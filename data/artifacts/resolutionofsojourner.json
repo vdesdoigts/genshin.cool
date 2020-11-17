@@ -1,0 +1,51 @@
+{
+	"name": "Resolution of Sojourner",
+	"minrarity": "3",
+	"maxrarity": "4",
+	"flower": {
+		"name": "Heart of Comradeship",
+		"images": {
+			"image": "https://static.wikia.nocookie.net/gensin-impact/images/f/fc/Item_Heart_of_Comradeship.png"
+		},
+		"description": "A small cerulean flower with somebody's ribbon pinned to the stem."
+	},
+	"plume": {
+		"name": "Feather of Homecoming",
+		"images": {
+			"image": "https://static.wikia.nocookie.net/gensin-impact/images/f/f0/Item_Feather_of_Homecoming.png"
+		},
+		"description": "A blue arrow fletching imbued with the sentiment of travelers that had once faded into the horizon."
+	},
+	"sands": {
+		"name": "Sundial of the Sojourner",
+		"images": {
+			"image": "https://static.wikia.nocookie.net/gensin-impact/images/9/93/Item_Sundial_of_the_Sojourner.png"
+		},
+		"description": "A sundial that has survived the ages, always silently recording the cycles of the sun and moon as they pass through the sky."
+	},
+	"goblet": {
+		"name": "Goblet of the Sojourner",
+		"images": {
+			"image": "https://static.wikia.nocookie.net/gensin-impact/images/0/06/Item_Goblet_of_the_Sojourner.png"
+		},
+		"description": "A plain porcelain goblet that was once brimming with joyous brews."
+	},
+	"circlet": {
+		"name": "Crown of Parting",
+		"images": {
+			"image": "https://static.wikia.nocookie.net/gensin-impact/images/2/25/Item_Crown_of_Parting.png"
+		},
+		"description": "A reed coronet that emanates the spring breeze."
+	},
+	"2pc": "ATK +18%",
+	"4pc": "Increase Charged Attack CRIT Rate by 30%.",
+	"drop": {
+		"3": [
+			"Midsummer Courtyard",
+			"Adventurer Handbook (Chapter 3 - all but sands)"
+		],
+		"4": [
+			"Midsummer Courtyard"
+		]
+	}
+}
