@@ -23,7 +23,7 @@ import { getCharacterByName, getCharacterArtifacts, getWeaponByName } from './ap
 
 import AppMenu from '../components/Menu'
 import ArtifactsMenu from '../components/ArtifactsMenu'
-import CharCard from '../components/CharCard'
+import CharacterCard from '../components/CharacterCard'
 import CharactersMenu from '../components/CharactersMenu'
 import Title from '../components/Title'
 import WeaponsMenu from '../components/WeaponsMenu'
@@ -150,7 +150,7 @@ const Home = () => {
 
                   return (
                     <Box key={index} width="100%">
-                      <CharCard
+                      <CharacterCard
                         character={character}
                         artifacts={artifacts}
                         weapon={weapon}

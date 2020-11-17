@@ -1,61 +1,114 @@
-import React from 'react'
+import Head from 'next/head'
 import {
   AspectRatio,
   Box,
+  Button,
+  Center,
+  Container,
+  Divider,
   Flex,
+  Grid,
+  GridItem,
   Heading,
+  HStack,
+  SimpleGrid,
+  Spacer,
   Stack,
   Text,
+  VStack,
+  Wrap,
+  WrapItem,
 } from '@chakra-ui/react'
-import { ICharacter, IWeapon } from '../../types'
+import { IArtifactItem, ICharacter, IRosterCharacter, IWeapon } from '../../types'
+import CharAvatar from '../CharacterAvatar'
+import ListCharacter from '../ListCharacter'
+import ListObject from '../ListObject'
 
 interface IProps {
+  artifacts: {
+    flower: IArtifactItem | null
+    plume: IArtifactItem | null
+    sands: IArtifactItem | null
+    goblet: IArtifactItem | null
+    circlet: IArtifactItem | null
+  }
   character: ICharacter
   weapon?: IWeapon
+  onOpenArtifactsDrawer: () => void
+  onOpenWeaponsDrawer: () => void
 }
 
-const getColorByTypeElement = (element: ICharacter['element']) => {
-  let color
+const Label = (props: { text: string }) => (
+  <Text
+    pb={2}
+    fontFamily="heading"
+    fontSize="1.125rem"
+    fontWeight="medium"
+  >
+    {props.text}
+  </Text>
+)
 
-  switch (element) {
-    case 'Electro':
-      color = 'linear-gradient(to left, #8e2de2, #4a00e0)'
-      break
-    case 'Pyro':
-      color = 'linear-gradient(to left, #ed213a, #93291e)'
-      break
-    case 'Hydro':
-      color = 'linear-gradient(to left, #00b4db, #0083b0)'
-      break
-    case 'Anemo':
-      color = 'linear-gradient(to right, #1d976c, #93f9b9)'
-      break
-    default:
-      color = '#000'
+const CharacterCard = ({
+  artifacts,
+  character,
+  weapon,
+  onOpenArtifactsDrawer,
+  onOpenWeaponsDrawer,
+}: IProps) => {
+
+  if (!character) {
+    return null
   }
 
-  return color
-}
-
-const CharacterCard = ({ character, weapon }: IProps) => {
   return (
-    <Stack
-      overflow="hidden"
-      align="center"
-      direction="row"
-      spacing={6}
-      background={getColorByTypeElement(character.element)}
-      borderRadius="50%"
-      padding={2}
-    >
-      <AspectRatio ratio={1} width="100%" background="#fff" borderRadius="50%" overflow="hidden">
-        <img src={character.images.image} />
-      </AspectRatio>
-      {/* <Stack spacing={1} justify="flex-start" color="#fff">
-        <Heading as="p" size="md" fontWeight="semibold">{character.name}</Heading>
-        <Text mt={0}>{weapon ? weapon.name : 'No weapon'}</Text>
-      </Stack> */}
-    </Stack>
+    <>
+      <Box
+        width="100%"
+        pt={8}
+        pb={6}
+        pl="80px"
+      >
+        <Stack
+          direction="row"
+          spacing={8}
+        >
+          <Flex direction="column" pb={8} flex="0 0 130px">
+            <Box width="100%">
+              <ListCharacter
+                label={character.name}
+                image={character.images.portrait}
+                element={character.element}
+              />
+            </Box>
+          </Flex>
+          <Box flex={1}>
+            <SimpleGrid
+              gridTemplateColumns="1fr 1fr 1fr"
+              spacing=".5rem"
+              spacingX="2rem"
+            >
+              {/* <Label text="Weapon" /> */}
+              <ListObject
+                label={weapon?.name}
+                placeholderLabel="Select a weapon"
+                image={weapon?.images.image}
+                onClick={onOpenWeaponsDrawer}
+              />
+              {Object.keys(artifacts).map((key, index) => (
+                <ListObject
+                  key={index}
+                  label={artifacts[key]?.name}
+                  placeholderLabel={`Select a ${key}`}
+                  image={artifacts[key]?.images.image}
+                  onClick={onOpenArtifactsDrawer}
+                />
+              ))}
+            </SimpleGrid>
+          </Box>
+        </Stack>
+      </Box>
+    </>
   )
 }
 

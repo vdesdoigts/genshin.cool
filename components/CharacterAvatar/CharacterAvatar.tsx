@@ -13,7 +13,7 @@ interface IProps {
   character: ICharacter
 }
 
-const CharCard = ({ character }: IProps) => {
+const CharacterCard = ({ character }: IProps) => {
   const { name } = character
 
   return (
@@ -79,4 +79,4 @@ const CharCard = ({ character }: IProps) => {
   )
 }
 
-export default CharCard
+export default CharacterCard
