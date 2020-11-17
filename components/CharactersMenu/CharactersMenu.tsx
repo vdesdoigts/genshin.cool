@@ -14,10 +14,10 @@ import Title from '../Title'
 
 interface IProps {
   onSelect: (characterName: ICharacter['name']) => void
+  userRosterCharacters: Pick<ICharacter, 'name'>[]
 }
 
-const CharactersMenu = ({ onSelect }: IProps) => {
-  const userRosterCharacters = useSelector(RosterSelectors.getUserRosterCharacters)
+const CharactersMenu = ({ onSelect, userRosterCharacters }: IProps) => {
   const [value, setValue] = useState('')
 
   const handleChange = (event) => {

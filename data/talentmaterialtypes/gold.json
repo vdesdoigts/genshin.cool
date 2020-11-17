@@ -6,5 +6,8 @@
 	"day": ["Wednesday", "Saturday", "Sunday"],
 	"location": "Jueyun Karst",
 	"region": "Liyue",
-	"domainofmastery": "Taishan Mansion"
+	"domainofmastery": "Taishan Mansion",
+    "images": {
+        "image": "https://rerollcdn.com/GENSHIN/Farming/NEW/Gold.png"
+    }
 }

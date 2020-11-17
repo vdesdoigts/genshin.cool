@@ -6,5 +6,8 @@
 	"day": ["Wednesday", "Saturday", "Sunday"],
 	"location": "Springvale",
 	"region": "Mondstadt",
-	"domainofmastery": "Forsaken Rift"
+	"domainofmastery": "Forsaken Rift",
+    "images": {
+        "image": "https://rerollcdn.com/GENSHIN/Farming/NEW/Ballad.png"
+    }
 }

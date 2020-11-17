@@ -7,5 +7,8 @@
 	"day": ["Wednesday", "Saturday", "Sunday"],
 	"location": "Wolvendom",
 	"region": "Mondstadt",
-	"domainofforgery": "Cecilia Garden"
+	"domainofforgery": "Cecilia Garden",
+	"images": {
+		"image": "https://rerollcdn.com/GENSHIN/Farming/NEW/Aerosiderite.png"
+	}
 }

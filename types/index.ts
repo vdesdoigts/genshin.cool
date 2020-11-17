@@ -74,6 +74,21 @@ export type ICharacter = {
   affiliation: string
   description: string
   url: string
+  talentmaterialtype: string
+}
+
+export type ITalentMaterialType = {
+	name: string
+	'2starname': string
+	'3starname': string
+	'4starname': string
+	day: string[]
+	location: string
+	region: string
+	domainofmastery: string
+  images: {
+    image: string
+  }
 }
 
 export type IWeapon = {
@@ -98,4 +113,19 @@ export type IWeapon = {
   description: string
   weaponmaterialtype: string,
   url: string
+}
+
+export type IWeaponMaterialType = {
+	name: string
+	'2starname': string
+	'3starname': string
+	'4starname': string
+	'5starname': string
+	day: string[]
+	location: string
+	region: string
+  domainofforgery: string
+  images: {
+    image: string
+  }
 }

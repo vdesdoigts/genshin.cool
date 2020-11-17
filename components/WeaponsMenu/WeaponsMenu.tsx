@@ -22,7 +22,6 @@ const ArtifactsMenu = ({ character, onSelect }: IProps) => {
   }
 
   const userRosterWeaponCharacter = useSelector((state) => RosterSelectors.selectWeaponCharacter(state, character.name))
-  console.log('userRosterArtifacts: ', userRosterWeaponCharacter)
   const [value, setValue] = useState('')
 
   const handleChange = (event) => {

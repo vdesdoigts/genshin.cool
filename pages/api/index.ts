@@ -1,14 +1,21 @@
 import artifacts from '../../data/artifacts'
 import characters from '../../data/characters'
+import talentmaterialtypes from '../../data/talentmaterialtypes'
 import weapons from '../../data/weapons'
-import { IArtifactItem, IArtifactType, ICharacter, IWeapon } from '../../types'
+import weaponmaterialtypes from '../../data/weaponmaterialtypes'
+import { IArtifactItem, IArtifactType, ICharacter, ITalentMaterialType, IWeapon, IWeaponMaterialType } from '../../types'
 
 export const getArtifactByName = (type: IArtifactType, name: IArtifactItem['name']) => {
   return artifacts.find((artifact) => artifact[type].name === name)![type]
 }
 
 export const getCharacterByName = (name: ICharacter['name']) => {
-  return name ? (characters.find((character) => character.name === name) as ICharacter) : null
+  return (characters.find((character) => character.name === name) as ICharacter)
+}
+
+export const getCharacterTalentMaterialType = (name: ICharacter['name']) => {
+  const character = getCharacterByName(name)
+  return talentmaterialtypes.find((material) => material.name === character?.talentmaterialtype)
 }
 
 export const getCharacterArtifacts = (artifacts: {
@@ -29,10 +36,18 @@ export const getCharacterArtifacts = (artifacts: {
   }
 }
 
+export const getTalentMaterialTypeByName = (name: ITalentMaterialType['name']) => {
+  return (talentmaterialtypes.find((talentmaterialtype) => talentmaterialtype.name === name) as ITalentMaterialType)
+}
+
 export const getWeaponByName = (name: IWeapon['name']) => {
   return weapons.find((weapon) => weapon.name === name)
 }
 
 export const getWeaponsByType = (type: ICharacter['weapontype']) => {
   return weapons.filter((weapon) => weapon.weapontype === type)
+}
+
+export const getWeaponMaterialTypeByName = (name: IWeaponMaterialType['name']) => {
+  return (weaponmaterialtypes.find((weaponmaterialtype) => weaponmaterialtype.name === name) as IWeaponMaterialType)
 }

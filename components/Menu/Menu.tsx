@@ -66,13 +66,15 @@ const Menu = ({
 
   return (
     <Flex
+      overflowY="auto"
       position="fixed"
       top={0}
       left={0}
       width="300px"
-      minH="100vh"
+      maxH="100vh"
       direction="column"
       justify="space-between"
+      background="#fff"
     >
       <Box px={8}>
         <Box pt={10}>

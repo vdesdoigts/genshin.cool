@@ -25,7 +25,8 @@ import AppMenu from '../components/Menu'
 import ArtifactsMenu from '../components/ArtifactsMenu'
 import CharacterCard from '../components/CharacterCard'
 import CharactersMenu from '../components/CharactersMenu'
-import Title from '../components/Title'
+import Header from '../components/Header'
+import Schedule from '../components/Schedule'
 import WeaponsMenu from '../components/WeaponsMenu'
 
 type IDrawerName = 'artifacts' | 'characters' | 'weapons'
@@ -33,6 +34,9 @@ type IDrawerName = 'artifacts' | 'characters' | 'weapons'
 const Home = () => {
   const dispatch = useRematchDispatch()
   const userRoster = useSelector(RosterSelectors.getUserRoster)
+  const userRosterCurrentName = useSelector(RosterSelectors.getUserRosterCurrentName)
+  const userRosterCharacters = useSelector(RosterSelectors.getUserRosterCharacters)
+  const userRosterCharactersWeapons = useSelector(RosterSelectors.selectWeaponCharacters)
 
   const [currentCharacter, setCurrentCharacter] = useState<ICharacter>()
   const [currentNavigation, setCurrentNavigation] = useState<'roster' | 'schedule'>('roster')
@@ -112,7 +116,7 @@ const Home = () => {
   }
 
   return (
-    <Box background="#f9f9f9">
+    <Box>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -126,48 +130,60 @@ const Home = () => {
             currentNavigation={currentNavigation}
           />
         </Box>
-        <Box px="6rem" py="3rem">
-          <div ref={rosterRef}>
-            <Stack direction="row" align="center" justify="space-between" pb={2}>
-              <Title label="Your roster" />
-              <Button onClick={() => onOpenDrawer('characters')}>Add a character</Button>
-            </Stack>
-            <Box
-              px={10}
-              py={6}
-              borderRadius="md"
-              boxShadow="lg"
-              background="#fff"
-            >
-              <VStack
-                width="100%"
-                divider={<Divider key={0} borderColor="gray.200" />}
+        <Box pb={10}>
+          <Box pt={10} pb={4} px="6rem">
+            <Header username={userRosterCurrentName} title="Your roster" />
+          </Box>
+          <Box px="6rem">
+            
+            <Box ref={rosterRef}>
+              <Stack direction="row" align="center" justify="flex-end" pb={2}>
+                {/* <Title label="Your roster" /> */}
+                <Button onClick={() => onOpenDrawer('characters')}>Add a character</Button>
+              </Stack>
+              <Box
+                px={10}
+                py={6}
+                borderRadius="md"
+                boxShadow="lg"
+                background="#fff"
               >
-                {userRoster.map((roster, index) => {
-                  const character = getCharacterByName(roster.character?.name)
-                  const artifacts = getCharacterArtifacts(roster.artifacts)
-                  const weapon = getWeaponByName(roster.weapon?.name)
+                <VStack
+                  width="100%"
+                  divider={<Divider key={0} borderColor="gray.200" />}
+                >
+                  {userRoster.map((roster, index) => {
+                    const character = getCharacterByName(roster.character?.name)
+                    const artifacts = getCharacterArtifacts(roster.artifacts)
+                    const weapon = getWeaponByName(roster.weapon?.name)
 
-                  return (
-                    <Box key={index} width="100%">
-                      <CharacterCard
-                        character={character}
-                        artifacts={artifacts}
-                        weapon={weapon}
-                        onOpenArtifactsDrawer={() => {
-                          onOpenDrawer('artifacts', character)
-                        }}
-                        onOpenWeaponsDrawer={() => {
-                          onOpenDrawer('weapons', character)
-                        }}
-                      />
-                    </Box>
-                  )
-                })}
-              </VStack>
+                    return (
+                      <Box key={index} width="100%">
+                        <CharacterCard
+                          character={character}
+                          artifacts={artifacts}
+                          weapon={weapon}
+                          onOpenArtifactsDrawer={() => {
+                            onOpenDrawer('artifacts', character)
+                          }}
+                          onOpenWeaponsDrawer={() => {
+                            onOpenDrawer('weapons', character)
+                          }}
+                        />
+                      </Box>
+                    )
+                  })}
+                </VStack>
+              </Box>
             </Box>
-          </div>
-          <Box ref={scheduleRef} height="2000px"></Box>
+
+            <Box ref={scheduleRef}>
+              <Schedule
+                userRosterCharacters={userRosterCharacters}
+                userRosterCharactersWeapons={userRosterCharactersWeapons}
+              />
+            </Box>
+          </Box>
         </Box>
       </SimpleGrid>
 
@@ -204,6 +220,7 @@ const Home = () => {
                 <DrawerBody>
                   <CharactersMenu
                     onSelect={onSelectCharacter}
+                    userRosterCharacters={userRosterCharacters}
                   />
                 </DrawerBody>
               </>

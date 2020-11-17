@@ -12,6 +12,7 @@ import { IArtifactItem, IWeapon } from '../../types'
 interface IProps {
   image?: IArtifactItem['images']['image'] | IWeapon['images']['image']
   label: IArtifactItem['name'] | IWeapon['name']
+  labelSize?: string
   onSelect?: () => void
   isSelected?: boolean
   size?: string
@@ -22,6 +23,7 @@ interface IProps {
 const ListItem = ({
   image,
   label,
+  labelSize = '1rem',
   onSelect,
   isSelected,
   size = '2.125rem',
@@ -48,9 +50,10 @@ const ListItem = ({
         </Box>
       )}
       <Text
-        pt={1}
+        pt=".125rem"
+        pr={6}
         fontFamily="heading"
-        fontSize="1rem"
+        fontSize={labelSize}
         fontWeight="medium"
       >
         {label}

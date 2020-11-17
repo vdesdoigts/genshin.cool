@@ -4,11 +4,16 @@ import {
   Heading,
 } from '@chakra-ui/react'
 
-const Header = () => {
+interface IProps {
+  username?: string
+  title: string
+}
+
+const Header = ({ username, title }: IProps) => {
   return (
-    <Box py={10}>
-      <Heading size="md" fontWeight="medium">Hi Friend,</Heading>
-      <Heading size="lg" fontWeight="semibold">Pagename</Heading>
+    <Box {...(!username ? { display: 'flex', alignItems: 'center' } : {})}>
+      {username && <Heading as="h3" size="md" fontWeight="medium">Hi {username} 👋</Heading>}
+      <Heading size="lg" fontWeight="semibold">{title}</Heading>
     </Box>
   )
 }
