@@ -1,7 +1,7 @@
 {
 	"name": "Prayers for Destiny",
-	"minrarity": "3",
-	"maxrarity": "4",
+	"minrarity": 3,
+	"maxrarity": 4,
 	"circlet": {
 		"name": "Tiara of Torrents",
 		"images": {

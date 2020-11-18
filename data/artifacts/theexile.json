@@ -1,7 +1,7 @@
 {
 	"name": "The Exile",
-	"minrarity": "3",
-	"maxrarity": "4",
+	"minrarity": 3,
+	"maxrarity": 4,
 	"flower": {
 		"name": "Exile's Flower",
 		"images": {

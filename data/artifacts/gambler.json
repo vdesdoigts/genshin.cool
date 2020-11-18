@@ -1,7 +1,7 @@
 {
 	"name": "Gambler",
-	"minrarity": "3",
-	"maxrarity": "4",
+	"minrarity": 3,
+	"maxrarity": 4,
 	"flower": {
 		"name": "Gambler's Brooch",
 		"images": {

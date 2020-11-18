@@ -29,18 +29,21 @@ export type IRosterCharacter = {
 
 export type IArtifact = {
   name: string
-  minrarity: number
-  maxrarity: number
-  flower: IArtifactItem,
-  plume: IArtifactItem,
-  sands: IArtifactItem,
-  goblet: IArtifactItem,
-  circlet: IArtifactItem,
-  '2pc': string
-  '4pc': string
+  minrarity: number | string
+  maxrarity: number | string
+  flower?: IArtifactItem,
+  plume?: IArtifactItem,
+  sands?: IArtifactItem,
+  goblet?: IArtifactItem,
+  circlet?: IArtifactItem,
+  '2pc'?: string
+  '4pc'?: string
   drop: {
-    4: string[]
-    5: []
+    1?: string[]
+    2?: string[]
+    3?: string[]
+    4?: string[]
+    5?: string[]
   }
 }
 

@@ -1,7 +1,7 @@
 {
 	"name": "Viridescent Venerer",
-	"minrarity": "4",
-	"maxrarity": "5",
+	"minrarity": 4,
+	"maxrarity": 5,
 	"flower": {
 		"name": "In Remembrance of Viridescent Fields",
 		"images": {

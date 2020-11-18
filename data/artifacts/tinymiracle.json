@@ -1,7 +1,7 @@
 {
 	"name": "Tiny Miracle",
-	"minrarity": "3",
-	"maxrarity": "4",
+	"minrarity": 3,
+	"maxrarity": 4,
 	"flower": {
 		"name": "Tiny Miracle's Flower",
 		"images": {

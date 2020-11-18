@@ -1,7 +1,7 @@
 {
 	"name": "Resolution of Sojourner",
-	"minrarity": "3",
-	"maxrarity": "4",
+	"minrarity": 3,
+	"maxrarity": 4,
 	"flower": {
 		"name": "Heart of Comradeship",
 		"images": {

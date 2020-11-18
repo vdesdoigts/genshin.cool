@@ -1,7 +1,7 @@
 {
 	"name": "Prayers for Wisdom",
-	"minrarity": "3",
-	"maxrarity": "4",
+	"minrarity": 3,
+	"maxrarity": 4,
 	"circlet": {
 		"name": "Tiara of Thunder",
 		"images": {

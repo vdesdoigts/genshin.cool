@@ -1,7 +1,7 @@
 {
 	"name": "Traveling Doctor",
-	"minrarity": "1",
-	"maxrarity": "3",
+	"minrarity": 1,
+	"maxrarity": 3,
 	"flower": {
 		"name": "Traveling Doctor's Silver Lotus",
 		"images": {

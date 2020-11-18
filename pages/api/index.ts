@@ -3,10 +3,11 @@ import characters from '../../data/characters'
 import talentmaterialtypes from '../../data/talentmaterialtypes'
 import weapons from '../../data/weapons'
 import weaponmaterialtypes from '../../data/weaponmaterialtypes'
-import { IArtifactItem, IArtifactType, ICharacter, ITalentMaterialType, IWeapon, IWeaponMaterialType } from '../../types'
+import { IArtifact, IArtifactItem, IArtifactType, ICharacter, ITalentMaterialType, IWeapon, IWeaponMaterialType } from '../../types'
 
+export const getArtifacts: () => IArtifact[] = () => artifacts.map((artifact) => artifact)
 export const getArtifactByName = (type: IArtifactType, name: IArtifactItem['name']) => {
-  return artifacts.find((artifact) => artifact[type].name === name)![type]
+  return artifacts.find((artifact) => artifact[type]?.name === name)![type]
 }
 
 export const getCharacterByName = (name: ICharacter['name']) => {
@@ -25,6 +26,7 @@ export const getCharacterArtifacts = (artifacts: {
   goblet: { name: string | null }
   circlet: { name: string | null }
 }) => {
+  console.log('artifacts: ', artifacts)
   const { flower, plume, sands, goblet, circlet } = artifacts
 
   return {

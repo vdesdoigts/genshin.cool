@@ -1,7 +1,7 @@
 {
 	"name": "Bloodstained Chivalry",
-	"minrarity": "4",
-	"maxrarity": "5",
+	"minrarity": 4,
+	"maxrarity": 5,
 	"flower": {
 		"name": "Bloodstained Flower of Iron",
 		"images": {

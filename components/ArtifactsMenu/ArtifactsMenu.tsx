@@ -7,8 +7,8 @@ import {
 } from '@chakra-ui/react'
 import { useSelector } from 'react-redux'
 import { RosterSelectors } from '../../redux/selectors'
-import artifacts from '../../data/artifacts'
-import { ICharacter, IArtifactItem, IArtifactType } from '../../types'
+import { ICharacter, IArtifact, IArtifactItem, IArtifactType } from '../../types'
+import { getArtifacts } from '../../pages/api'
 import ListItem from '../ListItem'
 import Title from '../Title'
 
@@ -22,6 +22,7 @@ const ArtifactsMenu = ({ character, onSelect }: IProps) => {
     return null
   }
 
+  const artifacts = getArtifacts()
   const userRosterArtifactsCharacter = useSelector((state) => RosterSelectors.selectArtifactsCharacter(state, character.name))
 
   const [value, setValue] = useState('')
@@ -34,11 +35,11 @@ const ArtifactsMenu = ({ character, onSelect }: IProps) => {
   }
 
   artifacts.forEach((artifact) => {
-    artifactsList.flower.push(artifact.flower)
-    artifactsList.plume.push(artifact.plume)
-    artifactsList.sands.push(artifact.sands)
-    artifactsList.goblet.push(artifact.goblet)
-    artifactsList.circlet.push(artifact.circlet)
+    artifact.flower && artifactsList.flower.push(artifact.flower)
+    artifact.plume && artifactsList.plume.push(artifact.plume)
+    artifact.sands && artifactsList.sands.push(artifact.sands)
+    artifact.goblet && artifactsList.goblet.push(artifact.goblet)
+    artifact.circlet && artifactsList.circlet.push(artifact.circlet)
   })
 
   const handleChange = (event) => {

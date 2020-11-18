@@ -1,7 +1,7 @@
 {
 	"name": "Defender's Will",
-	"minrarity": "3",
-	"maxrarity": "4",
+	"minrarity": 3,
+	"maxrarity": 4,
 	"flower": {
 		"name": "Guardian's Flower",
 		"images": {

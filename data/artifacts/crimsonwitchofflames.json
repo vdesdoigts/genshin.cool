@@ -1,7 +1,7 @@
 {
 	"name": "Crimson Witch of Flames",
-	"minrarity": "4",
-	"maxrarity": "5",
+	"minrarity": 4,
+	"maxrarity": 5,
 	"flower": {
 		"name": "Witch's Flower of Blaze",
 		"images": {

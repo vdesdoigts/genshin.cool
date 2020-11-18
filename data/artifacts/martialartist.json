@@ -1,7 +1,7 @@
 {
 	"name": "Martial Artist",
-	"minrarity": "3",
-	"maxrarity": "4",
+	"minrarity": 3,
+	"maxrarity": 4,
 	"flower": {
 		"name": "Martial Artist's Red Flower",
 		"images": {
