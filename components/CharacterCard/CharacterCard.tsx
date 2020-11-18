@@ -36,6 +36,7 @@ interface IProps {
   weapon?: IWeapon
   onOpenArtifactsDrawer: () => void
   onOpenWeaponsDrawer: () => void
+  onDeleteCharacter: () => void
 }
 
 const Label = (props: { text: string }) => (
@@ -55,6 +56,7 @@ const CharacterCard = ({
   weapon,
   onOpenArtifactsDrawer,
   onOpenWeaponsDrawer,
+  onDeleteCharacter,
 }: IProps) => {
 
   if (!character) {
@@ -81,6 +83,9 @@ const CharacterCard = ({
                 element={character.element}
               />
             </Box>
+            {/* <Box width="100%" pt={4}>
+              <Button variant="link" onClick={onDeleteCharacter}>Delete</Button>
+            </Box> */}
           </Flex>
           <Box flex={1}>
             <SimpleGrid

@@ -4,7 +4,7 @@ import characters from '../../data/characters'
 import { ICharacter } from '../../types'
 import { RootState } from '../store'
 
-export const getUserRoster = (state: RootState) => state.roster.userRosters[state.roster.currentRosterIndex]
+export const getUserRoster = (state: RootState) => state.roster.userRosters[state.roster.currentRosterIndex].filter((roster) => !roster.isDisabled)
 export const getUserRosterNames = (state: RootState) => state.roster.userRosterNames
 export const getUserRosterCurrentName = (state: RootState) => state.roster.userRosterNames[state.roster.currentRosterIndex]
 export const getCurrentRosterIndex = (state: RootState) => state.roster.currentRosterIndex

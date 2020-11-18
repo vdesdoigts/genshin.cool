@@ -193,6 +193,9 @@ const Home = () => {
                           onOpenWeaponsDrawer={() => {
                             onOpenDrawer('weapons', character)
                           }}
+                          onDeleteCharacter={() => {
+                            dispatch.roster.disabledCharacter(index)
+                          }}
                         />
                       </Box>
                     )

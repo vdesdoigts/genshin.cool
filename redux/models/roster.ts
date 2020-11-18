@@ -51,6 +51,12 @@ export const roster = createModel()({
         }
       })
     },
+    disabledCharacter(state, payload: number) {
+      return produce(state, draftState => {
+        const { currentRosterIndex } = state
+        draftState.userRosters[currentRosterIndex][payload].isDisabled = true
+      })
+    },
     addArtifact(state, payload: { character: ICharacter['name'], artifact: IArtifactItem['name'], type: IArtifactType }) {
       return produce(state, draftState => {
         const { currentRosterIndex } = state
