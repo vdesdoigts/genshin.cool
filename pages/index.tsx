@@ -21,6 +21,7 @@ import {
   ModalFooter,
   SimpleGrid,
   Stack,
+  Text,
   VStack,
   useDisclosure,
   useMediaQuery,
@@ -161,7 +162,7 @@ const Home = () => {
             
             <Box ref={rosterRef}>
               <Stack direction="row" align="center" justify="space-between" pb={2}>
-                <Header title="Your roster" />
+                <Heading id="roster" size="lg" fontWeight="semibold">Your roster</Heading>
                 <Button onClick={() => onOpenDrawer('characters')}>Add a character</Button>
               </Stack>
               <Box
@@ -206,6 +207,10 @@ const Home = () => {
                 userRosterCharactersWeapons={userRosterCharactersWeapons}
               />
             </Box>
+          </Box>
+
+          <Box pt={20} pb={4} px={{ base: 6, md: 10, xl: '6rem' }}>
+            <Text>This website is a fansite and is not affiliated with or endorsed by miHoYo.</Text>
           </Box>
         </Box>
       </SimpleGrid>

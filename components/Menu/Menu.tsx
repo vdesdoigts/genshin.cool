@@ -27,8 +27,9 @@ const menus = [
   }
 ]
 
-const NavButton = ({ label, isCurrent, onClick, onEdit }: { label: string, isCurrent?: boolean, onClick?: () => void, onEdit?: () => void }) => (
+const NavButton = ({ label, isCurrent, onClick, onEdit, ...rest }: { label: string, isCurrent?: boolean, onClick?: () => void, onEdit?: () => void, as?: any, href?: string }) => (
   <HStack
+    {...rest}
     px={6}
     py={4}
     justify="space-between"
@@ -125,6 +126,8 @@ const Menu = ({
             {menus.map((menu, index) => (
               <NavButton
                 key={index}
+                as="a"
+                href={`#${menu.id}`}
                 label={menu.label}
                 isCurrent={currentNavigation === menu.id}
               />

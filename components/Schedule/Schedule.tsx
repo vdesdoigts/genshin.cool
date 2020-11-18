@@ -38,7 +38,7 @@ const Schedule = ({ userRosterCharacters, userRosterCharactersWeapons }: IProps)
     <>
       <Box pt={10} pb={4}>
         <Stack direction="row" spacing={4}>
-          <Header title="Schedule" />
+          <Heading id="schedule" size="lg" fontWeight="semibold">Schedule</Heading>
           <Box flex="0 0 12.5rem">
             <Select
               instanceId="day"
