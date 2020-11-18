@@ -6,9 +6,12 @@ import {
   Image,
   Stack,
   Text,
+  Wrap,
+  WrapItem,
+  useTheme,
+  useMediaQuery,
 } from '@chakra-ui/react'
 import ListItem from '../ListItem'
-import { ICharacter } from '../../types'
 
 interface IProps {
   image: string 
@@ -19,6 +22,7 @@ interface IProps {
 }
 
 const AscensionItem = ({ image, label, sublabel, characters, date }: IProps) => {
+
   return (
     <Stack spacing={2}>
       <HStack spacing={4}>
@@ -59,18 +63,20 @@ const AscensionItem = ({ image, label, sublabel, characters, date }: IProps) => 
           </Text>
         </Box>
       </HStack>
-      <HStack spacing={3}>
+      <Wrap spacing={3}>
         {characters.map((item, index) => (
-          <ListItem
-            key={index}
-            image={item.images.image}
-            label={item.name}
-            size="2.438rem"
-            labelSize=".875rem"
-            imgContainerProps={{ py: 0 }}
-          />
+          <WrapItem key={index}>
+            <ListItem
+              image={item.images.image}
+              label={item.name}
+              size="2.438rem"
+              labelSize=".875rem"
+              imgContainerProps={{ py: 0 }}
+              showLabelIfLargerThanLg={true}
+            />
+          </WrapItem>
         ))}
-      </HStack>
+      </Wrap>
     </Stack>
   )
 }

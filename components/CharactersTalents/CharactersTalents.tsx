@@ -39,17 +39,10 @@ const CharactersTalents = ({ userRosterCharacters, date }: IProps) => {
 
   return (
     <Box>
-      <Heading
-        as="h3"
-        pb={2}
-        fontSize="1.25rem"
-        fontWeight="medium"
-      >
-        Character Talents Materials
-      </Heading>
-      <SimpleGrid columns={4} spacing={10}>
-        {items.map((talentMaterialType) => (
+      <SimpleGrid columns={{ base: 1, md: 2, xl: 1, xxl: 2 }} spacing={10}>
+        {items.map((talentMaterialType, index) => (
           <AscensionItem
+            key={index}
             image={talentMaterialType.images.image}
             label={talentMaterialType.name}
             sublabel={talentMaterialType.domainofmastery}

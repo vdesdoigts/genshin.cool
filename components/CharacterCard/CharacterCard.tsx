@@ -67,13 +67,13 @@ const CharacterCard = ({
         width="100%"
         pt={8}
         pb={6}
-        pl="80px"
+        pl={{ base: 0, md: '80px' }}
       >
         <Stack
-          direction="row"
+          direction={{ base: 'column', xl: 'row' }}
           spacing={8}
         >
-          <Flex direction="column" pb={8} flex="0 0 130px">
+          <Flex direction="column" flex={{ base: 'auto', xl: '0 0 130px' }} >
             <Box width="100%">
               <ListCharacter
                 label={character.name}
@@ -84,7 +84,7 @@ const CharacterCard = ({
           </Flex>
           <Box flex={1}>
             <SimpleGrid
-              gridTemplateColumns="1fr 1fr 1fr"
+              gridTemplateColumns={{ base: '1fr', sm: '1fr 1fr', xxl: '1fr 1fr 1fr' }}
               spacing=".5rem"
               spacingX="2rem"
             >

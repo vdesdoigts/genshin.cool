@@ -1,14 +1,13 @@
 import React from 'react'
 import {
-  AspectRatio,
   Box,
   Flex,
   HStack,
-  Icon,
   Text,
+  useMediaQuery,
+  useTheme,
 } from '@chakra-ui/react'
-import { MdModeEdit } from 'react-icons/md'
-import { IArtifactItem, ICharacter, IWeapon } from '../../types'
+import { ICharacter } from '../../types'
 import colors from '../../theme/colors'
 
 interface IProps {
@@ -35,10 +34,15 @@ const ListCharacter = ({
       onClick={onClick}
       spacing={0}
       alignItems="stretch"
-      transform="translateX(-80px)"
+      transform={{ base: 'none', md: 'translateX(-80px)' }}
       cursor="pointer"
     >
-      <Box position="relative" flex="0 0 80px" background={`linear-gradient(to left, ${color}, #fff)`}>
+      <Box
+        position="relative"
+        display={{ base: 'none', md: 'block' }}
+        flex="0 0 80px"
+        background={`linear-gradient(to left, ${color}, #fff)`}
+      >
         <Box
           position="absolute"
           top={0}

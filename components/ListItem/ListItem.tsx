@@ -18,6 +18,7 @@ interface IProps {
   size?: string
   imgContainerProps?: BoxProps
   ratio?: number
+  showLabelIfLargerThanLg?: boolean
 }
 
 const ListItem = ({
@@ -29,6 +30,7 @@ const ListItem = ({
   size = '2.125rem',
   imgContainerProps = { py: '.313rem', pl: 2 },
   ratio = 1,
+  showLabelIfLargerThanLg,
 }: IProps) => {
 
   return (
@@ -50,6 +52,7 @@ const ListItem = ({
         </Box>
       )}
       <Text
+        display={{ base: showLabelIfLargerThanLg ? 'none' : 'inline-block', lg: 'inline-block' }}
         pt=".125rem"
         pr={6}
         fontFamily="heading"

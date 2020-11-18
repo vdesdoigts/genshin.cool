@@ -46,15 +46,7 @@ const CharacterAscension = ({ userRosterCharactersWeapons, date }: IProps) => {
 
   return (
     <Box>
-      <Heading
-        as="h3"
-        pb={2}
-        fontSize="1.25rem"
-        fontWeight="medium"
-      >
-        Weapon Ascension Materials
-      </Heading>
-      <SimpleGrid columns={4} spacing={10}>
+      <SimpleGrid columns={{ base: 1, md: 2, xl: 1, xxl: 2 }} spacing={10}>
         {items.filter((item) => item.weaponMaterialType).map((weaponMaterialType) => (
           <AscensionItem
             image={weaponMaterialType.weaponMaterialType.images.image}

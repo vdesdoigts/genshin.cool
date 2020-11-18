@@ -1,13 +1,12 @@
 import React, { useState } from 'react'
 import {
   Box,
-  Divider,
+  Heading,
+  SimpleGrid,
   Stack,
-  VStack,
 } from '@chakra-ui/react'
 import { format } from 'date-fns'
 import { ICharacter, IWeapon } from '../../types'
-import { getCharacterByName } from '../../pages/api'
 import CharactersTalents from '../CharactersTalents'
 import Header from '../Header'
 import Select from '../Select'
@@ -42,6 +41,7 @@ const Schedule = ({ userRosterCharacters, userRosterCharactersWeapons }: IProps)
           <Header title="Schedule" />
           <Box flex="0 0 12.5rem">
             <Select
+              instanceId="day"
               defaultValue={date}
               name="color"
               options={options}
@@ -52,38 +52,56 @@ const Schedule = ({ userRosterCharacters, userRosterCharactersWeapons }: IProps)
           </Box>
         </Stack>
       </Box>
-      <Box
-        px={10}
-        py={6}
-        borderRadius="md"
-        boxShadow="lg"
-        background="#fff"
-      >
-        <VStack
-          width="100%"
-          spacing={8}
-          divider={<Divider key={0} borderColor="gray.200" />}
-        >
-          <Box width="100%">
-            <CharactersTalents
-              userRosterCharacters={userRosterCharacters}
-              date={date}
-            />
+      <SimpleGrid columns={{ base: 1, xl: 2 }} spacing={4}>
+        <Box>
+          <Heading
+            as="h3"
+            pb={2}
+            fontSize="1.25rem"
+            fontWeight="medium"
+          >
+            Character Talents Materials
+          </Heading>
+          <Box
+            px={{ base: 8, md: 10 }}
+            py={{ base: 6 }}
+            borderRadius="md"
+            boxShadow="lg"
+            background="#fff"
+          >
+            <Box width="100%">
+              <CharactersTalents
+                userRosterCharacters={userRosterCharacters}
+                date={date}
+              />
+            </Box>
           </Box>
-          {/* <Box width="100%">
-            <CharactersAscensions
-              userRosterCharacters={userRosterCharacters}
-              date={date}
-            />
-          </Box> */}
-          <Box width="100%">
-            <WeaponsAscensions
-              userRosterCharactersWeapons={userRosterCharactersWeapons}
-              date={date}
-            />
+        </Box>
+        <Box>
+          <Heading
+            as="h3"
+            pb={2}
+            fontSize="1.25rem"
+            fontWeight="medium"
+          >
+            Weapon Ascension Materials
+          </Heading>
+          <Box
+            px={{ base: 8, md: 10 }}
+            py={{ base: 6 }}
+            borderRadius="md"
+            boxShadow="lg"
+            background="#fff"
+          >
+            <Box width="100%">
+              <WeaponsAscensions
+                userRosterCharactersWeapons={userRosterCharactersWeapons}
+                date={date}
+              />
+            </Box>
           </Box>
-        </VStack>
-      </Box>
+        </Box>
+      </SimpleGrid>
     </>
   )
 }

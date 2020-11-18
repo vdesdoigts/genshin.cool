@@ -46,8 +46,9 @@ const CharacterAscension = ({ userRosterCharacters, date }: IProps) => {
         Character ascension
       </Heading>
       <SimpleGrid columns={4} spacing={10}>
-        {dailyTalentMaterialTypes.map((talentMaterialType) => (
+        {dailyTalentMaterialTypes.map((talentMaterialType, index) => (
           <AscensionItem
+            key={index}
             image={talentMaterialType.images.image}
             label={talentMaterialType.name}
             sublabel={talentMaterialType.domainofmastery}

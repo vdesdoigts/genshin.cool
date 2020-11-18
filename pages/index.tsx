@@ -14,6 +14,8 @@ import {
   Stack,
   VStack,
   useDisclosure,
+  useMediaQuery,
+  useTheme,
 } from '@chakra-ui/react'
 import { useSelector } from 'react-redux'
 import { RosterSelectors } from '../redux/selectors'
@@ -122,8 +124,8 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <SimpleGrid gridTemplateColumns="300px 1fr">
-        <Box minHeight="100vh" background="#fff">
+      <SimpleGrid gridTemplateColumns={{ base: '1fr', lg: '240px 1fr', xl: '300px 1fr' }}>
+        <Box display={{ base: 'none', lg: 'block' }} minHeight="100vh" background="#fff">
           <AppMenu
             onSelectRoster={onSelectRoster}
             onAddRoster={onAddRoster}
@@ -131,10 +133,10 @@ const Home = () => {
           />
         </Box>
         <Box pb={10}>
-          <Box pt={10} pb={4} px="6rem">
+          <Box pt={10} pb={4} px={{ base: 6, md: 10, xl: '6rem' }}>
             <Header username={userRosterCurrentName} title="Your roster" />
           </Box>
-          <Box px="6rem">
+          <Box px={{ base: 6, md: 10, xl: '6rem' }}>
             
             <Box ref={rosterRef}>
               <Stack direction="row" align="center" justify="flex-end" pb={2}>
@@ -142,8 +144,8 @@ const Home = () => {
                 <Button onClick={() => onOpenDrawer('characters')}>Add a character</Button>
               </Stack>
               <Box
-                px={10}
-                py={6}
+                px={{ base: 8, md: 10 }}
+                py={{ base: 2, md: 6 }}
                 borderRadius="md"
                 boxShadow="lg"
                 background="#fff"
