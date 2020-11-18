@@ -10,6 +10,7 @@ import {
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
+  Heading,
   SimpleGrid,
   Stack,
   VStack,
@@ -31,7 +32,7 @@ import Header from '../components/Header'
 import Schedule from '../components/Schedule'
 import WeaponsMenu from '../components/WeaponsMenu'
 
-type IDrawerName = 'artifacts' | 'characters' | 'weapons'
+type IDrawerName = 'artifacts' | 'characters' | 'weapons' | 'menu'
 
 const Home = () => {
   const dispatch = useRematchDispatch()
@@ -98,22 +99,21 @@ const Home = () => {
 
   const onAddRoster = () => dispatch.roster.addRoster()
 
-  const onOpenDrawer = (name: IDrawerName, character?: ICharacter) => {
+  const onOpenDrawer = (name: IDrawerName, character?: ICharacter, opts: Pick<DrawerProps, 'placement' | 'size'> = { placement: 'right', size: 'sm' }) => {
     if (character) {
       setCurrentCharacter(character)
     }
-    setDrawerOpts({ ...drawerOpts, name })
+    setDrawerOpts({
+      props: {
+        ...opts,
+      },
+      name,
+    })
     onOpen()
   }
 
   const onCloseDrawer = () => {
     onClose()
-    setDrawerOpts({
-      props: {
-        placement: 'right',
-        size: 'sm',
-      }
-    })
     setCurrentCharacter(undefined)
   }
 
@@ -133,14 +133,15 @@ const Home = () => {
           />
         </Box>
         <Box pb={10}>
-          <Box pt={10} pb={4} px={{ base: 6, md: 10, xl: '6rem' }}>
-            <Header username={userRosterCurrentName} title="Your roster" />
+          <Box display={{ base: 'block', lg: 'none' }} pt={6} px={{ base: 6, md: 10, xl: '6rem' }}>
+            <Button onClick={() => onOpenDrawer('menu', undefined, { placement: 'left', size: 'xs' })}>Menu</Button>
+            {/* <Heading as="h3" size="md" fontWeight="medium">Hi {userRosterCurrentName} 👋</Heading> */}
           </Box>
-          <Box px={{ base: 6, md: 10, xl: '6rem' }}>
+          <Box pt={10} px={{ base: 6, md: 10, xl: '6rem' }}>
             
             <Box ref={rosterRef}>
-              <Stack direction="row" align="center" justify="flex-end" pb={2}>
-                {/* <Title label="Your roster" /> */}
+              <Stack direction="row" align="center" justify="space-between" pb={2}>
+                <Header title="Your roster" />
                 <Button onClick={() => onOpenDrawer('characters')}>Add a character</Button>
               </Stack>
               <Box
@@ -198,34 +199,37 @@ const Home = () => {
           <DrawerContent>
             <DrawerCloseButton />
             {drawerOpts?.name === 'artifacts' && (
-              <>
-                <DrawerBody>
-                  <ArtifactsMenu
-                    character={currentCharacter}
-                    onSelect={onSelectArtifact}
-                  />
-                </DrawerBody>
-              </>
+              <DrawerBody>
+                <ArtifactsMenu
+                  character={currentCharacter}
+                  onSelect={onSelectArtifact}
+                />
+              </DrawerBody>
             )}
             {drawerOpts?.name === 'weapons' && (
-              <>
-                <DrawerBody>
-                  <WeaponsMenu
-                    character={currentCharacter}
-                    onSelect={onSelectWeapon}
-                  />
-                </DrawerBody>
-              </>
+              <DrawerBody>
+                <WeaponsMenu
+                  character={currentCharacter}
+                  onSelect={onSelectWeapon}
+                />
+              </DrawerBody>
             )}
             {drawerOpts?.name === 'characters' && (
-              <>
-                <DrawerBody>
-                  <CharactersMenu
-                    onSelect={onSelectCharacter}
-                    userRosterCharacters={userRosterCharacters}
-                  />
-                </DrawerBody>
-              </>
+              <DrawerBody>
+                <CharactersMenu
+                  onSelect={onSelectCharacter}
+                  userRosterCharacters={userRosterCharacters}
+                />
+              </DrawerBody>
+            )}
+            {drawerOpts?.name === 'menu' && (
+              <DrawerBody>
+                <AppMenu
+                  onSelectRoster={onSelectRoster}
+                  onAddRoster={onAddRoster}
+                  currentNavigation={currentNavigation}
+                />
+              </DrawerBody>
             )}
           </DrawerContent>
         </DrawerOverlay>

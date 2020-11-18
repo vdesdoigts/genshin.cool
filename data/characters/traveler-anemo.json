@@ -1,10 +1,10 @@
 {
-    "name": "Aether",
+    "name": "Traveler Anemo",
     "titles": [
         "Outlander",
         "Honorary Knight"
     ],
-    "element": "Adaptive",
+    "element": "Anemo",
     "weapontype": "Sword",
     "gender": "Male",
     "rarity": 5,

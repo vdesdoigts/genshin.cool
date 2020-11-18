@@ -1,12 +1,12 @@
 {
-    "name": "Lumine",
+    "name": "Traveler Anemo",
     "titles": [
         "Outlander",
         "Honorary Knight"
     ],
-    "element": "Adaptive",
+    "element": "Geo",
     "weapontype": "Sword",
-    "gender": "Female",
+    "gender": "Male",
     "rarity": 5,
     "images": {
         "image": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png",
@@ -14,9 +14,9 @@
         "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/2/24/Character_Traveler_%28Female%29_Portrait.png"
     },
     "cv": {
-        "japanese": "Aoi Yūki",
-        "korean": "Saea Lee",
-        "chinese": "Ning Yan"
+        "japanese": "Shun Horie",
+        "korean": "Gyeongtae Lee",
+        "chinese": "Hailong Dong"
     },
     "affiliation": "Neutral",
     "description": "A traveler from another world who had their only kin taken away, forcing them to embark on a journey to find The Seven.",
