@@ -10,6 +10,7 @@ import {
   MenuList,
   MenuItem,
   Text,
+  HStack,
   VStack,
 } from '@chakra-ui/react'
 import { useSelector } from 'react-redux'
@@ -26,19 +27,19 @@ const menus = [
   }
 ]
 
-const NavButton = ({ label, isCurrent, onClick }: { label: string, isCurrent?: boolean, onClick?: () => void }) => (
-  <Box
-    as="button"
-    appearance="none"
+const NavButton = ({ label, isCurrent, onClick, onEdit }: { label: string, isCurrent?: boolean, onClick?: () => void, onEdit?: () => void }) => (
+  <HStack
     px={6}
     py={4}
+    justify="space-between"
     borderRadius=".5rem"
     bg={!isCurrent ? '#fff' : '#9288e2'}
     color={!isCurrent ? '#757685' : '#fff'}
     textAlign="left"
     transition="all .2s ease"
+    cursor="pointer"
     _hover={{
-      color: '#9288e2'
+      color: !isCurrent ? '#9288e2' : '#fff',
     }}
     _active={{
       bg: "#9288e2",
@@ -46,20 +47,23 @@ const NavButton = ({ label, isCurrent, onClick }: { label: string, isCurrent?: b
     }}
     {...(!!onClick ? { onClick } : {})}
   >
-    <Text as="span" fontWeight="normal">{label}</Text>
-  </Box>
+    <Text fontWeight="normal">{label}</Text>
+    {!!onEdit && <Text onClick={(e) => { e.stopPropagation(); onEdit() }}>Edit</Text>}
+  </HStack>
 )
 
 interface IProps {
   onSelectRoster: (index: number) => void
   onAddRoster: () => void
   currentNavigation: 'roster' | 'schedule'
+  onEditProfile: (index: number) => void
 }
 
 const Menu = ({
   onSelectRoster,
   onAddRoster,
   currentNavigation,
+  onEditProfile,
 }: IProps) => {
   const userRosterNames = useSelector(RosterSelectors.getUserRosterNames)
   const currentRosterIndex = useSelector(RosterSelectors.getCurrentRosterIndex)
@@ -96,6 +100,7 @@ const Menu = ({
                 onClick={() => onSelectRoster(index)}
                 label={name}
                 isCurrent={index === currentRosterIndex}
+                onEdit={() => onEditProfile(index)}
               />
             ))}
             <NavButton

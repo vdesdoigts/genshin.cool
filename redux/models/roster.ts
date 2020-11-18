@@ -1,7 +1,7 @@
 import { createModel } from '@rematch/core'
 import findIndex from 'lodash.findindex'
 import produce from 'immer'
-import { IArtifactItem,IArtifactType, ICharacter, IRoster, IRosterCharacter, IWeapon } from '../../types'
+import { IArtifactItem, IArtifactType, ICharacter, IRoster, IRosterCharacter, IWeapon } from '../../types'
 
 export interface RosterState {
   currentRosterIndex: number
@@ -112,6 +112,11 @@ export const roster = createModel()({
     setCurrentRosterIndex(state, payload: number) {
       return produce(state, draftState => {
         draftState.currentRosterIndex = payload
+      })
+    },
+    updateRosterName(state, payload: {index: number, name: string }) {
+      return produce(state, draftState => {
+        draftState.userRosterNames[payload.index] = payload.name
       })
     }
   },

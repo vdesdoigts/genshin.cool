@@ -11,6 +11,14 @@ import {
   DrawerContent,
   DrawerCloseButton,
   Heading,
+  Input,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalCloseButton,
+  ModalBody,
+  ModalFooter,
   SimpleGrid,
   Stack,
   VStack,
@@ -37,13 +45,15 @@ type IDrawerName = 'artifacts' | 'characters' | 'weapons' | 'menu'
 const Home = () => {
   const dispatch = useRematchDispatch()
   const userRoster = useSelector(RosterSelectors.getUserRoster)
-  const userRosterCurrentName = useSelector(RosterSelectors.getUserRosterCurrentName)
+  const userRosterNames = useSelector(RosterSelectors.getUserRosterNames)
   const userRosterCharacters = useSelector(RosterSelectors.getUserRosterCharacters)
   const userRosterCharactersWeapons = useSelector(RosterSelectors.selectWeaponCharacters)
 
   const [currentCharacter, setCurrentCharacter] = useState<ICharacter>()
   const [currentNavigation, setCurrentNavigation] = useState<'roster' | 'schedule'>('roster')
+  const [currentEditProfile, setCurrentEditProfile] = useState<number>()
 
+  const { isOpen: isModalOpen, onOpen: onModalOpen, onClose: onModalClose } = useDisclosure()
   const { isOpen, onOpen, onClose } = useDisclosure()
   const [drawerOpts, setDrawerOpts] = useState<{
     name?: IDrawerName,
@@ -54,6 +64,9 @@ const Home = () => {
       size: 'sm',
     }
   })
+
+  const [value, setValue] = useState("")
+  const handleChange = (event) => setValue(event.target.value)
 
   const rosterRef = useRef(null)
   const scheduleRef = useRef(null)
@@ -117,6 +130,12 @@ const Home = () => {
     setCurrentCharacter(undefined)
   }
 
+  const onEditProfile = (index: number) => {
+    setValue(userRosterNames[index])
+    onModalOpen()
+    setCurrentEditProfile(index)
+  }
+
   return (
     <Box>
       <Head>
@@ -130,6 +149,7 @@ const Home = () => {
             onSelectRoster={onSelectRoster}
             onAddRoster={onAddRoster}
             currentNavigation={currentNavigation}
+            onEditProfile={onEditProfile}
           />
         </Box>
         <Box pb={10}>
@@ -228,12 +248,41 @@ const Home = () => {
                   onSelectRoster={onSelectRoster}
                   onAddRoster={onAddRoster}
                   currentNavigation={currentNavigation}
+                  onEditProfile={onEditProfile}
                 />
               </DrawerBody>
             )}
           </DrawerContent>
         </DrawerOverlay>
       </Drawer>
+
+      <Modal isOpen={isModalOpen} onClose={onModalClose}>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>Profile</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            {typeof currentEditProfile === 'number' && userRosterNames[currentEditProfile] && (
+              <Input
+                value={value}
+                onChange={handleChange}
+                placeholder="Name"
+                size="lg"
+              />
+            )}
+          </ModalBody>
+
+          <ModalFooter>
+            <Button colorScheme="blue" mr={3} onClick={() => {
+              dispatch.roster.updateRosterName({ index: currentEditProfile, name: value })
+              onModalClose()
+            }}>
+              Save
+            </Button>
+            <Button variant="ghost" onClick={onModalClose}>Close</Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
     </Box>
   )
 }

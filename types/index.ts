@@ -100,7 +100,7 @@ export type IWeapon = {
   },
   baseatk: string
   ability: string
-  passive: {
+  passive?: {
     passive_name: string
     refinement_effect: {
       refine_one: string
