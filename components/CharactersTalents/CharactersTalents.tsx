@@ -20,7 +20,7 @@ const CharactersTalents = ({ userRosterCharacters, date }: IProps) => {
   const talentMaterialTypes: ITalentMaterialType[] = uniq(talentMaterialTypeNames).map(
     (talentMaterialType) => getTalentMaterialTypeByName(talentMaterialType)
   )
-  const dailyTalentMaterialTypes = talentMaterialTypes.filter((talentMaterialType) => talentMaterialType.day.includes(date.value))
+  const dailyTalentMaterialTypes = talentMaterialTypes.filter((talentMaterialType) => talentMaterialType?.day.includes(date.value))
 
   const items = date.value === 'all' ? talentMaterialTypes : dailyTalentMaterialTypes
 
