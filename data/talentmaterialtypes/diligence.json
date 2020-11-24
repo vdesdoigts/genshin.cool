@@ -1,4 +1,5 @@
 {
+	"id": 2,
 	"name": "Diligence",
 	"2starname": "Teachings of \"Diligence\"",
 	"3starname": "Guide of \"Diligence\"",
@@ -7,7 +8,7 @@
 	"location": "Jueyun Karst",
 	"region": "Liyue",
 	"domainofmastery": "Taishan Mansion",
-    "images": {
-        "image": "https://rerollcdn.com/GENSHIN/Farming/NEW/Diligence.png"
-    }
+	"images": {
+		"image": "https://rerollcdn.com/GENSHIN/Farming/NEW/Diligence.png"
+	}
 }

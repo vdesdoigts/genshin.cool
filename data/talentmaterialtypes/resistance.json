@@ -1,4 +1,5 @@
 {
+	"id": 6,
 	"name": "Resistance",
 	"2starname": "Teachings of \"Resistance\"",
 	"3starname": "Guide of \"Resistance\"",
@@ -7,7 +8,7 @@
 	"location": "Springvale",
 	"region": "Mondstadt",
 	"domainofmastery": "Forsaken Rift",
-    "images": {
-        "image": "https://rerollcdn.com/GENSHIN/Farming/NEW/Resistance.png"
-    }
+	"images": {
+		"image": "https://rerollcdn.com/GENSHIN/Farming/NEW/Resistance.png"
+	}
 }

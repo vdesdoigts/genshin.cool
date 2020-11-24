@@ -1,25 +1,26 @@
 {
-    "name": "Traveler Anemo",
-    "titles": [
-        "Outlander",
-        "Honorary Knight"
-    ],
-    "element": "Anemo",
-    "weapontype": "Sword",
-    "gender": "Male",
-    "rarity": 5,
-    "images": {
-        "image": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png",
-        "card": "https://static.wikia.nocookie.net/gensin-impact/images/1/1c/Traveler_Male_Card.jpg",
-        "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/4/47/Character_Traveler_%28Male%29_Portrait.png"
-    },
-    "cv": {
-        "japanese": "Shun Horie",
-        "korean": "Gyeongtae Lee",
-        "chinese": "Hailong Dong"
-    },
-    "affiliation": "Neutral",
-    "description": "A traveler from another world who had their only kin taken away, forcing them to embark on a journey to find The Seven.",
-    "talentmaterialtype": "Freedom",
-    "url": "https://genshin-impact.fandom.com/wiki/Traveler"
+	"id": 21,
+  "name": "Traveler Anemo",
+  "titles": [
+    "Outlander",
+    "Honorary Knight"
+  ],
+  "element": "Anemo",
+  "weapontype": "Sword",
+  "gender": "Male",
+  "rarity": 5,
+  "images": {
+    "image": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png",
+    "card": "https://static.wikia.nocookie.net/gensin-impact/images/1/1c/Traveler_Male_Card.jpg",
+    "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/4/47/Character_Traveler_%28Male%29_Portrait.png"
+  },
+  "cv": {
+    "japanese": "Shun Horie",
+    "korean": "Gyeongtae Lee",
+    "chinese": "Hailong Dong"
+  },
+  "affiliation": "Neutral",
+  "description": "A traveler from another world who had their only kin taken away, forcing them to embark on a journey to find The Seven.",
+  "talentmaterialtype": "Freedom",
+  "url": "https://genshin-impact.fandom.com/wiki/Traveler"
 }

@@ -1,4 +1,5 @@
 {
+	"id": 3,
 	"name": "Freedom",
 	"2starname": "Teachings of \"Freedom\"",
 	"3starname": "Guide of \"Freedom\"",
@@ -7,7 +8,7 @@
 	"location": "Springvale",
 	"region": "Mondstadt",
 	"domainofmastery": "Forsaken Rift",
-    "images": {
-        "image": "https://rerollcdn.com/GENSHIN/Farming/NEW/Freedom.png"
-    }
+	"images": {
+		"image": "https://rerollcdn.com/GENSHIN/Farming/NEW/Freedom.png"
+	}
 }

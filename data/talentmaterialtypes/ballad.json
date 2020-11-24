@@ -1,4 +1,5 @@
 {
+	"id": 1,
 	"name": "Ballad",
 	"2starname": "Teachings of \"Ballad\"",
 	"3starname": "Guide of \"Ballad\"",
@@ -7,7 +8,7 @@
 	"location": "Springvale",
 	"region": "Mondstadt",
 	"domainofmastery": "Forsaken Rift",
-    "images": {
-        "image": "https://rerollcdn.com/GENSHIN/Farming/NEW/Ballad.png"
-    }
+	"images": {
+		"image": "https://rerollcdn.com/GENSHIN/Farming/NEW/Ballad.png"
+	}
 }
