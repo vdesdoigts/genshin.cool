@@ -29,13 +29,13 @@ const ListObject = ({
   return (
     <HStack
       role="group"
-      spacing={2}
+      spacing={4}
       onClick={onClick}
       cursor="pointer"
     >
       <AspectRatio
         ratio={1}
-        flex="0 0 44px"
+        flex="0 0 3.75rem"
       >
         <Box>
           <Box
@@ -44,6 +44,7 @@ const ListObject = ({
             p={2}
             borderRadius="8px"
             border="1px solid #ccc"
+            background="#f2f4f8"
           >
             <Box
               as="img"
@@ -71,9 +72,7 @@ const ListObject = ({
         <Text
           opacity={label ? 1 : .6}
           fontFamily="heading"
-          fontSize="16px"
-          transition="padding-left .2s ease"
-          _groupHover={{ paddingLeft: '.12rem' }}
+          fontSize="1.125rem"
         >
           {label || placeholderLabel}
         </Text>

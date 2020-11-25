@@ -19,6 +19,9 @@
     }
   },
   "description": "A standard-issue longsword of the Knights of Favonius. When you're armed with this agile and sharp weapon, channeling the power of the elements has never been so easy!",
-  "weaponmaterialtype": "Decarabian",
+  "weaponmaterialtype": {
+    "id": 4,
+    "name": "Decarabian"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Favonius_Sword"
 }

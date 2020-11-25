@@ -19,6 +19,9 @@
     }
   },
   "description": "The sword of the Knights of Favonius. Millennia later, it still calls on the winds of swift justice to vanquish all evil—just like the last heroine who wielded it.",
-  "weaponmaterialtype": "Decarabian",
+  "weaponmaterialtype": {
+    "id": 4,
+    "name": "Decarabian"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Aquila_Favonia"
 }

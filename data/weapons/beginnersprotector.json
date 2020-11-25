@@ -19,6 +19,9 @@
     }
   },
   "description": "A polearm as straight as a flag pole. Well suited to most combat situations, it has an imposing presence when swung.",
-  "weaponmaterialtype": "Dandelion Gladiator",
+  "weaponmaterialtype": {
+    "id": 3,
+    "name": "Dandelion Gladiator"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Beginner%27s_Protector"
 }

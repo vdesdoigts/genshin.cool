@@ -19,6 +19,9 @@
     }
   },
   "description": "Version 12. A reprint featuring corrections to Version 11 and brand-new additions based on recent developments.",
-  "weaponmaterialtype": "Decarabian",
+  "weaponmaterialtype": {
+    "id": 4,
+    "name": "Decarabian"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Magic_Guide"
 }

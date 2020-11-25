@@ -21,6 +21,9 @@
   },
   "affiliation": "Wangsheng Funeral Parlor",
   "description": "",
-  "talentmaterialtype": "Gold",
+  "talentmaterialtype": {
+    "id": 4,
+    "name": "Gold"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Zhongli"
 }

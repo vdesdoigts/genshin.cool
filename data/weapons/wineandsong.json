@@ -19,6 +19,9 @@
     }
   },
   "description": "A songbook from the bygone aristocratic era, whose composer has become forgotten. It chronicles the tale of a certain heroic outlaw.",
-  "weaponmaterialtype": "Boreal Wolf",
+  "weaponmaterialtype": {
+    "id": 2,
+    "name": "Boreal Wolf"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Wine_and_Song"
 }

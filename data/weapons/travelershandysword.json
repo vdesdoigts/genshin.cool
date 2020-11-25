@@ -19,6 +19,9 @@
     }
   },
   "description": "A handy steel sword which contains scissors, a magnifying glass, tinder, and other useful items in its sheath.",
-  "weaponmaterialtype": "Dandelion Gladiator",
+  "weaponmaterialtype": {
+    "id": 3,
+    "name": "Dandelion Gladiator"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Traveler%27s_Handy_Sword"
 }

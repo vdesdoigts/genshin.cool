@@ -1,0 +1,26 @@
+import React from 'react'
+import { SimpleGrid } from '@chakra-ui/react'
+import { ICharacter, ITalentMaterialType } from '../../types'
+import AscensionItem from '../AscensionItem'
+
+interface IProps {
+  talentsMaterials: (ITalentMaterialType & { characters: ICharacter[] })[]
+}
+
+const DailyTalentsMaterials = ({ talentsMaterials }: IProps) => {
+  return (
+    <SimpleGrid columns={1} spacing={6}>
+      {talentsMaterials.map((talentMaterialType, index) => (
+        <AscensionItem
+          key={index}
+          image={talentMaterialType.images.image}
+          label={talentMaterialType.name}
+          sublabel={talentMaterialType.domainofmastery}
+          characters={talentMaterialType.characters}
+        />
+      ))}
+    </SimpleGrid>
+  )
+}
+
+export default DailyTalentsMaterials

@@ -19,6 +19,9 @@
     }
   },
   "description": "A hunter's music consists of but two sounds: the twang of the bowstring and the whoosh of soaring arrows.",
-  "weaponmaterialtype": "Boreal Wolf",
+  "weaponmaterialtype": {
+    "id": 2,
+    "name": "Boreal Wolf"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Hunter%27s_Bow"
 }

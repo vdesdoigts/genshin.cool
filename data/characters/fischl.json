@@ -23,6 +23,9 @@
   },
   "affiliation": "Adventurers' Guild",
   "description": "A mysterious girl who calls herself 'Prinzessin der Verurteilung' and travels with a night raven named Oz. Currently serves as an investigator in the Adventurers' Guild. Through her unique abilities, eccentric character, and (while she would never admit it herself) hard work, Fischl has become a rising star among the Adventurers' Guild's investigators, earning the recognition of all.",
-  "talentmaterialtype": "Ballad",
+  "talentmaterialtype": {
+    "id": 1,
+    "name": "Diligence"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Fischl"
 }

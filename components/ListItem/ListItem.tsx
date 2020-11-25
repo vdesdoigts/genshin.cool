@@ -39,7 +39,8 @@ const ListItem = ({
       spacing={4}
       background="#F5F5F5"
       borderRadius="0 10px 10px 0"
-      {...(!isSelected ? { onClick: onSelect, cursor: 'pointer' } : { pointerEvents: 'none' } )}
+      onClick={onSelect}
+      {...(!isSelected ? { cursor: 'pointer' } : { } )}
     >
       {!!image && (
         <Box {...imgContainerProps}>

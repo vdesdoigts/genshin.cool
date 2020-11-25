@@ -19,6 +19,9 @@
     }
   },
   "description": "A bow that has been well-polished by time and meticulously cared for by its owner. It feels almost like an extension of the archer's arm.",
-  "weaponmaterialtype": "Boreal Wolf",
+  "weaponmaterialtype": {
+    "id": 2,
+    "name": "Boreal Wolf"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Seasoned_Hunter%27s_Bow"
 }

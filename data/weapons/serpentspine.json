@@ -19,6 +19,9 @@
     }
   },
   "description": "A rare weapon whose origin is the ancient ocean. One can hear the sound of the ageless waves as one swings it.",
-  "weaponmaterialtype": "Aerosiderite",
+  "weaponmaterialtype": {
+    "id": 1,
+    "name": "Aerosiderite"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Serpent_Spine"
 }

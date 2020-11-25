@@ -19,6 +19,9 @@
     }
   },
   "description": "A sharp crimson polearm that was once a gladiator's priceless treasure. Its awl has been stained by the blood of countless beasts and men.",
-  "weaponmaterialtype": "Boreal Wolf",
+  "weaponmaterialtype": {
+    "id": 2,
+    "name": "Boreal Wolf"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Deathmatch"
 }

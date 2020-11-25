@@ -19,6 +19,9 @@
     }
   },
   "description": "A heavy greatsword. A clock is embedded within it, though its internal mechanisms have long been damaged.",
-  "weaponmaterialtype": "Decarabian",
+  "weaponmaterialtype": {
+    "id": 4,
+    "name": "Decarabian"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/The_Bell"
 }

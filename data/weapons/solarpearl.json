@@ -19,6 +19,9 @@
     }
   },
   "description": "A dull, golden pearl made of an unknown substance that harbors the light of the sun and the moon, and pulses with a warm strength.",
-  "weaponmaterialtype": "Guyun",
+  "weaponmaterialtype": {
+    "id": 5,
+    "name": "Guyun"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Solar_Pearl"
 }

@@ -10,23 +10,21 @@ import { store } from '../redux/store'
 function App({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
-      <Box background="#f9f9f9" minHeight="100vh">
-        <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta
-            name="keywords"
-            content="toy photography, toy, toys, photography, photographies, actions figures, instagram, interview"
-          />
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="keywords"
+          content="toy photography, toy, toys, photography, photographies, actions figures, instagram, interview"
+        />
 
-          <meta
-            property="og:title"
-            content="Genshin dashboard"
-          />
-        </Head>
-        <Provider store={store}>
-            <Component {...pageProps} />
-        </Provider>
-      </Box>
+        <meta
+          property="og:title"
+          content="Genshin dashboard"
+        />
+      </Head>
+      <Provider store={store}>
+        <Component {...pageProps} />
+      </Provider>
     </ChakraProvider>
   )
 }

@@ -19,6 +19,9 @@
     }
   },
   "description": "A claymore made from white iron. Lightweight without compromising on power. Effective even when wielded by one of average strength, it is extremely deadly in the hands of a physically stronger wielder.",
-  "weaponmaterialtype": "Dandelion Gladiator",
+  "weaponmaterialtype": {
+    "id": 3,
+    "name": "Dandelion Gladiator"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/White_Iron_Greatsword"
 }

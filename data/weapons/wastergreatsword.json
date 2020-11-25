@@ -19,6 +19,9 @@
     }
   },
   "description": "A sturdy sheet of iron that may be powerful enough to break apart mountains if wielded with enough willpower.",
-  "weaponmaterialtype": "Boreal Wolf",
+  "weaponmaterialtype": {
+    "id": 2,
+    "name": "Boreal Wolf"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Waster_Greatsword"
 }

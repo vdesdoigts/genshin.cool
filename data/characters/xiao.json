@@ -24,6 +24,9 @@
   },
   "affiliation": "Liyue Adeptus",
   "description": "One of the \"Mighty and Illuminated Adepti\" guarding Liyue, also heralded as the \"Guardian yaksha.\"\nDespite his appearance as a young man, occasional legends about him have been documented in ancient books for thousands of years.\nHe is especially fond of Wangshu Inn's Almond Tofu.\nThe reason is that the dish tastes just like the \"dreams\" he used to devour.",
-  "talentmaterialtype": "Prosperity",
+  "talentmaterialtype": {
+    "id": 5,
+    "name": "Prosperity"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Xiao"
 }

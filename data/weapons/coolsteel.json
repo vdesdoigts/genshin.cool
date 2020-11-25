@@ -19,6 +19,9 @@
     }
   },
   "description": "A reliable steel-forged weapon that serves as a testament to the great adventures of its old master.",
-  "weaponmaterialtype": "Decarabian",
+  "weaponmaterialtype": {
+    "id": 4,
+    "name": "Decarabian"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Cool_Steel"
 }

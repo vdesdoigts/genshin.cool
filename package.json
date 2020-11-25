@@ -9,6 +9,7 @@
     "export": "next export"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^1.0.1",
     "@chakra-ui/react": "^1.0.0",
     "@emotion/react": "^11.0.0",
     "@emotion/styled": "^11.0.0",
@@ -16,7 +17,10 @@
     "date-fns": "^2.16.1",
     "framer-motion": "^2.9.4",
     "immer": "^7.0.14",
+    "lodash.defaultsdeep": "^4.6.1",
     "lodash.findindex": "^4.6.0",
+    "lodash.groupby": "^4.6.0",
+    "lodash.keyby": "^4.6.0",
     "lodash.union": "^4.6.0",
     "lodash.uniq": "^4.5.0",
     "lodash.uniqby": "^4.7.0",

@@ -19,6 +19,9 @@
     }
   },
   "description": "An ancient longsword discovered in the Blackcliff Forge that cuts through rocks like a hot knife through butter.",
-  "weaponmaterialtype": "Mist Veiled Elixir",
+  "weaponmaterialtype": {
+    "id": 6,
+    "name": "Mist Veiled Elixir"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Prototype_Rancour"
 }

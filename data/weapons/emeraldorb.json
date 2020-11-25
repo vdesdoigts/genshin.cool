@@ -19,6 +19,9 @@
     }
   },
   "description": "A catalyst carved out of the hard jade from Jueyunjian north of Liyue. It is small, light, and durable.",
-  "weaponmaterialtype": "Guyun",
+  "weaponmaterialtype": {
+    "id": 5,
+    "name": "Guyun"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Emerald_Orb"
 }

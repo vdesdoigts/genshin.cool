@@ -19,6 +19,9 @@
     }
   },
   "description": "An extremely sturdy greatsword from the Blackcliff Forge. It has a dark crimson color from the blade to the pommel.",
-  "weaponmaterialtype": "Mist Veiled Elixir",
+  "weaponmaterialtype": {
+    "id": 6,
+    "name": "Mist Veiled Elixir"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Blackcliff_Slasher"
 }

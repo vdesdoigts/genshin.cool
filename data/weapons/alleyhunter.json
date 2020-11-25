@@ -19,6 +19,9 @@
     }
   },
   "description": "An intricate, opulent longbow. It once belonged to a gentleman thief who was never caught.",
-  "weaponmaterialtype": "Boreal Wolf",
+  "weaponmaterialtype": {
+    "id": 2,
+    "name": "Boreal Wolf"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Alley_Hunter"
 }

@@ -19,6 +19,9 @@
     }
   },
   "description": "A battle-tested greatsword that has seen better days and worse.",
-  "weaponmaterialtype": "Boreal Wolf",
+  "weaponmaterialtype": {
+    "id": 2,
+    "name": "Boreal Wolf"
+  },
   "url": "ttps://genshin-impact.fandom.com/wiki/Old_Merc%27s_Pal"
 }

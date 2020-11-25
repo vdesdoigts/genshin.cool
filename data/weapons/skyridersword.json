@@ -19,6 +19,9 @@
     }
   },
   "description": "A reliable steel sword. The legendary Skyrider once tried to ride it as a flying sword...",
-  "weaponmaterialtype": "Aerosiderite",
+  "weaponmaterialtype": {
+    "id": 1,
+    "name": "Aerosiderite"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Skyrider_Sword"
 }

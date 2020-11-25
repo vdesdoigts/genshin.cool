@@ -1,5 +1,5 @@
 {
-	"id": 1,
+  "id": 1,
   "name": "Amber",
   "titles": [
     "Outrider",
@@ -23,6 +23,9 @@
   },
   "affiliation": "Knights of Favonius",
   "description": "A perky, straightforward girl, who is also the only Outrider of the Knights of Favonius. Her amazing mastery of the glider has made her a three-time winner of the Gliding Championship in Mondstadt. As a rising star within the Knights of Favonius, Amber is always ready for any challenging tasks.",
-  "talentmaterialtype": "Freedom",
+  "talentmaterialtype": {
+    "id": 3,
+    "name": "Freedom"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Amber"
 }

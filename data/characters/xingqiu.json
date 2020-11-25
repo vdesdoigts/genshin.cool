@@ -24,6 +24,9 @@
   },
   "affiliation": "Feiyun Commerce Guild",
   "description": "The second son of the Feiyun Commerce Guild, Xingqiu has had a reputation for being studious and polite ever since he was a young child. But there is another side to the mild-mannered Xingqiu everyone knows. A daring, adventurous and much more mischievous side...",
-  "talentmaterialtype": "Gold",
+  "talentmaterialtype": {
+    "id": 4,
+    "name": "Gold"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Xingqiu"
 }

@@ -19,6 +19,9 @@
     }
   },
   "description": "A sharp filleting knife. The blade is long, thin, and incredibly sharp.",
-  "weaponmaterialtype": "Mist Veiled Elixir",
+  "weaponmaterialtype": {
+    "id": 6,
+    "name": "Mist Veiled Elixir"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Fillet_Blade"
 }

@@ -19,6 +19,9 @@
     }
   },
   "description": "A jade polearm made by the archons, capable of slaying ancient beasts.",
-  "weaponmaterialtype": "Guyun",
+  "weaponmaterialtype": {
+    "id": 5,
+    "name": "Guyun"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Primordial_Jade_Winged-Spear#:~:text=Description,with%20all%20they%20could%20muster."
 }

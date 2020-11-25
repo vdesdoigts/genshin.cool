@@ -1,30 +1,33 @@
 import React, { useState } from 'react'
+import uniq from 'lodash.uniq'
 import {
   Box,
   Heading,
-  SimpleGrid,
 } from '@chakra-ui/react'
-import uniq from 'lodash.uniq'
+import { useSelector } from 'react-redux'
+import { AppSelectors, ProfileSelectors } from '../../redux/selectors'
 import { ICharacter, ITalentMaterialType } from '../../types'
-import { getCharacterByName, getTalentMaterialTypeByName } from '../../pages/api'
-import AscensionItem from '../AscensionItem'
+import { getCharacterById, getTalentMaterialTypeById } from '../../api'
+import DashBox from '../DashBox'
+import DailyTalentsMaterials from './DailyTalentsMaterials'
+import WeeklyTalentsMaterials from './WeeklyTalentsMaterials'
 
-interface IProps {
-  userRosterCharacters: Pick<ICharacter, 'name'>[]
-  date: { value: string, label: string }
-}
+const CharactersTalents = () => {
+  const currentSelectedDay = useSelector(AppSelectors.getCurrentSelectedDay)
+  const currentRosterCharacters = useSelector(ProfileSelectors.getCurrentEnabledRosterCharacters)
+  const characters = currentRosterCharacters.map((character) => getCharacterById(character.id))
 
-const CharactersTalents = ({ userRosterCharacters, date }: IProps) => {
-  const characters = userRosterCharacters.map((character) => getCharacterByName(character.name))
-  const talentMaterialTypeNames = characters.map((character) => character.talentmaterialtype)
-  const talentMaterialTypes: ITalentMaterialType[] = uniq(talentMaterialTypeNames).map(
-    (talentMaterialType) => getTalentMaterialTypeByName(talentMaterialType)
+  const talentMaterialTypeIds = characters.map((character) => character.talentmaterialtype.id)
+
+  const talentMaterialTypes: (ITalentMaterialType & { characters: ICharacter[] })[] = uniq(talentMaterialTypeIds).map(
+    (talentMaterialType) => ({
+      ...getTalentMaterialTypeById(talentMaterialType),
+      characters: characters.filter((character) => character.talentmaterialtype.id === talentMaterialType)
+    })
   )
-  const dailyTalentMaterialTypes = talentMaterialTypes.filter((talentMaterialType) => talentMaterialType?.day.includes(date.value))
+  const dailyTalentMaterialTypes = talentMaterialTypes.filter((talentMaterialType) => talentMaterialType?.day.includes(currentSelectedDay))
 
-  const items = date.value === 'all' ? talentMaterialTypes : dailyTalentMaterialTypes
-
-  if (items?.length === 0) {
+  if ((currentSelectedDay === 'all' && talentMaterialTypes?.length === 0) || (currentSelectedDay !== 'all' && dailyTalentMaterialTypes?.length === 0)) {
     return (
       <Heading
         as="h3"
@@ -38,20 +41,13 @@ const CharactersTalents = ({ userRosterCharacters, date }: IProps) => {
   }
 
   return (
-    <Box>
-      <SimpleGrid columns={{ base: 1, md: 2, xl: 1, xxl: 2 }} spacing={10}>
-        {items.map((talentMaterialType, index) => (
-          <AscensionItem
-            key={index}
-            image={talentMaterialType.images.image}
-            label={talentMaterialType.name}
-            sublabel={talentMaterialType.domainofmastery}
-            characters={characters.filter((character) => character.talentmaterialtype === talentMaterialType.name)}
-            date={date.value === 'all' && talentMaterialType.day.join(', ')}
-          />
-        ))}
-      </SimpleGrid>
-    </Box>
+    <DashBox title="Character materials">
+      {currentSelectedDay === 'all'
+        ? <Box pt={8}><WeeklyTalentsMaterials talentsMaterials={talentMaterialTypes} /></Box>
+        : <DailyTalentsMaterials talentsMaterials={dailyTalentMaterialTypes} />
+      }
+    </DashBox>
+    
   )
 }
 

@@ -19,6 +19,9 @@
     }
   },
   "description": "An exotic long-bladed rapier that somehow found its way into Liyue via foreign traders. It is light, agile, and sharp.",
-  "weaponmaterialtype": "Aerosiderite",
+  "weaponmaterialtype": {
+    "id": 1,
+    "name": "Aerosiderite"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Iron_Sting"
 }

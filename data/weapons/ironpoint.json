@@ -19,6 +19,9 @@
     }
   },
   "description": "Sharp and pointy at one end, it is a balanced weapon that is quite popular among travelers.",
-  "weaponmaterialtype": "Dandelion Gladiator",
+  "weaponmaterialtype": {
+    "id": 3,
+    "name": "Dandelion Gladiator"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Iron_Point"
 }

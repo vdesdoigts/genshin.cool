@@ -19,6 +19,9 @@
     }
   },
   "description": "Notes left behind by a top student. Many useful spells are listed, and the handwriting is beautiful.",
-  "weaponmaterialtype": "Decarabian",
+  "weaponmaterialtype": {
+    "id": 4,
+    "name": "Decarabian"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Apprentice%27s_Notes"
 }

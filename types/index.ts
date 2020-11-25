@@ -1,33 +1,40 @@
+export type IProfile = {
+  name: string
+  roster: IRoster
+  disabledRoster: IRoster
+}
+
 export type IRoster = IRosterCharacter[]
 
 export type IRosterCharacter = {
   isDisabled?: boolean
   character: {
-    name: ICharacter['name']
+    id: ICharacter['id']
   }
-  artifacts: {
-    flower: {
-      name: IArtifactItem['name']
+  artifacts?: {
+    flower?: {
+      id: IArtifactItem['id']
     }
-    plume: {
-      name: IArtifactItem['name']
+    plume?: {
+      id: IArtifactItem['id']
     }
-    sands: {
-      name: IArtifactItem['name']
+    sands?: {
+      id: IArtifactItem['id']
     }
-    goblet: {
-      name: IArtifactItem['name']
+    goblet?: {
+      id: IArtifactItem['id']
     }
-    circlet: {
-      name: IArtifactItem['name']
+    circlet?: {
+      id: IArtifactItem['id']
     }
   },
-  weapon: {
-    name: IWeapon['name']
+  weapon?: {
+    id: IWeapon['id']
   }
 }
 
 export type IArtifact = {
+  id: number
   name: string
   minrarity: number | string
   maxrarity: number | string
@@ -48,6 +55,7 @@ export type IArtifact = {
 }
 
 export type IArtifactItem = {
+  id: number
   name: string
   images: {
     image: string
@@ -57,7 +65,16 @@ export type IArtifactItem = {
 
 export type IArtifactType = 'flower' | 'plume' | 'sands' | 'goblet' | 'circlet'
 
+export type IArtifactCollection = {
+  flower?: IArtifactItem
+  plume?: IArtifactItem
+  sands?: IArtifactItem
+  goblet?: IArtifactItem
+  circlet?: IArtifactItem
+}
+
 export type ICharacter = {
+  id: number
   name: string
   titles: string[]
   element: string
@@ -77,10 +94,14 @@ export type ICharacter = {
   affiliation: string
   description: string
   url: string
-  talentmaterialtype: string
+  talentmaterialtype: {
+    id: ITalentMaterialType['id']
+    name: ITalentMaterialType['name']
+  }
 }
 
 export type ITalentMaterialType = {
+  id: number
 	name: string
 	'2starname': string
 	'3starname': string
@@ -95,6 +116,7 @@ export type ITalentMaterialType = {
 }
 
 export type IWeapon = {
+  id: number
   name: string
   weapontype: string
   rarity: number
@@ -114,11 +136,15 @@ export type IWeapon = {
     }
   },
   description: string
-  weaponmaterialtype: string,
+  weaponmaterialtype?: {
+    id: number
+    name: string
+  }
   url: string
 }
 
 export type IWeaponMaterialType = {
+  id: number
 	name: string
 	'2starname': string
 	'3starname': string

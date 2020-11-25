@@ -6,22 +6,21 @@ import {
 } from '@chakra-ui/react'
 import { useSelector } from 'react-redux'
 import { RosterSelectors } from '../../redux/selectors'
-import { ICharacter, IArtifactItem } from '../../types'
+import { ICharacter, IWeapon } from '../../types'
 import { getWeaponsByType } from '../../pages/api'
 import ListItem from '../ListItem'
 import Title from '../Title'
 
 interface IProps {
   character?: ICharacter
-  onSelect: (characterName: ICharacter['name'], artifact: IArtifactItem['name']) => void
+  onSelect: (characterName: ICharacter['id'], weapon: IWeapon['id']) => void
 }
 
-const ArtifactsMenu = ({ character, onSelect }: IProps) => {
+const WeaponsMenu = ({ character, onSelect }: IProps) => {
   if (!character) {
     return null
   }
 
-  const userRosterWeaponCharacter = useSelector((state) => RosterSelectors.selectWeaponCharacter(state, character.name))
   const [value, setValue] = useState('')
 
   const handleChange = (event) => {
@@ -46,8 +45,8 @@ const ArtifactsMenu = ({ character, onSelect }: IProps) => {
               key={index}
               image={item.images.image}
               label={item.name}
-              onSelect={() => onSelect(character.name, item.name)}
-              isSelected={userRosterWeaponCharacter.name === item.name}
+              onSelect={() => onSelect(character.id, item.id)}
+              // isSelected={userRosterWeaponCharacter.name === item.name}
             />
           ))}
         </SimpleGrid>
@@ -56,4 +55,4 @@ const ArtifactsMenu = ({ character, onSelect }: IProps) => {
   )
 }
 
-export default ArtifactsMenu
+export default WeaponsMenu

@@ -19,6 +19,9 @@
     }
   },
   "description": "A bow that once served as an extraordinary instrument. It is no longer capable of getting people up and dancing.",
-  "weaponmaterialtype": "Decarabian",
+  "weaponmaterialtype": {
+    "id": 4,
+    "name": "Decarabian"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/The_Stringless"
 }

@@ -19,6 +19,9 @@
     }
   },
   "description": "A bow, despite the name. After countless experiments and improvements to the design, the creator of the ultimate slingshot found himself to have made what was actually a bow.",
-  "weaponmaterialtype": "Guyun",
+  "weaponmaterialtype": {
+    "id": 5,
+    "name": "Guyun"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Slingshot"
 }

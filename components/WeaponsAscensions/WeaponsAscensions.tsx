@@ -1,37 +1,40 @@
 import React from 'react'
+import groupBy from 'lodash.groupby'
 import {
   Box,
   Heading,
-  SimpleGrid,
 } from '@chakra-ui/react'
-import { ICharacter, IWeapon } from '../../types'
-import { getCharacterByName, getWeaponByName, getWeaponMaterialTypeByName } from '../../pages/api'
-import AscensionItem from '../AscensionItem'
+import { useSelector } from 'react-redux'
+import { AppSelectors, ProfileSelectors } from '../../redux/selectors'
+import { getCharacterById, getWeaponMaterialTypeById, getWeaponById } from '../../api'
+import DashBox from '../DashBox'
+import WeeklyWeaponsMaterials from './WeeklyWeaponsMaterials'
+import DailyWeaponsMaterials from './DailyWeaponsMaterials'
+import { ICharacter, IWeapon, IWeaponMaterialType } from '../../types'
 
-interface IProps {
-  userRosterCharactersWeapons: {
-    weapon: Pick<IWeapon, 'name'>,
-    characters: Pick<ICharacter, 'name'>[]
-  }[]
-  date: { value: string, label: string }
-}
+const WeaponsAscensions = () => {
+  const currentSelectedDay = useSelector(AppSelectors.getCurrentSelectedDay)
+  const currentEnabledRoster = useSelector(ProfileSelectors.getCurrentEnabledRoster)
+  const weaponMaterialTypesByWeaponId = groupBy(currentEnabledRoster, (roster) => roster.weapon?.id)
 
-const CharacterAscension = ({ userRosterCharactersWeapons, date }: IProps) => {
-  const weaponMaterialTypes = userRosterCharactersWeapons.map((item) => {
-    const weapon = getWeaponByName(item.weapon.name)
-    
-    return {
-      weapon,
-      weaponMaterialType: getWeaponMaterialTypeByName(weapon.weaponmaterialtype),
-      characters: item.characters.map((character) => getCharacterByName(character.name))
-    }
-  })
+  const weaponMaterialTypes: { weapon: IWeapon, weaponMaterialType: IWeaponMaterialType, characters: ICharacter[] }[] = 
+    Object.keys(weaponMaterialTypesByWeaponId)
+      .filter((weaponKey) => weaponKey !== 'undefined')
+      .map((weaponKey) => {
+        const roster = weaponMaterialTypesByWeaponId[weaponKey]
+        const weapon = getWeaponById(roster[0].weapon.id) // same for all character 
+        const characters = roster.map((item) => item.character.id)
+        
+        return {
+          weapon,
+          weaponMaterialType: getWeaponMaterialTypeById(weapon.weaponmaterialtype.id),
+          characters: characters.map((character) => getCharacterById(character))
+        }
+      })
 
-  const dailyWeaponMaterialTypes = weaponMaterialTypes.filter((item) => item.weaponMaterialType?.day.includes(date.value))
+  const dailyWeaponMaterialTypes = weaponMaterialTypes.filter((item) => item.weaponMaterialType?.day.includes(currentSelectedDay))
 
-  const items = date.value === 'all' ? weaponMaterialTypes : dailyWeaponMaterialTypes
-
-  if (items?.length === 0) {
+  if ((currentSelectedDay === 'all' && weaponMaterialTypes?.length === 0) || (currentSelectedDay !== 'all' && dailyWeaponMaterialTypes?.length === 0)) {
     return (
       <Heading
         as="h3"
@@ -39,29 +42,19 @@ const CharacterAscension = ({ userRosterCharactersWeapons, date }: IProps) => {
         fontSize="1.25rem"
         fontWeight="medium"
       >
-        No weapon ascension material to farm today
+        No weapon material to farm today
       </Heading>
     )
   }
 
   return (
-    <Box>
-      <SimpleGrid columns={{ base: 1, md: 2, xl: 1, xxl: 2 }} spacing={10}>
-        {items.filter((item) => item.weaponMaterialType).map((weaponMaterialType) => (
-          <AscensionItem
-            image={weaponMaterialType.weaponMaterialType.images.image}
-            label={weaponMaterialType.weaponMaterialType.name}
-            sublabel={weaponMaterialType.weaponMaterialType.domainofforgery}
-            characters={[
-              weaponMaterialType.weapon,
-              ...weaponMaterialType.characters
-            ]}
-            date={date.value === 'all' && weaponMaterialType.weaponMaterialType.day.join(', ')}
-          />
-        ))}
-      </SimpleGrid>
-    </Box>
+    <DashBox title="Weapon Materials">
+      {currentSelectedDay === 'all'
+        ? <Box pt={8}><WeeklyWeaponsMaterials weaponsMaterials={weaponMaterialTypes} /></Box>
+        : <DailyWeaponsMaterials weaponsMaterials={dailyWeaponMaterialTypes} />
+      }
+    </DashBox>
   )
 }
 
-export default CharacterAscension
+export default WeaponsAscensions

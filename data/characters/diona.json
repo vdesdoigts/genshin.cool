@@ -22,6 +22,9 @@
   },
   "affiliation": "The Cat's Tail Bar",
   "description": "The incredibly popular bartender of the Cat's Tail tavern, rising star of Mondstadt's wine industry, and the greatest challenger to its traditional powerhouses.\nA feisty feline young lady from Springvale, any drink mixed by Diona's hand tastes delicious beyond belief.\nYet given her extreme distaste for alcohol, is her talent a blessing or a curse?",
-  "talentmaterialtype": "Freedom",
+  "talentmaterialtype": {
+    "id": 3,
+    "name": "Freedom"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Diona"
 }

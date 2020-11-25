@@ -19,6 +19,9 @@
     }
   },
   "description": "Youthful dreams and the thrill of adventure. If this isn't enough, then make it up with valiance.",
-  "weaponmaterialtype": "Decarabian",
+  "weaponmaterialtype": {
+    "id": 4,
+    "name": "Decarabian"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Dull_Blade"
 }

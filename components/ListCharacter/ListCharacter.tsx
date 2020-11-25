@@ -34,7 +34,6 @@ const ListCharacter = ({
       onClick={onClick}
       spacing={0}
       alignItems="stretch"
-      transform={{ base: 'none', md: 'translateX(-80px)' }}
       cursor="pointer"
     >
       <Box
@@ -50,7 +49,6 @@ const ListCharacter = ({
           width="100%"
           height="100%"
           pr="20px"
-          transform="translateY(-20px)"
         >
           <Box
             as="img"

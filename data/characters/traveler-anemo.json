@@ -1,5 +1,5 @@
 {
-	"id": 21,
+  "id": 21,
   "name": "Traveler Anemo",
   "titles": [
     "Outlander",
@@ -21,6 +21,9 @@
   },
   "affiliation": "Neutral",
   "description": "A traveler from another world who had their only kin taken away, forcing them to embark on a journey to find The Seven.",
-  "talentmaterialtype": "Freedom",
+  "talentmaterialtype": {
+    "id": 3,
+    "name": "Freedom"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Traveler"
 }
