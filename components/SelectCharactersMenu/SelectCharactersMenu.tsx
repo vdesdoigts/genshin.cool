@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import {
   Box,
+  Heading,
   Input,
   SimpleGrid,
-  Text,
 } from '@chakra-ui/react'
 import { useSelector } from 'react-redux'
 import useRematchDispatch from '../../hooks/useRematch'
@@ -28,8 +28,8 @@ const CharactersMenu = () => {
   }
 
   return (
-    <Box pt={4}>
-      <Title label="Add characters" />
+    <Box py={4}>
+      <Heading mb="12px" fontSize="18px" fontWeight="medium" lineHeight="1.33333">Manage your roster</Heading>
       <Box pt={2}>
         <Input
           value={value}

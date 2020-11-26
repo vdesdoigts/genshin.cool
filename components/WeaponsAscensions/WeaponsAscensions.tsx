@@ -3,6 +3,7 @@ import groupBy from 'lodash.groupby'
 import {
   Box,
   Heading,
+  Text,
 } from '@chakra-ui/react'
 import { useSelector } from 'react-redux'
 import { AppSelectors, ProfileSelectors } from '../../redux/selectors'
@@ -36,21 +37,18 @@ const WeaponsAscensions = () => {
 
   if ((currentSelectedDay === 'all' && weaponMaterialTypes?.length === 0) || (currentSelectedDay !== 'all' && dailyWeaponMaterialTypes?.length === 0)) {
     return (
-      <Heading
-        as="h3"
-        pb={2}
-        fontSize="1.25rem"
-        fontWeight="medium"
-      >
-        No weapon material to farm today
-      </Heading>
+      <DashBox title="Weapon Materials">
+        <Text mb={0}>
+          No weapon material to farm today.
+        </Text>
+      </DashBox>
     )
   }
 
   return (
-    <DashBox title="Weapon Materials">
+    <DashBox title="Weapon Materials" {...(currentSelectedDay === 'all' ? { variant: 'pink', size: 'sm' } : {})} shadow>
       {currentSelectedDay === 'all'
-        ? <Box pt={8}><WeeklyWeaponsMaterials weaponsMaterials={weaponMaterialTypes} /></Box>
+        ? <DashBox><WeeklyWeaponsMaterials weaponsMaterials={weaponMaterialTypes} /></DashBox>
         : <DailyWeaponsMaterials weaponsMaterials={dailyWeaponMaterialTypes} />
       }
     </DashBox>

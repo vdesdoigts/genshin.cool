@@ -65,9 +65,7 @@ const Character = ({ artifacts, character, weapon, isDisabled, onDisabled, onEdi
         >
           <Stack direction="row" spacing="1.875rem">
             <Box overflow="hidden" flex="0 0 3.5rem" width="3.5rem" height="3.5rem" borderRadius=".5rem" background="#f2f4f8">
-              <Image
-                src={character.images.image}
-              />
+              <Image src={character.images.image} />
             </Box>
             <Stack spacing={1} justify="center">
               <Text
@@ -81,8 +79,10 @@ const Character = ({ artifacts, character, weapon, isDisabled, onDisabled, onEdi
               </Text>
               <Box color="#bbbdcb">
                 {weapon 
-                  ? <Text fontSize="0.875rem" fontWeight="medium">{weapon.name} & {Object.keys(artifacts).length} artifacts</Text>
-                  : <Text fontSize="0.875rem" fontWeight="medium">No weapon & {Object.keys(artifacts).length} artifacts</Text>
+                  // ? <Text fontSize="0.875rem" fontWeight="medium">{weapon.name} & {Object.keys(artifacts).length} artifacts</Text>
+                  // : <Text fontSize="0.875rem" fontWeight="medium">No weapon & {Object.keys(artifacts).length} artifacts</Text>
+                  ? <Text fontSize="0.875rem" fontWeight="medium">{weapon.name}</Text>
+                  : <Text fontSize="0.875rem" fontWeight="medium">No weapon</Text>
                 }
               </Box>
             </Stack>

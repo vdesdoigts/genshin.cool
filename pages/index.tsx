@@ -52,8 +52,12 @@ const Dash = () => {
               <SimpleGrid columns={1} spacing="32px" pt="44px">
                 <DaySelect />
                 <SimpleGrid columns={2} spacing="32px">
-                  <CharactersTalents />
-                  <WeaponsAscensions />
+                  <Box>
+                    <CharactersTalents />
+                  </Box>
+                  <Box>
+                    <WeaponsAscensions />
+                  </Box>
                 </SimpleGrid>
               </SimpleGrid>
             </Box>

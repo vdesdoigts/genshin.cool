@@ -41,9 +41,9 @@ const CharactersTalents = () => {
   }
 
   return (
-    <DashBox title="Character materials">
+    <DashBox title="Character materials" {...(currentSelectedDay === 'all' ? { variant: 'pink', size: 'sm' } : {})} shadow>
       {currentSelectedDay === 'all'
-        ? <Box pt={8}><WeeklyTalentsMaterials talentsMaterials={talentMaterialTypes} /></Box>
+        ? <DashBox><WeeklyTalentsMaterials talentsMaterials={talentMaterialTypes} /></DashBox>
         : <DailyTalentsMaterials talentsMaterials={dailyTalentMaterialTypes} />
       }
     </DashBox>

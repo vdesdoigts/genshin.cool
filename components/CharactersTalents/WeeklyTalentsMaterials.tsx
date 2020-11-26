@@ -20,21 +20,7 @@ const WeeklyTalentsMaterials = ({ talentsMaterials }: IProps) => {
       {Object.keys(talentMaterialTypesByDays).map((key) => {
         return (
           <Box>
-            <Heading
-              pb={4}
-              color="#4b4d55"
-              fontSize="1rem"
-              fontWeight="light"
-              lineHeight="1"
-              _after={{
-                content: "''",
-                display: "block",
-                width: "100%",
-                height: '1px',
-                mt: ".75rem",
-                background: '#eef0f4',
-              }}
-            >
+            <Heading mb="16px" fontSize="14px" fontWeight="semibold" lineHeight="1.33333">
               {key.split(',').join(', ')}
             </Heading>
             <DailyTalentsMaterials talentsMaterials={talentMaterialTypesByDays[key]} />

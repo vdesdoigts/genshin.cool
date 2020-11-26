@@ -3,6 +3,7 @@ import {
   AspectRatio,
   Box,
   BoxProps,
+  Flex,
   HStack,
   Image,
   Text,
@@ -37,14 +38,14 @@ const ListItem = ({
     <HStack
       opacity={isSelected ? .4 : 1}
       spacing={4}
-      background="#F5F5F5"
       borderRadius="0 10px 10px 0"
       onClick={onSelect}
+
       {...(!isSelected ? { cursor: 'pointer' } : { } )}
     >
       {!!image && (
         <Box {...imgContainerProps}>
-          <AspectRatio ratio={ratio} width={size}>
+          <AspectRatio ratio={ratio} overflow="hidden" width={size} borderRadius=".5rem" background="#f2f4f8">
             <Image
               src={image}
               objectFit="contain"
@@ -52,16 +53,21 @@ const ListItem = ({
           </AspectRatio>
         </Box>
       )}
-      <Text
-        display={{ base: showLabelIfLargerThanLg ? 'none' : 'inline-block', lg: 'inline-block' }}
-        pt=".125rem"
-        pr={6}
-        fontFamily="heading"
-        fontSize={labelSize}
-        fontWeight="medium"
+      <Flex
+        align="center"
+        flex="1 1 auto"
+        alignSelf="stretch"
+        px={4}
+        borderRadius=".5rem"
+        background="#f2f4f8"
       >
-        {label}
-      </Text>
+        <Text
+          fontSize={labelSize}
+          fontWeight="medium"
+        >
+          {label}
+        </Text>
+      </Flex>
     </HStack>
   )
 }

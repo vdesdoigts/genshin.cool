@@ -53,6 +53,8 @@ const Schedule = () => {
               value={options.find((option) => option.value === currentSelectedDay)}
               // @ts-ignore
               onChange={value => dispatch.app.setDay(value.value)}
+              isSearchable={false}
+              maxMenuHeight={400}
             />
           </Box>
         </Box>

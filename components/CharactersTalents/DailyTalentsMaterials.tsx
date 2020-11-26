@@ -9,7 +9,7 @@ interface IProps {
 
 const DailyTalentsMaterials = ({ talentsMaterials }: IProps) => {
   return (
-    <SimpleGrid columns={1} spacing={6}>
+    <SimpleGrid columns={1} spacing={4}>
       {talentsMaterials.map((talentMaterialType, index) => (
         <AscensionItem
           key={index}

@@ -8,16 +8,24 @@ import ReactSelect, { Props } from 'react-select'
 const customStyles = {
   option: (provided, state) => ({
     ...provided,
-    color: state.isSelected ? 'red' : 'blue',
-    padding: 20,
+    cursor: 'pointer',
+    color: state.isSelected ? '#6C5DD3' : '#11142D', // state.isSelected ? 'red' : 'blue',
+    padding: '8px 16px',
+    background: state.isSelected ? '#E2E8F0' : '#FFF',
+    '&:hover': { color: '#6C5DD3' },
   }),
   control: (provided) => ({
     ...provided,
     minHeight: '44px',
-    borderColor: '#E3E3E3',
-    color: '#1B1D21',
+    borderColor: 'transparent',
+    borderRadius: '8px',
+    color: '#11142D',
     fontFamily: 'Poppins, Georgia, serif',
     fontSize: '16px',
+
+    '&:focus, &:hover': {
+      borderColor: 'transparent',
+    },
   }),
   valueContainer: (provided) => ({
     ...provided,
@@ -33,7 +41,10 @@ const customStyles = {
     const transition = 'opacity 300ms';
 
     return { ...provided, opacity, transition };
-  }
+  },
+  indicatorSeparator: () => ({
+    borderColor: '#fff'
+  }),
 }
 
 interface IProps {

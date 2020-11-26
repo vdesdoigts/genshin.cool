@@ -3,17 +3,39 @@ import { Box, Heading } from '@chakra-ui/react'
 
 interface IProps {
   title?: string
-  size?: 'base' | 'sm'
+  variant?: 'pink'
+  size?: 'sm'
+  shadow?: boolean
 }
 
-const DashBox: React.FC<IProps> = ({ children, title, size = 'base' }) => {
+const DashBox: React.FC<IProps> = ({ children, title, variant, size, shadow }) => {
+  let bgcolor
+  let px
+
+  switch (variant) {
+    case 'pink':
+      bgcolor = '#FFEBF6'
+      break;
+    default:
+      bgcolor = '#FFF'
+  }
+
+  switch (size) {
+    case 'sm':
+      px = '8px'
+      break;
+    default:
+      px = '32px'
+  }
+
   return (
     <Box
       position="relative"
-      padding="32px"
+      pt="32px"
+      pb={px}
       borderRadius="24px"
-      background="#ffffff"
-      _before={{
+      background={bgcolor}
+      _before={shadow ? {
         content: '""',
         position: 'absolute',
         top: '22px',
@@ -26,10 +48,12 @@ const DashBox: React.FC<IProps> = ({ children, title, size = 'base' }) => {
         // @ts-ignore
         filter: 'blur(86.985px)',
         borderRadius: '24px'
-      }}
+      } : {}}
     >
-      {!!title && <Heading mb="32px" fontSize="18px" fontWeight="medium" lineHeight="1.33333">{title}</Heading>}
-      {children}
+      {!!title && <Heading mb="32px" px="32px" fontSize="18px" fontWeight="medium" lineHeight="1.33333">{title}</Heading>}
+      <Box px={px}>
+        {children}
+      </Box>
     </Box>
   )
 }
