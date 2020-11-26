@@ -29,6 +29,8 @@ const Schedule = () => {
       color="#fff"
     >
       <Box
+        position="relative"
+        zIndex={2}
         flex="0 0 240px"
         py="13px"
       >
@@ -59,7 +61,7 @@ const Schedule = () => {
           </Box>
         </Box>
       </Box>
-      <Box position="absolute" bottom="0px" right="0px" width="70%">
+      <Box position="absolute" zIndex={1} bottom="0px" right="-40px" display={{ base: 'none', sm: 'block' }} width="70%">
         <Image src="https://uploadstatic-sea.mihoyo.com/contentweb/20200723/2020072319115159476.png" />
       </Box>
     </Flex>

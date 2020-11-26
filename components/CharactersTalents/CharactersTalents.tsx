@@ -1,9 +1,6 @@
 import React, { useState } from 'react'
 import uniq from 'lodash.uniq'
-import {
-  Box,
-  Heading,
-} from '@chakra-ui/react'
+import { Text } from '@chakra-ui/react'
 import { useSelector } from 'react-redux'
 import { AppSelectors, ProfileSelectors } from '../../redux/selectors'
 import { ICharacter, ITalentMaterialType } from '../../types'
@@ -29,14 +26,11 @@ const CharactersTalents = () => {
 
   if ((currentSelectedDay === 'all' && talentMaterialTypes?.length === 0) || (currentSelectedDay !== 'all' && dailyTalentMaterialTypes?.length === 0)) {
     return (
-      <Heading
-        as="h3"
-        pb={2}
-        fontSize="1.25rem"
-        fontWeight="medium"
-      >
-        No talent material to farm today
-      </Heading>
+      <DashBox title="Weapon Materials" shadow>
+        <Text mb={0}>
+          No character material to farm today.
+        </Text>
+      </DashBox>
     )
   }
 

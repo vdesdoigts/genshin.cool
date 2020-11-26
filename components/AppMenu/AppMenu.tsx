@@ -52,85 +52,94 @@ const Menu = () => {
 
   return (
     <Box
-      maxH="100%"
+      height="100%"
       padding="0 20px 30px"
       overflowY="auto"
-      
     >
-      <Box
-        width="215px"
-        overflow="hidden"
-        transition="width .25s"
+      <Flex
+        minH="100%"
+        justify="space-between"
+        direction="column"
       >
-        <Box mb="20px">
-          <Box
-            position="relative"
-            mb="40px"
-            pb="30px"
-            _before={{
-              content: '""',
-              position: 'absolute',
-              left: '20px',
-              right: '20px',
-              bottom: 0,
-              height: '1px',
-              background: '#F0F3F6',
-            }}
-          >
-            <Text
-              mb="16px"
-              pl="20px"
-              color="#808191"
-              fontSize="12px"
-              fontWeight="500"
-              line-height="1.33333"
+        <Box
+          width="215px"
+          overflow="hidden"
+          transition="width .25s"
+        >
+          <Box mb="20px">
+            <Box
+              position="relative"
+              mb="40px"
+              pb="30px"
+              _before={{
+                content: '""',
+                position: 'absolute',
+                left: '20px',
+                right: '20px',
+                bottom: 0,
+                height: '1px',
+                background: '#F0F3F6',
+              }}
             >
-              Profiles
-            </Text>
-            <VStack width="100%" spacing={0} align="stretch">
-              {userRosterNames.map((name, index) => (
+              <Text
+                mb="16px"
+                pl="20px"
+                color="#808191"
+                fontSize="12px"
+                fontWeight="500"
+                line-height="1.33333"
+              >
+                Profiles
+              </Text>
+              <VStack width="100%" spacing={0} align="stretch">
+                {userRosterNames.map((name, index) => (
+                  <NavButton
+                    key={index}
+                    onClick={() => onSelectProfile(index)}
+                    label={name}
+                    isCurrent={index === currentUserProfileIndex}
+                    // onEdit={() => onEditProfile(index)}
+                  />
+                ))}
                 <NavButton
-                  key={index}
-                  onClick={() => onSelectProfile(index)}
-                  label={name}
-                  isCurrent={index === currentUserProfileIndex}
-                  // onEdit={() => onEditProfile(index)}
+                  onClick={onAddProfile}
+                  label="Add a profile"
                 />
-              ))}
-              <NavButton
-                onClick={onAddProfile}
-                label="Add a profile"
-              />
-            </VStack>
-          </Box>
+              </VStack>
+            </Box>
 
-          <Box
-            position="relative"
-            mb="40px"
-            pb="30px"
-            _before={{
-              content: '""',
-              position: 'absolute',
-              left: '20px',
-              right: '20px',
-              bottom: 0,
-              height: '1px',
-              background: '#F0F3F6',
-            }}
-          >
-            <Text
-              mb="16px"
-              pl="20px"
-              color="#808191"
-              fontSize="12px"
-              fontWeight="500"
-              line-height="1.33333"
+            {/* <Box
+              position="relative"
+              mb="40px"
+              pb="30px"
+              _before={{
+                content: '""',
+                position: 'absolute',
+                left: '20px',
+                right: '20px',
+                bottom: 0,
+                height: '1px',
+                background: '#F0F3F6',
+              }}
             >
-              Tools
-            </Text>
+              <Text
+                mb="16px"
+                pl="20px"
+                color="#808191"
+                fontSize="12px"
+                fontWeight="500"
+                line-height="1.33333"
+              >
+                Tools
+              </Text>
+            </Box> */}
           </Box>
         </Box>
-      </Box>
+
+        <Box px="12px">
+          <Text fontSize="12px">This website is a fansite and is not affiliated with or endorsed by miHoYo.</Text>
+        </Box>
+      </Flex>
     </Box>
   )
 }

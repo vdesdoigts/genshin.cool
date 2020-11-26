@@ -12,7 +12,9 @@ const theme = extendTheme({
   },
   breakpoints: {
     sm: '35em', // 560px
-    xxl: '96.25em', // 1540px
+    md: '56.25em', // 900px
+    xl: '88.75em', // 1420px
+    xxl: '103.75em', // 1660px
   },
   sizes: {
     container: '100rem',
