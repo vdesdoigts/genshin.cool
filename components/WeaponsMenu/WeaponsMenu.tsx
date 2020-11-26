@@ -4,10 +4,8 @@ import {
   Input,
   SimpleGrid,
 } from '@chakra-ui/react'
-import { useSelector } from 'react-redux'
-import { RosterSelectors } from '../../redux/selectors'
 import { ICharacter, IWeapon } from '../../types'
-import { getWeaponsByType } from '../../pages/api'
+import { getWeaponsByType } from '../../api'
 import ListItem from '../ListItem'
 import Title from '../Title'
 

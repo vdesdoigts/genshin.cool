@@ -45,3 +45,5 @@ export const getArtifactsCharacter = (artifactsCharacter?: IRosterCharacter['art
 
 export const getTalentMaterialTypeById = (id: ITalentMaterialType['id']) => (talentmaterialtypes.find((talentmaterialtype) => talentmaterialtype.id === id) as ITalentMaterialType)
 export const getWeaponMaterialTypeById = (id: IWeaponMaterialType['id']) => (weaponmaterialtypes.find((weaponmaterialtype) => weaponmaterialtype.id === id) as IWeaponMaterialType)
+
+export const getWeaponsByType = (type: ICharacter['weapontype']) => weapons.filter((weapon) => weapon.weapontype === type)
