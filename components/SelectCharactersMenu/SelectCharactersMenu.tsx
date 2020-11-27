@@ -10,7 +10,6 @@ import useRematchDispatch from '../../hooks/useRematch'
 import { ProfileSelectors } from '../../redux/selectors'
 import { getCharacters } from '../../api'
 import ListItem from '../ListItem'
-import Title from '../Title'
 import { ICharacter } from '../../types'
 
 const CharactersMenu = () => {

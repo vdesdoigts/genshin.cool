@@ -26,6 +26,7 @@ interface IProps {
 }
 
 const EditCharacter = ({ character: characterId }: IProps) => {
+
   if (!characterId) {
     return null
   }
@@ -39,6 +40,7 @@ const EditCharacter = ({ character: characterId }: IProps) => {
 
   const onSelectWeapon = (character: ICharacter['id'], weapon: IWeapon['id']) => {
     dispatch.profile.addWeapon({ character, weapon })
+    onWeaponDrawerClose()
   }
 
   return (

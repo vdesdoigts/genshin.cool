@@ -52,6 +52,11 @@ export const profile = createModel()({
         }
       })
     },
+    updateProfileName(state, payload: { index: number, name: string }) {
+      return produce(state, draftState => {
+        draftState.userProfiles[payload.index].name = payload.name
+      })
+    },
     setCurrentProfile(state, payload: number) {
       return produce(state, drafState => {
         if (state.userProfiles[payload]) {

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {
   Box,
   Button,
+  Center,
   Checkbox,
   Drawer,
   DrawerBody,
@@ -18,7 +19,7 @@ import {
   Text,
   useDisclosure,
 } from '@chakra-ui/react'
-import { FiSettings } from 'react-icons/fi'
+import { FiEdit2, FiSettings } from 'react-icons/fi'
 import { useSelector } from 'react-redux'
 import useRematchDispatch from '../../hooks/useRematch'
 import { ProfileSelectors } from '../../redux/selectors'
@@ -40,11 +41,13 @@ interface IProps {
 const Character = ({ artifacts, character, weapon, isDisabled, onDisabled, onEdit }: IProps) => {
   return (
     <Box
+      role="group"
       overflow="hidden"
       position="relative"
       borderRadius="0.875rem"
       boxShadow="rgba(236, 240, 250, .4) 0px 1px 1px, rgba(236, 240, 250, 0.4) 0px 2px 2px, rgba(236, 240, 250, 1) 0px 4px 4px, rgba(236, 240, 250, .4) 0px 8px 8px, rgba(236, 240, 250, .4) 0px 16px 16px"
       background="#fff"
+      cursor="pointer"
       _before={{
         content: "''",
         position: "absolute",
@@ -64,8 +67,22 @@ const Character = ({ artifacts, character, weapon, isDisabled, onDisabled, onEdi
           onClick={onEdit}
         >
           <Stack direction="row" spacing="1.875rem">
-            <Box overflow="hidden" flex="0 0 3.5rem" width="3.5rem" height="3.5rem" borderRadius=".5rem" background="#f2f4f8">
+            <Box position="relative" overflow="hidden" flex="0 0 3.5rem" width="3.5rem" height="3.5rem" borderRadius=".5rem" background="#f2f4f8">
               <Image src={character.images.image} />
+              <Center
+                opacity={0}
+                position="absolute"
+                top={0}
+                left={0}
+                width="100%"
+                height="100%"
+                background="rgba(0, 0, 0, .6)"
+                borderRadius="10px"
+                transition="opacity .2s ease"
+                _groupHover={{ opacity: 1 }}
+              >
+                <Icon as={FiEdit2} w={5} h={5} color="#fff" />
+              </Center>
             </Box>
             <Stack spacing={1} justify="center">
               <Text

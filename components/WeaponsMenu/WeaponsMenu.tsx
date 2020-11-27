@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
 import {
   Box,
+  Heading,
   Input,
   SimpleGrid,
 } from '@chakra-ui/react'
+import { useSelector } from 'react-redux'
+import { ProfileSelectors } from '../../redux/selectors'
 import { ICharacter, IWeapon } from '../../types'
 import { getWeaponsByType } from '../../api'
 import ListItem from '../ListItem'
-import Title from '../Title'
 
 interface IProps {
   character?: ICharacter
@@ -15,10 +17,12 @@ interface IProps {
 }
 
 const WeaponsMenu = ({ character, onSelect }: IProps) => {
+
   if (!character) {
     return null
   }
 
+  const rosterCharacter = useSelector((state) => ProfileSelectors.getRosterCharacterById(state, character.id))
   const [value, setValue] = useState('')
 
   const handleChange = (event) => {
@@ -27,7 +31,7 @@ const WeaponsMenu = ({ character, onSelect }: IProps) => {
 
   return (
     <Box pt={4}>
-      <Title label={`Select ${character.name}'s weapon`} />
+      <Heading mb="12px" fontSize="18px" fontWeight="medium" lineHeight="1.33333">Select {character.name}'s weapon</Heading>
       <Box pt={2}>
         <Input
           value={value}
@@ -44,7 +48,7 @@ const WeaponsMenu = ({ character, onSelect }: IProps) => {
               image={item.images.image}
               label={item.name}
               onSelect={() => onSelect(character.id, item.id)}
-              // isSelected={userRosterWeaponCharacter.name === item.name}
+              isSelected={rosterCharacter.weapon?.id === item.id}
             />
           ))}
         </SimpleGrid>

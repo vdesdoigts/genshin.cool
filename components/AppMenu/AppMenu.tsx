@@ -1,20 +1,20 @@
 import React from 'react'
 import {
   Box,
-  Divider,
   Flex,
-  Heading,
+  Icon,
   Text,
-  HStack,
   VStack,
 } from '@chakra-ui/react'
+import { FiSettings } from 'react-icons/fi'
 import { useSelector } from 'react-redux'
 import useRematchDispatch from '../../hooks/useRematch'
 import { ProfileSelectors } from '../../redux/selectors'
 
-const NavButton = ({ label, isCurrent, onClick, onEdit, ...rest }: { label: string, isCurrent?: boolean, onClick?: () => void, onEdit?: () => void, as?: any, href?: string }) => (
+export const NavButton = ({ label, isCurrent, onClick, onEdit, ...rest }: { label: string, isCurrent?: boolean, onClick?: () => void, onEdit?: () => void, as?: any, href?: string }) => (
   <Flex
     alignItems="center"
+    justify="space-between"
     height="56px"
     padding="0 20px"
     borderRadius="12px"
@@ -23,21 +23,51 @@ const NavButton = ({ label, isCurrent, onClick, onEdit, ...rest }: { label: stri
     fontWeight="600"
     color={isCurrent ? '#fff' : '#808191'}
     transition="all .25s"
-    _hover={{
-      color: isCurrent ? '#fff': '#6C5DD3',
-    }}
     _active={{
       background: '#6C5DD3',
       color: '#ffffff',
     }}
-    {...(!!onClick ? { onClick, cursor: 'pointer' } : { })}
+    {...(!!onClick && !isCurrent ? { onClick, cursor: 'pointer' } : { })}
   >
-    <Text fontSize="inherit" fontWeight="inherit">{label}</Text>
-    {!!onEdit && <Text onClick={(e) => { e.stopPropagation(); onEdit() }}>Edit</Text>}
+    <Flex
+      align="center"
+      flex="1 1 100%"
+      height="100%"
+      _hover={{
+        color: isCurrent ? '#fff': '#6C5DD3',
+      }}
+    >
+      <Text noOfLines={1} fontSize="inherit" fontWeight="inherit">{label}</Text>
+    </Flex>
+    {!!onEdit && (
+      <Box
+        p={1}
+        cursor="pointer"
+        color={isCurrent ? '#fff' : '#808191'}
+        fontSize={0}
+        transition="all .25s"
+        _hover={{
+          transform: 'rotate(50deg)',
+          color: isCurrent ? '#fff': '#6C5DD3',
+        }}
+        onClick={(e) => {
+          e.stopPropagation();
+          onEdit()
+        }}>
+          <Icon as={FiSettings} w={5} h={5} />
+        </Box>
+      )}
   </Flex>
 )
 
-const Menu = () => {
+interface IProps {
+  onEditProfile: (index: number) => void
+  isMenuOpen: boolean
+  onMenuClose: () => void
+  onMenuToggle: () => void
+}
+
+const Menu = ({ onEditProfile, isMenuOpen, onMenuClose, onMenuToggle }: IProps) => {
   const dispatch = useRematchDispatch()
   const userRosterNames = useSelector(ProfileSelectors.getUserRosterNames)
   const currentUserProfileIndex = useSelector(ProfileSelectors.getCurrentUserProfileIndex)
@@ -52,14 +82,18 @@ const Menu = () => {
 
   return (
     <Box
+      position="relative"
+      zIndex={2}
       height="100%"
       padding="0 20px 30px"
       overflowY="auto"
+      background="#fff"
     >
       <Flex
         minH="100%"
         justify="space-between"
         direction="column"
+        padding="140px 0 12px 0"
       >
         <Box
           width="215px"
@@ -98,7 +132,7 @@ const Menu = () => {
                     onClick={() => onSelectProfile(index)}
                     label={name}
                     isCurrent={index === currentUserProfileIndex}
-                    // onEdit={() => onEditProfile(index)}
+                    onEdit={() => onEditProfile(index)}
                   />
                 ))}
                 <NavButton
