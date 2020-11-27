@@ -54,7 +54,7 @@ const Dash = () => {
       >
         <Box
           position="fixed"
-          zIndex={1400}
+          zIndex={isMenuOpen ? 1400 : 1000}
           top={0}
           left={0}
           flexShrink={0}
