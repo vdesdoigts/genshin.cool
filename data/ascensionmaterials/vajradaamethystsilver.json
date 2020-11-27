@@ -1,0 +1,28 @@
+{
+  "id": 13,
+  "name": "Vajrada Amethyst Silver",
+  "type": {
+    "id": 4,
+    "name": "Vajrada Amethyst"
+  },
+  "rarity": 2,
+  "images": {
+    "image": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Item_Vajrada_Amethyst_Sliver.png"
+  },
+  "url": "https://genshin-impact.fandom.com/wiki/Vajrada_Amethyst_Sliver",
+  "droppedby": [
+    {
+      "name": "Electro Hypostasis",
+      "type": "Normal Boss",
+      "images": {
+        "image": "https://static.wikia.nocookie.net/gensin-impact/images/3/32/Monster_Electro_Hypostasis_thumb.png"
+      }
+    }
+  ],
+  "purchasedat": [
+    {
+      "name": "Purchased from the Souvenir Shop"
+    }
+  ],
+  "characters": [3, 8, 11, 13, 18]
+}

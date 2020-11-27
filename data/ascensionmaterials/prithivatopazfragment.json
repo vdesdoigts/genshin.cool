@@ -1,0 +1,37 @@
+{
+  "id": 10,
+  "name": "Prithiva Topaz Fragment",
+  "type": {
+    "id": 3,
+    "name": "Prithiva Topaz"
+  },
+  "rarity": 3,
+  "images": {
+    "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Item_Prithiva_Topaz_Fragment.png"
+  },
+  "url": "https://genshin-impact.fandom.com/wiki/Prithiva_Topaz_Fragment",
+  "droppedby": [
+    {
+      "name": "Geo Hypostasis 40+",
+      "type": "Normal Boss",
+      "images": {
+        "image": "https://static.wikia.nocookie.net/gensin-impact/images/5/53/Monster_Geo_Hypostasis_thumb.png"
+      }
+    },
+    {
+      "name": "Wolf of the North Challenge Reward 40+"
+    }
+  ],
+  "craft": [
+    {
+      "type": "Alchemy",
+      "ascensionmaterialid": 9,
+      "name": "Prithiva Topaz Silver",
+      "amount": 3,
+      "images": {
+        "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Item_Prithiva_Topaz_Silver.png"
+      }
+    }
+  ],
+  "characters": [15, 16, 27]
+}

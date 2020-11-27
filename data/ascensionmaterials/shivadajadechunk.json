@@ -1,0 +1,37 @@
+{
+  "id": 19,
+  "name": "Shivada Jade Chunk",
+  "type": {
+    "id": 5,
+    "name": "Shivada Jade"
+  },
+  "rarity": 4,
+  "images": {
+    "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Item_Shivada_Jade_Chunk.png"
+  },
+  "url": "https://genshin-impact.fandom.com/wiki/Shivada_Jade_Chunk",
+  "droppedby": [
+    {
+      "name": "Cryo Regisvine 60+",
+      "type": "Normal Boss",
+      "images": {
+        "image": "https://genshin-impact.fandom.com/wiki/File:Monster_Pyro_Regisvine_thumb.png"
+      }
+    },
+    {
+      "name": "Wolf of the North Challenge Reward 60+"
+    }
+  ],
+  "craft": [
+    {
+      "type": "Alchemy",
+      "ascensionmaterialid": 2,
+      "name": "Shivada Jade Fragment",
+      "amount": 3,
+      "images": {
+        "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Item_Shivada_Jade_Fragment.png"
+      }
+    }
+  ],
+  "characters": [5, 7, 10, 17]
+}

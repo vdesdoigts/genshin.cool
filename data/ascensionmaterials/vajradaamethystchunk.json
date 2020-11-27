@@ -1,0 +1,34 @@
+{
+  "id": 15,
+  "name": "Vajrada Amethyst Chunk",
+  "type": {
+    "id": 4,
+    "name": "Vajrada Amethyst"
+  },
+  "rarity": 4,
+  "images": {
+    "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Item_Vajrada_Amethyst_Chunk.png"
+  },
+  "url": "https://genshin-impact.fandom.com/wiki/Vajrada_Amethyst_Chunk",
+  "droppedby": [
+    {
+      "name": "Electro Hypostasis 60+",
+      "type": "Normal Boss",
+      "images": {
+        "image": "https://static.wikia.nocookie.net/gensin-impact/images/3/32/Monster_Electro_Hypostasis_thumb.png"
+      }
+    }
+  ],
+  "craft": [
+    {
+      "type": "Alchemy",
+      "ascensionmaterialid": 14,
+      "name": "Vajrada Amethyst Fragment",
+      "amount": 3,
+      "images": {
+        "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Item_Vajrada_Amethyst_Fragment.png"
+      }
+    }
+  ],
+  "characters": [3, 8, 11, 13, 18]
+}

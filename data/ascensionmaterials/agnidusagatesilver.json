@@ -1,0 +1,31 @@
+{
+  "id": 1,
+  "name": "Agnidus Agate Silver",
+  "type": {
+    "id": 1,
+    "name": "Agnidus Agate"
+  },
+  "rarity": 2,
+  "images": {
+    "image": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Item_Agnidus_Agate_Sliver.png"
+  },
+  "url": "https://genshin-impact.fandom.com/wiki/Agnidus_Agate_Sliver",
+  "droppedby": [
+    {
+      "name": "Pyro Regisvine",
+      "type": "Normal Boss",
+      "images": {
+        "image": "https://genshin-impact.fandom.com/wiki/File:Monster_Pyro_Regisvine_thumb.png"
+      }
+    },
+    {
+      "name": "Wolf of the North Challenge Reward"
+    }
+  ],
+  "purchasedat": [
+    {
+      "name": "Purchased from the Souvenir Shop"
+    }
+  ],
+  "characters": [1, 4, 6, 12, 24]
+}

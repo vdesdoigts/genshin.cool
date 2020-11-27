@@ -1,0 +1,28 @@
+{
+  "id": 5,
+  "name": "Varunada Lazurite Silver",
+  "type": {
+    "id": 2,
+    "name": "Varunada Lazurite"
+  },
+  "rarity": 2,
+  "images": {
+    "image": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Item_Varunada_Lazurite_Sliver.png"
+  },
+  "url": "https://genshin-impact.fandom.com/wiki/Varunada_Lazurite_Sliver",
+  "droppedby": [
+    {
+      "name": "Oceanid",
+      "type": "Normal Boss",
+      "images": {
+        "image": "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Oceanid_Icon.png"
+      }
+    }
+  ],
+  "purchasedat": [
+    {
+      "name": "Purchased from the Souvenir Shop"
+    }
+  ],
+  "characters": [2, 14, 20, 26]
+}

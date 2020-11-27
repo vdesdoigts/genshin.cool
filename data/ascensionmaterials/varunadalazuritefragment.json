@@ -1,0 +1,34 @@
+{
+  "id": 6,
+  "name": "Varunada Lazurite Fragment",
+  "type": {
+    "id": 2,
+    "name": "Varunada Lazurite"
+  },
+  "rarity": 3,
+  "images": {
+    "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Item_Varunada_Lazurite_Fragment.png"
+  },
+  "url": "https://genshin-impact.fandom.com/wiki/Varunada_Lazurite_Fragment",
+  "droppedby": [
+    {
+      "name": "Oceanid 40+",
+      "type": "Normal Boss",
+      "images": {
+        "image": "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Oceanid_Icon.png"
+      }
+    }
+  ],
+  "craft": [
+    {
+      "type": "Alchemy",
+      "ascensionmaterialid": 5,
+      "name": "Varunada Lazurite Silver",
+      "amount": 3,
+      "images": {
+        "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Item_Varunada_Lazurite_Silver.png"
+      }
+    }
+  ],
+  "characters": [2, 14, 20, 26]
+}
