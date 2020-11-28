@@ -99,6 +99,23 @@ export const profile = createModel()({
         }
       })
     },
+    updateCharacterAsension(state, payload: { character: ICharacter['id'], ascension: IRosterCharacter['character']['ascension'] }) {
+      return produce(state, draftState => {
+        const { currentProfileIndex } = state
+        const currentRoster = state.userProfiles[currentProfileIndex].roster
+        const characterIndex = findIndex(currentRoster, (roster) => roster.character.id === payload.character)
+
+        if (characterIndex !== -1) {
+          draftState.userProfiles[currentProfileIndex].roster[characterIndex] = {
+            ...state.userProfiles[currentProfileIndex].roster[characterIndex],
+            character: {
+              ...state.userProfiles[currentProfileIndex].roster[characterIndex].character,
+              ascension: payload.ascension,
+            }
+          }
+        }
+      })
+    },
     toggleRoster(state, payload: number) {
       return produce(state, draftState => {
         const { currentProfileIndex } = state
@@ -111,7 +128,6 @@ export const profile = createModel()({
         const currentRoster = state.userProfiles[currentProfileIndex].roster
         const characterIndex = findIndex(currentRoster, (roster) => roster.character.id === payload.character)
 
-        console.log('characterIndex: ', characterIndex)
         if (characterIndex !== -1) {
           draftState.userProfiles[currentProfileIndex].roster[characterIndex] = {
             ...state.userProfiles[currentProfileIndex].roster[characterIndex],

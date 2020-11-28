@@ -24,13 +24,14 @@ import { useSelector } from 'react-redux'
 import useRematchDispatch from '../../hooks/useRematch'
 import { ProfileSelectors } from '../../redux/selectors'
 import { getArtifactsCharacter, getCharacterById, getWeaponById } from '../../api'
-import { IArtifactCollection, ICharacter, IRoster, IWeapon } from '../../types'
+import { IArtifactCollection, ICharacter, IRoster, IRosterCharacter, IWeapon } from '../../types'
 import colors from '../../theme/colors'
 import SelectCharactersMenu from '../SelectCharactersMenu'
 import EditCharacter from '../EditCharacter'
 
 interface IProps {
   artifacts: IArtifactCollection
+  ascension?: IRosterCharacter['character']['ascension']
   character: ICharacter
   weapon?: IWeapon
   isDisabled?: boolean
@@ -38,7 +39,7 @@ interface IProps {
   onEdit?: () => void
 }
 
-const Character = ({ artifacts, character, weapon, isDisabled, onDisabled, onEdit }: IProps) => {
+const Character = ({ artifacts, ascension = 1, character, weapon, isDisabled, onDisabled, onEdit }: IProps) => {
   return (
     <Box
       role="group"
@@ -96,12 +97,9 @@ const Character = ({ artifacts, character, weapon, isDisabled, onDisabled, onEdi
                 {character.name}
               </Text>
               <Box color="#bbbdcb">
-                {weapon 
-                  // ? <Text fontSize="0.875rem" fontWeight="medium">{weapon.name} & {Object.keys(artifacts).length} artifacts</Text>
-                  // : <Text fontSize="0.875rem" fontWeight="medium">No weapon & {Object.keys(artifacts).length} artifacts</Text>
-                  ? <Text fontSize="0.875rem" fontWeight="medium">{weapon.name}</Text>
-                  : <Text fontSize="0.875rem" fontWeight="medium">No weapon</Text>
-                }
+                <Text fontSize="0.875rem" fontWeight="medium">
+                  AR {ascension} &#183; {weapon ? weapon.name : 'No weapon'}
+                </Text>
               </Box>
             </Stack>
           </Stack>
@@ -167,6 +165,7 @@ const Roster = () => {
             <Character
               key={roster.character.id}
               artifacts={artifacts}
+              ascension={roster.character.ascension}
               character={character}
               weapon={weapon}
               isDisabled={roster.isDisabled}

@@ -7,19 +7,54 @@ import {
   DrawerContent,
   DrawerCloseButton,
   Heading,
+  HStack,
   Image,
   SimpleGrid,
   Stack,
   Text,
   useDisclosure,
+  useRadio,
+  useRadioGroup,
 } from '@chakra-ui/react'
 import { useSelector } from 'react-redux'
 import useRematchDispatch from '../../hooks/useRematch'
 import { ProfileSelectors } from '../../redux/selectors'
 import { getArtifactsCharacter, getCharacterById, getWeaponById } from '../../api'
-import { ICharacter, IWeapon } from '../../types'
+import { ICharacter, IRosterCharacter, IWeapon } from '../../types'
 import ListObject from '../ListObject'
 import WeaponsMenu from '../WeaponsMenu'
+
+function RadioCard(props) {
+  const { getInputProps, getCheckboxProps } = useRadio(props)
+
+  const input = getInputProps()
+  const checkbox = getCheckboxProps()
+
+  return (
+    <Box as="label">
+      <input {...input} />
+      <Box
+        {...checkbox}
+        cursor="pointer"
+        borderWidth="1px"
+        borderRadius="md"
+        boxShadow="md"
+        _checked={{
+          bg: "teal.600",
+          color: "white",
+          borderColor: "teal.600",
+        }}
+        _focus={{
+          boxShadow: "outline",
+        }}
+        px={5}
+        py={3}
+      >
+        {props.children}
+      </Box>
+    </Box>
+  )
+}
 
 interface IProps {
   character?: ICharacter['id']
@@ -38,9 +73,21 @@ const EditCharacter = ({ character: characterId }: IProps) => {
   const artifacts = getArtifactsCharacter(rosterCharacter?.artifacts)
   const { isOpen: isWeaponDrawerOpen, onOpen: onWeaponDrawerOpen, onClose: onWeaponDrawerClose } = useDisclosure()
 
+  const ascensionOptions = ['1', '2', '3', '4', '5', '6']
+  const { getRootProps, getRadioProps } = useRadioGroup({
+    name: 'ascension',
+    defaultValue: (rosterCharacter.character.ascension || 1).toString(),
+    onChange: (e) => onSelectAscension(character.id, (parseInt(e as string) as IRosterCharacter['character']['ascension'])),
+  })
+  const group = getRootProps()
+
   const onSelectWeapon = (character: ICharacter['id'], weapon: IWeapon['id']) => {
     dispatch.profile.addWeapon({ character, weapon })
     onWeaponDrawerClose()
+  }
+
+  const onSelectAscension = (character: ICharacter['id'], ascension: IRosterCharacter['character']['ascension']) => {
+    dispatch.profile.updateCharacterAsension({ character, ascension })
   }
 
   return (
@@ -65,6 +112,16 @@ const EditCharacter = ({ character: characterId }: IProps) => {
             <Text color="#bbbdcb" fontSize="1rem" fontWeight="medium">{character.affiliation}</Text>
           </Stack>
         </Stack>
+        <HStack {...group}>
+          {ascensionOptions.map((value) => {
+            const radio = getRadioProps({ value })
+            return (
+              <RadioCard key={value} {...radio}>
+                {value}
+              </RadioCard>
+            )
+          })}
+        </HStack>
         <Box pt={8}>
           <Heading
             pb={4}
