@@ -49,6 +49,8 @@ const WeaponsMenu = ({ character, onSelect }: IProps) => {
               label={item.name}
               onSelect={() => onSelect(character.id, item.id)}
               isSelected={rosterCharacter.weapon?.id === item.id}
+              size="3rem"
+              imgContainerProps={{ py: 0 }}
             />
           ))}
         </SimpleGrid>

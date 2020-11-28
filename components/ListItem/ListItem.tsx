@@ -31,7 +31,6 @@ const ListItem = ({
   size = '2.125rem',
   imgContainerProps = { py: '.313rem', pl: 2 },
   ratio = 1,
-  showLabelIfLargerThanLg,
 }: IProps) => {
 
   return (

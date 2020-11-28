@@ -20,7 +20,7 @@ interface IProps {
 
 const ListObject = ({
   image,
-  placeholderImage = '/gensin-impact/images/e/ec/Item_Adventurer%27s_Flower.png',
+  placeholderImage = '/images/weapons/eye-of-perception.png',
   label,
   placeholderLabel = 'Select an item',
   onClick,
