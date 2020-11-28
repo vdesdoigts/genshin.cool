@@ -27,5 +27,11 @@
     "id": 3,
     "name": "Freedom"
   },
+  "ascensionmaterials": [
+    {
+      "id": 2,
+      "name": "Varunada Lazurite"
+    }
+  ],
   "url": "https://genshin-impact.fandom.com/wiki/Barbara"
 }

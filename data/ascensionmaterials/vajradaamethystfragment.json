@@ -6,6 +6,7 @@
     "name": "Vajrada Amethyst"
   },
   "rarity": 3,
+  "ascensions": [2, 3],
   "images": {
     "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Item_Vajrada_Amethyst_Fragment.png"
   },

@@ -10,6 +10,7 @@ export type IRosterCharacter = {
   isDisabled?: boolean
   character: {
     id: ICharacter['id']
+    ascension?: number
   }
   artifacts?: {
     flower?: {
@@ -73,6 +74,39 @@ export type IArtifactCollection = {
   circlet?: IArtifactItem
 }
 
+export type IAscensionMaterial = {
+  id: number
+  name: string
+  type: {
+    id: number
+    name: string
+  },
+  rarity: number
+  ascensions: number[]
+  images: {
+    image: string
+  },
+  url: string
+  droppedby: {
+    name: string
+    type?: string
+    images?: {
+      image: string
+    }
+  }[]
+  purchasedat?: { name: string }[]
+  craft?: {
+    type: string
+    ascensionmaterialid: number
+    name: string
+    amount: number
+    images: {
+      image: string
+    }
+  }[]
+  characters: ICharacter['id'][]
+}
+
 export type ICharacter = {
   id: number
   name: string
@@ -98,6 +132,7 @@ export type ICharacter = {
     id: ITalentMaterialType['id']
     name: ITalentMaterialType['name']
   }
+  ascensionmaterials?: Pick<IAscensionMaterial, 'id' | 'name'>[]
 }
 
 export type ITalentMaterialType = {

@@ -26,5 +26,11 @@
     "id": 6,
     "name": "Resistance"
   },
+  "ascensionmaterials": [
+    {
+      "id": 4,
+      "name": "Vajrada Amethyst"
+    }
+  ],
   "url": "https://genshin-impact.fandom.com/wiki/Razor"
 }

@@ -27,5 +27,11 @@
     "id": 6,
     "name": "Resistance"
   },
+  "ascensionmaterials": [
+    {
+      "id": 2,
+      "name": "Varunada Lazurite"
+    }
+  ],
   "url": "https://genshin-impact.fandom.com/wiki/Mona"
 }

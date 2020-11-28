@@ -28,5 +28,11 @@
     "id": 4,
     "name": "Gold"
   },
+  "ascensionmaterials": [
+    {
+      "id": 2,
+      "name": "Varunada Lazurite"
+    }
+  ],
   "url": "https://genshin-impact.fandom.com/wiki/Xingqiu"
 }

@@ -28,6 +28,12 @@
     "id": 4,
     "name": "Gold"
   },
+  "ascensionmaterials": [
+    {
+      "id": 4,
+      "name": "Vajrada Amethyst"
+    }
+  ],
   "url": "https://genshin-impact.fandom.com/wiki/Beidou"
 }
 

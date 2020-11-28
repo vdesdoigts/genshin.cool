@@ -27,5 +27,11 @@
     "id": 3,
     "name": "Freedom"
   },
+  "ascensionmaterials": [
+    {
+      "id": 1,
+      "name": "Agnidus Agate"
+    }
+  ],
   "url": "https://genshin-impact.fandom.com/wiki/Amber"
 }

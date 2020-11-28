@@ -27,5 +27,11 @@
     "id": 2,
     "name": "Diligence"
   },
+  "ascensionmaterials": [
+    {
+      "id": 1,
+      "name": "Agnidus Agate"
+    }
+  ],
   "url": "https://genshin-impact.fandom.com/wiki/Xiangling"
 }

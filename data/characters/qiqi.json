@@ -27,5 +27,11 @@
     "id": 5,
     "name": "Prosperity"
   },
+  "ascensionmaterials": [
+    {
+      "id": 5,
+      "name": "Shivada Jade"
+    }
+  ],
   "url": "https://genshin-impact.fandom.com/wiki/Qiqi"
 }

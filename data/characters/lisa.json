@@ -27,5 +27,11 @@
     "id": 1,
     "name": "Diligence"
   },
+  "ascensionmaterials": [
+    {
+      "id": 4,
+      "name": "Vajrada Amethyst"
+    }
+  ],
   "url": "https://genshin-impact.fandom.com/wiki/Lisa"
 }

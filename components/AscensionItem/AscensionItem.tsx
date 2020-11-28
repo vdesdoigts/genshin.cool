@@ -20,7 +20,7 @@ import ListItem from '../ListItem'
 interface IProps {
   image: string 
   label: string
-  sublabel: string
+  sublabel?: string
   characters: any[]
 }
 
@@ -55,14 +55,14 @@ const AscensionItem = ({ image, label, sublabel, characters }: IProps) => {
             >
               {label}
             </Text>
-            <Text
+            {sublabel && <Text
               color="#808191"
               fontSize="13px"
               lineHeight="1.38462"
               fontWeight="600"
             >
               {sublabel}
-            </Text>
+            </Text>}
           </Box>
           <Box flex="0 0 auto">
             <AvatarGroup size="sm" max={4}>

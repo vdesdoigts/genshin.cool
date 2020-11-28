@@ -6,6 +6,7 @@
     "name": "Agnidus Agate"
   },
   "rarity": 4,
+  "ascensions": [4, 5],
   "images": {
     "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Item_Agnidus_Agate_Chunk.png"
   },

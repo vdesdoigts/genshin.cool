@@ -8,7 +8,6 @@ interface IProps {
 }
 
 const DailyWeaponsMaterials = ({ weaponsMaterials }: IProps) => {
-  console.log('weaponsMaterials: ', weaponsMaterials)
   return (
     <SimpleGrid columns={1} spacing={4}>
       {weaponsMaterials.filter((weaponsMaterial) => weaponsMaterial.weaponMaterialType !== undefined).map((weaponMaterial, index) => (

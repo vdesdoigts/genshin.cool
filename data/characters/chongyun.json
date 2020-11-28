@@ -27,5 +27,11 @@
     "id": 2,
     "name": "Diligence"
   },
+  "ascensionmaterials": [
+    {
+      "id": 5,
+      "name": "Shivada Jade"
+    }
+  ],
   "url": "https://genshin-impact.fandom.com/wiki/Chongyun"
 }

@@ -15,7 +15,7 @@ const initialState: IProfileState = {
       name: 'Profile 1',
       roster: [
         { character: { id: 2 }, weapon: { id : 2 }},
-        { character: { id: 10 }},
+        { character: { id: 10, ascension: 3 }},
         { character: { id: 13 }, weapon: { id : 2 }},
         { isDisabled: true, character: { id: 4 }},
         { character: { id: 5 }},

@@ -16,7 +16,7 @@ const Schedule = () => {
     { value: 'Wednesday', label: 'Wednesday' },
     { value: 'Thursday', label: 'Thursday' },
     { value: 'Friday', label: 'Friday' },
-    { value: 'Statuday', label: 'Statuday' },
+    { value: 'Saturday', label: 'Saturday' },
     { value: 'Sunday', label: 'Sunday' },
   ]
   

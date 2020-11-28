@@ -6,6 +6,7 @@
     "name": "Vayuda Turquoise"
   },
   "rarity": 3,
+  "ascensions": [2, 3],
   "images": {
     "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Item_Vayuda_Turquoise_Fragment.png"
   },

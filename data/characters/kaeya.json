@@ -26,5 +26,11 @@
     "id": 1,
     "name": "Diligence"
   },
+  "ascensionmaterials": [
+    {
+      "id": 5,
+      "name": "Shivada Jade"
+    }
+  ],
   "url": "https://genshin-impact.fandom.com/wiki/Kaeya"
 }

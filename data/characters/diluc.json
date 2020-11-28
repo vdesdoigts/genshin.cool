@@ -26,5 +26,11 @@
     "id": 6,
     "name": "Resistance"
   },
+  "ascensionmaterials": [
+    {
+      "id": 1,
+      "name": "Agnidus Agate"
+    }
+  ],
   "url": "https://genshin-impact.fandom.com/wiki/Diluc"
 }

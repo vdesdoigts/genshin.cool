@@ -10,6 +10,7 @@ import {
   useDisclosure,
 } from '@chakra-ui/react'
 import AppMenu from '../components/AppMenu'
+import CharactersAscension from '../components/CharactersAscensions'
 import CharactersTalents from '../components/CharactersTalents'
 import DaySelect from '../components/DaySelect'
 import Header from '../components/Header'
@@ -78,6 +79,7 @@ const Dash = () => {
                 flex={{ base: '0 0 100%', xl: '0 0 calc(100% - 480px)' }}
                 maxW={{ base: '100%', xl: 'calc(100% - 480px)' }}
                 pt="48px"
+                pb="32px"
                 px={{ base: '20px', md: '64px', xl: '32px', xxl: '64px' }}
               >
                 <Heading pl={{ base: '16px', md: 0 }} fontSize={{ base: '16px', md: '24px' }} lineHeight="1.33333" fontWeight="500">Hi Genshin Player,</Heading>
@@ -94,6 +96,9 @@ const Dash = () => {
                     </Box>
                   </SimpleGrid>
                 </SimpleGrid>
+                <SimpleGrid pt={{ base: '32px' }}>
+                  <CharactersAscension />
+                </SimpleGrid>
               </Box>
               <Box
                 borderLeft={{ base: 'none', xl: '1px solid #E4E4E4' }}
@@ -101,6 +106,7 @@ const Dash = () => {
                 width={{ base: '100%', xl: '480px' }}
                 minH={{ base: 'auto', xl: '100vh' }}
                 pt="48px"
+                pb="32px"
                 px={{ base: '20px', md: '64px', xl: '32px', xxl: '64px' }}
               >
                 <Roster />

@@ -27,5 +27,9 @@
     "id": 5,
     "name": "Prosperity"
   },
+  "ascensionmaterials": {
+    "id": 3,
+    "name": "Prithiva Topaz"
+  },
   "url": "https://genshin-impact.fandom.com/wiki/Ningguang"
 }

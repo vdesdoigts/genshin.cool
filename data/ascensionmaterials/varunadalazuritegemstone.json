@@ -5,7 +5,8 @@
     "id": 2,
     "name": "Varunada Lazurite"
   },
-  "rarity": 5,
+  "rarity": 4,
+  "ascensions": [6],
   "images": {
     "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Item_Varunada_Lazurite_Gemstone.png"
   },
