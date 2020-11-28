@@ -4,7 +4,7 @@
   "weapontype": "Sword",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/6/63/Weapon_The_Flute.png"
+    "image": "/images/weapons/the-flute.png"
   },
   "baseatk": "42",
   "ability": "ATK 9%",
@@ -23,5 +23,5 @@
     "id": 2,
     "name": "Boreal Wolf"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/The_Flute"
+  "url": "/wiki/The_Flute"
 }

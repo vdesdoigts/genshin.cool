@@ -11,9 +11,9 @@
   "region": "Mondstadt",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/a/ab/Character_Noelle_Thumb.png",
-    "card": "https://static.wikia.nocookie.net/gensin-impact/images/9/92/Character_Noelle_Card.jpg",
-    "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/a/a5/Character_Noelle_Portrait.png"
+    "image": "/images/characters/noelle-thumb.png",
+    "card": "/gensin-impact/images/9/92/Character_Noelle_Card.jpg",
+    "portrait": "/gensin-impact/images/a/a5/Character_Noelle_Portrait.png"
   },
   "cv": {
     "english": "Laura Faye Smith",
@@ -31,5 +31,5 @@
     "id": 3,
     "name": "Prithiva Topaz"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Noelle"
+  "url": "/wiki/Noelle"
 }

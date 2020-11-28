@@ -4,7 +4,7 @@
   "weapontype": "Bow",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Weapon_The_Stringless.png"
+    "image": "/images/weapons/the-stringless.png"
   },
   "baseatk": "42",
   "ability": "Elemental Mastery 36",
@@ -23,5 +23,5 @@
     "id": 4,
     "name": "Decarabian"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/The_Stringless"
+  "url": "/wiki/The_Stringless"
 }

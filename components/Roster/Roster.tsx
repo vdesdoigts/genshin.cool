@@ -62,6 +62,7 @@ const Character = ({ artifacts, character, weapon, isDisabled, onDisabled, onEdi
     >
       <Stack direction="row" spacing="0" align="center" justify="space-between">
         <Box
+          flex="1 1 100%"
           pl="1.25rem"
           py="1.75rem"
           onClick={onEdit}

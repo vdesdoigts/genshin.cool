@@ -12,9 +12,9 @@
   "region": "Mondstadt",
   "rarity": 5,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Venti_Thumb.png",
-    "card": "https://static.wikia.nocookie.net/gensin-impact/images/7/76/Character_Venti_Card.jpg",
-    "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/c/cf/Character_Venti_Portrait.png"
+    "image": "/images/characters/venti-thumb.png",
+    "card": "/gensin-impact/images/7/76/Character_Venti_Card.jpg",
+    "portrait": "/gensin-impact/images/c/cf/Character_Venti_Portrait.png"
   },
   "cv": {
     "english": "Erika Harlacher",
@@ -34,5 +34,5 @@
       "name": "Vayuda Turquoise"
     }
   ],
-  "url": "https://genshin-impact.fandom.com/wiki/Venti"
+  "url": "/wiki/Venti"
 }

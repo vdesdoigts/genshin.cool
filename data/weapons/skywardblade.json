@@ -4,7 +4,7 @@
   "weapontype": "Sword",
   "rarity": 5,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/0/03/Weapon_Skyward_Blade.png"
+    "image": "/images/weapons/skyward-blade.png"
   },
   "baseatk": "46",
   "ability": "Energy Recharge 12%",
@@ -23,5 +23,5 @@
     "id": 2,
     "name": "Boreal Wolf"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Skyward_Blade"
+  "url": "/wiki/Skyward_Blade"
 }

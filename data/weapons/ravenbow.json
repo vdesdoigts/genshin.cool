@@ -4,7 +4,7 @@
   "weapontype": "Bow",
   "rarity": 3,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/d/d0/Weapon_Raven_Bow.png"
+    "image": "/images/weapons/raven-bow.png"
   },
   "baseatk": "40",
   "ability": "Elemental Mastery 20",
@@ -23,5 +23,5 @@
     "id": 4,
     "name": "Decarabian"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Raven_Bow"
+  "url": "/wiki/Raven_Bow"
 }

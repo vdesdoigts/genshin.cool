@@ -4,7 +4,7 @@
   "weapontype": "Polearm",
   "rarity": 2,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/2/25/Weapon_Iron_Point.png"
+    "image": "/images/weapons/iron-point.png"
   },
   "baseatk": "33",
   "ability": "None",
@@ -23,5 +23,5 @@
     "id": 3,
     "name": "Dandelion Gladiator"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Iron_Point"
+  "url": "/wiki/Iron_Point"
 }

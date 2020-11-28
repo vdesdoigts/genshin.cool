@@ -4,7 +4,7 @@
   "weapontype": "Claymore",
   "rarity": 3,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/7/74/Weapon_Debate_Club.png"
+    "image": "/images/weapons/debate-club.png"
   },
   "baseatk": "39",
   "ability": "ATK 7,7%",
@@ -23,5 +23,5 @@
     "id": 6,
     "name": "Mist Veiled Elixir"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Debate_Club"
+  "url": "/wiki/Debate_Club"
 }

@@ -8,15 +8,15 @@
   "rarity": 4,
   "ascensions": [6],
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Item_Prithiva_Topaz_Gemstone.png"
+    "image": "/images/ascensionmaterials/prithiva-topaz-gemstone.png"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Prithiva_Topaz_Gemstone",
+  "url": "/wiki/Prithiva_Topaz_Gemstone",
   "droppedby": [
     {
       "name": "Geo Hypostasis 75+",
       "type": "Normal Boss",
       "images": {
-        "image": "https://static.wikia.nocookie.net/gensin-impact/images/5/53/Monster_Geo_Hypostasis_thumb.png"
+        "image": "/images/bosses/geo-hypostasis.png"
       }
     },
     {
@@ -30,7 +30,7 @@
       "name": "Prithiva Topaz Chunk",
       "amount": 3,
       "images": {
-        "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Item_Prithiva_Topaz_Chunk.png"
+        "image": "/images/ascensionmaterials/prithiva-topaz-chunk.png"
       }
     }
   ],

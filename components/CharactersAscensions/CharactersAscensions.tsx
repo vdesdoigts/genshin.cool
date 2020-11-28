@@ -2,7 +2,6 @@ import React from 'react'
 import uniqBy from 'lodash.uniqby'
 import {
   AspectRatio,
-  Box,
   Flex,
   HStack,
   Image,
@@ -21,7 +20,14 @@ const CharactersAscensions = () => {
   const characters = currentRosterCharacters.map((character) => getCharacterById(character.id))
 
   const ascensionMaterials = uniqBy(currentRosterCharacters.map((character, index) => 
-    getAscensionMaterialsByTypesAndAscension(characters[index].ascensionmaterials.map((ascensionmaterial) => ascensionmaterial.id).flat(), character.ascension)).flat(), 'id')
+    getAscensionMaterialsByTypesAndAscension(characters[index].ascensionmaterials.map((ascensionmaterial) =>
+      ascensionmaterial.id).flat(), character.ascension)).flat(), 'id').sort(function (a, b) {
+        if (a.type.id === b.type.id) {
+          return a.rarity - b.rarity
+        } else {
+          return a.type.id - b.type.id
+        }
+      });
 
   const ascensionMaterialsWithCharacters: (IAscensionMaterial & { characters: ICharacter[] })[] = ascensionMaterials.map((ascensionMaterial) => ({
     ...ascensionMaterial,
@@ -29,8 +35,6 @@ const CharactersAscensions = () => {
       ascensionMaterial.ascensions.includes(character.ascension || 1) && ascensionMaterial.characters.includes(character.id))
       .map((rosterCharacter) => characters.find((character) => character.id === rosterCharacter.id))
   }))
-
-  console.log('ascensionMaterialsWithCharacters: ', ascensionMaterialsWithCharacters)
 
   return (
     <DashBox title="Character ascensions" variant="pink" size="sm">
@@ -57,6 +61,8 @@ const CharactersAscensions = () => {
                     <Image
                       src={droppedby.images.image}
                       width="100%"
+                      height="100%"
+                      objectFit="contain"
                     />
                   </AspectRatio>}
                   <Flex

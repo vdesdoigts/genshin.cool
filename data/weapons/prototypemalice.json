@@ -4,7 +4,7 @@
   "weapontype": "Catalyst",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/3/32/Weapon_Prototype_Malice.png"
+    "image": "/images/weapons/prototype-malice.png"
   },
   "baseatk": "44",
   "ability": "Base HP 9%",
@@ -23,5 +23,5 @@
     "id": 6,
     "name": "Mist Veiled Elixir"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Prototype_Malice"
+  "url": "/wiki/Prototype_Malice"
 }

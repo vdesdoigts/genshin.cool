@@ -4,7 +4,7 @@
   "weapontype": "Catalyst",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/6/6c/Weapon_Eye_of_Perception.png"
+    "image": "/images/weapons/eye-of-perception.png"
   },
   "baseatk": "41",
   "ability": "ATK 12%",
@@ -23,5 +23,5 @@
     "id": 6,
     "name": "Mist Veiled Elixir"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Eye_of_Perception"
+  "url": "/wiki/Eye_of_Perception"
 }

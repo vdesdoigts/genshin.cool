@@ -4,7 +4,7 @@
   "weapontype": "Bow",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/9/99/Weapon_Royal_Bow.png"
+    "image": "/images/weapons/royal-bow.png"
   },
   "baseatk": "42",
   "ability": "ATK 9%",
@@ -20,5 +20,5 @@
   },
   "description": "An old royal longbow that belonged to the erstwhile rulers of Mondstadt. Countless generations later, the bowstring is still tight and can still fire arrows with great force.",
   "weaponmaterialtype": "",
-  "url": "https://genshin-impact.fandom.com/wiki/Royal_Bow"
+  "url": "/wiki/Royal_Bow"
 }

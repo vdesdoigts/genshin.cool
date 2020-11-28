@@ -12,9 +12,9 @@
   "region": "Liyue",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/6/61/Character_Beidou_Thumb.png",
-    "card": "https://static.wikia.nocookie.net/gensin-impact/images/8/84/Character_Beidou_Card.jpg",
-    "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/7/74/Character_Beidou_Portrait.png"
+    "image": "/images/characters/beidou-thumb.png",
+    "card": "/gensin-impact/images/8/84/Character_Beidou_Card.jpg",
+    "portrait": "/gensin-impact/images/7/74/Character_Beidou_Portrait.png"
   },
   "cv": {
     "english": "Allegra Clark",
@@ -34,6 +34,6 @@
       "name": "Vajrada Amethyst"
     }
   ],
-  "url": "https://genshin-impact.fandom.com/wiki/Beidou"
+  "url": "/wiki/Beidou"
 }
 

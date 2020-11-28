@@ -9,13 +9,7 @@ import {
   Image,
   Stack,
   Text,
-  Wrap,
-  WrapItem,
-  useTheme,
-  useMediaQuery,
-  SimpleGrid,
 } from '@chakra-ui/react'
-import ListItem from '../ListItem'
 
 interface IProps {
   image: string 
@@ -35,13 +29,14 @@ const AscensionItem = ({ image, label, sublabel, characters }: IProps) => {
           width="56px"
           height="56px"
           borderRadius="16px"
-          // border="1px solid #ccc"
           background="#f2f4f8"
         >
-          <Box p={2}>
+          <Box width="100%" height="100%" p={2}>
             <Image
               src={image}
               width="100%"
+              height="100%"
+              objectFit="contain"
             />
           </Box>
         </AspectRatio>

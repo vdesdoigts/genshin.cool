@@ -4,7 +4,7 @@
   "weapontype": "Claymore",
   "rarity": 5,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/0/0b/Weapon_Skyward_Pride.png"
+    "image": "/images/weapons/skyward-pride.png"
   },
   "baseatk": "48",
   "ability": "Energy Recharge 8%",
@@ -23,5 +23,5 @@
     "id": 2,
     "name": "Boreal Wolf"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Skyward_Pride"
+  "url": "/wiki/Skyward_Pride"
 }

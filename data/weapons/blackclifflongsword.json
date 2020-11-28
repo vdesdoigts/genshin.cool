@@ -4,7 +4,7 @@
   "weapontype": "Sword",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/6/6f/Weapon_Blackcliff_Longsword.png"
+    "image": "/images/weapons/blackcliff-longsword.png"
   },
   "baseatk": "44",
   "ability": "Physical DMG Bonus 8%",
@@ -20,5 +20,5 @@
   },
   "description": "A sword made of blackstone. It has a dark crimson glow on its black blade.",
   "weaponmaterialtype": "",
-  "url": "https://genshin-impact.fandom.com/wiki/Blackcliff_Longsword"
+  "url": "/wiki/Blackcliff_Longsword"
 }

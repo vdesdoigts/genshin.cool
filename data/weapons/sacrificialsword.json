@@ -4,7 +4,7 @@
   "weapontype": "Sword",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/a/a0/Weapon_Sacrificial_Sword.png"
+    "image": "/images/weapons/sacrificial-sword.png"
   },
   "baseatk": "41",
   "ability": "Energy Recharge 13.3%",
@@ -23,5 +23,5 @@
     "id": 3,
     "name": "Dandelion Gladiator"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Sacrificial_Sword"
+  "url": "/wiki/Sacrificial_Sword"
 }

@@ -8,15 +8,15 @@
   "rarity": 3,
   "ascensions": [2, 3],
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Item_Vajrada_Amethyst_Fragment.png"
+    "image": "/images/ascensionmaterials/vajrada-amethyst-fragment.png"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Vajrada_Amethyst_Fragment",
+  "url": "/wiki/Vajrada_Amethyst_Fragment",
   "droppedby": [
     {
       "name": "Electro Hypostasis 40+",
       "type": "Normal Boss",
       "images": {
-        "image": "https://static.wikia.nocookie.net/gensin-impact/images/3/32/Monster_Electro_Hypostasis_thumb.png"
+        "image": "/images/bosses/electro-hypostasis.png"
       }
     }
   ],
@@ -24,10 +24,10 @@
     {
       "type": "Alchemy",
       "ascensionmaterialid": 13,
-      "name": "Vajrada Amethyst Silver",
+      "name": "Vajrada Amethyst Sliver",
       "amount": 3,
       "images": {
-        "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Item_Vajrada_Amethyst_Silver.png"
+        "image": "/images/ascensionmaterials/vajrada-amethyst-sliver.png"
       }
     }
   ],

@@ -4,7 +4,7 @@
   "weapontype": "Sword",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/1/17/Weapon_Sword_of_Descension.png" 
+    "image": "/images/weapons/sword-of-descension.png" 
   },
   "baseatk": "39",
   "ability": "ATK 7,7%",
@@ -23,5 +23,5 @@
     "id": 2,
     "name": "Boreal Wolf"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Sword_of_Descension"
+  "url": "/wiki/Sword_of_Descension"
 }

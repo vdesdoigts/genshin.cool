@@ -6,7 +6,7 @@
 	"flower": {
 		"name": "Flower of Creviced Cliff",
 		"images": {
-			"image": "https://static.wikia.nocookie.net/gensin-impact/images/9/9f/Item_Flower_of_Creviced_Cliff.png"
+			"image": "/gensin-impact/images/9/9f/Item_Flower_of_Creviced_Cliff.png"
 		},
 		"description": "A flower born of the minerals and rocks of cliffside cracks. The way its petals blow in the wind makes it seem alive."
 	},

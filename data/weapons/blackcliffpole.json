@@ -4,7 +4,7 @@
   "weapontype": "Polearm",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/d/d5/Weapon_Blackcliff_Pole.png"
+    "image": "/images/weapons/blackcliff-pole.png"
   },
   "baseatk": "42",
   "ability": "Crit Dmg 12%",
@@ -20,5 +20,5 @@
   },
   "description": "A weapon made of blackstone and aerosiderite. There is a dark crimson glow on its cold black sheen.",
   "weaponmaterialtype": "",
-  "url": "https://genshin-impact.fandom.com/wiki/Blackcliff_Pole"
+  "url": "/wiki/Blackcliff_Pole"
 }

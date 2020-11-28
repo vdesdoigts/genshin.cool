@@ -4,7 +4,7 @@
   "weapontype": "Bow",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/b/b8/Weapon_Blackcliff_Warbow.png"
+    "image": "/images/weapons/blackcliff-warbow.png"
   },
   "baseatk": "41",
   "ability": "ATK 6%",
@@ -23,5 +23,5 @@
     "id": 5,
     "name": "Guyun"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Blackcliff_Warbow"
+  "url": "/wiki/Blackcliff_Warbow"
 }

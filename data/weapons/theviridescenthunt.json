@@ -4,7 +4,7 @@
   "weapontype": "Bow",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/f/ff/Weapon_The_Viridescent_Hunt.png"
+    "image": "/images/weapons/the-viridescent-hunt.png"
   },
   "baseatk": "42",
   "ability": "CRIT Rate 6%",
@@ -23,5 +23,5 @@
     "id": 4,
     "name": "Decarabian"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/The_Viridescent_Hunt"
+  "url": "/wiki/The_Viridescent_Hunt"
 }

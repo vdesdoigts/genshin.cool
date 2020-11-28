@@ -4,7 +4,7 @@
   "weapontype": "Polearm",
   "rarity": 3,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/1/1f/Weapon_White_Tassel.png"
+    "image": "/images/weapons/white-tassel.png"
   },
   "baseatk": "39",
   "ability": "Crit Rate 5,1%",
@@ -23,5 +23,5 @@
     "id": 5,
     "name": "Guyun"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/White_Tassel"
+  "url": "/wiki/White_Tassel"
 }

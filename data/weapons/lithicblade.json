@@ -4,7 +4,7 @@
   "weapontype": "Claymore",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/3/3a/Weapon_Lithic_Blade.png/revision/latest/scale-to-width-down/176?cb=20200716172440"
+    "image": "/images/weapons/lithic-blade.png"
   },
   "baseatk": "41",
   "ability": "CRIT DMG 16%",
@@ -20,5 +20,5 @@
   },
   "description": "A greatsword carved and chiseled from the very bedrock of Liyue.",
   "weaponmaterialtype": "",
-  "url": "https://genshin-impact.fandom.com/wiki/Lithic_Blade"
+  "url": "/wiki/Lithic_Blade"
 }

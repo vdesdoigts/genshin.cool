@@ -4,7 +4,7 @@
   "weapontype": "Claymore",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/8/88/Weapon_Serpent_Spine.png"
+    "image": "/images/weapons/serpent-spine.png"
   },
   "baseatk": "42",
   "ability": "CRIT Rate 6%",
@@ -23,5 +23,5 @@
     "id": 1,
     "name": "Aerosiderite"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Serpent_Spine"
+  "url": "/wiki/Serpent_Spine"
 }

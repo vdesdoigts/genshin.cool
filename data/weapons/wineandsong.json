@@ -4,7 +4,7 @@
   "weapontype": "Catalyst",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/c/c6/Weapon_Wine_and_Song.png"
+    "image": "/images/weapons/wine-and-song.png"
   },
   "baseatk": "42",
   "ability": "Energy Recharge 10%",
@@ -23,5 +23,5 @@
     "id": 2,
     "name": "Boreal Wolf"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Wine_and_Song"
+  "url": "/wiki/Wine_and_Song"
 }

@@ -6,7 +6,7 @@
 	"circlet": {
 		"name": "Tiara of Flame",
 		"images": {
-			"image": "https://static.wikia.nocookie.net/gensin-impact/images/1/18/Item_Tiara_of_Flame.png"
+			"image": "/gensin-impact/images/1/18/Item_Tiara_of_Flame.png"
 		},
 		"description": "A tiara worn by those tasked with offering sacrifices in ancient times. After being subjected to the dancing sacrificial flames year in and year out, it possesses remarkable resistance."
 	},

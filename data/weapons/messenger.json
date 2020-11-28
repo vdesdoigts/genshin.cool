@@ -4,7 +4,7 @@
   "weapontype": "Bow",
   "rarity": 3,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/3/38/Weapon_Messenger.png"
+    "image": "/images/weapons/messenger.png"
   },
   "baseatk": "40",
   "ability": "Crit DMG 6,8%",
@@ -23,5 +23,5 @@
     "id": 6,
     "name": "Mist Veiled Elixir"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Messenger"
+  "url": "/wiki/Messenger"
 }

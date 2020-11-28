@@ -4,7 +4,7 @@
   "weapontype": "Claymore",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/6/6e/Weapon_The_Bell.png/revision/latest/scale-to-width-down/174?cb=20201010004253"
+    "image": "/images/weapons/the-bell.png"
   },
   "baseatk": "42",
   "ability": "Base HP 9%",
@@ -23,5 +23,5 @@
     "id": 4,
     "name": "Decarabian"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/The_Bell"
+  "url": "/wiki/The_Bell"
 }

@@ -4,7 +4,7 @@
   "weapontype": "Claymore",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/0/04/Weapon_Whiteblind.png"
+    "image": "/images/weapons/whiteblind.png"
   },
   "baseatk": "42",
   "ability": "DEF 11.3%",
@@ -23,5 +23,5 @@
     "id": 5,
     "name": "Guyun"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Whiteblind"
+  "url": "/wiki/Whiteblind"
 }

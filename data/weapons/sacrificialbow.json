@@ -4,7 +4,7 @@
   "weapontype": "Bow",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Weapon_Sacrificial_Bow.png"
+    "image": "/images/weapons/sacrificial-bow.png"
   },
   "baseatk": "44",
   "ability": "Energy Recharge 6.7%",
@@ -23,5 +23,5 @@
     "id": 2,
     "name": "Boreal Wolf"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Sacrificial_Bow"
+  "url": "/wiki/Sacrificial_Bow"
 }

@@ -4,7 +4,7 @@
   "weapontype": "Polearm",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/2/2a/Weapon_Lithic_Spear.png"
+    "image": "/images/weapons/lithic-spear.png"
   },
   "baseatk": "42",
   "ability": "Physhical Dmg Bonus 9%",
@@ -20,5 +20,5 @@
   },
   "description": "A spear forged from the rocks of the Guyun Stone Forest. Its hardness knows no equal.",
   "weaponmaterialtype": "",
-  "url": "https://genshin-impact.fandom.com/wiki/Lithic_Spear"
+  "url": "/wiki/Lithic_Spear"
 }

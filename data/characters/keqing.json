@@ -11,9 +11,9 @@
   "region": "Liyue",
   "rarity": 5,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/0/06/Character_Keqing_Thumb.png",
-    "card": "https://static.wikia.nocookie.net/gensin-impact/images/f/f4/Character_Keqing_Card.jpg",
-    "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/8/81/Character_Keqing_Portrait.png"
+    "image": "/images/characters/keqing-thumb.png",
+    "card": "/gensin-impact/images/f/f4/Character_Keqing_Card.jpg",
+    "portrait": "/gensin-impact/images/8/81/Character_Keqing_Portrait.png"
   },
   "cv": {
     "english": "Kayli Mills",
@@ -33,5 +33,5 @@
       "name": "Vajrada Amethyst"
     }
   ],
-  "url": "https://genshin-impact.fandom.com/wiki/Keqing"
+  "url": "/wiki/Keqing"
 }

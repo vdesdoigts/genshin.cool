@@ -4,7 +4,7 @@
   "weapontype": "Sword",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/3/35/Weapon_Iron_Sting.png"
+    "image": "/images/weapons/iron-sting.png"
   },
   "baseatk": "42",
   "ability": "Elemental Mastery 36",
@@ -23,5 +23,5 @@
     "id": 1,
     "name": "Aerosiderite"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Iron_Sting"
+  "url": "/wiki/Iron_Sting"
 }

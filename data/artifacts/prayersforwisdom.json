@@ -6,7 +6,7 @@
 	"circlet": {
 		"name": "Tiara of Thunder",
 		"images": {
-			"image": "https://static.wikia.nocookie.net/gensin-impact/images/f/f6/Item_Tiara_of_Thunder.png"
+			"image": "/gensin-impact/images/f/f6/Item_Tiara_of_Thunder.png"
 		},
 		"description": "A tiara worn by those tasked with offering sacrifices in ancient times. Because it harkened the call of thunder year in and year out, it possesses remarkable resistance."
 	},

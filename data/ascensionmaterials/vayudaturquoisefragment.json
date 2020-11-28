@@ -8,15 +8,15 @@
   "rarity": 3,
   "ascensions": [2, 3],
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Item_Vayuda_Turquoise_Fragment.png"
+    "image": "/images/ascensionmaterials/vayuda-turquoise-fragment.png"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Vayuda_Turquoise_Fragment",
+  "url": "/wiki/Vayuda_Turquoise_Fragment",
   "droppedby": [
     {
       "name": "Anemo Hypostasis 40+",
       "type": "Normal Boss",
       "images": {
-        "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/e6/Monster_Anemo_Hypostasis_thumb.png"
+        "image": "/images/bosses/anemo-hypostasis.png"
       }
     }
   ],
@@ -24,10 +24,10 @@
     {
       "type": "Alchemy",
       "ascensionmaterialid": 13,
-      "name": "Vayuda Turquoise Silver",
+      "name": "Vayuda Turquoise Sliver",
       "amount": 3,
       "images": {
-        "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Item_Vayuda_Turquoise_Silver.png"
+        "image": "/images/ascensionmaterials/vayuda-turquoise-sliver.png"
       }
     }
   ],

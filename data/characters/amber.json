@@ -11,9 +11,9 @@
   "region": "Mondstadt",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/c/c6/Character_Amber_Thumb.png",
-    "card": "https://static.wikia.nocookie.net/gensin-impact/images/2/26/Character_Amber_Card.jpg",
-    "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/0/00/Character_Amber_Portrait.png"
+    "image": "/images/characters/amber-thumb.png",
+    "card": "/gensin-impact/images/2/26/Character_Amber_Card.jpg",
+    "portrait": "/gensin-impact/images/0/00/Character_Amber_Portrait.png"
   },
   "cv": {
     "english": "Kelly Baskin",
@@ -33,5 +33,5 @@
       "name": "Agnidus Agate"
     }
   ],
-  "url": "https://genshin-impact.fandom.com/wiki/Amber"
+  "url": "/wiki/Amber"
 }

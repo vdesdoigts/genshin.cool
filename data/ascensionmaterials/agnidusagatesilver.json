@@ -1,6 +1,6 @@
 {
   "id": 1,
-  "name": "Agnidus Agate Silver",
+  "name": "Agnidus Agate Sliver",
   "type": {
     "id": 1,
     "name": "Agnidus Agate"
@@ -8,15 +8,15 @@
   "rarity": 2,
   "ascensions": [1],
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Item_Agnidus_Agate_Sliver.png"
+    "image": "/images/ascensionmaterials/agnidus-agate-sliver.png"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Agnidus_Agate_Sliver",
+  "url": "/wiki/Agnidus_Agate_Sliver",
   "droppedby": [
     {
       "name": "Pyro Regisvine",
       "type": "Normal Boss",
       "images": {
-        "image": "https://genshin-impact.fandom.com/wiki/File:Monster_Pyro_Regisvine_thumb.png"
+        "image": "/images/bosses/pyro-regisvine.png"
       }
     },
     {

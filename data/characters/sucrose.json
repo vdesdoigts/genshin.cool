@@ -11,9 +11,9 @@
   "region": "Mondstadt",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/6/61/Character_Sucrose_Thumb.png",
-    "card": "https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Sucrose_Card.jpg",
-    "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/2/20/Character_Sucrose_Portrait.png"
+    "image": "/images/characters/sucrose-thumb.png",
+    "card": "/gensin-impact/images/2/22/Character_Sucrose_Card.jpg",
+    "portrait": "/gensin-impact/images/2/20/Character_Sucrose_Portrait.png"
   },
   "cv": {
     "english": "Valeria Rodriguez",
@@ -33,5 +33,5 @@
       "name": "Vayuda Turquoise"
     }
   ],
-  "url": "https://genshin-impact.fandom.com/wiki/Sucrose"
+  "url": "/wiki/Sucrose"
 }

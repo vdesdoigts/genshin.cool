@@ -11,8 +11,8 @@
   "region": "Mondstadt",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Diona_Thumb.png",
-    "card": "https://static.wikia.nocookie.net/gensin-impact/images/0/08/Character_Diona_Card.png",
+    "image": "/images/characters/diona-thumb.png",
+    "card": "/gensin-impact/images/0/08/Character_Diona_Card.png",
     "portrait": ""
   },
   "cv": {
@@ -32,5 +32,5 @@
       "name": "Shivada Jade"
     }
   ],
-  "url": "https://genshin-impact.fandom.com/wiki/Diona"
+  "url": "/wiki/Diona"
 }

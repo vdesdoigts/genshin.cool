@@ -4,7 +4,7 @@
   "weapontype": "Polearm",
   "rarity": 5,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/8/80/Weapon_Primordial_Jade_Winged-Spear.png"
+    "image": "/images/weapons/primordial-jade-winged-spear.png"
   },
   "baseatk": "48",
   "ability": "Crit Rate 4,8%",
@@ -23,5 +23,5 @@
     "id": 5,
     "name": "Guyun"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Primordial_Jade_Winged-Spear#:~:text=Description,with%20all%20they%20could%20muster."
+  "url": "/wiki/Primordial_Jade_Winged-Spear#:~:text=Description,with%20all%20they%20could%20muster."
 }

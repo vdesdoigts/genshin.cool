@@ -4,7 +4,7 @@
   "weapontype": "Polearm",
   "rarity": 5,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/6/69/Weapon_Skyward_Spine.png"
+    "image": "/images/weapons/skyward-spine.png"
   },
   "baseatk": "48",
   "ability": "Energy Recharge 8%",
@@ -23,5 +23,5 @@
     "id": 3,
     "name": "Dandelion Gladiator"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Skyward_Spine"
+  "url": "/wiki/Skyward_Spine"
 }

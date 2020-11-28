@@ -8,15 +8,15 @@
   "rarity": 4,
   "ascensions": [6],
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Item_Varunada_Lazurite_Gemstone.png"
+    "image": "/images/ascensionmaterials/varunada-lazurite-gemstone.png"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Varunada_Lazurite_Gemstone",
+  "url": "/wiki/Varunada_Lazurite_Gemstone",
   "droppedby": [
     {
       "name": "Oceanid 75+",
       "type": "Normal Boss",
       "images": {
-        "image": "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Oceanid_Icon.png"
+        "image": "/images/bosses/oceanid.png"
       }
     }
   ],
@@ -27,7 +27,7 @@
       "name": "Varunada Lazurite Chunk",
       "amount": 3,
       "images": {
-        "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Item_Varunada_Lazurite_Chunk.png"
+        "image": "/images/ascensionmaterials/varunada-lazurite-chunk.png"
       }
     }
   ],

@@ -7,17 +7,16 @@
   },
   "rarity": 4,
   "ascensions": [4, 5],
-  "ascensions": [4, 5],
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Item_Vajrada_Amethyst_Chunk.png"
+    "image": "/images/ascensionmaterials/vajrada-amethyst-chunk.png"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Vajrada_Amethyst_Chunk",
+  "url": "/wiki/Vajrada_Amethyst_Chunk",
   "droppedby": [
     {
       "name": "Electro Hypostasis 60+",
       "type": "Normal Boss",
       "images": {
-        "image": "https://static.wikia.nocookie.net/gensin-impact/images/3/32/Monster_Electro_Hypostasis_thumb.png"
+        "image": "/images/bosses/electro-hypostasis.png"
       }
     }
   ],
@@ -28,7 +27,7 @@
       "name": "Vajrada Amethyst Fragment",
       "amount": 3,
       "images": {
-        "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Item_Vajrada_Amethyst_Fragment.png"
+        "image": "/images/ascensionmaterials/vajrada-amethyst-fragment.png"
       }
     }
   ],

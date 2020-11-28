@@ -8,15 +8,15 @@
   "rarity": 3,
   "ascensions": [2, 3],
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Item_Prithiva_Topaz_Fragment.png"
+    "image": "/images/ascensionmaterials/prithiva-topaz-fragment.png"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Prithiva_Topaz_Fragment",
+  "url": "/wiki/Prithiva_Topaz_Fragment",
   "droppedby": [
     {
       "name": "Geo Hypostasis 40+",
       "type": "Normal Boss",
       "images": {
-        "image": "https://static.wikia.nocookie.net/gensin-impact/images/5/53/Monster_Geo_Hypostasis_thumb.png"
+        "image": "/images/bosses/geo-hypostasis.png"
       }
     },
     {
@@ -27,10 +27,10 @@
     {
       "type": "Alchemy",
       "ascensionmaterialid": 9,
-      "name": "Prithiva Topaz Silver",
+      "name": "Prithiva Topaz Sliver",
       "amount": 3,
       "images": {
-        "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Item_Prithiva_Topaz_Silver.png"
+        "image": "/images/ascensionmaterials/prithiva-topaz-sliver.png"
       }
     }
   ],

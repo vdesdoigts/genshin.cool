@@ -4,7 +4,7 @@
   "weapontype": "Polearm",
   "rarity": 5,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/9/93/Weapon_Kunwu%27s_Iris_Rift.png"
+    "image": "/images/weapons/kunwu-iris-rift.png"
   },
   "baseatk": "46",
   "ability": "ATK 10,8%",
@@ -20,5 +20,5 @@
   },
   "description": "A polearm made from a meteorite, capable of cutting rainbows in a flash. When swung, one can almost see the rift it tears in the air.",
   "weaponmaterialtype": "",
-  "url": "https://genshin-impact.fandom.com/wiki/Kunwu%27s_Iris_Rift"
+  "url": "/wiki/Kunwu%27s_Iris_Rift"
 }

@@ -10,9 +10,9 @@
   "gender": "Male",
   "rarity": 5,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Character_Traveler_Thumb.png",
-    "card": "https://static.wikia.nocookie.net/gensin-impact/images/c/c8/Traveler_Female_Card.jpg",
-    "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/2/24/Character_Traveler_%28Female%29_Portrait.png"
+    "image": "/images/characters/traveler-thumb.png",
+    "card": "/gensin-impact/images/c/c8/Traveler_Female_Card.jpg",
+    "portrait": "/gensin-impact/images/2/24/Character_Traveler_%28Female%29_Portrait.png"
   },
   "cv": {
     "japanese": "Shun Horie",
@@ -25,5 +25,5 @@
     "id": 5,
     "name": "Prosperity"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Traveler"
+  "url": "/wiki/Traveler"
 }

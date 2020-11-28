@@ -1,6 +1,6 @@
 {
   "id": 17,
-  "name": "Shivada Jade Silver",
+  "name": "Shivada Jade Sliver",
   "type": {
     "id": 5,
     "name": "Shivada Jade"
@@ -8,15 +8,15 @@
   "rarity": 2,
   "ascensions": [1],
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/8/87/Item_Shivada_Jade_Sliver.png"
+    "image": "/images/ascensionmaterials/shivada-jade-sliver.png"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Shivada_Jade_Sliver",
+  "url": "/wiki/Shivada_Jade_Sliver",
   "droppedby": [
     {
       "name": "Cryo Regisvine",
       "type": "Normal Boss",
       "images": {
-        "image": "https://genshin-impact.fandom.com/wiki/File:Monster_Pyro_Regisvine_thumb.png"
+        "image": "/images/bosses/pyro-regisvine.png"
       }
     },
     {

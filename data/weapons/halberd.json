@@ -4,7 +4,7 @@
   "weapontype": "Polearm",
   "rarity": 3,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/4/41/Weapon_Halberd.png"
+    "image": "/images/weapons/halberd.png"
   },
   "baseatk": "40",
   "ability": "ATK 5,1%",
@@ -23,5 +23,5 @@
     "id": 6,
     "name": "Mist Veiled Elixir"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Halberd"
+  "url": "/wiki/Halberd"
 }

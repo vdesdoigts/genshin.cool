@@ -4,7 +4,7 @@
   "weapontype": "Bow",
   "rarity": 5,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/1/19/Weapon_Skyward_Harp.png"
+    "image": "/images/weapons/skyward-harp.png"
   },
   "baseatk": "48",
   "ability": "CRIT Rate 4.8%",
@@ -23,5 +23,5 @@
     "id": 2,
     "name": "Boreal Wolf"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Skyward_Harp"
+  "url": "/wiki/Skyward_Harp"
 }

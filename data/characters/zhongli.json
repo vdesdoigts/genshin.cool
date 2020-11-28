@@ -10,7 +10,7 @@
   "region": "Liyue",
   "rarity": 5,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/c/c2/Character_Zhongli_Thumb.png",
+    "image": "/images/characters/zhongli-thumb.png",
     "card": "",
     "portrait": ""
   },
@@ -29,5 +29,5 @@
     "id": 3,
     "name": "Prithiva Topaz"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Zhongli"
+  "url": "/wiki/Zhongli"
 }

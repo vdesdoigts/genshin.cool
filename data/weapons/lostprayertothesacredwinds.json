@@ -4,7 +4,7 @@
   "weapontype": "Catalyst",
   "rarity": 5,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Sacred_A2.png"
+    "image": "/images/weapons/lost-prayer-to-the-sacred-winds.png"
   },
   "baseatk": "46",
   "ability": "CRIT Rate 7.2%",
@@ -23,5 +23,5 @@
     "id": 3,
     "name": "Dandelion Gladiator"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Lost_Prayer_to_the_Sacred_Winds"
+  "url": "/wiki/Lost_Prayer_to_the_Sacred_Winds"
 }

@@ -4,7 +4,7 @@
   "weapontype": "Bow",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/0/0a/Weapon_Alley_Hunter.png"
+    "image": "/images/weapons/alley-hunter.png"
   },
   "baseatk": "41",
   "ability": "CRIT Rate 8%",
@@ -23,5 +23,5 @@
     "id": 2,
     "name": "Boreal Wolf"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Alley_Hunter"
+  "url": "/wiki/Alley_Hunter"
 }

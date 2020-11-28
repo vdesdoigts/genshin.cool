@@ -20,7 +20,7 @@ interface IProps {
 
 const ListObject = ({
   image,
-  placeholderImage = 'https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Item_Adventurer%27s_Flower.png',
+  placeholderImage = '/gensin-impact/images/e/ec/Item_Adventurer%27s_Flower.png',
   label,
   placeholderLabel = 'Select an item',
   onClick,

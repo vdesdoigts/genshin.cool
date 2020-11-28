@@ -4,7 +4,7 @@
   "weapontype": "Polearm",
   "rarity": 3,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/4/43/Weapon_Black_Tassel.png"
+    "image": "/images/weapons/black-tassel.png"
   },
   "baseatk": "38",
   "ability": "HP 10,2%",
@@ -23,5 +23,5 @@
     "id": 1,
     "name": "Aerosiderite"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Black_Tassel"
+  "url": "/wiki/Black_Tassel"
 }

@@ -4,7 +4,7 @@
   "weapontype": "Polearm",
   "rarity": 1,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/f/fc/Weapon_Beginner%27s_Protector.png"
+    "image": "/images/weapons/beginner-protector.png"
   },
   "baseatk": "23",
   "ability": "None",
@@ -23,5 +23,5 @@
     "id": 3,
     "name": "Dandelion Gladiator"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Beginner%27s_Protector"
+  "url": "/wiki/Beginner%27s_Protector"
 }

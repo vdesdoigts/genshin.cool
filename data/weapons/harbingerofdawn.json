@@ -4,7 +4,7 @@
   "weapontype": "Sword",
   "rarity": 3,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/2/23/Weapon_Harbinger_of_Dawn.png"    
+    "image": "/images/weapons/harbinger-of-dawn.png"    
   },
   "baseatk": "39",
   "ability": "Crit Dmg 10,2%",
@@ -23,5 +23,5 @@
     "id": 2,
     "name": "Boreal Wolf"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Harbinger_of_Dawn"
+  "url": "/wiki/Harbinger_of_Dawn"
 }

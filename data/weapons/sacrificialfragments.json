@@ -4,7 +4,7 @@
   "weapontype": "Catalyst",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/6/6c/Weapon_Sacrificial_Fragments.png"
+    "image": "/images/weapons/sacrificial-fragments.png"
   },
   "baseatk": "41",
   "ability": "Elemental Mastery 48",
@@ -23,5 +23,5 @@
     "id": 3,
     "name": "Dandelion Gladiator"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Sacrificial_Fragments"
+  "url": "/wiki/Sacrificial_Fragments"
 }

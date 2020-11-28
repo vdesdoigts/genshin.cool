@@ -4,7 +4,7 @@
   "weapontype": "Catalyst",
   "rarity": 3,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/1/11/Weapon_Otherworldly_Story.png"
+    "image": "/images/weapons/otherworldly-story.png"
   },
   "baseatk": "39",
   "ability": "Energy Recharge 8,5%",
@@ -23,5 +23,5 @@
     "id": 3,
     "name": "Dandelion Gladiator"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Otherworldly_Story"
+  "url": "/wiki/Otherworldly_Story"
 }

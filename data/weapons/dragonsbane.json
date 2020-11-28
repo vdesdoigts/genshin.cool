@@ -4,7 +4,7 @@
   "weapontype": "Polearm",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/2/24/Weapon_Dragon%27s_Bane.png"
+    "image": "/images/weapons/dragon-bane.png"
   },
   "baseatk": "41",
   "ability": "Elemental Mastery 48",
@@ -23,5 +23,5 @@
     "id": 6,
     "name": "Mist Veiled Elixir"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Dragon%27s_Bane"
+  "url": "/wiki/Dragon%27s_Bane"
 }

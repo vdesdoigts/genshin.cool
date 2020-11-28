@@ -12,9 +12,9 @@
   "region": "Liyue",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/4/4a/Character_Xingqiu_Thumb.png",
-    "card": "https://static.wikia.nocookie.net/gensin-impact/images/c/c2/Character_Xingqiu_Card.jpg",
-    "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/a/a9/Character_Xingqiu_Portrait.png"
+    "image": "/images/characters/xingqiu-thumb.png",
+    "card": "/gensin-impact/images/c/c2/Character_Xingqiu_Card.jpg",
+    "portrait": "/gensin-impact/images/a/a9/Character_Xingqiu_Portrait.png"
   },
   "cv": {
     "english": "Cristina Vee Valenzuela",
@@ -34,5 +34,5 @@
       "name": "Varunada Lazurite"
     }
   ],
-  "url": "https://genshin-impact.fandom.com/wiki/Xingqiu"
+  "url": "/wiki/Xingqiu"
 }

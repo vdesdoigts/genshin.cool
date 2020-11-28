@@ -4,7 +4,7 @@
   "weapontype": "Claymore",
   "rarity": 3,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/5/56/Weapon_White_Iron_Greatsword.png"
+    "image": "/images/weapons/white-iron-greatsword.png"
   },
   "baseatk": "39",
   "ability": "Deff 9,6%",
@@ -23,5 +23,5 @@
     "id": 3,
     "name": "Dandelion Gladiator"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/White_Iron_Greatsword"
+  "url": "/wiki/White_Iron_Greatsword"
 }

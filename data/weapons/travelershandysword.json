@@ -4,7 +4,7 @@
   "weapontype": "Sword",
   "rarity": 3,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/c/c9/Weapon_Traveler%27s_Handy_Sword.png"
+    "image": "/images/weapons/traveler-handy-sword.png"
   },
   "baseatk": "40",
   "ability": "Deff 6,4%",
@@ -23,5 +23,5 @@
     "id": 3,
     "name": "Dandelion Gladiator"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Traveler%27s_Handy_Sword"
+  "url": "/wiki/Traveler%27s_Handy_Sword"
 }

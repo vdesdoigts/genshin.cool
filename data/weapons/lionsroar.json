@@ -4,7 +4,7 @@
   "weapontype": "Sword",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/e6/Weapon_Lion%27s_Roar.png"
+    "image": "/images/weapons/lion-roar.png"
   },
   "baseatk": "42",
   "ability": "ATK 9%",
@@ -23,5 +23,5 @@
     "id": 5,
     "name": "Guyun"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Lion%27s_Roar"
+  "url": "/wiki/Lion%27s_Roar"
 }

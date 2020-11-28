@@ -11,9 +11,9 @@
   "region": "Mondstadt",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/1/14/Character_Fischl_Thumb.png",
-    "card": "https://static.wikia.nocookie.net/gensin-impact/images/4/48/Character_Fischl_Card.jpg",
-    "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/3/34/Character_Fischl_Portrait.png"
+    "image": "/images/characters/fischl-thumb.png",
+    "card": "/gensin-impact/images/4/48/Character_Fischl_Card.jpg",
+    "portrait": "/gensin-impact/images/3/34/Character_Fischl_Portrait.png"
   },
   "cv": {
     "english": "Brittany Cox",
@@ -33,5 +33,5 @@
       "name": "Vajrada Amethyst"
     }
   ],
-  "url": "https://genshin-impact.fandom.com/wiki/Fischl"
+  "url": "/wiki/Fischl"
 }

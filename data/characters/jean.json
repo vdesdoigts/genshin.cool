@@ -12,9 +12,9 @@
   "region": "Mondstadt",
   "rarity": 5,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/8/89/Character_Jean_Thumb.png",
-    "card": "https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Jean_Card.jpg",
-    "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/0/02/Character_Jean_Portrait.png"
+    "image": "/images/characters/jean-thumb.png",
+    "card": "/gensin-impact/images/0/0e/Character_Jean_Card.jpg",
+    "portrait": "/gensin-impact/images/0/02/Character_Jean_Portrait.png"
   },
   "cv": {
     "english": "Stephanie Southerland",
@@ -34,5 +34,5 @@
       "name": "Vayuda Turquoise"
     }
   ],
-  "url": "https://genshin-impact.fandom.com/wiki/Jean"
+  "url": "/wiki/Jean"
 }

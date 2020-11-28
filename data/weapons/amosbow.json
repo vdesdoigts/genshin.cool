@@ -4,7 +4,7 @@
   "weapontype": "Bow",
   "rarity": 5,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/d/de/Weapon_Amos%27_Bow.png"
+    "image": "/images/weapons/amos-bow.png"
   },
   "baseatk": "46",
   "ability": "ATK 10.8%",
@@ -23,5 +23,5 @@
     "id": 3,
     "name": "Dandelion Gladiator"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Amos%27_Bow"
+  "url": "/wiki/Amos%27_Bow"
 }

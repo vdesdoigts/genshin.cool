@@ -4,7 +4,7 @@
   "weapontype": "Sword",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/c/cd/Weapon_Royal_Longsword.png"
+    "image": "/images/weapons/royal-longsword.png"
   },
   "baseatk": "42",
   "ability": "ATK 9%",
@@ -20,5 +20,5 @@
   },
   "description": "An old longsword that belonged to the erstwhile rulers of Mondstadt. Exquisitely crafted, the carvings and embellishments testify to the stature of its owner.",
   "weaponmaterialtype": "",
-  "url": "https://genshin-impact.fandom.com/wiki/Royal_Longsword"
+  "url": "/wiki/Royal_Longsword"
 }

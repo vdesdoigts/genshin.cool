@@ -4,7 +4,7 @@
   "weapontype": "Catalyst",
   "rarity": 3,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/7/7c/Weapon_Emerald_Orb.png"
+    "image": "/images/weapons/emerald-orb.png"
   },
   "baseatk": "40",
   "ability": "Elemental Mastery 20",
@@ -23,5 +23,5 @@
     "id": 5,
     "name": "Guyun"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Emerald_Orb"
+  "url": "/wiki/Emerald_Orb"
 }

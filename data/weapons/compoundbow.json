@@ -4,7 +4,7 @@
   "weapontype": "Bow",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/3/32/Weapon_Compound_Bow.png"
+    "image": "/images/weapons/compound-bow.png"
   },
   "baseatk": "41",
   "ability": "Phys DMG Bonus 15%",
@@ -23,5 +23,5 @@
     "id": 1,
     "name": "Aerosiderite"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Compound_Bow"
+  "url": "/wiki/Compound_Bow"
 }

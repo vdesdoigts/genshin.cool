@@ -4,7 +4,7 @@
   "weapontype": "Catalyst",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/2/21/Weapon_Blackcliff_Amulet.png"
+    "image": "/images/weapons/blackcliff-amulet.png"
   },
   "baseatk": "42",
   "ability": "CRIT DMG 8.4%",
@@ -20,5 +20,5 @@
   },
   "description": "A mysterious catalyst made of blackstone. It has an ominous crimson glow that seems to pulse in synchronization with the tremors from deep within the earth.",
   "weaponmaterialtype": "",
-  "url": "https://genshin-impact.fandom.com/wiki/Blackcliff_Amulet"
+  "url": "/wiki/Blackcliff_Amulet"
 }

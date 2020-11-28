@@ -4,7 +4,7 @@
   "weapontype": "Bow",
   "rarity": 2,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/4/44/Weapon_Hunter%27s_Bow.png"
+    "image": "/images/weapons/hunter-bow.png"
   },
   "baseatk": "33",
   "ability": "None",
@@ -23,5 +23,5 @@
     "id": 2,
     "name": "Boreal Wolf"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Seasoned_Hunter%27s_Bow"
+  "url": "/wiki/Seasoned_Hunter%27s_Bow"
 }

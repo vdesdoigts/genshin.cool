@@ -4,7 +4,7 @@
   "weapontype": "Sword",
   "rarity": 1,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/2/2f/Weapon_Dull_Blade.png"    
+    "image": "/images/weapons/dull-blade.png"    
   },
   "baseatk": "23",
   "ability": "None",
@@ -23,5 +23,5 @@
     "id": 4,
     "name": "Decarabian"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Dull_Blade"
+  "url": "/wiki/Dull_Blade"
 }

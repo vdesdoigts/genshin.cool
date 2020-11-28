@@ -11,9 +11,9 @@
   "region": "Mondstadt",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/7/7b/Character_Bennett_Thumb.png",
-    "card": "https://static.wikia.nocookie.net/gensin-impact/images/7/7f/Character_Bennett_Card.jpg",
-    "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/7/73/Character_Bennett_Portrait.png"
+    "image": "/images/characters/bennett-thumb.png",
+    "card": "/gensin-impact/images/7/7f/Character_Bennett_Card.jpg",
+    "portrait": "/gensin-impact/images/7/73/Character_Bennett_Portrait.png"
   },
   "cv": {
     "english": "Cristina Vee Valenzuela",
@@ -33,5 +33,5 @@
       "name": "Agnidus Agate"
     }
   ],
-  "url": "https://genshin-impact.fandom.com/wiki/Bennett"
+  "url": "/wiki/Bennett"
 }

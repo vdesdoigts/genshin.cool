@@ -11,9 +11,9 @@
   "region": "Mondstadt",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Character_Lisa_Thumb.png",
-    "card": "https://static.wikia.nocookie.net/gensin-impact/images/d/dc/Character_Lisa_Card.jpg",
-    "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/f/fa/Character_Lisa_Portrait.png"
+    "image": "/images/characters/lisa-thumb.png",
+    "card": "/gensin-impact/images/d/dc/Character_Lisa_Card.jpg",
+    "portrait": "/gensin-impact/images/f/fa/Character_Lisa_Portrait.png"
   },
   "cv": {
     "english": "Mara Junot",
@@ -33,5 +33,5 @@
       "name": "Vajrada Amethyst"
     }
   ],
-  "url": "https://genshin-impact.fandom.com/wiki/Lisa"
+  "url": "/wiki/Lisa"
 }

@@ -4,7 +4,7 @@
   "weapontype": "Sword",
   "rarity": 3,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/9/9c/Weapon_Cool_Steel.png"    
+    "image": "/images/weapons/cool-steel.png"    
   },
   "baseatk": "39",
   "ability": "ATK 7,7%",
@@ -23,5 +23,5 @@
     "id": 4,
     "name": "Decarabian"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Cool_Steel"
+  "url": "/wiki/Cool_Steel"
 }

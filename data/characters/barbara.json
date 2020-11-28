@@ -11,9 +11,9 @@
   "region": "Mondstadt",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/7/72/Character_Barbara_Thumb.png",
-    "card": "https://static.wikia.nocookie.net/gensin-impact/images/9/93/Character_Barbara_Card.jpg",
-    "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/4/4a/Character_Barbara_Portrait.png"
+    "image": "/images/characters/barbara-thumb.png",
+    "card": "/gensin-impact/images/9/93/Character_Barbara_Card.jpg",
+    "portrait": "/gensin-impact/images/4/4a/Character_Barbara_Portrait.png"
   },
   "cv": {
     "english": "Laura Stahl",
@@ -33,5 +33,5 @@
       "name": "Varunada Lazurite"
     }
   ],
-  "url": "https://genshin-impact.fandom.com/wiki/Barbara"
+  "url": "/wiki/Barbara"
 }

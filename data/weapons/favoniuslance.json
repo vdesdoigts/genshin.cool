@@ -4,7 +4,7 @@
   "weapontype": "Polearm",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/5/57/Weapon_Favonius_Lance.png"
+    "image": "/images/weapons/favonius-lance.png"
   },
   "baseatk": "44",
   "ability": "Energy Recharge 6,7%",
@@ -23,5 +23,5 @@
     "id": 3,
     "name": "Dandelion Gladiator"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Favonius_Lance"
+  "url": "/wiki/Favonius_Lance"
 }

@@ -4,7 +4,7 @@
   "weapontype": "Catalyst",
   "rarity": 3,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/3/39/Weapon_Magic_Guide.png"
+    "image": "/images/weapons/magic-guide.png"
   },
   "baseatk": "38",
   "ability": "Elemental Mastery 41",
@@ -23,5 +23,5 @@
     "id": 4,
     "name": "Decarabian"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Magic_Guide"
+  "url": "/wiki/Magic_Guide"
 }

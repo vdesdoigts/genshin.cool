@@ -6,7 +6,7 @@
 	"flower": {
 		"name": "Summer Night's Bloom",
 		"images": {
-			"image": "https://static.wikia.nocookie.net/gensin-impact/images/a/a6/Item_Summer_Night%27s_Bloom.png"
+			"image": "/gensin-impact/images/a/a6/Item_Summer_Night%27s_Bloom.png"
 		},
 		"description": "A man-made flower in eternal bloom. Who knows if there truly is life in there?"
 	},
@@ -27,7 +27,7 @@
 	"goblet": {
 		"name": "Summer Night's Moment",
 		"images": {
-			"image": "https://static.wikia.nocookie.net/gensin-impact/images/1/10/Item_Summer_Night%27s_Waterballoon.png"
+			"image": "/gensin-impact/images/1/10/Item_Summer_Night%27s_Waterballoon.png"
 		},
 		"description": "Water balloons can be seen everywhere during the summer festival, but none are as finely-wrought as this one."
 	},

@@ -1,6 +1,6 @@
 {
   "id": 9,
-  "name": "Prithiva Topaz Silver",
+  "name": "Prithiva Topaz Sliver",
   "type": {
     "id": 3,
     "name": "Prithiva Topaz"
@@ -8,15 +8,15 @@
   "rarity": 2,
   "ascensions": [1],
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Item_Prithiva_Topaz_Sliver.png"
+    "image": "/images/ascensionmaterials/prithiva-topaz-sliver.png"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Prithiva_Topaz_Sliver",
+  "url": "/wiki/Prithiva_Topaz_Sliver",
   "droppedby": [
     {
       "name": "Geo Hypostasis",
       "type": "Normal Boss",
       "images": {
-        "image": "https://static.wikia.nocookie.net/gensin-impact/images/5/53/Monster_Geo_Hypostasis_thumb.png"
+        "image": "/images/bosses/geo-hypostasis.png"
       }
     },
     {

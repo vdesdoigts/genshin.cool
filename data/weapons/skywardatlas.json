@@ -4,7 +4,7 @@
   "weapontype": "Catalyst",
   "rarity": 5,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/3/33/Weapon_Skyward_Atlas.png"
+    "image": "/images/weapons/skyward-atlas.png"
   },
   "baseatk": "48",
   "ability": "ATK 7.2%",
@@ -23,5 +23,5 @@
     "id": 2,
     "name": "Boreal Wolf"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Skyward_Atlas"
+  "url": "/wiki/Skyward_Atlas"
 }

@@ -4,7 +4,7 @@
   "weapontype": "Bow",
   "rarity": 3,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Weapon_Recurve_Bow.png"
+    "image": "/images/weapons/recurve-bow.png"
   },
   "baseatk": "38",
   "ability": "Base HP 10,2%",
@@ -23,5 +23,5 @@
     "id": 3,
     "name": "Dandelion Gladiator"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Recurve_Bow"
+  "url": "/wiki/Recurve_Bow"
 }

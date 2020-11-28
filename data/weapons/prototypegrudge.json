@@ -4,7 +4,7 @@
   "weapontype": "Polearm",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/7/7a/Weapon_Prototype_Grudge.png"
+    "image": "/images/weapons/prototype-grudge.png"
   },
   "baseatk": "42",
   "ability": "Energy Recharge 10%",
@@ -23,5 +23,5 @@
     "id": 1,
     "name": "Aerosiderite"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Prototype_Grudge"
+  "url": "/wiki/Prototype_Grudge"
 }

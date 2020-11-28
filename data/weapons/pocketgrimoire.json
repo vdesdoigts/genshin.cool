@@ -4,7 +4,7 @@
   "weapontype": "Catalyst",
   "rarity": 2,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/1/16/Weapon_Pocket_Grimoire.png"
+    "image": "/images/weapons/pocket-grimoire.png"
   },
   "baseatk": "33",
   "ability": "None",
@@ -13,5 +13,5 @@
     "id": 4,
     "name": "Decarabian"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Pocket_Grimoire"
+  "url": "/wiki/Pocket_Grimoire"
 }

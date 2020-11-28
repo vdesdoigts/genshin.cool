@@ -11,9 +11,9 @@
   "region": "Mondstadt",
   "rarity": 5,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/a/a0/Character_Mona_Thumb.png",
-    "card": "https://static.wikia.nocookie.net/gensin-impact/images/6/69/Character_Mona_Card.jpg",
-    "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/f/fe/Character_Mona_Portrait.png"
+    "image": "/images/characters/mona-thumb.png",
+    "card": "/gensin-impact/images/6/69/Character_Mona_Card.jpg",
+    "portrait": "/gensin-impact/images/f/fe/Character_Mona_Portrait.png"
   },
   "cv": {
     "english": "Felecia Angelle",
@@ -33,5 +33,5 @@
       "name": "Varunada Lazurite"
     }
   ],
-  "url": "https://genshin-impact.fandom.com/wiki/Mona"
+  "url": "/wiki/Mona"
 }

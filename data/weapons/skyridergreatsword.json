@@ -4,7 +4,7 @@
   "weapontype": "Claymore",
   "rarity": 3,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/6/6e/Weapon_Skyrider_Greatsword.png"
+    "image": "/images/weapons/skyrider-greatsword.png"
   },
   "baseatk": "39",
   "ability": "Physical Dmg Bonus 9,6%",
@@ -23,5 +23,5 @@
     "id": 1,
     "name": "Aerosiderite"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Skyrider_Greatsword"
+  "url": "/wiki/Skyrider_Greatsword"
 }

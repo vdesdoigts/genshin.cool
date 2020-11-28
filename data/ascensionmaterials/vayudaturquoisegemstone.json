@@ -8,15 +8,15 @@
   "rarity": 4,
   "ascensions": [6],
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Item_Vayuda_Turquoise_Gemstone.png"
+    "image": "/images/ascensionmaterials/vayuda-turquoise-gemstone.png"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Vayuda_Turquoise_Gemstone",
+  "url": "/wiki/Vayuda_Turquoise_Gemstone",
   "droppedby": [
     {
       "name": "Anemo Hypostasis 75+",
       "type": "Normal Boss",
       "images": {
-        "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/e6/Monster_Anemo_Hypostasis_thumb.png"
+        "image": "/images/bosses/anemo-hypostasis.png"
       }
     }
   ],
@@ -27,7 +27,7 @@
       "name": "Vayuda Turquoise Chunk",
       "amount": 3,
       "images": {
-        "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Item_Vayuda_Turquoise_Chunk.png"
+        "image": "/images/ascensionmaterials/vayuda-turquoise-chunk.png"
       }
     }
   ],

@@ -1,6 +1,6 @@
 {
   "id": 21,
-  "name": "Vayuda Turquoise Silver",
+  "name": "Vayuda Turquoise Sliver",
   "type": {
     "id": 6,
     "name": "Vayuda Turquoise"
@@ -8,15 +8,15 @@
   "rarity": 2,
   "ascensions": [1],
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Item_Vayuda_Turquoise_Sliver.png"
+    "image": "/images/ascensionmaterials/vayuda-turquoise-sliver.png"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Vayuda_Turquoise_Sliver",
+  "url": "/wiki/Vayuda_Turquoise_Sliver",
   "droppedby": [
     {
       "name": "Anemo Hypostasis",
       "type": "Normal Boss",
       "images": {
-        "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/e6/Monster_Anemo_Hypostasis_thumb.png"
+        "image": "/images/bosses/anemo-hypostasis.png"
       }
     }
   ],

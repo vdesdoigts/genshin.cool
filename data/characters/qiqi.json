@@ -11,9 +11,9 @@
   "region": "Liyue",
   "rarity": 5,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/d/d5/Character_Qiqi_Thumb.png",
-    "card": "https://static.wikia.nocookie.net/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg",
-    "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/2/2a/Character_Qiqi_Portrait.png"
+    "image": "/images/characters/qiqi-thumb.png",
+    "card": "/gensin-impact/images/b/b9/Character_Qiqi_Card.jpg",
+    "portrait": "/gensin-impact/images/2/2a/Character_Qiqi_Portrait.png"
   },
   "cv": {
     "english": "Christie Cate",
@@ -33,5 +33,5 @@
       "name": "Shivada Jade"
     }
   ],
-  "url": "https://genshin-impact.fandom.com/wiki/Qiqi"
+  "url": "/wiki/Qiqi"
 }

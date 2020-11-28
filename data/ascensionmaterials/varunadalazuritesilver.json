@@ -1,6 +1,6 @@
 {
   "id": 5,
-  "name": "Varunada Lazurite Silver",
+  "name": "Varunada Lazurite Sliver",
   "type": {
     "id": 2,
     "name": "Varunada Lazurite"
@@ -8,15 +8,15 @@
   "rarity": 2,
   "ascensions": [1],
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Item_Varunada_Lazurite_Sliver.png"
+    "image": "/images/ascensionmaterials/varunada-lazurite-sliver.png"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Varunada_Lazurite_Sliver",
+  "url": "/wiki/Varunada_Lazurite_Sliver",
   "droppedby": [
     {
       "name": "Oceanid",
       "type": "Normal Boss",
       "images": {
-        "image": "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Oceanid_Icon.png"
+        "image": "/images/bosses/oceanid.png"
       }
     }
   ],

@@ -4,7 +4,7 @@
   "weapontype": "Catalyst",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/f/f0/Weapon_The_Widsith.png"
+    "image": "/images/weapons/the-widsith.png"
   },
   "baseatk": "42",
   "ability": "Crit Dmg 12%",
@@ -23,5 +23,5 @@
     "id": 2,
     "name": "Boreal Wolf"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/The_Widsith"
+  "url": "/wiki/The_Widsith"
 }

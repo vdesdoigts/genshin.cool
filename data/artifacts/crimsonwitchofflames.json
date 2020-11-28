@@ -6,35 +6,35 @@
 	"flower": {
 		"name": "Witch's Flower of Blaze",
 		"images": {
-			"image": "https://static.wikia.nocookie.net/gensin-impact/images/0/0f/Item_Witch%27s_Flower_of_Blaze.png"
+			"image": "/gensin-impact/images/0/0f/Item_Witch%27s_Flower_of_Blaze.png"
 		},
 		"description": "A flower touched by the witch who once dreamt of burning away all the demons in the world. The anonymous flames affectionately caress the hands of those who touch it."
 	},
 	"plume": {
 		"name": "Witch's Ever-Burning Plume",
 		"images": {
-			"image": "https://static.wikia.nocookie.net/gensin-impact/images/b/b3/Item_Witch%27s_Ever-Burning_Plume.png"
+			"image": "/gensin-impact/images/b/b3/Item_Witch%27s_Ever-Burning_Plume.png"
 		},
 		"description": "A bird feather touched by the witch who once dreamt of burning away all the demons in the world. Its eternal flame burns hot."
 	},
 	"sands": {
 		"name": "Witch's End Time",
 		"images": {
-			"image": "https://static.wikia.nocookie.net/gensin-impact/images/1/14/Item_Witch%27s_End_Time.png"
+			"image": "/gensin-impact/images/1/14/Item_Witch%27s_End_Time.png"
 		},
 		"description": "A timepiece worn by the witch who dreamt of burning away all the demons in the world. The years the witch dedicated to the flames flow within."
 	},
 	"goblet": {
 		"name": "Witch's Heart Flames",
 		"images": {
-			"image": "https://static.wikia.nocookie.net/gensin-impact/images/b/ba/Item_Witch%27s_Heart_Flames.png"
+			"image": "/gensin-impact/images/b/ba/Item_Witch%27s_Heart_Flames.png"
 		},
 		"description": "A flame-spitting urn left behind by the Crimson Witch of Flames, who once dreamt of burning away all the demons in the world. The fire in the urn burns eternally, as did its former master."
 	},
 	"circlet": {
 		"name": "Witch's Scorching Hat",
 		"images": {
-			"image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ea/Item_Witch%27s_Scorching_Hat.png"
+			"image": "/gensin-impact/images/e/ea/Item_Witch%27s_Scorching_Hat.png"
 		},
 		"description": "A hat once worn by the witch who dreamt of burning away all the demons in the world. The large brim blocked her sight."
 	},

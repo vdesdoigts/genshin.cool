@@ -8,15 +8,15 @@
   "rarity": 3,
   "ascensions": [2, 3],
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Item_Agnidus_Agate_Fragment.png"
+    "image": "/images/ascensionmaterials/agnidus-agate-fragment.png"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Agnidus_Agate_Fragment",
+  "url": "/wiki/Agnidus_Agate_Fragment",
   "droppedby": [
     {
       "name": "Pyro Regisvine 40+",
       "type": "Normal Boss",
       "images": {
-        "image": "https://genshin-impact.fandom.com/wiki/File:Monster_Pyro_Regisvine_thumb.png"
+        "image": "/images/bosses/pyro-regisvine.png"
       }
     },
     {
@@ -27,10 +27,10 @@
     {
       "type": "Alchemy",
       "ascensionmaterialid": 1,
-      "name": "Agnidus Agate Silver",
+      "name": "Agnidus Agate Sliver",
       "amount": 3,
       "images": {
-        "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/Item_Agnidus_Agate_Silver.png"
+        "image": "/images/ascensionmaterials/agnidus-agate-sliver.png"
       }
     }
   ],

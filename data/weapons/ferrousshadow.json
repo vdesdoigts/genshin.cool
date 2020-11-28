@@ -4,7 +4,7 @@
   "weapontype": "Claymore",
   "rarity": 3,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/e/e9/Weapon_Ferrous_Shadow.png"
+    "image": "/images/weapons/ferrous-shadow.png"
   },
   "baseatk": "39",
   "ability": "Base HP 7,7%",
@@ -23,5 +23,5 @@
     "id": 4,
     "name": "Decarabian"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Ferrous_Shadow"
+  "url": "/wiki/Ferrous_Shadow"
 }

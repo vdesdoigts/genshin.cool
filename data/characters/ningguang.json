@@ -11,9 +11,9 @@
   "region": "Liyue",
   "rarity": 4,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Character_Ningguang_Thumb.png",
-    "card": "https://static.wikia.nocookie.net/gensin-impact/images/3/3e/Character_Ningguang_Card.jpg/",
-    "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/1/17/Character_Ningguang_Portrait.png"
+    "image": "/images/characters/ningguang-thumb.png",
+    "card": "/gensin-impact/images/3/3e/Character_Ningguang_Card.jpg/",
+    "portrait": "/gensin-impact/images/1/17/Character_Ningguang_Portrait.png"
   },
   "cv": {
     "english": "Erin Ebers",
@@ -31,5 +31,5 @@
     "id": 3,
     "name": "Prithiva Topaz"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Ningguang"
+  "url": "/wiki/Ningguang"
 }

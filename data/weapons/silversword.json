@@ -4,7 +4,7 @@
   "weapontype": "Sword",
   "rarity": 2,
   "images": {
-    "image": "https://static.wikia.nocookie.net/gensin-impact/images/3/32/Weapon_Silver_Sword.png"
+    "image": "/images/weapons/silver-sword.png"
   },
   "baseatk": "33",
   "ability": "None",
@@ -23,5 +23,5 @@
     "id": 4,
     "name": "Decarabian"
   },
-  "url": "https://genshin-impact.fandom.com/wiki/Silver_Sword"
+  "url": "/wiki/Silver_Sword"
 }
