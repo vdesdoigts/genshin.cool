@@ -131,20 +131,29 @@ const Armory = () => {
           <Icon as={FiSettings} w={6} h={6} />
         </Button>
       </HStack>
-      <SimpleGrid columns={1} spacing="0.75rem">
-        {currentArmory.map((armory, index) => {
-          const weapon = getWeaponById(armory.weapon.id)
-          
-          return (
-            <Weapon
-              key={armory.weapon.id}
-              weapon={weapon}
-              isDisabled={armory.isDisabled}
-              onDisabled={() => onDisabledWeapon(index)}
-            />
-          )
-        })}
-      </SimpleGrid>
+      {currentArmory.length > 0
+        ? (
+          <SimpleGrid columns={1} spacing="0.75rem">
+            {currentArmory.map((armory, index) => {
+              const weapon = getWeaponById(armory.weapon.id)
+              
+              return (
+                <Weapon
+                  key={armory.weapon.id}
+                  weapon={weapon}
+                  isDisabled={armory.isDisabled}
+                  onDisabled={() => onDisabledWeapon(index)}
+                />
+              )
+            })}
+          </SimpleGrid>
+        )
+        : (
+          <Box>
+            Your amory is empty, select at weapon.
+          </Box>
+        )
+      }
       <Drawer
         isOpen={isSelectWeaponDrawerOpen}
         onClose={onSelectWeaponDrawerClose}

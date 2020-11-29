@@ -37,6 +37,16 @@ const CharactersAscensions = () => {
       .map((rosterCharacter) => characters.find((character) => character.id === rosterCharacter.id))
   }))
 
+  if (ascensionMaterialsWithCharacters.length === 0) {
+    return (
+      <DashBox title="Character ascensions" variant="pink" shadow size="sm">
+        <DashBox>
+          No character in your roster.
+        </DashBox>
+      </DashBox>
+    )
+  }
+
   return (
     <DashBox title="Character ascensions" variant="pink" size="sm">
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing="16px">

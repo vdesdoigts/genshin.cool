@@ -25,7 +25,7 @@ const CharactersTalents = () => {
 
   if ((currentSelectedDay === 'all' && talentMaterialTypes?.length === 0) || (currentSelectedDay !== 'all' && dailyTalentMaterialTypes?.length === 0)) {
     return (
-      <DashBox title="Weapon Materials" shadow>
+      <DashBox title="Character materials" shadow size="sm">
         <DashBox variant="blue">
           No character material to farm today.
         </DashBox>

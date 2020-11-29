@@ -163,26 +163,35 @@ const Roster = () => {
           <Icon as={FiSettings} w={6} h={6} />
         </Button>
       </HStack>
-      <SimpleGrid columns={1} spacing="0.75rem">
-        {currentRoster.map((roster, index) => {
-          const character = getCharacterById(roster.character.id)
-          const weapon = getWeaponById(roster.weapon?.id)
-          const artifacts = getArtifactsCharacter(roster?.artifacts)
-          
-          return (
-            <Character
-              key={roster.character.id}
-              artifacts={artifacts}
-              ascension={roster.character.ascension}
-              character={character}
-              weapon={weapon}
-              isDisabled={roster.isDisabled}
-              onDisabled={() => onDisabledCharacter(index)}
-              onEdit={() => onEditCharacter(character.id)}
-            />
-          )
-        })}
-      </SimpleGrid>
+      {currentRoster.length > 0
+        ? (
+          <SimpleGrid columns={1} spacing="0.75rem">
+            {currentRoster.map((roster, index) => {
+              const character = getCharacterById(roster.character.id)
+              const weapon = getWeaponById(roster.weapon?.id)
+              const artifacts = getArtifactsCharacter(roster?.artifacts)
+              
+              return (
+                <Character
+                  key={roster.character.id}
+                  artifacts={artifacts}
+                  ascension={roster.character.ascension}
+                  character={character}
+                  weapon={weapon}
+                  isDisabled={roster.isDisabled}
+                  onDisabled={() => onDisabledCharacter(index)}
+                  onEdit={() => onEditCharacter(character.id)}
+                />
+              )
+            })}
+          </SimpleGrid>
+        )
+        :  (
+          <Box>
+            Your roster is empty, select at character.
+          </Box>
+        )
+      }
       <Drawer
         isOpen={isSelectCharacterDrawerOpen}
         onClose={onSelectCharacterDrawerClose}
