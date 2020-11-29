@@ -140,21 +140,27 @@ export const profile = createModel()({
         }
       })
     },
+    toggleArmory(state, payload: number) {
+      return produce(state, draftState => {
+        const { currentProfileIndex } = state
+        draftState.userProfiles[currentProfileIndex].armory[payload].isDisabled = !state.userProfiles[currentProfileIndex].armory[payload].isDisabled
+      })
+    },
     toggleWeapon(state, payload: IWeapon['id']) { // from armory
       return produce(state, draftState => {
         const { currentProfileIndex } = state
         const currentArmory = state.userProfiles[currentProfileIndex].armory
         const currentDisabledArmory = state.userProfiles[currentProfileIndex].disabledArmory
         const weaponIndex = findIndex(currentArmory, (armory) => armory.weapon.id === payload)
-        const disabledCharacterIndex = findIndex(currentDisabledArmory, (armory) => armory.weapon.id === payload)
+        const disabledWeaponIndex = findIndex(currentDisabledArmory, (armory) => armory.weapon.id === payload)
 
         if (weaponIndex !== -1) {
           const currentWeapon = state.userProfiles[currentProfileIndex].armory[weaponIndex]
           draftState.userProfiles[currentProfileIndex].armory = state.userProfiles[currentProfileIndex].armory.filter((armory) => armory.weapon.id !== payload)
           draftState.userProfiles[currentProfileIndex].disabledArmory.push(currentWeapon)
         } else {
-          if (disabledCharacterIndex !== -1) {
-            const currentDisabledWeapon = state.userProfiles[currentProfileIndex].disabledArmory[disabledCharacterIndex]
+          if (disabledWeaponIndex !== -1) {
+            const currentDisabledWeapon = state.userProfiles[currentProfileIndex].disabledArmory[disabledWeaponIndex]
             draftState.userProfiles[currentProfileIndex].disabledArmory = state.userProfiles[currentProfileIndex].disabledArmory.filter((armory) => armory.weapon.id !== payload)
             draftState.userProfiles[currentProfileIndex].armory.push(currentDisabledWeapon)
           } else {

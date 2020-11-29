@@ -11,7 +11,7 @@ import { IWeapon, IWeaponMaterialType } from '../../types'
 const WeaponsAscensions = () => {
   const currentSelectedDay = useSelector(AppSelectors.getCurrentSelectedDay)
   const currentArmoryWeapons = useSelector(ProfileSelectors.getCurrentArmoryWeapons)
-  const weapons = currentArmoryWeapons.map((weapon) => getWeaponById(weapon.id))
+  const weapons = currentArmoryWeapons.map((weapon) => getWeaponById(weapon.id)).filter((weapon) => weapon)
 
   const weaponMaterialTypeIds = weapons.filter((weapon) => weapon.weaponmaterialtype?.id).map((weapon) => weapon.weaponmaterialtype.id)
 

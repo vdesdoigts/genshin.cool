@@ -59,7 +59,7 @@ const CharactersAscensions = () => {
             />
             <SimpleGrid columns={1} pt="12px" spacing="8px">
               {ascensionMaterial.droppedby.map((droppedby) => (
-                <HStack spacing="8px">
+                <HStack key={droppedby.name} spacing="8px">
                   {droppedby.images?.image && <AspectRatio
                     ratio={1}
                     overflow="hidden"

@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import {
   Box,
   Button,
-  Center,
   Checkbox,
   Drawer,
   DrawerBody,
@@ -100,7 +99,7 @@ const Armory = () => {
   const { isOpen: isSelectWeaponDrawerOpen, onOpen: onSelectWeaponDrawerOpen, onClose: onSelectWeaponDrawerClose } = useDisclosure()
 
   const onDisabledWeapon = (index: number) => {
-    dispatch.profile.toggleWeapon(index)
+    dispatch.profile.toggleArmory(index)
   }
 
   return (
@@ -135,6 +134,10 @@ const Armory = () => {
           <SimpleGrid columns={1} spacing="0.75rem">
             {currentArmory.map((armory, index) => {
               const weapon = getWeaponById(armory.weapon.id)
+
+              if (!weapon) {
+                return null
+              }
               
               return (
                 <Weapon

@@ -6,7 +6,7 @@ const theme = extendTheme({
     global: {
       'html, body': {
         color: '#11142D',
-        '-webkit-font-smoothing': 'antialiased'
+        webkitFontSmoothing: 'antialiased'
       },
     },
   },
