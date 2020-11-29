@@ -35,15 +35,16 @@ const ListObject = ({
     >
       <AspectRatio
         ratio={1}
-        flex="0 0 3.75rem"
+        flex="0 0 56px"
+        width="56px"
+        height="56px"
       >
         <Box>
           <Box
             width="100%"
             height="100%"
             p={2}
-            borderRadius="8px"
-            border="1px solid #ccc"
+            borderRadius="16px"
             background="#f2f4f8"
           >
             <Box
@@ -71,8 +72,10 @@ const ListObject = ({
       <Box>
         <Text
           opacity={label ? 1 : .6}
-          fontFamily="heading"
-          fontSize="1.125rem"
+          mb="3px"
+          fontSize="16px"
+          lineHeight="1.1875"
+          fontWeight="600"
         >
           {label || placeholderLabel}
         </Text>

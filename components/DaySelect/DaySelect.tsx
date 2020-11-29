@@ -43,7 +43,7 @@ const Schedule = () => {
           Genshin Impact farming guide
         </Heading>
         <Text mb="18px" fontSize="14px">
-          Select a day of the week, or choose week option to see all days.
+          Find out the best farming methods and schedule optimization.
         </Text>
         <Box>
           <Box maxW="400px">

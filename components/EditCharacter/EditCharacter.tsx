@@ -38,17 +38,13 @@ function RadioCard(props) {
         cursor="pointer"
         borderWidth="1px"
         borderRadius="md"
-        boxShadow="md"
         _checked={{
-          bg: "teal.600",
-          color: "white",
-          borderColor: "teal.600",
+          bg: "#6C5DD3",
+          color: "#fff",
+          borderColor: "#6C5DD3",
         }}
-        _focus={{
-          boxShadow: "outline",
-        }}
-        px={5}
-        py={3}
+        px={4}
+        py={2}
       >
         {props.children}
       </Box>
@@ -112,33 +108,24 @@ const EditCharacter = ({ character: characterId }: IProps) => {
             <Text color="#bbbdcb" fontSize="1rem" fontWeight="medium">{character.affiliation}</Text>
           </Stack>
         </Stack>
-        <HStack {...group}>
-          {ascensionOptions.map((value) => {
-            const radio = getRadioProps({ value })
-            return (
-              <RadioCard key={value} {...radio}>
-                {value}
-              </RadioCard>
-            )
-          })}
-        </HStack>
         <Box pt={8}>
-          <Heading
-            pb={4}
-            color="#4b4d55"
-            fontSize="1rem"
-            fontWeight="light"
-            lineHeight="1"
-            _after={{
-              content: "''",
-              display: "block",
-              width: "100%",
-              height: '1px',
-              mt: ".75rem",
-              background: '#eef0f4',
-            }}
-          >
-            Equipments
+          <Heading mb="16px" fontSize="14px" fontWeight="semibold" lineHeight="1.33333">
+            Ascension Rank
+          </Heading>
+          <HStack {...group}>
+            {ascensionOptions.map((value) => {
+              const radio = getRadioProps({ value })
+              return (
+                <RadioCard key={value} {...radio}>
+                  {value}
+                </RadioCard>
+              )
+            })}
+          </HStack>
+        </Box>
+        <Box pt={8}>
+          <Heading mb="16px" fontSize="14px" fontWeight="semibold" lineHeight="1.33333">
+            Equipment
           </Heading>
         </Box>
         <Box flex={1}>
