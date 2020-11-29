@@ -3,12 +3,7 @@ import findIndex from 'lodash.findindex'
 import produce from 'immer'
 import { ICharacter, IProfile, IRosterCharacter, IWeapon } from '../../types'
 
-export interface IProfileState {
-  currentProfileIndex: number
-  userProfiles: IProfile[]
-}
-
-const initialState: IProfileState = {
+export const defaultState = {
   currentProfileIndex: 0,
   userProfiles: [
     {
@@ -29,9 +24,19 @@ const initialState: IProfileState = {
   ],
 }
 
+export interface IProfileState {
+  currentProfileIndex: number
+  userProfiles: IProfile[]
+}
+
+const initialState: IProfileState = defaultState
+
 export const profile = createModel()({
   state: initialState,
   reducers: {
+    reset() {
+      return defaultState
+    },
     addProfile(state) {
       return produce(state, draftState => {
         const profileIndex = state.userProfiles.length

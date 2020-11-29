@@ -46,10 +46,10 @@ function App({ Component, pageProps }) {
         <meta name="twitter:card" content="summary_large_image" />
         {/* <meta name="twitter:image" content="https://www.genshin.cool/assets/images/logo-600x600.png" /> */}
 
-        {/* <script
+        <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=[Tracking ID]"
-        /> */}
+          src="https://www.googletagmanager.com/gtag/js?id=G-Q274VX13LE"
+        />
 
         <script
           dangerouslySetInnerHTML={{
