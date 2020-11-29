@@ -39,9 +39,9 @@ const CharactersMenu = () => {
       </Box>
 
       <SimpleGrid spacing={3} pt={4}>
-        {characters.filter((character) => character.name.toUpperCase().indexOf(value.toUpperCase()) > -1).map((item, index) => (
+        {characters.filter((character) => character.name.toUpperCase().indexOf(value.toUpperCase()) > -1).map((item) => (
           <ListItem
-            key={index}
+            key={item.id}
             image={item.images.image}
             label={item.name}
             onSelect={() => onSelect(item.id)}

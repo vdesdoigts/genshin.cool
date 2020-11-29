@@ -40,8 +40,8 @@ const CharactersAscensions = () => {
   return (
     <DashBox title="Character ascensions" variant="pink" size="sm">
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing="16px">
-        {ascensionMaterialsWithCharacters.map((ascensionMaterial, index) => (
-          <DashBox key={index}>
+        {ascensionMaterialsWithCharacters.map((ascensionMaterial) => (
+          <DashBox key={ascensionMaterial.name}>
             <AscensionItem
               image={ascensionMaterial.images.image}
               label={ascensionMaterial.name}

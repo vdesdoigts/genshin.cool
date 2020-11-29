@@ -42,9 +42,9 @@ const WeaponsMenu = ({ character, onSelect }: IProps) => {
       </Box>
       <Box pt={4}>
         <SimpleGrid spacing={3}>
-          {getWeaponsByType(character.weapontype).filter((weapon) => weapon.name.toUpperCase().indexOf(value.toUpperCase()) > -1).map((item, index) => (
+          {getWeaponsByType(character.weapontype).filter((weapon) => weapon.name.toUpperCase().indexOf(value.toUpperCase()) > -1).map((item) => (
             <ListItem
-              key={index}
+              key={item.id}
               image={item.images.image}
               label={item.name}
               onSelect={() => onSelect(character.id, item.id)}

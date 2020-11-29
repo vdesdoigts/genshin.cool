@@ -37,10 +37,10 @@ const WeaponsAscensions = () => {
 
   if ((currentSelectedDay === 'all' && weaponMaterialTypes?.length === 0) || (currentSelectedDay !== 'all' && dailyWeaponMaterialTypes?.length === 0)) {
     return (
-      <DashBox title="Weapon Materials" shadow>
-        <Text mb={0}>
+      <DashBox title="Weapon Materials" shadow size="sm">
+        <DashBox variant="blue">
           No weapon material to farm today.
-        </Text>
+        </DashBox>
       </DashBox>
     )
   }

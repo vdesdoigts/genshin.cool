@@ -3,7 +3,7 @@ import { Box, Heading } from '@chakra-ui/react'
 
 interface IProps {
   title?: string
-  variant?: 'pink'
+  variant?: 'pink' | 'blue'
   size?: 'sm'
   shadow?: boolean
 }
@@ -15,7 +15,10 @@ const DashBox: React.FC<IProps> = ({ children, title, variant, size, shadow }) =
   switch (variant) {
     case 'pink':
       bgcolor = '#FFEBF6'
-      break;
+      break
+    case 'blue':
+      bgcolor = 'rgba(160, 215, 231, 0.85)'
+      break
     default:
       bgcolor = '#FFF'
   }

@@ -63,8 +63,8 @@ const AscensionItem = ({ image, label, sublabel, characters }: IProps) => {
           </Box>
           <Box flex="0 0 auto">
             <AvatarGroup size="sm" max={4}>
-              {characters.map((item, index) => (
-                <Avatar key={index} name={item.name} src={item.images.image} background="#f2f4f8" loading="eager" />
+              {characters.map((item) => (
+                <Avatar key={item.id} name={item.name} src={item.images.image} background="#f2f4f8" loading="eager" />
               ))}
             </AvatarGroup>
           </Box>

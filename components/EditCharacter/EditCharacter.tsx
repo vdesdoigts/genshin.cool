@@ -141,9 +141,9 @@ const EditCharacter = ({ character: characterId }: IProps) => {
               image={weapon?.images.image}
               onClick={onWeaponDrawerOpen}
             />
-            {Object.keys(artifacts).map((key, index) => (
+            {Object.keys(artifacts).map((key) => (
               <ListObject
-                key={index}
+                key={artifacts[key]?.name}
                 label={artifacts[key]?.name}
                 placeholderLabel={`Select a ${key}`}
                 image={artifacts[key]?.images.image}
