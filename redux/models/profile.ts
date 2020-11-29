@@ -1,7 +1,7 @@
 import { createModel } from '@rematch/core'
 import findIndex from 'lodash.findindex'
 import produce from 'immer'
-import { IArtifactItem, IArtifactType, ICharacter, IProfile, IRoster, IRosterCharacter, IWeapon } from '../../types'
+import { ICharacter, IProfile, IRosterCharacter, IWeapon } from '../../types'
 
 export interface IProfileState {
   currentProfileIndex: number
@@ -14,17 +14,17 @@ const initialState: IProfileState = {
     {
       name: 'Profile 1',
       roster: [
-        { character: { id: 2 }, weapon: { id : 2 }},
-        { character: { id: 10, ascension: 3 }},
-        { character: { id: 13 }, weapon: { id : 2 }},
-        { isDisabled: true, character: { id: 4 }},
-        { character: { id: 5 }},
-        { character: { id: 8 }, weapon: { id : 3 }},
-        { character: { id: 20 }, weapon: { id : 3 }},
+        { character: { id: 1 }, weapon: { id : 62 }},
+        { character: { id: 10 }, weapon: { id : 74 }},
+        { character: { id: 13 }, weapon: { id : 25 }},
       ],
-      disabledRoster: [
-        { character: { id: 1 }},
+      disabledRoster: [],
+      armory: [
+        { weapon: { id : 62 }},
+        { weapon: { id : 74 }},
+        { weapon: { id : 25 }},
       ],
+      disabledArmory: [],
     },
   ],
 }
@@ -38,8 +38,10 @@ export const profile = createModel()({
 
         draftState.userProfiles.push({
           name: `Profile ${profileIndex + 1}`,
-          roster: [{ character: { id: 2 }}],
+          roster: [{ character: { id: 8 }, weapon: { id: 29 }}, { character: { id: 2 }, weapon: { id: 52 }}, { character: { id: 24 }, weapon: { id: 77 }}],
           disabledRoster: [],
+          armory: [],
+          disabledArmory: [],
         })
         draftState.currentProfileIndex = profileIndex
       })
@@ -122,7 +124,7 @@ export const profile = createModel()({
         draftState.userProfiles[currentProfileIndex].roster[payload].isDisabled = !state.userProfiles[currentProfileIndex].roster[payload].isDisabled
       })
     },
-    addWeapon(state, payload: { character: ICharacter['id'], weapon: IWeapon['id'] }) {
+    addWeapon(state, payload: { character: ICharacter['id'], weapon: IWeapon['id'] }) { // from roster weapon
       return produce(state, draftState => {
         const { currentProfileIndex } = state
         const currentRoster = state.userProfiles[currentProfileIndex].roster
@@ -134,6 +136,31 @@ export const profile = createModel()({
             weapon: {
               id: payload.weapon,
             }
+          }
+        }
+      })
+    },
+    toggleWeapon(state, payload: IWeapon['id']) { // from armory
+      return produce(state, draftState => {
+        const { currentProfileIndex } = state
+        const currentArmory = state.userProfiles[currentProfileIndex].armory
+        const currentDisabledArmory = state.userProfiles[currentProfileIndex].disabledArmory
+        const weaponIndex = findIndex(currentArmory, (armory) => armory.weapon.id === payload)
+        const disabledCharacterIndex = findIndex(currentDisabledArmory, (armory) => armory.weapon.id === payload)
+
+        if (weaponIndex !== -1) {
+          const currentWeapon = state.userProfiles[currentProfileIndex].armory[weaponIndex]
+          draftState.userProfiles[currentProfileIndex].armory = state.userProfiles[currentProfileIndex].armory.filter((armory) => armory.weapon.id !== payload)
+          draftState.userProfiles[currentProfileIndex].disabledArmory.push(currentWeapon)
+        } else {
+          if (disabledCharacterIndex !== -1) {
+            const currentDisabledWeapon = state.userProfiles[currentProfileIndex].disabledArmory[disabledCharacterIndex]
+            draftState.userProfiles[currentProfileIndex].disabledArmory = state.userProfiles[currentProfileIndex].disabledArmory.filter((armory) => armory.weapon.id !== payload)
+            draftState.userProfiles[currentProfileIndex].armory.push(currentDisabledWeapon)
+          } else {
+            draftState.userProfiles[currentProfileIndex].armory.push({
+              weapon: { id: payload }
+            })
           }
         }
       })

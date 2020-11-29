@@ -4,19 +4,19 @@ import { ICharacter, IWeapon, IWeaponMaterialType } from '../../types'
 import AscensionItem from '../AscensionItem'
 
 interface IProps {
-  weaponsMaterials: { weapon: IWeapon, weaponMaterialType: IWeaponMaterialType, characters: ICharacter[] }[]
+  weaponsMaterials: (IWeaponMaterialType & { weapons: IWeapon[] })[]
 }
 
 const DailyWeaponsMaterials = ({ weaponsMaterials }: IProps) => {
   return (
     <SimpleGrid columns={1} spacing={4}>
-      {weaponsMaterials.filter((weaponsMaterial) => weaponsMaterial.weaponMaterialType !== undefined).map((weaponMaterial) => (
+      {weaponsMaterials.map((weaponsMaterial) => (
         <AscensionItem
-          key={weaponMaterial.weapon.id}
-          image={weaponMaterial.weaponMaterialType.images.image}
-          label={weaponMaterial.weaponMaterialType.name}
-          sublabel={weaponMaterial.weaponMaterialType.domainofforgery}
-          characters={weaponMaterial.characters}
+          key={weaponsMaterial.id}
+          image={weaponsMaterial.images.image}
+          label={weaponsMaterial.name}
+          sublabel={weaponsMaterial.domainofforgery}
+          characters={weaponsMaterial.weapons}
         />
       ))}
     </SimpleGrid>

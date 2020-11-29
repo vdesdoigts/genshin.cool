@@ -5,25 +5,25 @@ import {
   Heading,
   SimpleGrid,
 } from '@chakra-ui/react'
-import { ICharacter, IWeapon, IWeaponMaterialType } from '../../types'
+import { IWeapon, IWeaponMaterialType } from '../../types'
 import DailyWeaponsMaterials from './DailyWeaponsMaterials'
 
 interface IProps {
-  weaponsMaterials: { weapon: IWeapon, weaponMaterialType: IWeaponMaterialType, characters: ICharacter[] }[]
+  weaponsMaterials: (IWeaponMaterialType & { weapons: IWeapon[] })[]
 }
 
 const WeeklyWeaponsMaterials = ({ weaponsMaterials }: IProps) => {
-  const weaponMaterialTypesByDays = groupBy(weaponsMaterials.filter((weaponsMaterial) => weaponsMaterial.weaponMaterialType !== undefined), (weaponsMaterial) => weaponsMaterial.weaponMaterialType.day)
+  const weaponsMaterialsByDays = groupBy(weaponsMaterials, (item) => item.day)
 
   return (
     <SimpleGrid columns={1} spacing={12}>
-      {Object.keys(weaponMaterialTypesByDays).map((key) => {
+      {Object.keys(weaponsMaterialsByDays).map((key) => {
         return (
           <Box>
             <Heading mb="16px" fontSize="14px" fontWeight="semibold" lineHeight="1.33333">
               {key.split(',').join(', ')}
             </Heading>
-            <DailyWeaponsMaterials weaponsMaterials={weaponMaterialTypesByDays[key]} />
+            <DailyWeaponsMaterials weaponsMaterials={weaponsMaterialsByDays[key]} />
           </Box>
         )
       })}

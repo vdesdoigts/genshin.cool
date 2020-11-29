@@ -27,9 +27,11 @@
     "id": 6,
     "name": "Resistance"
   },
-  "ascensionmaterials": {
-    "id": 3,
-    "name": "Prithiva Topaz"
-  },
+  "ascensionmaterials": [
+    {
+      "id": 3,
+      "name": "Prithiva Topaz"
+    }
+  ],
   "url": "/wiki/Noelle"
 }

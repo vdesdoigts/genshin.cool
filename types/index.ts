@@ -2,6 +2,17 @@ export type IProfile = {
   name: string
   roster: IRoster
   disabledRoster: IRoster
+  armory: IArmory
+  disabledArmory: IArmory
+}
+
+export type IArmory = IArmoryWeapon[]
+
+export type IArmoryWeapon = {
+  isDisabled?: boolean
+  weapon?: {
+    id: IWeapon['id']
+  }
 }
 
 export type IRoster = IRosterCharacter[]

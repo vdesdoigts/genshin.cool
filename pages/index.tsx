@@ -17,6 +17,7 @@ import Header from '../components/Header'
 import Roster from '../components/Roster'
 import WeaponsAscensions from '../components/WeaponsAscensions'
 import EditProfile from '../components/EditProfile'
+import Armory from '../components/Armory'
 
 const Dash = () => {
   const { isOpen: isMenuOpen, onOpen: onMenuOpen, onClose: onMenuClose, onToggle: onMenuToggle } = useDisclosure()
@@ -109,7 +110,10 @@ const Dash = () => {
                 pb="32px"
                 px={{ base: '20px', md: '64px', xl: '32px', xxl: '64px' }}
               >
-                <Roster />
+                <SimpleGrid columns={1} spacing="32px">
+                  <Roster />
+                  <Armory />
+                </SimpleGrid>
               </Box>
             </Flex>
           </Box>

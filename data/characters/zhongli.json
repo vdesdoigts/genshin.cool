@@ -25,9 +25,11 @@
     "id": 4,
     "name": "Gold"
   },
-  "ascensionmaterials": {
-    "id": 3,
-    "name": "Prithiva Topaz"
-  },
+  "ascensionmaterials": [
+    {
+      "id": 3,
+      "name": "Prithiva Topaz"
+    }
+  ],
   "url": "/wiki/Zhongli"
 }

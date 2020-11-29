@@ -18,6 +18,7 @@ import {
 
 export const getCharacters = () => characters
 export const getAscensionMaterials = () => ascensionsmaterials
+export const getWeapons = () => weapons
 
 export const getAscensionMaterialByTypeId = (id: IAscensionMaterial['type']['id']) => ascensionsmaterials.find((ascensionsmaterial) => ascensionsmaterial.type.id === id)
 export const getArtifactById = (id: IArtifactItem['id'], type: IArtifactType) => artifacts.find((artifact) => artifact.id === id)![type] as IArtifactItem

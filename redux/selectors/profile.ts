@@ -11,3 +11,7 @@ export const getCurrentRosterCharacters = (state: RootState) => getCurrentRoster
 export const getRosterCharacterById = (state: RootState, character: ICharacter['id']) => getCurrentRoster(state).find((roster) => roster.character.id === character)
 export const getUserRosterNames = (state: RootState) => state.profile.userProfiles.map((profile) => profile.name)
 export const getCurrentRosterWeapons = (state: RootState) => getCurrentRoster(state).map((roster) => roster.weapon)
+export const getCurrentArmory = (state: RootState) => state.profile.userProfiles[state.profile.currentProfileIndex].armory
+export const getCurrentEnabledArmory = (state: RootState) => getCurrentArmory(state).filter((armory) => !armory.isDisabled)
+export const getCurrentEnabledArmoryWeapons = (state: RootState) => getCurrentEnabledArmory(state).map((armory) => armory.weapon)
+export const getCurrentArmoryWeapons = (state: RootState) => getCurrentArmory(state).map((armory) => armory.weapon)

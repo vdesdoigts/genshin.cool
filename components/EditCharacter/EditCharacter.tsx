@@ -124,7 +124,7 @@ const EditCharacter = ({ character: characterId }: IProps) => {
             })}
           </HStack>
         </Box>
-        <Box pt={8}>
+        {/* <Box pt={8}>
           <Heading mb="16px" fontSize="14px" fontWeight="semibold" lineHeight="1.33333">
             Equipment
           </Heading>
@@ -151,9 +151,9 @@ const EditCharacter = ({ character: characterId }: IProps) => {
               />
             ))}
           </SimpleGrid>
-        </Box>
+        </Box> */}
       </Box>
-      <Drawer
+      {/* <Drawer
         isOpen={isWeaponDrawerOpen}
         onClose={onWeaponDrawerClose}
         size="md"
@@ -169,7 +169,7 @@ const EditCharacter = ({ character: characterId }: IProps) => {
               </DrawerBody>
           </DrawerContent>
         </DrawerOverlay>
-      </Drawer>
+      </Drawer> */}
     </>
   )
 }

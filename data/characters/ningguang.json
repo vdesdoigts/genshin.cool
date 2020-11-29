@@ -27,9 +27,11 @@
     "id": 5,
     "name": "Prosperity"
   },
-  "ascensionmaterials": {
-    "id": 3,
-    "name": "Prithiva Topaz"
-  },
+  "ascensionmaterials": [
+    {
+      "id": 3,
+      "name": "Prithiva Topaz"
+    }
+  ],
   "url": "/wiki/Ningguang"
 }

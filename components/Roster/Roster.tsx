@@ -65,7 +65,7 @@ const Character = ({ artifacts, ascension = 1, character, weapon, isDisabled, on
         <Box
           flex="1 1 100%"
           pl="1.25rem"
-          py="1.75rem"
+          py="16px"
           onClick={onEdit}
         >
           <Stack direction="row" spacing="1.875rem">
@@ -105,7 +105,8 @@ const Character = ({ artifacts, ascension = 1, character, weapon, isDisabled, on
               </Text>
               <Box color="#bbbdcb">
                 <Text fontSize="0.875rem" fontWeight="medium">
-                  AR {ascension} &#183; {weapon ? weapon.name : 'No weapon'}
+                  Ascension rank {ascension} 
+                  {/* &#183; {weapon ? weapon.name : 'No weapon'} */}
                 </Text>
               </Box>
             </Stack>
@@ -136,8 +137,8 @@ const Roster = () => {
   }
 
   return (
-    <>
-      <HStack width="100%" align="center" justify="space-between" mb="32px">
+    <Box>
+      <HStack width="100%" align="center" justify="space-between" mb="16px">
         <Heading
           fontSize="18px"
           fontWeight="500"
@@ -210,7 +211,7 @@ const Roster = () => {
           </DrawerContent>
         </DrawerOverlay>
       </Drawer>
-    </>
+    </Box>
   )
 }
 
