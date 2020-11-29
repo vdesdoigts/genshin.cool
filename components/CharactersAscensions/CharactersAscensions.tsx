@@ -2,12 +2,13 @@ import React from 'react'
 import uniqBy from 'lodash.uniqby'
 import {
   AspectRatio,
+  Box,
   Flex,
   HStack,
-  Image,
   SimpleGrid,
   Text,
 } from '@chakra-ui/react'
+import Image from 'next/image'
 import { useSelector } from 'react-redux'
 import { ProfileSelectors } from '../../redux/selectors'
 import { getAscensionMaterialsByTypesAndAscension, getCharacterById } from '../../api'
@@ -58,12 +59,14 @@ const CharactersAscensions = () => {
                     borderRadius="8px"
                     background="#f2f4f8"
                   >
-                    <Image
-                      src={droppedby.images.image}
-                      width="100%"
-                      height="100%"
-                      objectFit="contain"
-                    />
+                    <Box position="relative" width="100%" height="100%">
+                      <Image
+                        src={droppedby.images.image}
+                        // @ts-ignore
+                        layout="fill"
+                        objectFit="contain"
+                      />
+                    </Box>
                   </AspectRatio>}
                   <Flex
                     align="center"

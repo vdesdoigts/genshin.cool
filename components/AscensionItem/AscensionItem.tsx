@@ -6,10 +6,10 @@ import {
   Box,
   Flex,
   HStack,
-  Image,
   Stack,
   Text,
 } from '@chakra-ui/react'
+import Image from 'next/image'
 
 interface IProps {
   image: string 
@@ -32,12 +32,14 @@ const AscensionItem = ({ image, label, sublabel, characters }: IProps) => {
           background="#f2f4f8"
         >
           <Box width="100%" height="100%" p={2}>
-            <Image
-              src={image}
-              width="100%"
-              height="100%"
-              objectFit="contain"
-            />
+            <Box position="relative" width="100%" height="100%">
+              <Image
+                src={image}
+                // @ts-ignore
+                layout="fill"
+                objectFit="contain"
+              />
+            </Box>
           </Box>
         </AspectRatio>
         <Flex width="100%" align="center" justify="space-between">
@@ -62,7 +64,7 @@ const AscensionItem = ({ image, label, sublabel, characters }: IProps) => {
           <Box flex="0 0 auto">
             <AvatarGroup size="sm" max={4}>
               {characters.map((item, index) => (
-                <Avatar key={index} name={item.name} src={item.images.image} background="#f2f4f8" />
+                <Avatar key={index} name={item.name} src={item.images.image} background="#f2f4f8" loading="eager" />
               ))}
             </AvatarGroup>
           </Box>

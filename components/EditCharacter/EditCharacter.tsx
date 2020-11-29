@@ -8,7 +8,6 @@ import {
   DrawerCloseButton,
   Heading,
   HStack,
-  Image,
   SimpleGrid,
   Stack,
   Text,
@@ -16,6 +15,7 @@ import {
   useRadio,
   useRadioGroup,
 } from '@chakra-ui/react'
+import Image from 'next/image'
 import { useSelector } from 'react-redux'
 import useRematchDispatch from '../../hooks/useRematch'
 import { ProfileSelectors } from '../../redux/selectors'
@@ -90,9 +90,10 @@ const EditCharacter = ({ character: characterId }: IProps) => {
     <>
       <Box pt={10}>
         <Stack direction="row" spacing="1.875rem">
-          <Box overflow="hidden" width="5.625rem" height="5.625rem" borderRadius=".5rem" background="#f2f4f8">
+          <Box overflow="hidden" position="relative" width="5.625rem" height="5.625rem" borderRadius=".5rem" background="#f2f4f8">
             <Image
               src={character.images.image}
+              layout="fill"
             />
           </Box>
           <Stack spacing={1} justify="center">

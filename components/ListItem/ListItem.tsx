@@ -5,9 +5,9 @@ import {
   BoxProps,
   Flex,
   HStack,
-  Image,
   Text,
 } from '@chakra-ui/react'
+import Image from 'next/image'
 import { IArtifactItem, IWeapon } from '../../types'
 
 interface IProps {
@@ -38,16 +38,16 @@ const ListItem = ({
       opacity={isSelected ? .4 : 1}
       spacing={4}
       borderRadius="0 10px 10px 0"
+      cursor="pointer"
       onClick={onSelect}
-
-      {...(!isSelected ? { cursor: 'pointer' } : { } )}
     >
       {!!image && (
         <Box {...imgContainerProps}>
           <AspectRatio ratio={ratio} overflow="hidden" width={size} borderRadius=".5rem" background="#f2f4f8">
             <Image
               src={image}
-              objectFit="contain"
+              layout="fill"
+              // objectFit="contain"
             />
           </AspectRatio>
         </Box>

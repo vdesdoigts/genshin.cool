@@ -1,5 +1,7 @@
 import React from 'react'
-import { Box, Flex, Heading, Image, Text } from '@chakra-ui/react'
+import { css } from '@emotion/css'
+import { Box, Flex, Heading, Text } from '@chakra-ui/react'
+import Image from 'next/image'
 import { useSelector } from 'react-redux'
 import useRematchDispatch from '../../hooks/useRematch'
 import { AppSelectors } from '../../redux/selectors'
@@ -61,8 +63,13 @@ const Schedule = () => {
           </Box>
         </Box>
       </Box>
-      <Box position="absolute" zIndex={1} bottom="0px" right="-40px" display={{ base: 'none', sm: 'block' }} width="70%">
-        <Image src="https://uploadstatic-sea.mihoyo.com/contentweb/20200723/2020072319115159476.png" />
+      <Box position="absolute" zIndex={1} bottom="0px" right="-40px" display={{ base: 'none', sm: 'block' }} width={{ base: '400px', md: '580px' }} height="360px">
+        <Image
+          src="/images/site/sucrose.png"
+          layout="fill"
+          className={css({ objectFit: 'contain', objectPosition: 'center bottom' })}
+          // className={css({ display: 'block' })}
+        />
       </Box>
     </Flex>
   )

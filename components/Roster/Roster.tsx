@@ -70,7 +70,14 @@ const Character = ({ artifacts, ascension = 1, character, weapon, isDisabled, on
         >
           <Stack direction="row" spacing="1.875rem">
             <Box position="relative" overflow="hidden" flex="0 0 3.5rem" width="3.5rem" height="3.5rem" borderRadius=".5rem" background="#f2f4f8">
-              <Image src={character.images.image} />
+              <Box position="relative" width="100%" height="100%">
+                <Image
+                  src={character.images.image}
+                  // @ts-ignore
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </Box>
               <Center
                 opacity={0}
                 position="absolute"
