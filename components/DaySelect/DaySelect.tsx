@@ -1,7 +1,6 @@
 import React from 'react'
 import { css } from '@emotion/css'
-import { Box, Flex, Heading, Text } from '@chakra-ui/react'
-import Image from 'next/image'
+import { Box, Flex, Heading, Image, Text } from '@chakra-ui/react'
 import { useSelector } from 'react-redux'
 import useRematchDispatch from '../../hooks/useRematch'
 import { AppSelectors } from '../../redux/selectors'
@@ -63,14 +62,19 @@ const Schedule = () => {
           </Box>
         </Box>
       </Box>
-      <Box position="absolute" zIndex={1} bottom="0px" right="-40px" display={{ base: 'none', sm: 'block' }} width={{ base: '400px', md: '580px' }} height="360px">
-        <Image
-          src="/images/site/sucrose.png"
-          layout="fill"
-          className={css({ objectFit: 'contain', objectPosition: 'center bottom' })}
-          // className={css({ display: 'block' })}
-        />
-      </Box>
+      <Box
+        position="absolute"
+        zIndex={1}
+        bottom="0px"
+        right="-40px"
+        display={{ base: 'none', sm: 'block' }}
+        width={{ base: '400px', md: '580px' }}
+        height="360px"
+        backgroundImage="url(/images/site/sucrose.png)"
+        backgroundPosition="center bottom"
+        backgroundSize="contain"
+        backgroundRepeat="no-repeat"
+      />
     </Flex>
   )
 }

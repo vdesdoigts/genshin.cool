@@ -5,9 +5,9 @@ import {
   BoxProps,
   Flex,
   HStack,
+  Image,
   Text,
 } from '@chakra-ui/react'
-import Image from 'next/image'
 import { IArtifactItem, IWeapon } from '../../types'
 
 interface IProps {

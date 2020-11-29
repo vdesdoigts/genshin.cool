@@ -44,7 +44,6 @@ const Weapon = ({ weapon, isDisabled, onDisabled }: IProps) => {
       borderRadius="0.875rem"
       boxShadow="rgba(236, 240, 250, .4) 0px 1px 1px, rgba(236, 240, 250, 0.4) 0px 2px 2px, rgba(236, 240, 250, 1) 0px 4px 4px, rgba(236, 240, 250, .4) 0px 8px 8px, rgba(236, 240, 250, .4) 0px 16px 16px"
       background="#fff"
-      cursor="pointer"
       _before={{
         content: "''",
         position: "absolute",

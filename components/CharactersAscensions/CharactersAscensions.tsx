@@ -5,10 +5,10 @@ import {
   Box,
   Flex,
   HStack,
+  Image,
   SimpleGrid,
   Text,
 } from '@chakra-ui/react'
-import Image from 'next/image'
 import { useSelector } from 'react-redux'
 import { ProfileSelectors } from '../../redux/selectors'
 import { getAscensionMaterialsByTypesAndAscension, getCharacterById } from '../../api'

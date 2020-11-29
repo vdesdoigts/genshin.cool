@@ -6,10 +6,10 @@ import {
   Box,
   Flex,
   HStack,
+  Image,
   Stack,
   Text,
 } from '@chakra-ui/react'
-import Image from 'next/image'
 
 interface IProps {
   image: string 

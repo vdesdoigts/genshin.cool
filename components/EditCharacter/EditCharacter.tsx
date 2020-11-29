@@ -1,21 +1,15 @@
 import React from 'react'
 import {
   Box,
-  Drawer,
-  DrawerBody,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
   Heading,
   HStack,
-  SimpleGrid,
+  Image,
   Stack,
   Text,
   useDisclosure,
   useRadio,
   useRadioGroup,
 } from '@chakra-ui/react'
-import Image from 'next/image'
 import { useSelector } from 'react-redux'
 import useRematchDispatch from '../../hooks/useRematch'
 import { ProfileSelectors } from '../../redux/selectors'
