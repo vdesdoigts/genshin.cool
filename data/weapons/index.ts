@@ -94,6 +94,7 @@ import whiteirongreatsword from './whiteirongreatsword.json'
 import whitetassel from './whitetassel.json'
 import wineandsong from './wineandsong.json'
 import wolfsgravestone from './wolfsgravestone.json'
+import memoryofdust from './memoryofdust.json'
 
 export default [
   alleyhunter,
@@ -192,4 +193,5 @@ export default [
   whitetassel,
   wineandsong,
   wolfsgravestone,
+  memoryofdust,
 ]
