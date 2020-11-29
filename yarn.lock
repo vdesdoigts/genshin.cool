@@ -1855,6 +1855,13 @@
   resolved "https://registry.yarnpkg.com/@rematch/core/-/core-2.0.0-next.6.tgz#f24eacededb08a9f78facf56c26d6b370c9b224f"
   integrity sha512-48yNHglcuuDufBqb07gazlMdVnJn4cGOepEHRpGcEnNwrbvxx6LkxarC4MdnMQFdeJxvYE/X5JTxWZrjkGTbJg==
 
+"@rematch/persist@^2.0.0-next.6":
+  version "2.0.0-next.6"
+  resolved "https://registry.yarnpkg.com/@rematch/persist/-/persist-2.0.0-next.6.tgz#fafd973d379f8af366a91ea8ad91f099908ff601"
+  integrity sha512-hM1NkCR9IwTDa3klav9NSlW3XM0klTNzXQL1kzJnoSiTDdWVjkfgmZcEIPkTmQrMu+00Bm866HUMXEqhypQHaQ==
+  dependencies:
+    redux-persist "^6.0.0"
+
 "@styled-system/core@5.1.2":
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/@styled-system/core/-/core-5.1.2.tgz#b8b7b86455d5a0514f071c4fa8e434b987f6a772"
@@ -5462,6 +5469,11 @@ readdirp@~3.5.0:
   integrity sha512-cMhu7c/8rdhkHXWsY+osBhfSy0JikwpHK/5+imo+LpeasTF8ouErHrlYkwT0++njiyuDvc7OFY5T3ukvZ8qmFQ==
   dependencies:
     picomatch "^2.2.1"
+
+redux-persist@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/redux-persist/-/redux-persist-6.0.0.tgz#b4d2972f9859597c130d40d4b146fecdab51b3a8"
+  integrity sha512-71LLMbUq2r02ng2We9S215LtPu3fY0KgaGE0k8WRgl6RkqxtGfl7HUozz1Dftwsb0D/5mZ8dwAaPbtnzfvbEwQ==
 
 redux@^4.0.5:
   version "4.0.5"

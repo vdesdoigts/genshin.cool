@@ -1,11 +1,15 @@
 import * as React from 'react'
 import { Provider } from 'react-redux'
-import { Box, ChakraProvider } from '@chakra-ui/react'
+import { getPersistor } from '@rematch/persist'
+import { PersistGate } from 'redux-persist/lib/integration/react'
+import { ChakraProvider } from '@chakra-ui/react'
 import Head from 'next/head'
 import 'typeface-poppins'
 import theme from '../theme'
 import '../styles/globals.css'
 import { store } from '../redux/store'
+
+const persistor = getPersistor()
 
 function App({ Component, pageProps }) {
   return (
@@ -58,8 +62,11 @@ function App({ Component, pageProps }) {
           }}
         />
       </Head>
+      
       <Provider store={store}>
-        <Component {...pageProps} />
+        <PersistGate persistor={persistor}>
+          <Component {...pageProps} />
+        </PersistGate>
       </Provider>
     </ChakraProvider>
   )
