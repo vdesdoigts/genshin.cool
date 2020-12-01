@@ -1,13 +1,13 @@
 {
 	"id": 1,
-	"name": "Ballad",
+	"name": "ballad",
 	"2starname": "Teachings of \"Ballad\"",
 	"3starname": "Guide of \"Ballad\"",
 	"4starname": "Philosophies of \"Ballad\"",
 	"day": ["Wednesday", "Saturday", "Sunday"],
 	"location": "Springvale",
-	"region": "Mondstadt",
-	"domainofmastery": "Forsaken Rift",
+	"region": "mondstadt",
+	"domainofmastery": "forsaken_rift",
 	"images": {
 		"image": "/images/talentmaterials/ballad-teachings.png"
 	}

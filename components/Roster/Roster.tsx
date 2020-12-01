@@ -108,7 +108,7 @@ const Character = ({ artifacts, ascension = 1, character, weapon, isDisabled, on
               </Text>
               <Box color="#bbbdcb">
                 <Text fontSize="0.875rem" fontWeight="medium">
-                  Ascension rank {ascension}
+                  {t('site.ascension_rank')} {ascension}
                   {/* &#183; {weapon ? weapon.name : 'No weapon'} */}
                 </Text>
               </Box>
@@ -124,6 +124,7 @@ const Character = ({ artifacts, ascension = 1, character, weapon, isDisabled, on
 }
 
 const Roster = () => {
+  const { t } = useTranslation()
   const dispatch = useRematchDispatch()
   const currentRoster: IRoster = useSelector(ProfileSelectors.getCurrentRoster)
   const { isOpen: isSelectCharacterDrawerOpen, onOpen: onSelectCharacterDrawerOpen, onClose: onSelectCharacterDrawerClose } = useDisclosure()
@@ -147,7 +148,7 @@ const Roster = () => {
           fontWeight="500"
           lineHeight="1.33333"
         >
-          Your roster
+          {t('site.your_roster')}
         </Heading>
         <Button
           position="relative"

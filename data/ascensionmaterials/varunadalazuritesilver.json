@@ -1,9 +1,9 @@
 {
   "id": 5,
-  "name": "Varunada Lazurite Sliver",
+  "name": "varunada_lazurite_sliver",
   "type": {
     "id": 2,
-    "name": "Varunada Lazurite"
+    "name": "varunada_lazurite"
   },
   "rarity": 2,
   "ascensions": [1],
@@ -13,7 +13,7 @@
   "url": "/wiki/Varunada_Lazurite_Sliver",
   "droppedby": [
     {
-      "name": "Oceanid",
+      "name": "oceanid",
       "type": "Normal Boss",
       "images": {
         "image": "/images/bosses/oceanid.png"

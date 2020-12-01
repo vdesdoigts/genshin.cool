@@ -15,6 +15,55 @@
     "wangsheng_funeral_parlor": "Wangsheng Funeral Parlor",
     "wanmin_restaurant": "Wanmin Restaurant"
   },
+  "ascensionmaterials": {
+    "agnidus_agate": "Agnidus Agate",
+    "agnidus_agate_chunk": "Agnidus Agate Chunk",
+    "agnidus_agate_fragment": "Agnidus Agate Fragment",
+    "agnidus_agate_gemstone": "Agnidus Agate Gemstone",
+    "agnidus_agate_sliver": "Agnidus Agate Sliver",
+    "prithiva_topaz": "Prithiva Topaz",
+    "prithiva_topaz_chunk": "Prithiva Topaz Chunk",
+    "prithiva_topaz_fragment": "Prithiva Topaz Fragment",
+    "prithiva_topaz_gemstone": "Prithiva Topaz Gemstone",
+    "prithiva_topaz_sliver": "Prithiva Topaz Sliver",
+    "shivada_jade": "Shivada Jade",
+    "shivada_jade_chunk": "Shivada Jade Chunk",
+    "shivada_jade_fragment": "Shivada Jade Fragment",
+    "shivada_jade_gemstone": "Shivada Jade Gemstone",
+    "shivada_jade_sliver": "Shivada Jade Sliver",
+    "vajrada_amethyst": "Vajrada Amethyst",
+    "vajrada_amethyst_chunk": "Vajrada Amethyst Chunk",
+    "vajrada_amethyst_fragment": "Vajrada Amethyst Fragment",
+    "vajrada_amethyst_gemstone": "Vajrada Amethyst Gemstone",
+    "vajrada_amethyst_sliver": "Vajrada Amethyst Sliver",
+    "varunada_lazurite": "Varunada Lazurite",
+    "varunada_lazurite_chunk": "Varunada Lazurite Chunk",
+    "varunada_lazurite_fragment": "Varunada Lazurite Fragment",
+    "varunada_lazurite_gemstone": "Varunada Lazurite Gemstone",
+    "varunada_lazurite_sliver": "Varunada Lazurite Sliver",
+    "vayuda_turquoise": "Vayuda Turquoise",
+    "vayuda_turquoise_chunk": "Varunada Lazurite Chunk",
+    "vayuda_turquoise_fragment": "Varunada Lazurite Fragment",
+    "vayuda_turquoise_gemstone": "Varunada Lazurite Gemstone",
+    "vayuda_turquoise_sliver": "Varunada Lazurite Sliver"
+  },
+  "bosses": {
+    "anemo_hypostasis": "Anemo Hypostasis",
+    "cryo_regisvine": "Cryo Regisvine",
+    "electro_hypostasis": "Electro Hypostasis",
+    "geo_hypostasis": "Geo Hypostasis",
+    "oceanid": "Oceanid",
+    "pyro_regisvine": "Pyro Regisvine",
+    "wolf_of_the_north_challenge_reward": "Wolf of the North Challenge Reward"
+  },
+  "domainofforgeries": {
+    "cecilia_garden": "Cecilia Garden",
+    "hidden_palace_of_lianshan_formula": "Hidden Palace of Lianshan Formula"
+  },
+  "domainofmasteries": {
+    "forsaken_rift": "Forsaken Rift",
+    "taishan_mansion": "Taishan Mansion"
+  },
   "elements": {
     "anemo": "Anemo",
     "cryo": "Cryo",
@@ -31,6 +80,27 @@
   "regions": {
     "mondstadt": "Mondstadt",
     "liyue": "Liyue"
+  },
+  "site": {
+    "ascension_rank": "Ascension rank",
+    "character_materials": "Character_materials",
+    "genshin_impact_farming_guide_description": "Find out the best farming methods and schedule optimization.",
+    "genshin_impact_farming_guide": "Genshin Impact farming guide",
+    "header_label": "Hi Genshin Player",
+    "header_title": "Welcome back 👋",
+    "profiles": "Profiles",
+    "settings": "Settings",
+    "your_armory": "Your armory",
+    "your_roster": "Your roster",
+    "weapon_materials": "Weapon materials"
+  },
+  "talentmaterialtypes": {
+    "ballad": "Ballad",
+    "diligence": "Diligence",
+    "freedom": "Freedom",
+    "gold": "Gold",
+    "prosperity": "Prosperity",
+    "resistance": "Resistance"
   },
   "titles": {
     "acting_grand_master": "Acting Grand Master",
@@ -96,5 +166,13 @@
     "claymore": "Claymore",
     "polearm": "Polearm",
     "sword": "Sword"
+  },
+  "weaponmaterialtypes": {
+    "aerosiderite": "Aerosiderite",
+    "boreal_wolf": "Boreal Wolf",
+    "dandelion_gladiator": "Dandelion Gladiator",
+    "decarabian": "Decarabian",
+    "guyun": "Guyun",
+    "mist_veiled_elixir": "Mist Veiled Elixir"
   }
 }

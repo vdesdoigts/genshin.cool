@@ -1,9 +1,9 @@
 {
   "id": 9,
-  "name": "Prithiva Topaz Sliver",
+  "name": "prithiva_topaz_sliver",
   "type": {
     "id": 3,
-    "name": "Prithiva Topaz"
+    "name": "prithiva_topaz"
   },
   "rarity": 2,
   "ascensions": [1],
@@ -13,14 +13,14 @@
   "url": "/wiki/Prithiva_Topaz_Sliver",
   "droppedby": [
     {
-      "name": "Geo Hypostasis",
+      "name": "geo_hypostasis",
       "type": "Normal Boss",
       "images": {
         "image": "/images/bosses/geo-hypostasis.png"
       }
     },
     {
-      "name": "Wolf of the North Challenge Reward"
+      "name": "wolf_of_the_north_challenge_reward"
     }
   ],
   "purchasedat": [

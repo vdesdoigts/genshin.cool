@@ -1,9 +1,9 @@
 {
   "id": 19,
-  "name": "Shivada Jade Chunk",
+  "name": "shivada_jade_chunk",
   "type": {
     "id": 5,
-    "name": "Shivada Jade"
+    "name": "shivada_jade"
   },
   "rarity": 4,
   "ascensions": [4, 5],
@@ -13,7 +13,8 @@
   "url": "/wiki/Shivada_Jade_Chunk",
   "droppedby": [
     {
-      "name": "Cryo Regisvine 60+",
+      "name": "cryo_regisvine",
+      "level": "60+",
       "type": "Normal Boss",
       "images": {
         "image": "/images/bosses/cryo-regisvine.png"
@@ -27,7 +28,7 @@
     {
       "type": "Alchemy",
       "ascensionmaterialid": 2,
-      "name": "Shivada Jade Fragment",
+      "name": "shivada_jade_fragment",
       "amount": 3,
       "images": {
         "image": "/images/ascensionmaterials/shivada-jade-fragment.png"

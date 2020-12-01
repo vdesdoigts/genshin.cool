@@ -1,9 +1,9 @@
 {
   "id": 18,
-  "name": "Shivada Jade Fragment",
+  "name": "shivada_jade_fragment",
   "type": {
     "id": 5,
-    "name": "Shivada Jade"
+    "name": "shivada_jade"
   },
   "rarity": 3,
   "ascensions": [2, 3],
@@ -13,7 +13,8 @@
   "url": "/wiki/Shivada_Jade_Fragment",
   "droppedby": [
     {
-      "name": "Cryo Regisvine 40+",
+      "name": "cryo_regisvine",
+      "level": "40+",
       "type": "Normal Boss",
       "images": {
         "image": "/images/bosses/cryo-regisvine.png"
@@ -27,7 +28,7 @@
     {
       "type": "Alchemy",
       "ascensionmaterialid": 1,
-      "name": "Shivada Jade Sliver",
+      "name": "shivada_jade_sliver",
       "amount": 3,
       "images": {
         "image": "/images/ascensionmaterials/shivada-jade-sliver.png"

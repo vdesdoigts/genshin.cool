@@ -17,8 +17,8 @@ const DailyTalentsMaterials = ({ talentsMaterials }: IProps) => {
         <AscensionItem
           key={talentMaterialType.id}
           image={talentMaterialType.images.image}
-          label={t(`database.${talentMaterialType.name}`)}
-          sublabel={talentMaterialType.domainofmastery}
+          label={t(`talentmaterialtypes.${talentMaterialType.name}`)}
+          sublabel={t(`domainofmasteries.${talentMaterialType.domainofmastery}`)}
           characters={talentMaterialType.characters}
         />
       ))}

@@ -1,5 +1,5 @@
 import React from 'react'
-import { css } from '@emotion/css'
+import { useTranslation } from 'react-i18next'
 import { Box, Flex, Heading, Image, Text } from '@chakra-ui/react'
 import { useSelector } from 'react-redux'
 import useRematchDispatch from '../../hooks/useRematch'
@@ -7,6 +7,7 @@ import { AppSelectors } from '../../redux/selectors'
 import Select from '../Select'
 
 const Schedule = () => {
+  const { t } = useTranslation()
   const dispatch = useRematchDispatch()
   const currentSelectedDay = useSelector(AppSelectors.getCurrentSelectedDay)
 
@@ -41,10 +42,10 @@ const Schedule = () => {
           fontWeight="medium"
           lineHeight="1.33333"
         >
-          Genshin Impact farming guide
+          {t('site.genshin_impact_farming_guide')}
         </Heading>
         <Text mb="18px" fontSize="14px">
-          Find out the best farming methods and schedule optimization.
+        {t('site.genshin_impact_farming_guide_description')}
         </Text>
         <Box>
           <Box maxW="400px">

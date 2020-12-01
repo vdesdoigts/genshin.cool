@@ -1,9 +1,9 @@
 {
   "id": 21,
-  "name": "Vayuda Turquoise Sliver",
+  "name": "vayuda_turquoise_sliver",
   "type": {
     "id": 6,
-    "name": "Vayuda Turquoise"
+    "name": "vayuda_turquoise"
   },
   "rarity": 2,
   "ascensions": [1],
@@ -13,7 +13,7 @@
   "url": "/wiki/Vayuda_Turquoise_Sliver",
   "droppedby": [
     {
-      "name": "Anemo Hypostasis",
+      "name": "anemo_hypostasis",
       "type": "Normal Boss",
       "images": {
         "image": "/images/bosses/anemo-hypostasis.png"

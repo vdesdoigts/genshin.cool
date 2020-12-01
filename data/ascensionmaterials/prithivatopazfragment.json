@@ -1,9 +1,9 @@
 {
   "id": 10,
-  "name": "Prithiva Topaz Fragment",
+  "name": "prithiva_topaz_fragment",
   "type": {
     "id": 3,
-    "name": "Prithiva Topaz"
+    "name": "prithiva_topaz"
   },
   "rarity": 3,
   "ascensions": [2, 3],
@@ -13,7 +13,8 @@
   "url": "/wiki/Prithiva_Topaz_Fragment",
   "droppedby": [
     {
-      "name": "Geo Hypostasis 40+",
+      "name": "geo_hypostasis",
+      "level": "40+",
       "type": "Normal Boss",
       "images": {
         "image": "/images/bosses/geo-hypostasis.png"
@@ -27,7 +28,7 @@
     {
       "type": "Alchemy",
       "ascensionmaterialid": 9,
-      "name": "Prithiva Topaz Sliver",
+      "name": "prithiva_topaz_sliver",
       "amount": 3,
       "images": {
         "image": "/images/ascensionmaterials/prithiva-topaz-sliver.png"

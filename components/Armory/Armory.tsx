@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { useTranslation } from 'react-i18next'
 import {
   Box,
   Button,
@@ -25,7 +26,6 @@ import { ProfileSelectors } from '../../redux/selectors'
 import { getWeaponById } from '../../api'
 import { IArmory, IWeapon } from '../../types'
 import WeaponsMenu from '../WeaponsMenu'
-
 
 interface IProps {
   weapon?: IWeapon
@@ -94,6 +94,7 @@ const Weapon = ({ weapon, isDisabled, onDisabled }: IProps) => {
 }
 
 const Armory = () => {
+  const { t } = useTranslation()
   const dispatch = useRematchDispatch()
   const currentArmory: IArmory = useSelector(ProfileSelectors.getCurrentArmory)
   const { isOpen: isSelectWeaponDrawerOpen, onOpen: onSelectWeaponDrawerOpen, onClose: onSelectWeaponDrawerClose } = useDisclosure()
@@ -110,7 +111,7 @@ const Armory = () => {
           fontWeight="500"
           lineHeight="1.33333"
         >
-          Your armory
+          {t('site.your_armory')}
         </Heading>
         <Button
           position="relative"

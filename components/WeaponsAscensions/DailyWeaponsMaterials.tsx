@@ -1,6 +1,7 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import { SimpleGrid } from '@chakra-ui/react'
-import { ICharacter, IWeapon, IWeaponMaterialType } from '../../types'
+import { IWeapon, IWeaponMaterialType } from '../../types'
 import AscensionItem from '../AscensionItem'
 
 interface IProps {
@@ -8,14 +9,16 @@ interface IProps {
 }
 
 const DailyWeaponsMaterials = ({ weaponsMaterials }: IProps) => {
+  const { t } = useTranslation()
+
   return (
     <SimpleGrid columns={1} spacing={4}>
       {weaponsMaterials.map((weaponsMaterial) => (
         <AscensionItem
           key={weaponsMaterial.id}
           image={weaponsMaterial.images.image}
-          label={weaponsMaterial.name}
-          sublabel={weaponsMaterial.domainofforgery}
+          label={t(`weaponmaterialtypes.${weaponsMaterial.name}`)}
+          sublabel={t(`domainofforgeries.${weaponsMaterial.domainofforgery}`)}
           characters={weaponsMaterial.weapons}
         />
       ))}

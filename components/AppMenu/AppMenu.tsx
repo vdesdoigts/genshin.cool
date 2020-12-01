@@ -130,7 +130,7 @@ const Menu = ({ onEditProfile, isMenuOpen, onMenuClose, onMenuToggle }: IProps) 
                 fontWeight="500"
                 line-height="1.33333"
               >
-                Profiles
+                {t('site.profiles')}
               </Text>
               <VStack width="100%" spacing={0} align="stretch">
                 {userRosterNames.map((name, index) => (
@@ -171,7 +171,7 @@ const Menu = ({ onEditProfile, isMenuOpen, onMenuClose, onMenuToggle }: IProps) 
                 fontWeight="500"
                 line-height="1.33333"
               >
-                Settings
+                {t('site.settings')}
               </Text>
               <VStack width="100%" spacing={0} align="stretch">
                 <Select onChange={onChangeLanguage}>

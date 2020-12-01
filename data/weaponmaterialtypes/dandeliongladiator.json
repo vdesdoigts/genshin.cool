@@ -1,6 +1,6 @@
 {
 	"id": 3,
-	"name": "Dandelion Gladiator",
+	"name": "dandelion_gladiator",
 	"2starname": "Fetters of the Dandelion Gladiator",
 	"3starname": "Chains of the Dandelion Gladiator",
 	"4starname": "Shackles of the Dandelion Gladiator",
@@ -8,7 +8,7 @@
 	"day": ["Wednesday", "Saturday", "Sunday"],
 	"location": "Wolvendom",
 	"region": "Mondstadt",
-	"domainofforgery": "Cecilia Garden",
+	"domainofforgery": "cecilia_garden",
 	"images": {
 		"image": "/images/weaponmaterialtypes/fetters-of-the-dandelion-gladiator.png"
 	}

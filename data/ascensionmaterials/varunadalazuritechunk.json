@@ -1,9 +1,9 @@
 {
   "id": 7,
-  "name": "Varunada Lazurite Chunk",
+  "name": "varunada_lazurite_chunk",
   "type": {
     "id": 2,
-    "name": "Varunada Lazurite"
+    "name": "varunada_lazurite"
   },
   "rarity": 4,
   "ascensions": [4, 5],
@@ -13,7 +13,8 @@
   "url": "/wiki/Varunada_Lazurite_Chunk",
   "droppedby": [
     {
-      "name": "Oceanid 60+",
+      "name": "oceanid",
+      "level": "60+",
       "type": "Normal Boss",
       "images": {
         "image": "/images/bosses/oceanid.png"
@@ -24,7 +25,7 @@
     {
       "type": "Alchemy",
       "ascensionmaterialid": 6,
-      "name": "Varunada Lazurite Fragment",
+      "name": "varunada_lazurite_fragment",
       "amount": 3,
       "images": {
         "image": "/images/ascensionmaterials/varunada-lazurite-fragment.png"

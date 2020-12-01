@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import uniqBy from 'lodash.uniqby'
 import {
   AspectRatio,
@@ -17,6 +18,7 @@ import DashBox from '../DashBox'
 import { IAscensionMaterial, ICharacter } from '../../types'
 
 const CharactersAscensions = () => {
+  const { t } = useTranslation()
   const currentRosterCharacters = useSelector(ProfileSelectors.getCurrentEnabledRosterCharacters)
   const characters = currentRosterCharacters.map((character) => getCharacterById(character.id))
 
@@ -54,7 +56,7 @@ const CharactersAscensions = () => {
           <DashBox key={ascensionMaterial.name}>
             <AscensionItem
               image={ascensionMaterial.images.image}
-              label={ascensionMaterial.name}
+              label={t(`ascensionmaterials.${ascensionMaterial.name}`)}
               characters={ascensionMaterial.characters}
             />
             <SimpleGrid columns={1} pt="12px" spacing="8px">
@@ -93,7 +95,7 @@ const CharactersAscensions = () => {
                       lineHeight="1.1875"
                       fontWeight="500"
                     >
-                      {droppedby.name}
+                      {t(`bosses.${droppedby.name}`)}
                     </Text>
                   </Flex>
                 </HStack>

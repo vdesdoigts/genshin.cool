@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import uniq from 'lodash.uniq'
 import { useSelector } from 'react-redux'
 import { AppSelectors, ProfileSelectors } from '../../redux/selectors'

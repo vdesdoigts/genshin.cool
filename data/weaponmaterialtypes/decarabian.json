@@ -1,6 +1,6 @@
 {
 	"id": 4,
-	"name": "Decarabian",
+	"name": "decarabian",
 	"2starname": "Tile of Decarabian's Tower",
 	"3starname": "Debris of Decarabian's City",
 	"4starname": "Fragment of Decarabian's Epic",
@@ -8,7 +8,7 @@
 	"day": ["Monday", "Thursday", "Sunday"],
 	"location": "Wolvendom",
 	"region": "Mondstadt",
-	"domainofforgery": "Cecilia Garden",
+	"domainofforgery": "cecilia_garden",
 	"images": {
 		"image": "/images/weaponmaterialtypes/tile-of-decarabian-tower.png"
 	}
