@@ -2,13 +2,13 @@
 	"id": 14,
   "name": "Mona",
   "titles": [
-    "Enigmatic Astrologer",
-    "Astral Reflection"
+    "enigmatic_astrologer",
+    "astral_reflection"
   ],
-  "element": "Hydro",
-  "weapontype": "Catalyst",
-  "gender": "Female",
-  "region": "Mondstadt",
+  "element": "hydro",
+  "weapontype": "catalyst",
+  "gender": "female",
+  "region": "mondstadt",
   "rarity": 5,
   "images": {
     "image": "/images/characters/mona-thumb.png",

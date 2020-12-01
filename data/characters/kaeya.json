@@ -2,12 +2,12 @@
 	"id": 10,
   "name": "Kaeya",
   "titles": [
-      "Cavalry Captain"
+    "cavalry_captain"
   ],
-  "element": "Cryo",
-  "weapontype": "Sword",
-  "gender": "Male",
-  "region": "Mondstadt",
+  "element": "cryo",
+  "weapontype": "sword",
+  "gender": "male",
+  "region": "mondstadt",
   "rarity": 4,
   "images": {
     "image": "/images/characters/kaeya-thumb.png",
@@ -20,7 +20,7 @@
     "korean": "Jeong JuWon",
     "chinese": "Ye Sun"
   },
-  "affiliation": "Knights of Favonius",
+  "affiliation": "knights_of_favonius",
   "description": "In the Knights of Favonius, Kaeya is the most trusted aide for the Acting Grand Master Jean. You can always count on him to solve any intractable problems. Everyone in Mondstadt loves Kaeya, but no one knows what secrets this witty, charming knight has...",
   "talentmaterialtype": {
     "id": 1,

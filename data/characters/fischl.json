@@ -2,13 +2,13 @@
 	"id": 8,
   "name": "Fischl",
   "titles": [
-    "Prinzessin der Verurteilung",
-    "Sovereign of Immernachtreich"
+    "prinzessin_der_verurteilung",
+    "sovereign_of_immernachtreich"
   ],
-  "element": "Electro",
-  "weapontype": "Bow",
-  "gender": "Female",
-  "region": "Mondstadt",
+  "element": "electro",
+  "weapontype": "bow",
+  "gender": "female",
+  "region": "mondstadt",
   "rarity": 4,
   "images": {
     "image": "/images/characters/fischl-thumb.png",
@@ -21,7 +21,7 @@
     "korean": "Park GoWoon",
     "chinese": "Minyue Lu"
   },
-  "affiliation": "Adventurers' Guild",
+  "affiliation": "adventurers_guild",
   "description": "A mysterious girl who calls herself 'Prinzessin der Verurteilung' and travels with a night raven named Oz. Currently serves as an investigator in the Adventurers' Guild. Through her unique abilities, eccentric character, and (while she would never admit it herself) hard work, Fischl has become a rising star among the Adventurers' Guild's investigators, earning the recognition of all.",
   "talentmaterialtype": {
     "id": 1,

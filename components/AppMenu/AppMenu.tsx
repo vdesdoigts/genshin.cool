@@ -1,8 +1,10 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import {
   Box,
   Flex,
   Icon,
+  Select,
   Text,
   VStack,
 } from '@chakra-ui/react'
@@ -68,6 +70,7 @@ interface IProps {
 }
 
 const Menu = ({ onEditProfile, isMenuOpen, onMenuClose, onMenuToggle }: IProps) => {
+  const { i18n, t } = useTranslation()
   const dispatch = useRematchDispatch()
   const userRosterNames = useSelector(ProfileSelectors.getUserRosterNames)
   const currentUserProfileIndex = useSelector(ProfileSelectors.getCurrentUserProfileIndex)
@@ -78,6 +81,10 @@ const Menu = ({ onEditProfile, isMenuOpen, onMenuClose, onMenuToggle }: IProps) 
 
   const onAddProfile = () => {
     dispatch.profile.addProfile()
+  }
+
+  const onChangeLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    i18n.changeLanguage(e.target.value)
   }
 
   return (
@@ -142,7 +149,7 @@ const Menu = ({ onEditProfile, isMenuOpen, onMenuClose, onMenuToggle }: IProps) 
               </VStack>
             </Box>
 
-            {/* <Box
+            <Box
               position="relative"
               mb="40px"
               pb="30px"
@@ -164,9 +171,15 @@ const Menu = ({ onEditProfile, isMenuOpen, onMenuClose, onMenuToggle }: IProps) 
                 fontWeight="500"
                 line-height="1.33333"
               >
-                Tools
+                Settings
               </Text>
-            </Box> */}
+              <VStack width="100%" spacing={0} align="stretch">
+                <Select onChange={onChangeLanguage}>
+                  <option value="en" selected={i18n.language === 'en'}>{t('langs.english')}</option>
+                  <option value="fr" selected={i18n.language === 'fr'}>{t('langs.french')}</option>
+                </Select>
+              </VStack>
+            </Box>
           </Box>
         </Box>
 

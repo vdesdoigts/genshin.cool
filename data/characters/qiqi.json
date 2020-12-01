@@ -2,13 +2,13 @@
 	"id": 17,
   "name": "Qiqi",
   "titles": [
-    "Pharmacist",
-    "Icy Resurrection"
+    "pharmacist",
+    "icy_resurrection"
   ],
-  "element": "Cryo",
-  "weapontype": "Sword",
-  "gender": "Female",
-  "region": "Liyue",
+  "element": "cryo",
+  "weapontype": "sword",
+  "gender": "female",
+  "region": "liyue",
   "rarity": 5,
   "images": {
     "image": "/images/characters/qiqi-thumb.png",
@@ -21,7 +21,7 @@
     "korean": "Seul Lee",
     "chinese": "Ning Yan"
   },
-  "affiliation": "Bubu Pharmacy",
+  "affiliation": "bubu_pharmacy",
   "description": "An apprentice and herb gatherer at Bubu Pharmacy. 'Blessed' by the adepti with a body that cannot die, this petite zombie cannot do anything without first giving herself orders to do it. Qiqi's memory is like a sieve. Out of necessity, she always carries around a notebook in which she writes anything important that she is sure to forget later. But on her worst days, she even forgets to look at her notebook...",
   "talentmaterialtype": {
     "id": 5,

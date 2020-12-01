@@ -2,12 +2,12 @@
   "id": 21,
   "name": "Traveler Anemo",
   "titles": [
-    "Outlander",
-    "Honorary Knight"
+    "outlander",
+    "honorary_knight"
   ],
-  "element": "Anemo",
-  "weapontype": "Sword",
-  "gender": "Male",
+  "element": "anemo",
+  "weapontype": "sword",
+  "gender": "male",
   "rarity": 5,
   "images": {
     "image": "/images/characters/traveler-thumb.png",
@@ -19,7 +19,7 @@
     "korean": "Gyeongtae Lee",
     "chinese": "Hailong Dong"
   },
-  "affiliation": "Neutral",
+  "affiliation": "neutral",
   "description": "A traveler from another world who had their only kin taken away, forcing them to embark on a journey to find The Seven.",
   "talentmaterialtype": {
     "id": 3,

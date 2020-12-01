@@ -2,12 +2,12 @@
 	"id": 6,
   "name": "Diluc",
   "titles": [
-    "Dark Side of Dawn"
+    "dark_side_of_dawn"
   ],
-  "element": "Pyro",
-  "weapontype": "Claymore",
-  "gender": "Male",
-  "region": "Mondstadt",
+  "element": "pyro",
+  "weapontype": "claymore",
+  "gender": "male",
+  "region": "mondstadt",
   "rarity": 5,
   "images": {
     "image": "/images/characters/diluc-thumb.png",

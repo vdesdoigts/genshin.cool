@@ -4,10 +4,10 @@
   "titles": [
     "Vago Mundo"
   ],
-  "element": "Geo",
-  "weapontype": "Polearm",
-  "gender": "Male",
-  "region": "Liyue",
+  "element": "geo",
+  "weapontype": "polearm",
+  "gender": "male",
+  "region": "liyue",
   "rarity": 5,
   "images": {
     "image": "/images/characters/zhongli-thumb.png",

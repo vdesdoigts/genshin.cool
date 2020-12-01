@@ -1,12 +1,9 @@
 import React, { useState } from 'react'
 import {
   Box,
-  Container,
   Flex,
-  Grid,
   Heading,
   SimpleGrid,
-  Text,
   useDisclosure,
 } from '@chakra-ui/react'
 import AppMenu from '../components/AppMenu'

@@ -1,0 +1,13 @@
+{
+  "langs": {
+    "english": "Anglais",
+    "french": "Français"
+  },
+  "weapons": {
+    "bow": "Arc",
+    "catalyst": "Catalyseur",
+    "claymore": "Épée à deux mains",
+    "polearm": "Armes d’Hast",
+    "sword": "Épée à une main"
+  }
+}

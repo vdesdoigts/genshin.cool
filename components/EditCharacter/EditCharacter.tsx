@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import {
   Box,
   Heading,
@@ -6,17 +7,14 @@ import {
   Image,
   Stack,
   Text,
-  useDisclosure,
   useRadio,
   useRadioGroup,
 } from '@chakra-ui/react'
 import { useSelector } from 'react-redux'
 import useRematchDispatch from '../../hooks/useRematch'
 import { ProfileSelectors } from '../../redux/selectors'
-import { getArtifactsCharacter, getCharacterById, getWeaponById } from '../../api'
-import { ICharacter, IRosterCharacter, IWeapon } from '../../types'
-import ListObject from '../ListObject'
-import WeaponsMenu from '../WeaponsMenu'
+import { getCharacterById } from '../../api'
+import { ICharacter, IRosterCharacter } from '../../types'
 
 function RadioCard(props) {
   const { getInputProps, getCheckboxProps } = useRadio(props)
@@ -56,12 +54,10 @@ const EditCharacter = ({ character: characterId }: IProps) => {
     return null
   }
 
+  const { t } = useTranslation()
   const dispatch = useRematchDispatch()
   const rosterCharacter = useSelector((state) => ProfileSelectors.getRosterCharacterById(state, characterId))
   const character = getCharacterById(characterId)
-  const weapon = getWeaponById(rosterCharacter.weapon?.id)
-  const artifacts = getArtifactsCharacter(rosterCharacter?.artifacts)
-  const { isOpen: isWeaponDrawerOpen, onOpen: onWeaponDrawerOpen, onClose: onWeaponDrawerClose } = useDisclosure()
 
   const ascensionOptions = ['1', '2', '3', '4', '5', '6']
   const { getRootProps, getRadioProps } = useRadioGroup({
@@ -70,11 +66,6 @@ const EditCharacter = ({ character: characterId }: IProps) => {
     onChange: (e) => onSelectAscension(character.id, (parseInt(e as string) as IRosterCharacter['character']['ascension'])),
   })
   const group = getRootProps()
-
-  const onSelectWeapon = (character: ICharacter['id'], weapon: IWeapon['id']) => {
-    dispatch.profile.addWeapon({ character, weapon })
-    onWeaponDrawerClose()
-  }
 
   const onSelectAscension = (character: ICharacter['id'], ascension: IRosterCharacter['character']['ascension']) => {
     dispatch.profile.updateCharacterAsension({ character, ascension })
@@ -100,7 +91,7 @@ const EditCharacter = ({ character: characterId }: IProps) => {
             >
               {character.name}
             </Text>
-            <Text color="#bbbdcb" fontSize="1rem" fontWeight="medium">{character.affiliation}</Text>
+            <Text color="#bbbdcb" fontSize="1rem" fontWeight="medium">{t(`affiliations.${character.affiliation}`)}</Text>
           </Stack>
         </Stack>
         <Box pt={8}>
@@ -118,52 +109,7 @@ const EditCharacter = ({ character: characterId }: IProps) => {
             })}
           </HStack>
         </Box>
-        {/* <Box pt={8}>
-          <Heading mb="16px" fontSize="14px" fontWeight="semibold" lineHeight="1.33333">
-            Equipment
-          </Heading>
-        </Box>
-        <Box flex={1}>
-          <SimpleGrid
-            gridTemplateColumns="1fr"
-            spacing=".5rem"
-            spacingX="2rem"
-          >
-            <ListObject
-              label={weapon?.name}
-              placeholderLabel="Select a weapon"
-              image={weapon?.images.image}
-              onClick={onWeaponDrawerOpen}
-            />
-            {Object.keys(artifacts).map((key) => (
-              <ListObject
-                key={artifacts[key]?.name}
-                label={artifacts[key]?.name}
-                placeholderLabel={`Select a ${key}`}
-                image={artifacts[key]?.images.image}
-                // onClick={onOpenArtifactsDrawer}
-              />
-            ))}
-          </SimpleGrid>
-        </Box> */}
       </Box>
-      {/* <Drawer
-        isOpen={isWeaponDrawerOpen}
-        onClose={onWeaponDrawerClose}
-        size="md"
-      >
-        <DrawerOverlay>
-          <DrawerContent>
-            <DrawerCloseButton />
-              <DrawerBody>
-                <WeaponsMenu
-                  character={character}
-                  onSelect={onSelectWeapon}
-                />
-              </DrawerBody>
-          </DrawerContent>
-        </DrawerOverlay>
-      </Drawer> */}
     </>
   )
 }
