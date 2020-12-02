@@ -1,17 +1,11 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import {
   Box,
-  Container,
-  Drawer,
-  DrawerOverlay,
-  DrawerContent,
   Flex,
-  Heading,
   Menu,
   MenuButton,
   MenuList,
-  MenuItem,
-  MenuDivider,
   Stack,
   VStack,
 } from '@chakra-ui/react'
@@ -31,6 +25,7 @@ interface IProps {
 }
 
 const Header = ({ onEditProfile, isMenuOpen, onMenuClose, onMenuToggle }: IProps) => {
+  const { t } = useTranslation()
   const dispatch = useRematchDispatch()
   const userRosterNames = useSelector(ProfileSelectors.getUserRosterNames)
   const currentUserProfileIndex = useSelector(ProfileSelectors.getCurrentUserProfileIndex)
@@ -122,7 +117,7 @@ const Header = ({ onEditProfile, isMenuOpen, onMenuClose, onMenuToggle }: IProps
                       ))}
                       <NavButton
                         onClick={onAddProfile}
-                        label="Add a profile"
+                        label={t('site.add_a_profile')}
                       />
                     </VStack>
                   </MenuList>

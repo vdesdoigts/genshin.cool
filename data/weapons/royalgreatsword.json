@@ -1,7 +1,7 @@
 {
   "id": 59,
-  "name": "Royal Greatsword",
-  "weapontype": "Claymore",
+  "name": "royal_greatsword",
+  "weapontype": "claymore",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/royal-greatsword.png"

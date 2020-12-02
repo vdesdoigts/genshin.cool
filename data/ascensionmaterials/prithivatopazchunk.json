@@ -1,9 +1,9 @@
 {
   "id": 11,
-  "name": "Prithiva Topaz Chunk",
+  "name": "prithiva_topaz_chunk",
   "type": {
     "id": 3,
-    "name": "Prithiva Topaz"
+    "name": "prithiva_topaz"
   },
   "rarity": 4,
   "ascensions": [4, 5],
@@ -13,7 +13,8 @@
   "url": "/wiki/Prithiva_Topaz_Chunk",
   "droppedby": [
     {
-      "name": "Geo Hypostasis 60+",
+      "name": "geo_hypostasis",
+      "level": "60+",
       "type": "Normal Boss",
       "images": {
         "image": "/images/bosses/geo-hypostasis.png"
@@ -27,7 +28,7 @@
     {
       "type": "Alchemy",
       "ascensionmaterialid": 10,
-      "name": "Prithiva Topaz Fragment",
+      "name": "prithiva_topaz_fragment",
       "amount": 3,
       "images": {
         "image": "/images/ascensionmaterials/prithiva-topaz-fragment.png"

@@ -1,7 +1,7 @@
 {
   "id": 7,
-  "name": "Blackcliff Amulet",
-  "weapontype": "Catalyst",
+  "name": "blackcliff_amulet",
+  "weapontype": "catalyst",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/blackcliff-amulet.png"

@@ -1,9 +1,9 @@
 {
   "id": 4,
-  "name": "Agnidus Agate Gemstone",
+  "name": "agnidus_agate_gemstone",
   "type": {
     "id": 1,
-    "name": "Agnidus Agate"
+    "name": "agnidus_agate"
   },
   "rarity": 4,
   "ascensions": [6],
@@ -13,7 +13,8 @@
   "url": "/wiki/Agnidus_Agate_Gemstone",
   "droppedby": [
     {
-      "name": "Pyro Regisvine 75+",
+      "name": "pyro_regisvine",
+      "level": "75+",
       "type": "Normal Boss",
       "images": {
         "image": "/images/bosses/pyro-regisvine.png"
@@ -27,7 +28,7 @@
     {
       "type": "Alchemy",
       "ascensionmaterialid": 3,
-      "name": "Agnidus Agate Chunk",
+      "name": "agnidus_agate_chunk",
       "amount": 3,
       "images": {
         "image": "/images/ascensionmaterials/agnidus-agate-chunk.png"

@@ -2,14 +2,14 @@
 	"id": 26,
   "name": "Xingqiu",
   "titles": [
-    "Juvenile Galant",
-    "Guhua Guru of Feiyun Fame",
-    "Guhua Geek"
+    "juvenile_galant",
+    "guhua_guru_of_feiyun_fame",
+    "guhua_geek"
   ],
-  "element": "Hydro",
-  "weapontype": "Sword",
-  "gender": "Male",
-  "region": "Liyue",
+  "element": "hydro",
+  "weapontype": "sword",
+  "gender": "male",
+  "region": "liyue",
   "rarity": 4,
   "images": {
     "image": "/images/characters/xingqiu-thumb.png",
@@ -22,7 +22,7 @@
     "korean": "Junko Minagawa",
     "chinese": "Kwak Kyumi"
   },
-  "affiliation": "Feiyun Commerce Guild",
+  "affiliation": "feiyun_commerce_guild",
   "description": "The second son of the Feiyun Commerce Guild, Xingqiu has had a reputation for being studious and polite ever since he was a young child. But there is another side to the mild-mannered Xingqiu everyone knows. A daring, adventurous and much more mischievous side...",
   "talentmaterialtype": {
     "id": 4,

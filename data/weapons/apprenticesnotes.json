@@ -1,7 +1,7 @@
 {
   "id": 4,
-  "name": "Apprentice's Notes",
-  "weapontype": "Catalyst",
+  "name": "apprentice_s_notes",
+  "weapontype": "catalyst",
   "rarity": 1,
   "images": {
     "image": "/images/weapons/apprentice-notes.png"

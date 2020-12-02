@@ -1,7 +1,7 @@
 {
   "id": 41,
-  "name": "Lost Prayer to the Sacred Winds",
-  "weapontype": "Catalyst",
+  "name": "lost_prayer_to_the_sacred_winds",
+  "weapontype": "catalyst",
   "rarity": 5,
   "images": {
     "image": "/images/weapons/lost-prayer-to-the-sacred-winds.png"

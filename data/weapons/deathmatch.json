@@ -1,7 +1,7 @@
 {
   "id": 18,
-  "name": "Deathmatch",
-  "weapontype": "Polearm",
+  "name": "deathmatch",
+  "weapontype": "polearm",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/deathmatch.png"

@@ -1,9 +1,9 @@
 {
   "id": 8,
-  "name": "Varunada Lazurite Gemstone",
+  "name": "varunada_lazurite_gemstone",
   "type": {
     "id": 2,
-    "name": "Varunada Lazurite"
+    "name": "varunada_lazurite"
   },
   "rarity": 4,
   "ascensions": [6],
@@ -13,7 +13,8 @@
   "url": "/wiki/Varunada_Lazurite_Gemstone",
   "droppedby": [
     {
-      "name": "Oceanid 75+",
+      "name": "oceanid",
+      "level": "75+",
       "type": "Normal Boss",
       "images": {
         "image": "/images/bosses/oceanid.png"
@@ -24,7 +25,7 @@
     {
       "type": "Alchemy",
       "ascensionmaterialid": 7,
-      "name": "Varunada Lazurite Chunk",
+      "name": "varunada_lazurite_chunk",
       "amount": 3,
       "images": {
         "image": "/images/ascensionmaterials/varunada-lazurite-chunk.png"

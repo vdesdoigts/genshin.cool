@@ -1,7 +1,7 @@
 {
   "id": 60,
-  "name": "Royal Grimoire",
-  "weapontype": "Catalyst",
+  "name": "royal_grimoire",
+  "weapontype": "catalyst",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/royal-grimoire.png"

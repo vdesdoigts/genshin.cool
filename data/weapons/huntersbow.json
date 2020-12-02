@@ -1,7 +1,7 @@
 {
   "id": 34,
-  "name": "Hunter's Bow",
-  "weapontype": "Bow",
+  "name": "hunter_s_bow",
+  "weapontype": "box",
   "rarity": 1,
   "images": {
     "image": "/images/weapons/hunter-bow.png"

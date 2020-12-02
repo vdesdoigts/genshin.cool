@@ -1,7 +1,7 @@
 {
   "id": 11,
-  "name": "Blackcliff Warbow",
-  "weapontype": "Bow",
+  "name": "blackcliff_warbow",
+  "weapontype": "box",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/blackcliff-warbow.png"

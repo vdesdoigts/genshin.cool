@@ -1,9 +1,9 @@
 {
   "id": 23,
-  "name": "Vayuda Turquoise Chunk",
+  "name": "vayuda_turquoise_chunk",
   "type": {
     "id": 6,
-    "name": "Vayuda Turquoise"
+    "name": "vayuda_turquoise"
   },
   "rarity": 4,
   "ascensions": [4, 5],
@@ -13,7 +13,8 @@
   "url": "/wiki/Vayuda_Turquoise_Chunk",
   "droppedby": [
     {
-      "name": "Anemo Hypostasis 60+",
+      "name": "anemo_hypostasis",
+      "level": "60+",
       "type": "Normal Boss",
       "images": {
         "image": "/images/bosses/anemo-hypostasis.png"
@@ -24,7 +25,7 @@
     {
       "type": "Alchemy",
       "ascensionmaterialid": 14,
-      "name": "Vayuda Turquoise Fragment",
+      "name": "vayuda_turquoise_fragment",
       "amount": 3,
       "images": {
         "image": "/images/ascensionmaterials/vayuda-turquoise-fragment.png"

@@ -1,7 +1,7 @@
 {
   "id": 61,
-  "name": "Royal Longsword",
-  "weapontype": "Sword",
+  "name": "royal_longsword",
+  "weapontype": "sword",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/royal-longsword.png"

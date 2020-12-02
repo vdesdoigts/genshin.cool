@@ -1,7 +1,7 @@
 {
   "id": 73,
-  "name": "Skyward Atlas",
-  "weapontype": "Catalyst",
+  "name": "skyward_atlas",
+  "weapontype": "catalyst",
   "rarity": 5,
   "images": {
     "image": "/images/weapons/skyward-atlas.png"

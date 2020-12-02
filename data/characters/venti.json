@@ -2,14 +2,14 @@
 	"id": 23,
   "name": "Venti",
   "titles": [
-    "Windborne Bard",
-    "The God of Freedom",
-    "Tone-Deaf Bar"
+    "windborne_bard",
+    "the_god_of_freedom",
+    "tonedeaf_bar"
   ],
-  "element": "Anemo",
-  "weapontype": "Bow",
-  "gender": "Male",
-  "region": "Mondstadt",
+  "element": "anemo",
+  "weapontype": "bow",
+  "gender": "male",
+  "region": "mondstadt",
   "rarity": 5,
   "images": {
     "image": "/images/characters/venti-thumb.png",

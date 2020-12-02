@@ -1,7 +1,7 @@
 {
   "id": 55,
-  "name": "Rainslasher",
-  "weapontype": "Claymore",
+  "name": "rainslasher",
+  "weapontype": "claymore",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/rainslasher.png"

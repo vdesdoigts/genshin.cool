@@ -1,7 +1,7 @@
 {
   "id": 89,
-  "name": "Traveler's Handy Sword",
-  "weapontype": "Sword",
+  "name": "traveler_s_handy_sword",
+  "weapontype": "sword",
   "rarity": 3,
   "images": {
     "image": "/images/weapons/traveler-handy-sword.png"

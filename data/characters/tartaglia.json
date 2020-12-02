@@ -2,12 +2,12 @@
   "id": 20,
   "name": "Tartaglia",
   "titles": [
-    "Childe",
-    "Eleventh of the Fatui Harbingers"
+    "childe",
+    "eleventh_of_the_fatui_harbingers"
   ],
-  "element": "Hydro",
-  "weapontype": "Bow",
-  "gender": "Male",
+  "element": "hydro",
+  "weapontype": "bow",
+  "gender": "male",
   "region": "Snezhnaya",
   "rarity": 5,
   "images": {

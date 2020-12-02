@@ -1,9 +1,9 @@
 {
   "id": 22,
-  "name": "Vayuda Turquoise Fragment",
+  "name": "vayuda_turquoise_fragment",
   "type": {
     "id": 6,
-    "name": "Vayuda Turquoise"
+    "name": "vayuda_turquoise"
   },
   "rarity": 3,
   "ascensions": [2, 3],
@@ -13,7 +13,8 @@
   "url": "/wiki/Vayuda_Turquoise_Fragment",
   "droppedby": [
     {
-      "name": "Anemo Hypostasis 40+",
+      "name": "anemo_hypostasis",
+      "level": "40+",
       "type": "Normal Boss",
       "images": {
         "image": "/images/bosses/anemo-hypostasis.png"
@@ -24,7 +25,7 @@
     {
       "type": "Alchemy",
       "ascensionmaterialid": 13,
-      "name": "Vayuda Turquoise Sliver",
+      "name": "vayuda_turquoise_sliver",
       "amount": 3,
       "images": {
         "image": "/images/ascensionmaterials/vayuda-turquoise-sliver.png"

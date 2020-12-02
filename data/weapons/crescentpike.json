@@ -1,7 +1,7 @@
 {
   "id": 16,
-  "name": "Crescent Pike",
-  "weapontype": "Polearm",
+  "name": "crescent_pike",
+  "weapontype": "polearm",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/crescent-pike.png"

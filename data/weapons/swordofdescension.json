@@ -1,7 +1,7 @@
 {
   "id": 80,
-  "name": "Sword of Descension",
-  "weapontype": "Sword",
+  "name": "sword_of_descension",
+  "weapontype": "sword",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/sword-of-descension.png" 

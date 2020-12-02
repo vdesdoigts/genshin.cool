@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import {
+  Box,
   Button,
   Input,
   Modal,
@@ -26,6 +28,7 @@ const EditProfile = ({ profileBeingEdited, isModalOpen, onModalClose }: IProps) 
     return null
   }
 
+  const { t } = useTranslation()
   const dispatch = useRematchDispatch()
   const userRosterNames = useSelector(ProfileSelectors.getUserRosterNames)
 
@@ -33,7 +36,14 @@ const EditProfile = ({ profileBeingEdited, isModalOpen, onModalClose }: IProps) 
   const handleChange = (event) => setValue(event.target.value)
 
   const onEdit = () => {
-    dispatch.profile.updateProfileName({ index: profileBeingEdited, name: value })
+    if (value !== null && value !== '') {
+      dispatch.profile.updateProfileName({ index: profileBeingEdited, name: value })
+      onModalClose()
+    }
+  }
+
+  const onDeleteProfile = () => {
+    dispatch.profile.deleteProfile(profileBeingEdited)
     onModalClose()
   }
 
@@ -41,7 +51,7 @@ const EditProfile = ({ profileBeingEdited, isModalOpen, onModalClose }: IProps) 
     <Modal isOpen={isModalOpen} onClose={onModalClose}>
       <ModalOverlay />
       <ModalContent>
-        <ModalHeader>Profile</ModalHeader>
+        <ModalHeader>{t('site.edit_profile_modal.title')}</ModalHeader>
         <ModalCloseButton />
         <ModalBody>
           <Input
@@ -52,11 +62,14 @@ const EditProfile = ({ profileBeingEdited, isModalOpen, onModalClose }: IProps) 
           />
         </ModalBody>
 
-        <ModalFooter>
-          <Button colorScheme="blue" mr={3} onClick={onEdit}>
-            Save
-          </Button>
-          <Button variant="ghost" onClick={onModalClose}>Close</Button>
+        <ModalFooter justifyContent={userRosterNames.length > 1 ? 'space-between' : 'flex-end'}>
+          {userRosterNames.length > 1 && <Button variant="outline" colorScheme="red" onClick={onDeleteProfile}>{t('site.delete')}</Button>}
+          <Box>
+            <Button colorScheme="blue" mr={3} onClick={onEdit} isDisabled={value === null && value === ''}>
+              {t('site.save')}
+            </Button>
+            <Button variant="outline" onClick={onModalClose}>{t('site.cancel')}</Button>
+          </Box>
         </ModalFooter>
       </ModalContent>
     </Modal>

@@ -1,9 +1,9 @@
 {
   "id": 13,
-  "name": "Vajrada Amethyst Sliver",
+  "name": "vajrada_amethyst_sliver",
   "type": {
     "id": 4,
-    "name": "Vajrada Amethyst"
+    "name": "vajrada_amethyst"
   },
   "rarity": 2,
   "ascensions": [1],
@@ -13,7 +13,7 @@
   "url": "/wiki/Vajrada_Amethyst_Sliver",
   "droppedby": [
     {
-      "name": "Electro Hypostasis",
+      "name": "electro_hypostasis",
       "type": "Normal Boss",
       "images": {
         "image": "/images/bosses/electro-hypostasis.png"

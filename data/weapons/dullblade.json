@@ -1,7 +1,7 @@
 {
   "id": 21,
-  "name": "Dull Blade",
-  "weapontype": "Sword",
+  "name": "dull_blade",
+  "weapontype": "sword",
   "rarity": 1,
   "images": {
     "image": "/images/weapons/dull-blade.png"    

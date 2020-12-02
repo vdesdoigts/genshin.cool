@@ -1,7 +1,7 @@
 {
   "id": 26,
-  "name": "Favonius Greatsword",
-  "weapontype": "Claymore",
+  "name": "favonius_greatsword",
+  "weapontype": "claymore",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/favonius-greatsword.png"

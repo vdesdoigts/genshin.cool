@@ -1,7 +1,7 @@
 {
   "id": 8,
-  "name": "Blackcliff Longsword",
-  "weapontype": "Sword",
+  "name": "blackcliff_longsword",
+  "weapontype": "sword",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/blackcliff-longsword.png"

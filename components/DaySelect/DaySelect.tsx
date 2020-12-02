@@ -1,5 +1,5 @@
 import React from 'react'
-import { css } from '@emotion/css'
+import { useTranslation } from 'react-i18next'
 import { Box, Flex, Heading, Image, Text } from '@chakra-ui/react'
 import { useSelector } from 'react-redux'
 import useRematchDispatch from '../../hooks/useRematch'
@@ -7,18 +7,19 @@ import { AppSelectors } from '../../redux/selectors'
 import Select from '../Select'
 
 const Schedule = () => {
+  const { t } = useTranslation()
   const dispatch = useRematchDispatch()
   const currentSelectedDay = useSelector(AppSelectors.getCurrentSelectedDay)
 
   const options = [
-    { value: 'all', label: 'Week' },
-    { value: 'Monday', label: 'Monday' },
-    { value: 'Tuesday', label: 'Tuesday' },
-    { value: 'Wednesday', label: 'Wednesday' },
-    { value: 'Thursday', label: 'Thursday' },
-    { value: 'Friday', label: 'Friday' },
-    { value: 'Saturday', label: 'Saturday' },
-    { value: 'Sunday', label: 'Sunday' },
+    { value: 'all', label: t('site.days.week') },
+    { value: 'Monday', label: t('site.days.monday') },
+    { value: 'Tuesday', label: t('site.days.tuesday') },
+    { value: 'Wednesday', label: t('site.days.wednesday') },
+    { value: 'Thursday', label: t('site.days.thursday') },
+    { value: 'Friday', label: t('site.days.friday') },
+    { value: 'Saturday', label: t('site.days.saturday') },
+    { value: 'Sunday', label: t('site.days.sunday') },
   ]
   
   return (
@@ -41,10 +42,10 @@ const Schedule = () => {
           fontWeight="medium"
           lineHeight="1.33333"
         >
-          Genshin Impact farming guide
+          {t('site.genshin_impact_farming_guide')}
         </Heading>
         <Text mb="18px" fontSize="14px">
-          Find out the best farming methods and schedule optimization.
+        {t('site.genshin_impact_farming_guide_description')}
         </Text>
         <Box>
           <Box maxW="400px">

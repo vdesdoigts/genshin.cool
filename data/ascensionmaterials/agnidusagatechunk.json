@@ -1,9 +1,9 @@
 {
   "id": 3,
-  "name": "Agnidus Agate Chunk",
+  "name": "agnidus_agate_chunk",
   "type": {
     "id": 1,
-    "name": "Agnidus Agate"
+    "name": "agnidus_agate"
   },
   "rarity": 4,
   "ascensions": [4, 5],
@@ -13,7 +13,8 @@
   "url": "/wiki/Agnidus_Agate_Chunk",
   "droppedby": [
     {
-      "name": "Pyro Regisvine 60+",
+      "name": "pyro_regisvine",
+      "level": "60+",
       "type": "Normal Boss",
       "images": {
         "image": "/images/bosses/pyro-regisvine.png"
@@ -27,7 +28,7 @@
     {
       "type": "Alchemy",
       "ascensionmaterialid": 2,
-      "name": "Agnidus Agate Fragment",
+      "name": "agnidus_agate_fragment",
       "amount": 3,
       "images": {
         "image": "/images/ascensionmaterials/agnidus-agate-fragment.png"

@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { useTranslation } from 'react-i18next'
 import uniq from 'lodash.uniq'
 import { useSelector } from 'react-redux'
 import { AppSelectors, ProfileSelectors } from '../../redux/selectors'
@@ -9,6 +10,7 @@ import DailyTalentsMaterials from './DailyTalentsMaterials'
 import WeeklyTalentsMaterials from './WeeklyTalentsMaterials'
 
 const CharactersTalents = () => {
+  const { t } = useTranslation()
   const currentSelectedDay = useSelector(AppSelectors.getCurrentSelectedDay)
   const currentRosterCharacters = useSelector(ProfileSelectors.getCurrentEnabledRosterCharacters)
   const characters = currentRosterCharacters.map((character) => getCharacterById(character.id))
@@ -25,16 +27,16 @@ const CharactersTalents = () => {
 
   if ((currentSelectedDay === 'all' && talentMaterialTypes?.length === 0) || (currentSelectedDay !== 'all' && dailyTalentMaterialTypes?.length === 0)) {
     return (
-      <DashBox title="Character materials" shadow size="sm">
+      <DashBox title={t('site.character_materials')} shadow size="sm">
         <DashBox variant="blue">
-          No character material to farm today.
+          {t('site.character_materials_empty')}
         </DashBox>
       </DashBox>
     )
   }
 
   return (
-    <DashBox title="Character materials" {...(currentSelectedDay === 'all' ? { variant: 'pink', size: 'sm' } : {})} shadow>
+    <DashBox title={t('site.character_materials')} {...(currentSelectedDay === 'all' ? { variant: 'pink', size: 'sm' } : {})} shadow>
       {currentSelectedDay === 'all'
         ? <DashBox><WeeklyTalentsMaterials talentsMaterials={talentMaterialTypes} /></DashBox>
         : <DailyTalentsMaterials talentsMaterials={dailyTalentMaterialTypes} />

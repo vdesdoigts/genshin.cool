@@ -1,7 +1,7 @@
 {
   "id": 12,
-  "name": "Black Tassel",
-  "weapontype": "Polearm",
+  "name": "black_tassel",
+  "weapontype": "polearm",
   "rarity": 3,
   "images": {
     "image": "/images/weapons/black-tassel.png"

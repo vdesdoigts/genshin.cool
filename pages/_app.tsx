@@ -1,10 +1,12 @@
 import * as React from 'react'
+import { useTranslation } from 'react-i18next'
 import { Provider } from 'react-redux'
 import { getPersistor } from '@rematch/persist'
 import { PersistGate } from 'redux-persist/lib/integration/react'
 import { ChakraProvider } from '@chakra-ui/react'
 import Head from 'next/head'
 import 'typeface-poppins'
+import '../i18n'
 import theme from '../theme'
 import '../styles/globals.css'
 import { store } from '../redux/store'
@@ -12,6 +14,12 @@ import { store } from '../redux/store'
 const persistor = getPersistor()
 
 function App({ Component, pageProps }) {
+  const { i18n } = useTranslation()
+
+  React.useEffect(() => {
+    i18n.changeLanguage(store.getState().options.lang)
+  }, [])
+
   return (
     <ChakraProvider theme={theme}>
       <Head>

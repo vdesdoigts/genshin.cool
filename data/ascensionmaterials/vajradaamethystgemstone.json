@@ -1,9 +1,9 @@
 {
   "id": 16,
-  "name": "Vajrada Amethyst Gemstone",
+  "name": "vajrada_amethyst_gemstone",
   "type": {
     "id": 4,
-    "name": "Vajrada Amethyst"
+    "name": "vajrada_amethyst"
   },
   "rarity": 4,
   "ascensions": [6],
@@ -13,7 +13,8 @@
   "url": "/wiki/Vajrada_Amethyst_Gemstone",
   "droppedby": [
     {
-      "name": "Electro Hypostasis 75+",
+      "name": "electro_hypostasis",
+      "level": "75+",
       "type": "Normal Boss",
       "images": {
         "image": "/images/bosses/electro-hypostasis.png"
@@ -24,7 +25,7 @@
     {
       "type": "Alchemy",
       "ascensionmaterialid": 15,
-      "name": "Vajrada Amethyst Chunk",
+      "name": "vajrada_amethyst_chunk",
       "amount": 3,
       "images": {
         "image": "/images/ascensionmaterials/vajrada-amethyst-chunk.png"

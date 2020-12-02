@@ -1,9 +1,9 @@
 {
   "id": 17,
-  "name": "Shivada Jade Sliver",
+  "name": "shivada_jade_sliver",
   "type": {
     "id": 5,
-    "name": "Shivada Jade"
+    "name": "shivada_jade"
   },
   "rarity": 2,
   "ascensions": [1],
@@ -13,14 +13,14 @@
   "url": "/wiki/Shivada_Jade_Sliver",
   "droppedby": [
     {
-      "name": "Cryo Regisvine",
+      "name": "cryo_regisvine",
       "type": "Normal Boss",
       "images": {
         "image": "/images/bosses/cryo-regisvine.png"
       }
     },
     {
-      "name": "Wolf of the North Challenge Reward"
+      "name": "wolf_of_the_north_challenge_reward"
     }
   ],
   "purchasedat": [

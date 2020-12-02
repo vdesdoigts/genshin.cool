@@ -1,7 +1,7 @@
 {
   "id": 24,
-  "name": "Eye of Perception",
-  "weapontype": "Catalyst",
+  "name": "eye_of_perception",
+  "weapontype": "catalyst",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/eye-of-perception.png"

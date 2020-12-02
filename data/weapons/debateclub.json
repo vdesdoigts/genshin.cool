@@ -1,7 +1,7 @@
 {
   "id": 19,
-  "name": "Debate Club",
-  "weapontype": "Claymore",
+  "name": "debate_club",
+  "weapontype": "claymore",
   "rarity": 3,
   "images": {
     "image": "/images/weapons/debate-club.png"

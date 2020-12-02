@@ -1,7 +1,7 @@
 {
   "id": 45,
-  "name": "Old Merc's Pal",
-  "weapontype": "Claymore",
+  "name": "old_merc_s_pal",
+  "weapontype": "claymore",
   "rarity": 2,
   "images": {
     "image": "/images/weapons/old-merc-pal.png"

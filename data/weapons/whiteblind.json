@@ -1,7 +1,7 @@
 {
   "id": 92,
-  "name": "Whiteblind",
-  "weapontype": "Claymore",
+  "name": "whiteblind",
+  "weapontype": "claymore",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/whiteblind.png"

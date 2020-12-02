@@ -1,7 +1,7 @@
 {
   "id": 75,
-  "name": "Skyward Harp",
-  "weapontype": "Bow",
+  "name": "skyward_harp",
+  "weapontype": "box",
   "rarity": 5,
   "images": {
     "image": "/images/weapons/skyward-harp.png"

@@ -1,7 +1,7 @@
 {
   "id": 31,
-  "name": "Fillet Blade",
-  "weapontype": "Sword",
+  "name": "fillet_blade",
+  "weapontype": "sword",
   "rarity": 3,
   "images": {
     "image": "/images/weapons/fillet-blade.png" 

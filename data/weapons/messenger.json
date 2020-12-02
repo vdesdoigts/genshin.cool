@@ -1,7 +1,7 @@
 {
   "id": 44,
-  "name": "Messenger",
-  "weapontype": "Bow",
+  "name": "messenger",
+  "weapontype": "box",
   "rarity": 3,
   "images": {
     "image": "/images/weapons/messenger.png"

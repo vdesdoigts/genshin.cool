@@ -1,7 +1,7 @@
 {
   "id": 72,
-  "name": "Skyrider Sword",
-  "weapontype": "Sword",
+  "name": "skyrider_sword",
+  "weapontype": "sword",
   "rarity": 3,
   "images": {
     "image": "/images/weapons/skyrider-sword.png" 

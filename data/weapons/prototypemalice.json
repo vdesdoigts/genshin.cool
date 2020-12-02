@@ -1,7 +1,7 @@
 {
   "id": 52,
-  "name": "Prototype Malice",
-  "weapontype": "Catalyst",
+  "name": "prototype_malice",
+  "weapontype": "catalyst",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/prototype-malice.png"

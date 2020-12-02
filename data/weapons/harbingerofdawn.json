@@ -1,7 +1,7 @@
 {
   "id": 33,
-  "name": "Harbinger of Dawn",
-  "weapontype": "Sword",
+  "name": "harbinger_of_dawn",
+  "weapontype": "sword",
   "rarity": 3,
   "images": {
     "image": "/images/weapons/harbinger-of-dawn.png"    

@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import {
   Box,
-  Container,
   Flex,
-  Grid,
   Heading,
   SimpleGrid,
-  Text,
   useDisclosure,
 } from '@chakra-ui/react'
 import AppMenu from '../components/AppMenu'
@@ -20,6 +18,7 @@ import EditProfile from '../components/EditProfile'
 import Armory from '../components/Armory'
 
 const Dash = () => {
+  const { t } = useTranslation()
   const { isOpen: isMenuOpen, onOpen: onMenuOpen, onClose: onMenuClose, onToggle: onMenuToggle } = useDisclosure()
   const { isOpen: isEditProfileModalOpen, onOpen: onEditProfileModalOpen, onClose: onEditProfileModalClose } = useDisclosure()
   const [profileBeingEdited, setProfileBeingEdited] = useState<number | null>()
@@ -83,8 +82,8 @@ const Dash = () => {
                 pb="32px"
                 px={{ base: '20px', md: '64px', xl: '32px', xxl: '64px' }}
               >
-                <Heading pl={{ base: '16px', md: 0 }} fontSize={{ base: '16px', md: '24px' }} lineHeight="1.33333" fontWeight="500">Hi Genshin Player,</Heading>
-                <Heading pl={{ base: '16px', md: 0 }} fontSize={{ base: '32px', md: '48px' }} lineHeight="1.5" fontWeight="600" letterSpacing="-1px">Welcome back 👋</Heading>
+                <Heading pl={{ base: '16px', md: 0 }} fontSize={{ base: '16px', md: '24px' }} lineHeight="1.33333" fontWeight="500">{t('site.header_label')}</Heading>
+                <Heading pl={{ base: '16px', md: 0 }} fontSize={{ base: '32px', md: '48px' }} lineHeight="1.5" fontWeight="600" letterSpacing="-1px">{t('site.header_title')}</Heading>
 
                 <SimpleGrid columns={1} spacing="32px" pt={{ base: '22px', md: '44px' }}>
                   <DaySelect />

@@ -1,7 +1,7 @@
 {
   "id": 40,
-  "name": "Lithic Spear",
-  "weapontype": "Polearm",
+  "name": "lithic_spear",
+  "weapontype": "polearm",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/lithic-spear.png"

@@ -2,13 +2,13 @@
 	"id": 15,
   "name": "Ningguang",
   "titles": [
-    "Eclipsing Star",
-    "Lady of the Jade Chamber"
+    "eclipsing_star",
+    "lady_of_the_jade_chamber"
   ],
-  "element": "Geo",
-  "weapontype": "Catalyst",
-  "gender": "Female",
-  "region": "Liyue",
+  "element": "geo",
+  "weapontype": "catalyst",
+  "gender": "female",
+  "region": "liyue",
   "rarity": 4,
   "images": {
     "image": "/images/characters/ningguang-thumb.png",
@@ -21,7 +21,7 @@
     "korean": "Kwak Kyumi",
     "chinese": "Mingya Du"
   },
-  "affiliation": "Liyue Qixing",
+  "affiliation": "liyue_qixing",
   "description": "Owner of the Jade Chamber in the skies above Liyue, there are stories abound about Ningguang, with her elegance and mysterious smile. As a Tianquan of the Liyue Qixing, not only does she embody law and order, she also represents fortune and wit.",
   "talentmaterialtype": {
     "id": 5,

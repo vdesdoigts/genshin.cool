@@ -1,7 +1,7 @@
 {
   "id": 64,
-  "name": "Sacrificial Fragments",
-  "weapontype": "Catalyst",
+  "name": "sacrificial_fragments",
+  "weapontype": "catalyst",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/sacrificial-fragments.png"

@@ -1,9 +1,9 @@
 {
   "id": 14,
-  "name": "Vajrada Amethyst Fragment",
+  "name": "vajrada_amethyst_fragment",
   "type": {
     "id": 4,
-    "name": "Vajrada Amethyst"
+    "name": "vajrada_amethyst"
   },
   "rarity": 3,
   "ascensions": [2, 3],
@@ -13,7 +13,8 @@
   "url": "/wiki/Vajrada_Amethyst_Fragment",
   "droppedby": [
     {
-      "name": "Electro Hypostasis 40+",
+      "name": "electro_hypostasis",
+      "level": "40+",
       "type": "Normal Boss",
       "images": {
         "image": "/images/bosses/electro-hypostasis.png"
@@ -24,7 +25,7 @@
     {
       "type": "Alchemy",
       "ascensionmaterialid": 13,
-      "name": "Vajrada Amethyst Sliver",
+      "name": "vajrada_amethyst_sliver",
       "amount": 3,
       "images": {
         "image": "/images/ascensionmaterials/vajrada-amethyst-sliver.png"

@@ -1,6 +1,6 @@
 {
 	"id": 5,
-	"name": "Guyun",
+	"name": "guyun",
 	"2starname": "Luminous Sands from Guyun",
 	"3starname": "Lustrous Stone from Guyun",
 	"4starname": "Relic from Guyun",
@@ -8,7 +8,7 @@
 	"day": ["Monday", "Thursday", "Sunday"],
 	"location": "Mingyun Village",
 	"region": "Liyue",
-	"domainofforgery": "Hidden Palace of Lianshan Formula",
+	"domainofforgery": "hidden_palace_of_lianshan_formula",
 	"images": {
 		"image": "/images/weaponmaterialtypes/luminous-sands.png"
 	}

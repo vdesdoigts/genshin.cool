@@ -1,7 +1,7 @@
 {
   "id": 86,
-  "name": "The Viridiscent Hunt",
-  "weapontype": "Bow",
+  "name": "the_viridiscent_hunt",
+  "weapontype": "box",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/the-viridescent-hunt.png"

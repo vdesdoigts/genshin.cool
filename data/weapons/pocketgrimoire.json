@@ -1,7 +1,7 @@
 {
   "id": 47,
-  "name": "Pocket Grimoire",
-  "weapontype": "Catalyst",
+  "name": "pocket_grimoire",
+  "weapontype": "catalyst",
   "rarity": 2,
   "images": {
     "image": "/images/weapons/pocket-grimoire.png"

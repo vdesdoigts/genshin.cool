@@ -1,7 +1,7 @@
 {
   "id": 17,
-  "name": "Dark Iron Sword",
-  "weapontype": "Sword",
+  "name": "dark_iron_sword",
+  "weapontype": "sword",
   "rarity": 3,
   "images": {
     "image": "/images/weapons/dark-iron-sword.png"    

@@ -1,7 +1,7 @@
 {
   "id": 6,
-  "name": "Beginner's Protector",
-  "weapontype": "Polearm",
+  "name": "beginner_s_protector",
+  "weapontype": "polearm",
   "rarity": 1,
   "images": {
     "image": "/images/weapons/beginner-protector.png"

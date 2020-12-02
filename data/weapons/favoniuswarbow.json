@@ -1,7 +1,7 @@
 {
   "id": 29,
-  "name": "Favonius Warbow",
-  "weapontype": "Bow",
+  "name": "favonius_warbow",
+  "weapontype": "box",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/favonius-warbow.png"

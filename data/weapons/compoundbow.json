@@ -1,7 +1,7 @@
 {
   "id": 14,
-  "name": "Compound Bow",
-  "weapontype": "Bow",
+  "name": "compound_bow",
+  "weapontype": "box",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/compound-bow.png"

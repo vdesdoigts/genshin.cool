@@ -1,9 +1,9 @@
 {
   "id": 2,
-  "name": "Agnidus Agate Fragment",
+  "name": "agnidus_agate_fragment",
   "type": {
     "id": 1,
-    "name": "Agnidus Agate"
+    "name": "agnidus_agate"
   },
   "rarity": 3,
   "ascensions": [2, 3],
@@ -13,7 +13,8 @@
   "url": "/wiki/Agnidus_Agate_Fragment",
   "droppedby": [
     {
-      "name": "Pyro Regisvine 40+",
+      "name": "pyro_regisvine",
+      "level": "40+",
       "type": "Normal Boss",
       "images": {
         "image": "/images/bosses/pyro-regisvine.png"
@@ -27,7 +28,7 @@
     {
       "type": "Alchemy",
       "ascensionmaterialid": 1,
-      "name": "Agnidus Agate Sliver",
+      "name": "agnidus_agate_sliver",
       "amount": 3,
       "images": {
         "image": "/images/ascensionmaterials/agnidus-agate-sliver.png"

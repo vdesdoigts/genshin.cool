@@ -1,7 +1,7 @@
 {
   "id": 43,
-  "name": "Mappa Mare",
-  "weapontype": "Catalyst",
+  "name": "mappa_mare",
+  "weapontype": "catalyst",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/mappa-mare.png"

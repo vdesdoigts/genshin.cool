@@ -1,7 +1,7 @@
 {
   "id": 9,
-  "name": "Blackcliff Pole",
-  "weapontype": "Polearm",
+  "name": "blackcliff_pole",
+  "weapontype": "polearm",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/blackcliff-pole.png"

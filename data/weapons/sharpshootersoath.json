@@ -1,7 +1,7 @@
 {
   "id": 69,
-  "name": "Sharpshooter's Oath",
-  "weapontype": "Bow",
+  "name": "sharpshooter_s_oath",
+  "weapontype": "box",
   "rarity": 3,
   "images": {
     "image": "/images/weapons/sharpshooter-oath.png"

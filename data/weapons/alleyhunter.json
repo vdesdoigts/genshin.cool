@@ -1,7 +1,7 @@
 {
   "id": 1,
-  "name": "Alley Hunter",
-  "weapontype": "Bow",
+  "name": "alley_hunter",
+  "weapontype": "box",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/alley-hunter.png"

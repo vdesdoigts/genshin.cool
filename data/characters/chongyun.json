@@ -2,13 +2,13 @@
 	"id": 5,
   "name": "Chongyun",
   "titles": [
-    "Frozen Ardor",
-    "Banisher of Evil and Rumors Thereof"
+    "frozen_ardor",
+    "banisher_of_evil_and_rumors_thereof"
   ],
-  "element": "Cryo",
-  "weapontype": "Claymore",
-  "gender": "Male",
-  "region": "Liyue",
+  "element": "cryo",
+  "weapontype": "claymore",
+  "gender": "male",
+  "region": "liyue",
   "rarity": 4,
   "images": {
     "image": "/images/characters/chongyun-thumb.png",

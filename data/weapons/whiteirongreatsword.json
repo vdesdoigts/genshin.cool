@@ -1,7 +1,7 @@
 {
   "id": 93,
-  "name": "White Iron Greatsword",
-  "weapontype": "Claymore",
+  "name": "white_iron_greatsword",
+  "weapontype": "claymore",
   "rarity": 3,
   "images": {
     "image": "/images/weapons/white-iron-greatsword.png"

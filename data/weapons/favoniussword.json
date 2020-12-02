@@ -1,7 +1,7 @@
 {
   "id": 28,
-  "name": "Favonius Sword",
-  "weapontype": "Sword",
+  "name": "favonius_sword",
+  "weapontype": "sword",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/favonius-sword.png"

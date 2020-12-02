@@ -1,7 +1,7 @@
 {
   "id": 68,
-  "name": "Serpent Spine",
-  "weapontype": "Claymore",
+  "name": "serpent_spine",
+  "weapontype": "claymore",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/serpent-spine.png"

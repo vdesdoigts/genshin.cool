@@ -4,10 +4,10 @@
   "titles": [
     "n/a"
   ],
-  "element": "Electro",
-  "weapontype": "Claymore",
-  "gender": "Male",
-  "region": "Mondstadt",
+  "element": "electro",
+  "weapontype": "claymore",
+  "gender": "male",
+  "region": "mondstadt",
   "rarity": 4,
   "images": {
     "image": "/images/characters/razor-thumb.png",

@@ -1,13 +1,13 @@
 {
 	"id": 5,
-	"name": "Prosperity",
+	"name": "prosperity",
 	"2starname": "Teachings of \"Prosperity\"",
 	"3starname": "Guide of \"Prosperity\"",
 	"4starname": "Philosophies of \"Prosperity\"",
 	"day": ["Monday", "Thursday", "Sunday"],
 	"location": "Jueyun Karst",
 	"region": "Liyue",
-	"domainofmastery": "Taishan Mansion",
+	"domainofmastery": "taishan_mansion",
 	"images": {
 		"image": "/images/talentmaterials/prosperity-teachings.png"
 	}

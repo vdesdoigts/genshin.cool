@@ -1,7 +1,7 @@
 {
   "id": 46,
-  "name": "Otherworldly Story",
-  "weapontype": "Catalyst",
+  "name": "otherworldly_story",
+  "weapontype": "catalyst",
   "rarity": 3,
   "images": {
     "image": "/images/weapons/otherworldly-story.png"

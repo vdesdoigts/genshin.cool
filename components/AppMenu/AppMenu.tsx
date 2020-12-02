@@ -1,15 +1,19 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import {
   Box,
   Flex,
   Icon,
+  Select,
   Text,
   VStack,
 } from '@chakra-ui/react'
+import { CloseButton } from '@chakra-ui/close-button'
 import { FiSettings } from 'react-icons/fi'
 import { useSelector } from 'react-redux'
+import { ILangs } from '../../types'
 import useRematchDispatch from '../../hooks/useRematch'
-import { ProfileSelectors } from '../../redux/selectors'
+import { OptionsSelectors, ProfileSelectors } from '../../redux/selectors'
 
 export const NavButton = ({ label, isCurrent, onClick, onEdit, ...rest }: { label: string, isCurrent?: boolean, onClick?: () => void, onEdit?: () => void, as?: any, href?: string }) => (
   <Flex
@@ -68,8 +72,10 @@ interface IProps {
 }
 
 const Menu = ({ onEditProfile, isMenuOpen, onMenuClose, onMenuToggle }: IProps) => {
+  const { i18n, t } = useTranslation()
   const dispatch = useRematchDispatch()
   const userRosterNames = useSelector(ProfileSelectors.getUserRosterNames)
+  const currentLang = useSelector(OptionsSelectors.getCurrentLang)
   const currentUserProfileIndex = useSelector(ProfileSelectors.getCurrentUserProfileIndex)
 
   const onSelectProfile = (index: number) => {
@@ -78,6 +84,11 @@ const Menu = ({ onEditProfile, isMenuOpen, onMenuClose, onMenuToggle }: IProps) 
 
   const onAddProfile = () => {
     dispatch.profile.addProfile()
+  }
+
+  const onChangeLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    dispatch.options.setLang(e.target.value as ILangs)
+    i18n.changeLanguage(e.target.value as ILangs)
   }
 
   return (
@@ -89,6 +100,14 @@ const Menu = ({ onEditProfile, isMenuOpen, onMenuClose, onMenuToggle }: IProps) 
       overflowY="auto"
       background="#fff"
     >
+      <Box
+        display={{ base: 'block', xxl: 'none' }}
+        position="absolute"
+        top={2}
+        right={2}
+      >
+        <CloseButton size="lg" onClick={onMenuClose} />
+      </Box>
       <Flex
         minH="100%"
         justify="space-between"
@@ -123,7 +142,7 @@ const Menu = ({ onEditProfile, isMenuOpen, onMenuClose, onMenuToggle }: IProps) 
                 fontWeight="500"
                 line-height="1.33333"
               >
-                Profiles
+                {t('site.profiles')}
               </Text>
               <VStack width="100%" spacing={0} align="stretch">
                 {userRosterNames.map((name, index) => (
@@ -137,12 +156,12 @@ const Menu = ({ onEditProfile, isMenuOpen, onMenuClose, onMenuToggle }: IProps) 
                 ))}
                 <NavButton
                   onClick={onAddProfile}
-                  label="Add a profile"
+                  label={t('site.add_a_profile')}
                 />
               </VStack>
             </Box>
 
-            {/* <Box
+            <Box
               position="relative"
               mb="40px"
               pb="30px"
@@ -164,9 +183,15 @@ const Menu = ({ onEditProfile, isMenuOpen, onMenuClose, onMenuToggle }: IProps) 
                 fontWeight="500"
                 line-height="1.33333"
               >
-                Tools
+                {t('site.settings')}
               </Text>
-            </Box> */}
+              <VStack width="100%" spacing={0} align="stretch">
+                <Select onChange={onChangeLanguage} defaultValue={currentLang}>
+                  <option value="en">{t('langs.english')}</option>
+                  <option value="fr">{t('langs.french')}</option>
+                </Select>
+              </VStack>
+            </Box>
           </Box>
         </Box>
 

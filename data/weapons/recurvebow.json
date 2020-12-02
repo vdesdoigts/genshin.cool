@@ -1,7 +1,7 @@
 {
   "id": 57,
-  "name": "Recurve Bow",
-  "weapontype": "Bow",
+  "name": "recurve_bow",
+  "weapontype": "box",
   "rarity": 3,
   "images": {
     "image": "/images/weapons/recurve-bow.png"

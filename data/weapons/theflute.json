@@ -1,7 +1,7 @@
 {
   "id": 84,
-  "name": "The Flute",
-  "weapontype": "Sword",
+  "name": "the_flute",
+  "weapontype": "sword",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/the-flute.png"

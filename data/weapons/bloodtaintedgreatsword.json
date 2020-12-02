@@ -1,7 +1,7 @@
 {
   "id": 13,
-  "name": "Bloodtainted Greatsword",
-  "weapontype": "Claymore",
+  "name": "bloodtainted_greatsword",
+  "weapontype": "claymore",
   "rarity": 3,
   "images": {
     "image": "/images/weapons/bloodtainted-greatsword.png"

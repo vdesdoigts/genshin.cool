@@ -1,7 +1,7 @@
 {
   "id": 30,
-  "name": "Ferrous Shadow",
-  "weapontype": "Claymore",
+  "name": "ferrous_shadow",
+  "weapontype": "claymore",
   "rarity": 3,
   "images": {
     "image": "/images/weapons/ferrous-shadow.png"

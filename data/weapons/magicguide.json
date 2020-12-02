@@ -1,7 +1,7 @@
 {
   "id": 42,
-  "name": "Magic Guide",
-  "weapontype": "Catalyst",
+  "name": "magic_guide",
+  "weapontype": "catalyst",
   "rarity": 3,
   "images": {
     "image": "/images/weapons/magic-guide.png"

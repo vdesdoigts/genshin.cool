@@ -1,7 +1,7 @@
 {
   "id": 85,
-  "name": "The Stringless",
-  "weapontype": "Bow",
+  "name": "the_stringless",
+  "weapontype": "box",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/the-stringless.png"

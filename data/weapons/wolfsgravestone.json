@@ -1,7 +1,7 @@
 {
   "id": 96,
-  "name": "Wolf's Gravestone",
-  "weapontype": "Claymore",
+  "name": "wolf_s_gravestone",
+  "weapontype": "claymore",
   "rarity": 5,
   "images": {
     "image": "/images/weapons/wolf-gravestone.png"

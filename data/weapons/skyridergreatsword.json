@@ -1,7 +1,7 @@
 {
   "id": 71,
-  "name": "Skyrider Greatsword",
-  "weapontype": "Claymore",
+  "name": "skyrider_greatsword",
+  "weapontype": "claymore",
   "rarity": 3,
   "images": {
     "image": "/images/weapons/skyrider-greatsword.png"

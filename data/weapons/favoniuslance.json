@@ -1,7 +1,7 @@
 {
   "id": 27,
-  "name": "Favonius Lance",
-  "weapontype": "Polearm",
+  "name": "favonius_lance",
+  "weapontype": "polearm",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/favonius-lance.png"

@@ -1,13 +1,13 @@
 {
 	"id": 4,
-	"name": "Gold",
+	"name": "gold",
 	"2starname": "Teachings of \"Gold\"",
 	"3starname": "Guide of \"Gold\"",
 	"4starname": "Philosophies of \"Gold\"",
 	"day": ["Wednesday", "Saturday", "Sunday"],
 	"location": "Jueyun Karst",
 	"region": "Liyue",
-	"domainofmastery": "Taishan Mansion",
+	"domainofmastery": "taishan_mansion",
 	"images": {
 		"image": "/images/talentmaterials/gold-teachings.png"
 	}

@@ -1,9 +1,9 @@
 {
   "id": 20,
-  "name": "Shivada Jade Gemstone",
+  "name": "shivada_jade_gemstone",
   "type": {
     "id": 5,
-    "name": "Shivada Jade"
+    "name": "shivada_jade"
   },
   "rarity": 4,
   "ascensions": [6],
@@ -13,7 +13,8 @@
   "url": "/wiki/Shivada_Jade_Gemstone",
   "droppedby": [
     {
-      "name": "Cryo Regisvine 75+",
+      "name": "cryo_regisvine",
+      "level": "75+",
       "type": "Normal Boss",
       "images": {
         "image": "/images/bosses/cryo-regisvine.png"
@@ -27,7 +28,7 @@
     {
       "type": "Alchemy",
       "ascensionmaterialid": 3,
-      "name": "Shivada Jade Chunk",
+      "name": "shivada_jade_chunk",
       "amount": 3,
       "images": {
         "image": "/images/ascensionmaterials/shivada-jade-chunk.png"

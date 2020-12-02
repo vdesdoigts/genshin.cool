@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import groupBy from 'lodash.groupby'
 import {
   Box,
@@ -13,6 +14,7 @@ interface IProps {
 }
 
 const WeeklyWeaponsMaterials = ({ weaponsMaterials }: IProps) => {
+  const { t } = useTranslation()
   const weaponsMaterialsByDays = groupBy(weaponsMaterials, (item) => item.day)
 
   return (
@@ -21,7 +23,7 @@ const WeeklyWeaponsMaterials = ({ weaponsMaterials }: IProps) => {
         return (
           <Box>
             <Heading mb="16px" fontSize="14px" fontWeight="semibold" lineHeight="1.33333">
-              {key.split(',').join(', ')}
+              {t(`site.days.${key.split(',').join(', ')}`)}
             </Heading>
             <DailyWeaponsMaterials weaponsMaterials={weaponsMaterialsByDays[key]} />
           </Box>

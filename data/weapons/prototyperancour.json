@@ -1,7 +1,7 @@
 {
   "id": 53,
-  "name": "Prototype Rancour",
-  "weapontype": "Sword",
+  "name": "prototype_rancour",
+  "weapontype": "sword",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/prototype-rancour.png"

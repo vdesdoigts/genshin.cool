@@ -1,7 +1,7 @@
 {
   "id": 88,
-  "name": "Thrilling Tales of Dragon Slayers",
-  "weapontype": "Catalyst",
+  "name": "thrilling_tales_of_dragon_slayers",
+  "weapontype": "catalyst",
   "rarity": 3,
   "images": {
     "image": "/images/weapons/thrilling-tales-of-dragon-slayers.png"
