@@ -14,12 +14,12 @@ import {
   Heading,
   HStack,
   Icon,
-  Image,
   Stack,
   SimpleGrid,
   Text,
   useDisclosure,
 } from '@chakra-ui/react'
+import Image from 'next/image'
 import { FiEdit2, FiSettings } from 'react-icons/fi'
 import { useSelector } from 'react-redux'
 import useRematchDispatch from '../../hooks/useRematch'
@@ -76,9 +76,7 @@ const Character = ({ artifacts, ascension = 1, character, weapon, isDisabled, on
               <Box position="relative" width="100%" height="100%">
                 <Image
                   src={character.images.image}
-                  // @ts-ignore
                   layout="fill"
-                  objectFit="contain"
                 />
               </Box>
               <Center

@@ -6,10 +6,10 @@ import {
   Box,
   Flex,
   HStack,
-  Image,
   Stack,
   Text,
 } from '@chakra-ui/react'
+import Image from 'next/image'
 
 interface IProps {
   image: string 
@@ -35,9 +35,7 @@ const AscensionItem = ({ image, label, sublabel, characters }: IProps) => {
             <Box position="relative" width="100%" height="100%">
               <Image
                 src={image}
-                // @ts-ignore
                 layout="fill"
-                objectFit="contain"
               />
             </Box>
           </Box>

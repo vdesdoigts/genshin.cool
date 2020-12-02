@@ -4,12 +4,12 @@ import {
   Box,
   Heading,
   HStack,
-  Image,
   Stack,
   Text,
   useRadio,
   useRadioGroup,
 } from '@chakra-ui/react'
+import Image from 'next/image'
 import { useSelector } from 'react-redux'
 import useRematchDispatch from '../../hooks/useRematch'
 import { ProfileSelectors } from '../../redux/selectors'

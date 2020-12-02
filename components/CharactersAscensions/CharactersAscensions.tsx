@@ -6,10 +6,10 @@ import {
   Box,
   Flex,
   HStack,
-  Image,
   SimpleGrid,
   Text,
 } from '@chakra-ui/react'
+import Image from 'next/image'
 import { useSelector } from 'react-redux'
 import { ProfileSelectors } from '../../redux/selectors'
 import { getAscensionMaterialsByTypesAndAscension, getCharacterById } from '../../api'
@@ -74,9 +74,7 @@ const CharactersAscensions = () => {
                     <Box position="relative" width="100%" height="100%">
                       <Image
                         src={droppedby.images.image}
-                        // @ts-ignore
                         layout="fill"
-                        objectFit="contain"
                       />
                     </Box>
                   </AspectRatio>}
