@@ -53,7 +53,7 @@ const DashBox: React.FC<IProps> = ({ children, title, variant, size, shadow }) =
         borderRadius: '24px'
       } : {}}
     >
-      {!!title && <Heading mb="32px" px="32px" fontSize="18px" fontWeight="medium" lineHeight="1.33333">{title}</Heading>}
+      {!!title && <Heading as="h2" mb="32px" px="32px" fontSize="18px" fontWeight="medium" lineHeight="1.33333">{title}</Heading>}
       <Box px={px}>
         {children}
       </Box>

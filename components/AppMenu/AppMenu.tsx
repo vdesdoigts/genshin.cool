@@ -1,4 +1,5 @@
 import React from 'react'
+import { css } from '@emotion/css'
 import { useTranslation } from 'react-i18next'
 import {
   Box,
@@ -10,7 +11,7 @@ import {
 } from '@chakra-ui/react'
 import { CloseButton } from '@chakra-ui/close-button'
 import { FiSettings } from 'react-icons/fi'
-import { IoIosArrowDropdown } from 'react-icons/io'
+import { MdLanguage } from 'react-icons/md'
 import { useSelector } from 'react-redux'
 import { ILangs } from '../../types'
 import useRematchDispatch from '../../hooks/useRematch'
@@ -187,20 +188,32 @@ const Menu = ({ onEditProfile, isMenuOpen, onMenuClose, onMenuToggle }: IProps) 
                 {t('site.settings')}
               </Text>
               <VStack width="100%" spacing={0} align="stretch">
-                <Select
-                  variant="unstyled"
-                  rootProps={{
-                    px: '20px',
-                    fontSize: '14px',
-                    fontWeight: '600',
-                  }}
-                  icon={<Icon as={IoIosArrowDropdown} w={12} h={12} />}
-                  onChange={onChangeLanguage}
-                  defaultValue={currentLang}
+                <Flex
+                  alignItems="center"
+                  height="56px"
+                  borderRadius="12px"
+                  background="rgba(0, 0, 0, .05)"
                 >
-                  <option value="en">{t('langs.english')}</option>
-                  <option value="fr">{t('langs.french')}</option>
-                </Select>
+                  <Select
+                    variant="unstyled"
+                    cursor="pointer"
+                    _hover={{
+                      color: 'currenColor',
+                    }}
+                    rootProps={{
+                      px: '20px',
+                      _hover: { color: '#6C5DD3' },
+                    }}
+                    icon={<Icon as={MdLanguage} opacity={.8} _hover={{ color: 'currentcolor' }} mr="20px" />}
+                    iconSize="24px"
+                    onChange={onChangeLanguage}
+                    defaultValue={currentLang}
+                    css={{ fontFamily: '-apple-system,system-ui,sans-serif', fontSize: '14px', fontWeight: 600 }}
+                  >
+                    <option value="en">{t('langs.english')}</option>
+                    <option value="fr">{t('langs.french')}</option>
+                  </Select>
+                </Flex>
               </VStack>
             </Box>
           </Box>

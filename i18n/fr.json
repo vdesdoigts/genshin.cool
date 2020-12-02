@@ -48,12 +48,12 @@
     "vayuda_turquoise_sliver": "Varunada Lazurite Sliver"
   },
   "bosses": {
-    "anemo_hypostasis": "Anemo Hypostasis",
-    "cryo_regisvine": "Cryo Regisvine",
-    "electro_hypostasis": "Electro Hypostasis",
-    "geo_hypostasis": "Geo Hypostasis",
-    "oceanid": "Oceanid",
-    "pyro_regisvine": "Pyro Regisvine",
+    "anemo_hypostasis": "Hypostase Anémo",
+    "cryo_regisvine": "Arbre congelé",
+    "electro_hypostasis": "Hypostase Électro",
+    "geo_hypostasis": "Hypostase Geo",
+    "oceanid": "Esprit des Eaux",
+    "pyro_regisvine": "Arbre enflammé",
     "wolf_of_the_north_challenge_reward": "Défi du Loup du Nord"
   },
   "domainofforgeries": {
@@ -65,10 +65,10 @@
     "taishan_mansion": "Manoir Taishan"
   },
   "elements": {
-    "anemo": "Anemo",
+    "anemo": "Anémo",
     "cryo": "Cryo",
     "dendro": "Dendro",
-    "electro": "Electro",
+    "electro": "Électro",
     "geo": "Geo",
     "hydro": "Hydro",
     "pyro": "Pyro"
@@ -106,7 +106,7 @@
     "edit_profile_modal": {
       "title": "Éditer le profil"
     },
-    "genshin_impact_farming_guide_description": "Optimisez l'obtention des resources nécessaires à l'élévation de vos personnages.",
+    "genshin_impact_farming_guide_description": "Optimisez l'obtention des ressources nécessaires à l'élévation de vos personnages.",
     "genshin_impact_farming_guide": "Guide de farming Genshin Impact",
     "header_label": "Hi Genshin Player",
     "header_title": "Bienvenue 👋",

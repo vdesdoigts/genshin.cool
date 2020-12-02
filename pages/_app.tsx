@@ -8,7 +8,6 @@ import Head from 'next/head'
 import 'typeface-poppins'
 import '../i18n'
 import theme from '../theme'
-import '../styles/globals.css'
 import { store } from '../redux/store'
 
 const persistor = getPersistor()

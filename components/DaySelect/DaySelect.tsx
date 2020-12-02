@@ -37,6 +37,7 @@ const Schedule = () => {
         py="13px"
       >
         <Heading
+          as="h1"
           mb="14px"
           fontSize="24px"
           fontWeight="medium"

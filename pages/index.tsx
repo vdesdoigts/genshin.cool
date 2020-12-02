@@ -82,8 +82,8 @@ const Dash = () => {
                 pb="32px"
                 px={{ base: '20px', md: '64px', xl: '32px', xxl: '64px' }}
               >
-                <Heading pl={{ base: '16px', md: 0 }} fontSize={{ base: '16px', md: '24px' }} lineHeight="1.33333" fontWeight="500">{t('site.header_label')}</Heading>
-                <Heading pl={{ base: '16px', md: 0 }} fontSize={{ base: '32px', md: '48px' }} lineHeight="1.5" fontWeight="600" letterSpacing="-1px">{t('site.header_title')}</Heading>
+                <Heading as="h3" pl={{ base: '16px', md: 0 }} fontSize={{ base: '16px', md: '24px' }} lineHeight="1.33333" fontWeight="500">{t('site.header_label')}</Heading>
+                <Heading as="h4" pl={{ base: '16px', md: 0 }} fontSize={{ base: '32px', md: '48px' }} lineHeight="1.5" fontWeight="600" letterSpacing="-1px">{t('site.header_title')}</Heading>
 
                 <SimpleGrid columns={1} spacing="32px" pt={{ base: '22px', md: '44px' }}>
                   <DaySelect />
