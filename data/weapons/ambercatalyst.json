@@ -1,7 +1,7 @@
 {
   "id": 2,
   "name": "amber_catalyst",
-  "weapontype": "Catalyst",
+  "weapontype": "catalyst",
   "rarity": 3,
   "images": {
     "image": "/images/weapons/amber-catalyst.png"

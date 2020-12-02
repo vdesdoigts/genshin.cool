@@ -1,7 +1,7 @@
 {
   "id": 22,
   "name": "ebony_bow",
-  "weapontype": "Bow",
+  "weapontype": "box",
   "rarity": 3,
   "images": {
     "image": "/images/weapons/ebony-bow.png"

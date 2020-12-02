@@ -1,7 +1,7 @@
 {
   "id": 25,
   "name": "favonius_codex",
-  "weapontype": "Catalyst",
+  "weapontype": "catalyst",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/favonius-codex.png"

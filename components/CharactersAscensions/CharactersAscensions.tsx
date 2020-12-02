@@ -41,16 +41,16 @@ const CharactersAscensions = () => {
 
   if (ascensionMaterialsWithCharacters.length === 0) {
     return (
-      <DashBox title="Character ascensions" variant="pink" shadow size="sm">
+      <DashBox title={t('site.character_ascensions')} variant="pink" shadow size="sm">
         <DashBox>
-          No character in your roster.
+          {t('site.your_roster_empty')}
         </DashBox>
       </DashBox>
     )
   }
 
   return (
-    <DashBox title="Character ascensions" variant="pink" size="sm">
+    <DashBox title={t('site.character_ascensions')} variant="pink" size="sm">
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing="16px">
         {ascensionMaterialsWithCharacters.map((ascensionMaterial) => (
           <DashBox key={ascensionMaterial.name}>

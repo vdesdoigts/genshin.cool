@@ -1,7 +1,7 @@
 {
   "id": 20,
   "name": "dragon_s_bane",
-  "weapontype": "Polearm",
+  "weapontype": "polearm",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/dragon-bane.png"

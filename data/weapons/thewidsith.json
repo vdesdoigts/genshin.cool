@@ -1,7 +1,7 @@
 {
   "id": 87,
   "name": "the_widsith",
-  "weapontype": "Catalyst",
+  "weapontype": "catalyst",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/the-widsith.png"

@@ -1,7 +1,7 @@
 {
   "id": 48,
   "name": "primordial_jade_winged_spear",
-  "weapontype": "Polearm",
+  "weapontype": "polearm",
   "rarity": 5,
   "images": {
     "image": "/images/weapons/primordial-jade-winged-spear.png"

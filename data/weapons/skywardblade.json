@@ -1,7 +1,7 @@
 {
   "id": 74,
   "name": "skyward_blade",
-  "weapontype": "Sword",
+  "weapontype": "sword",
   "rarity": 5,
   "images": {
     "image": "/images/weapons/skyward-blade.png"

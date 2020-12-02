@@ -1,7 +1,7 @@
 {
   "id": 50,
   "name": "prototype_crescent",
-  "weapontype": "Bow",
+  "weapontype": "box",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/prototype-crescent.png"

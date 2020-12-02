@@ -1,7 +1,7 @@
 {
   "id": 32,
   "name": "halberd",
-  "weapontype": "Polearm",
+  "weapontype": "polearm",
   "rarity": 3,
   "images": {
     "image": "/images/weapons/halberd.png"

@@ -1,7 +1,7 @@
 {
   "id": 78,
   "name": "slingshot",
-  "weapontype": "Bow",
+  "weapontype": "box",
   "rarity": 3,
   "images": {
     "image": "/images/weapons/slingshot.png"

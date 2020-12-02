@@ -41,7 +41,10 @@ const WeaponsMenu = () => {
       </Box>
 
       <SimpleGrid spacing={3} pt={4}>
-        {weapons.filter((weapon) => weapon.name.toUpperCase().indexOf(value.toUpperCase()) > -1 || weapon.weapontype.toUpperCase().indexOf(value.toUpperCase()) > -1).map((item) => (
+        {weapons.filter((weapon) => 
+          t(`weapons.${weapon.name}`).toUpperCase().indexOf(value.toUpperCase()) > -1 
+          || t(`weapontypes.${weapon.weapontype}`).toUpperCase().indexOf(value.toUpperCase()) > -1)
+          .map((item) => (
           <ListItem
             key={item.id}
             image={item.images.image}

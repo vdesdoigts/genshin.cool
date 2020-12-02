@@ -1,7 +1,7 @@
 {
   "id": 3,
   "name": "amos_bow",
-  "weapontype": "Bow",
+  "weapontype": "box",
   "rarity": 5,
   "images": {
     "image": "/images/weapons/amos-bow.png"

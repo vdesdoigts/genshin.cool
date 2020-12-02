@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import uniq from 'lodash.uniq'
 import { useSelector } from 'react-redux'
 import { AppSelectors, ProfileSelectors } from '../../redux/selectors'
@@ -9,6 +10,7 @@ import DailyWeaponsMaterials from './DailyWeaponsMaterials'
 import { IWeapon, IWeaponMaterialType } from '../../types'
 
 const WeaponsAscensions = () => {
+  const { t } = useTranslation()
   const currentSelectedDay = useSelector(AppSelectors.getCurrentSelectedDay)
   const currentEnabledArmoryWeapons = useSelector(ProfileSelectors.getCurrentEnabledArmoryWeapons)
   const weapons = currentEnabledArmoryWeapons.map((weapon) => getWeaponById(weapon.id)).filter((weapon) => weapon)
@@ -25,16 +27,16 @@ const WeaponsAscensions = () => {
 
   if ((currentSelectedDay === 'all' && weaponMaterialTypes?.length === 0) || (currentSelectedDay !== 'all' && dailyWeaponMaterialTypes?.length === 0)) {
     return (
-      <DashBox title="Weapon materials" shadow size="sm">
+      <DashBox title={t('site.weapon_materials')} shadow size="sm">
         <DashBox variant="blue">
-          No weapon material to farm today.
+          {t('site.weapon_materials_empty')}
         </DashBox>
       </DashBox>
     )
   }
 
   return (
-    <DashBox title="Weapon materials" {...(currentSelectedDay === 'all' ? { variant: 'pink', size: 'sm' } : {})} shadow>
+    <DashBox title={t('site.weapon_materials')} {...(currentSelectedDay === 'all' ? { variant: 'pink', size: 'sm' } : {})} shadow>
       {currentSelectedDay === 'all'
         ? <DashBox><WeeklyWeaponsMaterials weaponsMaterials={weaponMaterialTypes} /></DashBox>
         : <DailyWeaponsMaterials weaponsMaterials={dailyWeaponMaterialTypes} />

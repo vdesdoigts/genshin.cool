@@ -1,7 +1,7 @@
 {
   "id": 23,
   "name": "emerald_orb",
-  "weapontype": "Catalyst",
+  "weapontype": "catalyst",
   "rarity": 3,
   "images": {
     "image": "/images/weapons/emerald-orb.png"

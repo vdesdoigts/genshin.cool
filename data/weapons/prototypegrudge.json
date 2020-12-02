@@ -1,7 +1,7 @@
 {
   "id": 51,
   "name": "prototype_grudge",
-  "weapontype": "Polearm",
+  "weapontype": "polearm",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/prototype-grudge.png"

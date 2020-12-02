@@ -1,7 +1,7 @@
 {
   "id": 49,
   "name": "prototype_aminus",
-  "weapontype": "Claymore",
+  "weapontype": "claymore",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/prototype-aminus.png"

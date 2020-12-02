@@ -1,7 +1,7 @@
 {
   "id": 56,
   "name": "raven_bow",
-  "weapontype": "Bow",
+  "weapontype": "box",
   "rarity": 3,
   "images": {
     "image": "/images/weapons/raven-bow.png"

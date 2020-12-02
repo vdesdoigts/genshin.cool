@@ -1,7 +1,7 @@
 {
   "id": 62,
   "name": "rust",
-  "weapontype": "Bow",
+  "weapontype": "box",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/rust.png"

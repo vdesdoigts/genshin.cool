@@ -1,7 +1,7 @@
 {
   "id": 39,
   "name": "lithic_blade",
-  "weapontype": "Claymore",
+  "weapontype": "claymore",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/lithic-blade.png"

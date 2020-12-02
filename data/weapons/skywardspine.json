@@ -1,7 +1,7 @@
 {
   "id": 77,
   "name": "skyward_spine",
-  "weapontype": "Polearm",
+  "weapontype": "polearm",
   "rarity": 5,
   "images": {
     "image": "/images/weapons/skyward-spine.png"

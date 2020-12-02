@@ -1,7 +1,7 @@
 {
   "id": 38,
   "name": "lion_s_roar",
-  "weapontype": "Sword",
+  "weapontype": "sword",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/lion-roar.png"

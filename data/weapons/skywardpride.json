@@ -1,7 +1,7 @@
 {
   "id": 76,
   "name": "skyward_pride",
-  "weapontype": "Claymore",
+  "weapontype": "claymore",
   "rarity": 5,
   "images": {
     "image": "/images/weapons/skyward-pride.png"

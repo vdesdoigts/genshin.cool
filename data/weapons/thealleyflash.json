@@ -1,7 +1,7 @@
 {
   "id": 81,
   "name": "the_alley_flash",
-  "weapontype": "Sword",
+  "weapontype": "sword",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/the-alley-flash.png"

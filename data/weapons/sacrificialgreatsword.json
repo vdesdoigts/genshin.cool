@@ -1,7 +1,7 @@
 {
   "id": 65,
   "name": "sacrificial_greatsword",
-  "weapontype": "Claymore",
+  "weapontype": "claymore",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/sacrificial-greatsword.png"

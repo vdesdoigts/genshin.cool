@@ -1,7 +1,7 @@
 {
   "id": 37,
   "name": "kunwu_s_iris_rift",
-  "weapontype": "Polearm",
+  "weapontype": "polearm",
   "rarity": 5,
   "images": {
     "image": "/images/weapons/kunwu-iris-rift.png"

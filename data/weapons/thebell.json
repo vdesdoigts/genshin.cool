@@ -1,7 +1,7 @@
 {
   "id": 82,
   "name": "the_bell",
-  "weapontype": "Claymore",
+  "weapontype": "claymore",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/the-bell.png"

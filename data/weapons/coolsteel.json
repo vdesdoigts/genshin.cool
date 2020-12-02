@@ -1,7 +1,7 @@
 {
   "id": 15,
   "name": "cool_steel",
-  "weapontype": "Sword",
+  "weapontype": "sword",
   "rarity": 3,
   "images": {
     "image": "/images/weapons/cool-steel.png"    

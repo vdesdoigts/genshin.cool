@@ -1,7 +1,7 @@
 {
   "id": 79,
   "name": "solar_pearl",
-  "weapontype": "Catalyst",
+  "weapontype": "catalyst",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/solar-pearl.png"

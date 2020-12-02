@@ -1,7 +1,7 @@
 {
   "id": 58,
   "name": "royal_bow",
-  "weapontype": "Bow",
+  "weapontype": "box",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/royal-bow.png"

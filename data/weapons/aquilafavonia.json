@@ -1,7 +1,7 @@
 {
   "id": 5,
   "name": "aquila_favonia",
-  "weapontype": "Sword",
+  "weapontype": "sword",
   "rarity": 5,
   "images": {
     "image": "/images/weapons/aquila-favonia.png"

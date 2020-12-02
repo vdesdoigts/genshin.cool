@@ -1,7 +1,7 @@
 {
   "id": 90,
   "name": "twin_nephrite",
-  "weapontype": "Catalyst",
+  "weapontype": "catalyst",
   "rarity": 3,
   "images": {
     "image": "/images/weapons/twin-nephrite.png"

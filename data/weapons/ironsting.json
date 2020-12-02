@@ -1,7 +1,7 @@
 {
   "id": 36,
   "name": "iron_sting",
-  "weapontype": "Sword",
+  "weapontype": "sword",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/iron-sting.png"

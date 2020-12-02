@@ -1,7 +1,7 @@
 {
   "id": 97,
   "name": "memory_of_dust",
-  "weapontype": "Catalyst",
+  "weapontype": "catalyst",
   "rarity": 5,
   "images": {
     "image": "/images/weapons/memory-of-dust.png"

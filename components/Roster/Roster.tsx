@@ -192,7 +192,7 @@ const Roster = () => {
         )
         :  (
           <Box>
-            Your roster is empty, select at character.
+            {t('site.your_roster_empty')}
           </Box>
         )
       }

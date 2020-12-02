@@ -82,17 +82,41 @@
     "liyue": "Liyue"
   },
   "site": {
+    "armory_empty": "Your amory is empty, select at weapon",
     "ascension_rank": "Ascension rank",
-    "character_materials": "Character_materials",
+    "cancel": "Cancel",
+    "character_ascensions": "Character ascensions",
+    "character_materials": "Character materials",
+    "character_materials_empty": "No character material to farm today.",
+    "days": {
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday",
+      "week": "Week",
+      "Monday, Thursday, Sunday": "Monday, Thursday, Sunday",
+      "Wednesday, Saturday, Sunday": "Wednesday, Saturday, Sunday",
+      "Tuesday, Friday, Sunday": "Tuesday, Friday, Sunday"
+    },
+    "delete": "Delete",
+    "edit_profile_modal": {
+      "title": "Profil edit"
+    },
     "genshin_impact_farming_guide_description": "Find out the best farming methods and schedule optimization.",
     "genshin_impact_farming_guide": "Genshin Impact farming guide",
-    "header_label": "Hi Genshin Player",
+    "header_label": "Hi Genshin Player,",
     "header_title": "Welcome back 👋",
     "profiles": "Profiles",
+    "save": "Save",
     "settings": "Settings",
     "your_armory": "Your armory",
     "your_roster": "Your roster",
-    "weapon_materials": "Weapon materials"
+    "your_roster_empty": "No character in your roster.",
+    "weapon_materials": "Weapon materials",
+    "weapon_materials_empty": "No weapon material to farm today."
   },
   "talentmaterialtypes": {
     "ballad": "Ballad",

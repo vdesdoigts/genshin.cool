@@ -1,7 +1,7 @@
 {
   "id": 10,
   "name": "blackcliff_slasher",
-  "weapontype": "Claymore",
+  "weapontype": "claymore",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/blackcliff-slasher.png"

@@ -1,7 +1,7 @@
 {
   "id": 67,
   "name": "seasoned_hunter_s_bow",
-  "weapontype": "Bow",
+  "weapontype": "box",
   "rarity": 2,
   "images": {
     "image": "/images/weapons/hunter-bow.png"

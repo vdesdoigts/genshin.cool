@@ -8,8 +8,10 @@ import {
   Text,
   VStack,
 } from '@chakra-ui/react'
+import { CloseButton } from '@chakra-ui/close-button'
 import { FiSettings } from 'react-icons/fi'
 import { useSelector } from 'react-redux'
+import { ILangs } from '../../types'
 import useRematchDispatch from '../../hooks/useRematch'
 import { ProfileSelectors } from '../../redux/selectors'
 
@@ -84,7 +86,7 @@ const Menu = ({ onEditProfile, isMenuOpen, onMenuClose, onMenuToggle }: IProps) 
   }
 
   const onChangeLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    i18n.changeLanguage(e.target.value)
+    dispatch.options.setLang(e.target.value as ILangs)
   }
 
   return (
@@ -96,6 +98,14 @@ const Menu = ({ onEditProfile, isMenuOpen, onMenuClose, onMenuToggle }: IProps) 
       overflowY="auto"
       background="#fff"
     >
+      <Box
+        display={{ base: 'block', xxl: 'none' }}
+        position="absolute"
+        top={2}
+        right={2}
+      >
+        <CloseButton size="lg" onClick={onMenuClose} />
+      </Box>
       <Flex
         minH="100%"
         justify="space-between"

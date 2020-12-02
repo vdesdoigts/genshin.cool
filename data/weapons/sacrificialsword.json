@@ -1,7 +1,7 @@
 {
   "id": 66,
   "name": "sacrificial_sword",
-  "weapontype": "Sword",
+  "weapontype": "sword",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/sacrificial-sword.png"

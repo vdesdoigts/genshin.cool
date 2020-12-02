@@ -12,14 +12,14 @@ const Schedule = () => {
   const currentSelectedDay = useSelector(AppSelectors.getCurrentSelectedDay)
 
   const options = [
-    { value: 'all', label: 'Week' },
-    { value: 'Monday', label: 'Monday' },
-    { value: 'Tuesday', label: 'Tuesday' },
-    { value: 'Wednesday', label: 'Wednesday' },
-    { value: 'Thursday', label: 'Thursday' },
-    { value: 'Friday', label: 'Friday' },
-    { value: 'Saturday', label: 'Saturday' },
-    { value: 'Sunday', label: 'Sunday' },
+    { value: 'all', label: t('site.days.week') },
+    { value: 'Monday', label: t('site.days.monday') },
+    { value: 'Tuesday', label: t('site.days.tuesday') },
+    { value: 'Wednesday', label: t('site.days.wednesday') },
+    { value: 'Thursday', label: t('site.days.thursday') },
+    { value: 'Friday', label: t('site.days.friday') },
+    { value: 'Saturday', label: t('site.days.saturday') },
+    { value: 'Sunday', label: t('site.days.sunday') },
   ]
   
   return (

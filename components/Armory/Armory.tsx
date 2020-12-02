@@ -155,7 +155,7 @@ const Armory = () => {
         )
         : (
           <Box>
-            Your amory is empty, select at weapon.
+            {t('site.armory_empty')}
           </Box>
         )
       }

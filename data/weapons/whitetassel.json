@@ -1,7 +1,7 @@
 {
   "id": 94,
   "name": "white_tassel",
-  "weapontype": "Polearm",
+  "weapontype": "polearm",
   "rarity": 3,
   "images": {
     "image": "/images/weapons/white-tassel.png"

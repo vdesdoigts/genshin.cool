@@ -1,7 +1,7 @@
 {
   "id": 95,
   "name": "wine_and_song",
-  "weapontype": "Catalyst",
+  "weapontype": "catalyst",
   "rarity": 4,
   "images": {
     "image": "/images/weapons/wine-and-song.png"

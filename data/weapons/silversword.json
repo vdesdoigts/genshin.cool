@@ -1,7 +1,7 @@
 {
   "id": 70,
   "name": "silver_sword",
-  "weapontype": "Sword",
+  "weapontype": "sword",
   "rarity": 2,
   "images": {
     "image": "/images/weapons/silver-sword.png"
