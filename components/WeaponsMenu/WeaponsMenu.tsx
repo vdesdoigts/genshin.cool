@@ -30,12 +30,12 @@ const WeaponsMenu = () => {
 
   return (
     <Box py={4}>
-      <Heading mb="12px" fontSize="18px" fontWeight="medium" lineHeight="1.33333">Manage your armory</Heading>
+      <Heading mb="12px" fontSize="18px" fontWeight="medium" lineHeight="1.33333">{t('site.manage_your_armory')}</Heading>
       <Box pt={2}>
         <Input
           value={value}
           onChange={handleChange}
-          placeholder="Search characters by name or type"
+          placeholder={t('site.search_weapons_by_name_or_type')}
           size="lg"
         />
       </Box>

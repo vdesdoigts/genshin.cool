@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import {
   Box,
   Heading,
@@ -13,6 +14,7 @@ import ListItem from '../ListItem'
 import { ICharacter } from '../../types'
 
 const CharactersMenu = () => {
+  const { t } = useTranslation()
   const dispatch = useRematchDispatch()
   const currentRosterCharacters = useSelector(ProfileSelectors.getCurrentRosterCharacters)
   const characters = getCharacters()
@@ -28,12 +30,12 @@ const CharactersMenu = () => {
 
   return (
     <Box py={4}>
-      <Heading mb="12px" fontSize="18px" fontWeight="medium" lineHeight="1.33333">Manage your roster</Heading>
+      <Heading mb="12px" fontSize="18px" fontWeight="medium" lineHeight="1.33333">{t('site.manage_your_roster')}</Heading>
       <Box pt={2}>
         <Input
           value={value}
           onChange={handleChange}
-          placeholder="Search characters by name"
+          placeholder={t('site.search_characters_by_name')}
           size="lg"
         />
       </Box>
