@@ -24,6 +24,7 @@ import venti from './venti.json'
 import xiangling from './xiangling.json'
 import xiao from './xiao.json'
 import xingqiu from './xingqiu.json'
+import xinyan from './xinyan.json'
 import zhongli from './zhongli.json'
 
 export default [
@@ -53,5 +54,6 @@ export default [
   xiangling,
   xiao,
   xingqiu,
+  xinyan,
   zhongli,
 ]

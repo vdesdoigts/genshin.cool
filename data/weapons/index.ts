@@ -34,7 +34,6 @@ import harbingerofdawn from './harbingerofdawn.json'
 import huntersbow from './huntersbow.json'
 import ironpoint from './ironpoint.json'
 import ironsting from './ironsting.json'
-import kunwusirisrift from './kunwusirisrift.json'
 import lionsroar from './lionsroar.json'
 import lithicblade from './lithicblade.json'
 import lithicspear from './lithicspear.json'
@@ -59,6 +58,7 @@ import royalbow from './royalbow.json'
 import royalgreatsword from './royalgreatsword.json'
 import royalgrimoire from './royalgrimoire.json'
 import royallongsword from './royallongsword.json'
+import royalspear from './royalspear.json'
 import rust from './rust.json'
 import sacrificialbow from './sacrificialbow.json'
 import sacrificialfragments from './sacrificialfragments.json'
@@ -83,11 +83,13 @@ import thebell from './thebell.json'
 import theblacksword from './theblacksword.json'
 import theflute from './theflute.json'
 import thestringless from './thestringless.json'
+import theunforged from './theunforged.json'
 import theviridescenthunt from './theviridescenthunt.json'
 import thewidsith from './thewidsith.json'
 import thrillingtalesofdragonslayers from './thrillingtalesofdragonslayers.json'
 import travelershandysword from './travelershandysword.json'
 import twinnephrite from './twinnephrite.json'
+import vortexvanquisher from './vortexvanquisher.json'
 import wastergreatsword from './wastergreatsword.json'
 import whiteblind from './whiteblind.json'
 import whiteirongreatsword from './whiteirongreatsword.json'
@@ -133,13 +135,13 @@ export default [
   huntersbow,
   ironpoint,
   ironsting,
-  kunwusirisrift,
   lionsroar,
   lithicblade,
   lithicspear,
   lostprayertothesacredwinds,
   magicguide,
   mappamare,
+  memoryofdust,
   messenger,
   oldmercspal,
   otherworldlystory,
@@ -158,6 +160,7 @@ export default [
   royalgreatsword,
   royalgrimoire,
   royallongsword,
+  royalspear,
   rust,
   sacrificialbow,
   sacrificialfragments,
@@ -182,16 +185,17 @@ export default [
   theblacksword,
   theflute,
   thestringless,
+  theunforged,
   theviridescenthunt,
   thewidsith,
   thrillingtalesofdragonslayers,
   travelershandysword,
   twinnephrite,
+  vortexvanquisher,
   wastergreatsword,
   whiteblind,
   whiteirongreatsword,
   whitetassel,
   wineandsong,
   wolfsgravestone,
-  memoryofdust,
 ]
