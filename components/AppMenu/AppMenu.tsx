@@ -13,7 +13,7 @@ import { FiSettings } from 'react-icons/fi'
 import { useSelector } from 'react-redux'
 import { ILangs } from '../../types'
 import useRematchDispatch from '../../hooks/useRematch'
-import { ProfileSelectors } from '../../redux/selectors'
+import { OptionsSelectors, ProfileSelectors } from '../../redux/selectors'
 
 export const NavButton = ({ label, isCurrent, onClick, onEdit, ...rest }: { label: string, isCurrent?: boolean, onClick?: () => void, onEdit?: () => void, as?: any, href?: string }) => (
   <Flex
@@ -75,6 +75,7 @@ const Menu = ({ onEditProfile, isMenuOpen, onMenuClose, onMenuToggle }: IProps) 
   const { i18n, t } = useTranslation()
   const dispatch = useRematchDispatch()
   const userRosterNames = useSelector(ProfileSelectors.getUserRosterNames)
+  const currentLang = useSelector(OptionsSelectors.getCurrentLang)
   const currentUserProfileIndex = useSelector(ProfileSelectors.getCurrentUserProfileIndex)
 
   const onSelectProfile = (index: number) => {
@@ -87,6 +88,7 @@ const Menu = ({ onEditProfile, isMenuOpen, onMenuClose, onMenuToggle }: IProps) 
 
   const onChangeLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {
     dispatch.options.setLang(e.target.value as ILangs)
+    i18n.changeLanguage(e.target.value as ILangs)
   }
 
   return (
@@ -154,7 +156,7 @@ const Menu = ({ onEditProfile, isMenuOpen, onMenuClose, onMenuToggle }: IProps) 
                 ))}
                 <NavButton
                   onClick={onAddProfile}
-                  label="Add a profile"
+                  label={t('site.add_a_profile')}
                 />
               </VStack>
             </Box>
@@ -184,9 +186,9 @@ const Menu = ({ onEditProfile, isMenuOpen, onMenuClose, onMenuToggle }: IProps) 
                 {t('site.settings')}
               </Text>
               <VStack width="100%" spacing={0} align="stretch">
-                <Select onChange={onChangeLanguage}>
-                  <option value="en" selected={i18n.language === 'en'}>{t('langs.english')}</option>
-                  <option value="fr" selected={i18n.language === 'fr'}>{t('langs.french')}</option>
+                <Select onChange={onChangeLanguage} defaultValue={currentLang}>
+                  <option value="en">{t('langs.english')}</option>
+                  <option value="fr">{t('langs.french')}</option>
                 </Select>
               </VStack>
             </Box>

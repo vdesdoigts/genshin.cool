@@ -18,7 +18,7 @@ function App({ Component, pageProps }) {
 
   React.useEffect(() => {
     i18n.changeLanguage(store.getState().options.lang)
-  }, [store.getState().options.lang])
+  }, [])
 
   return (
     <ChakraProvider theme={theme}>

@@ -82,6 +82,7 @@
     "liyue": "Liyue"
   },
   "site": {
+    "add_a_profile": "Ajouter un profil",
     "armory_empty": "Votre armurerie est vide.",
     "ascension_rank": "Niveau d'élévation",
     "cancel": "Annuler",
@@ -109,9 +110,9 @@
     "genshin_impact_farming_guide": "Guide de farming Genshin Impact",
     "header_label": "Hi Genshin Player",
     "header_title": "Bienvenue 👋",
-    "profiles": "Profiles",
+    "profiles": "Profils",
     "save": "Enregistrer",
-    "settings": "Settings",
+    "settings": "Paramètres",
     "your_armory": "Armurerie",
     "your_roster": "Personnages",
     "your_roster_empty": "Aucun personnage sélectionné.",
