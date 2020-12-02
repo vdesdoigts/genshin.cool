@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import {
   Box,
   Heading,
@@ -13,6 +14,7 @@ import ListItem from '../ListItem'
 import { IWeapon } from '../../types'
 
 const WeaponsMenu = () => {
+  const { t } = useTranslation()
   const dispatch = useRematchDispatch()
   const currentArmoryWeapons = useSelector(ProfileSelectors.getCurrentArmoryWeapons)
   const weapons = getWeapons()
@@ -43,7 +45,7 @@ const WeaponsMenu = () => {
           <ListItem
             key={item.id}
             image={item.images.image}
-            label={item.name}
+            label={t(`weapons.${item.name}`)}
             onSelect={() => onSelect(item.id)}
             isSelected={currentArmoryWeapons.findIndex((weapon) => weapon.id === item.id) > -1}
             size="3rem"

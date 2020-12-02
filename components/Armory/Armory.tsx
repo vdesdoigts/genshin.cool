@@ -35,6 +35,8 @@ interface IProps {
 }
 
 const Weapon = ({ weapon, isDisabled, onDisabled }: IProps) => {
+  const { t } = useTranslation()
+
   return (
     <Box
       role="group"
@@ -80,7 +82,7 @@ const Weapon = ({ weapon, isDisabled, onDisabled }: IProps) => {
                 fontWeight="semibold"
                 lineHeight="1"
               >
-                {weapon.name}
+                {t(`weapons.${weapon.name}`)}
               </Text>
             </Stack>
           </Stack>
