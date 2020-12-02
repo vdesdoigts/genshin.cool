@@ -100,6 +100,7 @@ export type IAscensionMaterial = {
   url: string
   droppedby: {
     name: string
+    level?: string
     type?: string
     images?: {
       image: string

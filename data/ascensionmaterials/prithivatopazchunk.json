@@ -20,8 +20,14 @@
         "image": "/images/bosses/geo-hypostasis.png"
       }
     },
+
     {
-      "name": "Wolf of the North Challenge Reward 60+"
+      "name": "Wolf of the North Challenge Reward 60+",
+      "level": "60+",
+      "type": "Normal Boss",
+      "images": {
+        "image": "/images/bosses/north-wolf.png"
+      }
     }
   ],
   "craft": [

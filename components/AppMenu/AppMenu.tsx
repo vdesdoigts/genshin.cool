@@ -10,6 +10,7 @@ import {
 } from '@chakra-ui/react'
 import { CloseButton } from '@chakra-ui/close-button'
 import { FiSettings } from 'react-icons/fi'
+import { IoIosArrowDropdown } from 'react-icons/io'
 import { useSelector } from 'react-redux'
 import { ILangs } from '../../types'
 import useRematchDispatch from '../../hooks/useRematch'
@@ -186,7 +187,17 @@ const Menu = ({ onEditProfile, isMenuOpen, onMenuClose, onMenuToggle }: IProps) 
                 {t('site.settings')}
               </Text>
               <VStack width="100%" spacing={0} align="stretch">
-                <Select onChange={onChangeLanguage} defaultValue={currentLang}>
+                <Select
+                  variant="unstyled"
+                  rootProps={{
+                    px: '20px',
+                    fontSize: '14px',
+                    fontWeight: '600',
+                  }}
+                  icon={<Icon as={IoIosArrowDropdown} w={12} h={12} />}
+                  onChange={onChangeLanguage}
+                  defaultValue={currentLang}
+                >
                   <option value="en">{t('langs.english')}</option>
                   <option value="fr">{t('langs.french')}</option>
                 </Select>

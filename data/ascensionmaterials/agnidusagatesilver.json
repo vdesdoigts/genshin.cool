@@ -20,7 +20,11 @@
       }
     },
     {
-      "name": "wolf_of_the_north_challenge_reward"
+      "name": "wolf_of_the_north_challenge_reward",
+      "type": "Normal Boss",
+      "images": {
+        "image": "/images/bosses/north-wolf.png"
+      }
     }
   ],
   "purchasedat": [

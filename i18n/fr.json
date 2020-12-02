@@ -54,15 +54,15 @@
     "geo_hypostasis": "Geo Hypostasis",
     "oceanid": "Oceanid",
     "pyro_regisvine": "Pyro Regisvine",
-    "wolf_of_the_north_challenge_reward": "Wolf of the North Challenge Reward"
+    "wolf_of_the_north_challenge_reward": "Défi du Loup du Nord"
   },
   "domainofforgeries": {
-    "cecilia_garden": "Cecilia Garden",
-    "hidden_palace_of_lianshan_formula": "Hidden Palace of Lianshan Formula"
+    "cecilia_garden": "Pépinière de Cécilias",
+    "hidden_palace_of_lianshan_formula": "Palais secret de Lianshan"
   },
   "domainofmasteries": {
-    "forsaken_rift": "Forsaken Rift",
-    "taishan_mansion": "Taishan Mansion"
+    "forsaken_rift": "Gorge de l'oubli",
+    "taishan_mansion": "Manoir Taishan"
   },
   "elements": {
     "anemo": "Anemo",
@@ -74,8 +74,8 @@
     "pyro": "Pyro"
   },
   "genders": {
-    "female": "Female",
-    "male": "Male"
+    "female": "Féminin",
+    "male": "Masculin"
   },
   "regions": {
     "mondstadt": "Mondstadt",

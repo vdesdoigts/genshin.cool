@@ -21,7 +21,12 @@
       }
     },
     {
-      "name": "Wolf of the North Challenge Reward 60+"
+      "name": "wolf_of_the_north_challenge_reward",
+      "level": "60+",
+      "type": "Normal Boss",
+      "images": {
+        "image": "/images/bosses/north-wolf.png"
+      }
     }
   ],
   "craft": [

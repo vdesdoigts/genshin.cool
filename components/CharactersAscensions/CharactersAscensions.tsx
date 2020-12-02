@@ -93,7 +93,7 @@ const CharactersAscensions = () => {
                       lineHeight="1.1875"
                       fontWeight="500"
                     >
-                      {t(`bosses.${droppedby.name}`)}
+                      {t(`bosses.${droppedby.name}`)} {droppedby.level}
                     </Text>
                   </Flex>
                 </HStack>
