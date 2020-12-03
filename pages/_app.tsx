@@ -1,19 +1,35 @@
-import * as React from 'react'
+import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Provider } from 'react-redux'
 import { getPersistor } from '@rematch/persist'
 import { PersistGate } from 'redux-persist/lib/integration/react'
-import { ChakraProvider } from '@chakra-ui/react'
+import { Box, ChakraProvider, Flex, useDisclosure } from '@chakra-ui/react'
 import Head from 'next/head'
 import 'typeface-poppins'
 import '../i18n'
 import theme from '../theme'
 import { store } from '../redux/store'
+import AppMenu from '../components/AppMenu'
+import EditProfile from '../components/EditProfile'
+import Header from '../components/Header'
 
 const persistor = getPersistor()
 
 function App({ Component, pageProps }) {
   const { i18n } = useTranslation()
+  const { isOpen: isMenuOpen, onOpen: onMenuOpen, onClose: onMenuClose, onToggle: onMenuToggle } = useDisclosure()
+  const { isOpen: isEditProfileModalOpen, onOpen: onEditProfileModalOpen, onClose: onEditProfileModalClose } = useDisclosure()
+  const [profileBeingEdited, setProfileBeingEdited] = useState<number | null>()
+
+  const handleEditProfileModalOpen = (index: number) => {
+    setProfileBeingEdited(index)
+    onEditProfileModalOpen()
+  }
+
+  const handleEditProfileModalClose = () => {
+    onEditProfileModalClose()
+    setProfileBeingEdited(null)
+  }
 
   React.useEffect(() => {
     i18n.changeLanguage(store.getState().options.lang)
@@ -72,7 +88,46 @@ function App({ Component, pageProps }) {
       
       <Provider store={store}>
         <PersistGate persistor={persistor}>
-          <Component {...pageProps} />
+          <Box
+            opacity={isMenuOpen ? 1 : 0}
+            pointerEvents={isMenuOpen ? 'initial' : 'none'}
+            position="fixed"
+            zIndex={1300}
+            left={0}
+            top={0}
+            width="100vw"
+            height="100vh"
+            background="rgba(0, 0, 0, 0.48)"
+            transition="all .25s"
+            onClick={onMenuClose}
+          />
+          <Header onEditProfile={handleEditProfileModalOpen} isMenuOpen={isMenuOpen} onMenuClose={onMenuClose} onMenuToggle={onMenuToggle} />
+          <Flex
+            direction="column"
+            minHeight="100vh"
+          >
+            <Box
+              position="fixed"
+              zIndex={isMenuOpen ? 1400 : 1000}
+              top={0}
+              left={0}
+              flexShrink={0}
+              width="256px"
+              height="100vh"
+              background="#ffffff"
+              borderRight="1px solid #E4E4E4"
+              transition="all .25s"
+              transform={{ base: isMenuOpen ? 'translateX(0)' : 'translateX(-100%)', xxl: 'none' }}
+            >
+              <AppMenu onEditProfile={handleEditProfileModalOpen} isMenuOpen={isMenuOpen} onMenuClose={onMenuClose} onMenuToggle={onMenuToggle} />
+            </Box>
+              <Component {...pageProps} />
+          </Flex>
+          <EditProfile
+            profileBeingEdited={profileBeingEdited}
+            isModalOpen={isEditProfileModalOpen}
+            onModalClose={handleEditProfileModalClose}
+          />
         </PersistGate>
       </Provider>
     </ChakraProvider>

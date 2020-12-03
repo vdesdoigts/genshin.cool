@@ -1,5 +1,5 @@
 import React from 'react'
-import { css } from '@emotion/css'
+import { useRouter } from 'next/router'
 import { useTranslation } from 'react-i18next'
 import {
   Box,
@@ -9,60 +9,49 @@ import {
   Text,
   VStack,
 } from '@chakra-ui/react'
+import Image from 'next/image'
 import { CloseButton } from '@chakra-ui/close-button'
 import { FiSettings } from 'react-icons/fi'
-import { MdLanguage } from 'react-icons/md'
+import { MdBookmarkBorder, MdLanguage, MdPeople } from 'react-icons/md'
 import { useSelector } from 'react-redux'
 import { ILangs } from '../../types'
 import useRematchDispatch from '../../hooks/useRematch'
 import { OptionsSelectors, ProfileSelectors } from '../../redux/selectors'
+import Language from './Language'
+import ProfileMenu from './ProfileMenu'
 
-export const NavButton = ({ label, isCurrent, onClick, onEdit, ...rest }: { label: string, isCurrent?: boolean, onClick?: () => void, onEdit?: () => void, as?: any, href?: string }) => (
+interface INavButtonProps {
+  href: string
+  label: string
+  isCurrent?: boolean
+  onClick?: (e: any) => void
+}
+
+export const NavButton = ({ href, label, isCurrent, onClick }: INavButtonProps) => (
   <Flex
+    as="a"
+    href={href}
     alignItems="center"
     justify="space-between"
     height="56px"
     padding="0 20px"
     borderRadius="12px"
-    background={isCurrent ? '#6C5DD3' : 'transparent'}
+    background={isCurrent ? '#6C5DD3' : '#f2f2f2'}
     fontSize="14px"
     fontWeight="600"
-    color={isCurrent ? '#fff' : '#808191'}
+    color={isCurrent ? '#fff' : '#11142D'}
     transition="all .25s"
     _active={{
       background: '#6C5DD3',
       color: '#ffffff',
     }}
-    {...(!!onClick && !isCurrent ? { onClick, cursor: 'pointer' } : { })}
+    _hover={{
+      background: isCurrent ? '#6C5DD3' : '#e8e8e8',
+    }}
+    onClick={onClick}
+    {...(!isCurrent ? { cursor: 'pointer' } : { cursor: 'initial' })}
   >
-    <Flex
-      align="center"
-      flex="1 1 100%"
-      height="100%"
-      _hover={{
-        color: isCurrent ? '#fff': '#6C5DD3',
-      }}
-    >
-      <Text noOfLines={1} fontSize="inherit" fontWeight="inherit">{label}</Text>
-    </Flex>
-    {!!onEdit && (
-      <Box
-        p={1}
-        cursor="pointer"
-        color={isCurrent ? '#fff' : '#808191'}
-        fontSize={0}
-        transition="all .25s"
-        _hover={{
-          transform: 'rotate(50deg)',
-          color: isCurrent ? '#fff': '#6C5DD3',
-        }}
-        onClick={(e) => {
-          e.stopPropagation();
-          onEdit()
-        }}>
-          <Icon as={FiSettings} w={5} h={5} />
-        </Box>
-      )}
+    {label}
   </Flex>
 )
 
@@ -73,24 +62,20 @@ interface IProps {
   onMenuToggle: () => void
 }
 
-const Menu = ({ onEditProfile, isMenuOpen, onMenuClose, onMenuToggle }: IProps) => {
+const Menu = ({ onEditProfile, onMenuClose }: IProps) => {
   const { i18n, t } = useTranslation()
+  const router = useRouter()
   const dispatch = useRematchDispatch()
-  const userRosterNames = useSelector(ProfileSelectors.getUserRosterNames)
   const currentLang = useSelector(OptionsSelectors.getCurrentLang)
-  const currentUserProfileIndex = useSelector(ProfileSelectors.getCurrentUserProfileIndex)
-
-  const onSelectProfile = (index: number) => {
-    dispatch.profile.setCurrentProfile(index)
-  }
-
-  const onAddProfile = () => {
-    dispatch.profile.addProfile()
-  }
 
   const onChangeLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {
     dispatch.options.setLang(e.target.value as ILangs)
     i18n.changeLanguage(e.target.value as ILangs)
+  }
+
+  const handleNavigation = (e, href) => {
+    e.preventDefault()
+    router.push(href)
   }
 
   return (
@@ -121,106 +106,57 @@ const Menu = ({ onEditProfile, isMenuOpen, onMenuClose, onMenuToggle }: IProps) 
           overflow="hidden"
           transition="width .25s"
         >
-          <Box mb="20px">
-            <Box
-              position="relative"
-              mb="40px"
-              pb="30px"
-              _before={{
-                content: '""',
-                position: 'absolute',
-                left: '20px',
-                right: '20px',
-                bottom: 0,
-                height: '1px',
-                background: '#F0F3F6',
-              }}
+          <Box
+            position="relative"
+            mb="40px"
+            pb="30px"
+            _before={{
+              content: '""',
+              position: 'absolute',
+              left: '20px',
+              right: '20px',
+              bottom: 0,
+              height: '1px',
+              background: '#F0F3F6',
+            }}
+          >
+            <Text
+              mb="16px"
+              pl="20px"
+              color="#808191"
+              fontSize="12px"
+              fontWeight="500"
+              line-height="1.33333"
             >
-              <Text
-                mb="16px"
-                pl="20px"
-                color="#808191"
-                fontSize="12px"
-                fontWeight="500"
-                line-height="1.33333"
-              >
-                {t('site.profiles')}
-              </Text>
-              <VStack width="100%" spacing={0} align="stretch">
-                {userRosterNames.map((name, index) => (
-                  <NavButton
-                    key={index}
-                    onClick={() => onSelectProfile(index)}
-                    label={name}
-                    isCurrent={index === currentUserProfileIndex}
-                    onEdit={() => onEditProfile(index)}
-                  />
-                ))}
-                <NavButton
-                  onClick={onAddProfile}
-                  label={t('site.add_a_profile')}
-                />
-              </VStack>
-            </Box>
-
-            <Box
-              position="relative"
-              mb="40px"
-              pb="30px"
-              _before={{
-                content: '""',
-                position: 'absolute',
-                left: '20px',
-                right: '20px',
-                bottom: 0,
-                height: '1px',
-                background: '#F0F3F6',
-              }}
-            >
-              <Text
-                mb="16px"
-                pl="20px"
-                color="#808191"
-                fontSize="12px"
-                fontWeight="500"
-                line-height="1.33333"
-              >
-                {t('site.settings')}
-              </Text>
-              <VStack width="100%" spacing={0} align="stretch">
-                <Flex
-                  alignItems="center"
-                  height="56px"
-                  borderRadius="12px"
-                  background="rgba(0, 0, 0, .05)"
-                >
-                  <Select
-                    variant="unstyled"
-                    cursor="pointer"
-                    _hover={{
-                      color: 'currenColor',
-                    }}
-                    rootProps={{
-                      px: '20px',
-                      _hover: { color: '#6C5DD3' },
-                    }}
-                    icon={<Icon as={MdLanguage} opacity={.8} _hover={{ color: 'currentcolor' }} mr="20px" />}
-                    iconSize="24px"
-                    onChange={onChangeLanguage}
-                    defaultValue={currentLang}
-                    css={{ fontFamily: '-apple-system,system-ui,sans-serif', fontSize: '14px', fontWeight: 600 }}
-                  >
-                    <option value="en">{t('langs.english')}</option>
-                    <option value="fr">{t('langs.french')}</option>
-                  </Select>
-                </Flex>
-              </VStack>
-            </Box>
+              {t('site.navigation')}
+            </Text>
+            <VStack width="100%" align="stretch">
+              <NavButton
+                href="/"
+                onClick={(e) => handleNavigation(e, '/')}
+                label={t('site.navigations.overview')}
+                isCurrent={router.pathname === '/'}
+              />
+              <NavButton
+                href="/roster"
+                onClick={(e) => handleNavigation(e, '/roster')}
+                label={t('site.navigations.roster')}
+                isCurrent={router.pathname === '/roster'}
+              />
+            </VStack>
           </Box>
         </Box>
 
-        <Box px="12px">
-          <Text fontSize="12px">This website is a fansite and is not affiliated with or endorsed by miHoYo.</Text>
+        <Box>
+          <Box mb="20px">
+            <VStack width="100%" align="stretch">
+              <ProfileMenu onEditProfile={onEditProfile} />
+              <Language />
+            </VStack>
+          </Box>
+          <Box px="12px">
+            <Text fontSize="12px">This website is a fansite and is not affiliated with or endorsed by miHoYo.</Text>
+          </Box>
         </Box>
       </Flex>
     </Box>

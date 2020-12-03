@@ -112,6 +112,11 @@
     "header_title": "Bienvenue 👋",
     "manage_your_armory": "Gérez votre armurerie",
     "manage_your_roster": "Gérez vos personnages",
+    "navigation": "Navigation",
+    "navigations": {
+      "overview": "Planning",
+      "roster": "Personnages"
+    },
     "profiles": "Profils",
     "save": "Enregistrer",
     "search_characters_by_name": "Chercher par nom",

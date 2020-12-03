@@ -1,73 +1,23 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useTranslation } from 'react-i18next'
 import {
   Box,
   Flex,
   Heading,
   SimpleGrid,
-  useDisclosure,
 } from '@chakra-ui/react'
-import AppMenu from '../components/AppMenu'
 import CharactersAscension from '../components/CharactersAscensions'
 import CharactersTalents from '../components/CharactersTalents'
 import DaySelect from '../components/DaySelect'
-import Header from '../components/Header'
 import Roster from '../components/Roster'
 import WeaponsAscensions from '../components/WeaponsAscensions'
-import EditProfile from '../components/EditProfile'
 import Armory from '../components/Armory'
 
 const Dash = () => {
   const { t } = useTranslation()
-  const { isOpen: isMenuOpen, onOpen: onMenuOpen, onClose: onMenuClose, onToggle: onMenuToggle } = useDisclosure()
-  const { isOpen: isEditProfileModalOpen, onOpen: onEditProfileModalOpen, onClose: onEditProfileModalClose } = useDisclosure()
-  const [profileBeingEdited, setProfileBeingEdited] = useState<number | null>()
-
-  const handleEditProfileModalOpen = (index: number) => {
-    setProfileBeingEdited(index)
-    onEditProfileModalOpen()
-  }
-
-  const handleEditProfileModalClose = () => {
-    onEditProfileModalClose()
-    setProfileBeingEdited(null)
-  }
 
   return (
     <>
-      <Box
-        opacity={isMenuOpen ? 1 : 0}
-        pointerEvents={isMenuOpen ? 'initial' : 'none'}
-        position="fixed"
-        zIndex={1300}
-        left={0}
-        top={0}
-        width="100vw"
-        height="100vh"
-        background="rgba(0, 0, 0, 0.48)"
-        transition="all .25s"
-        onClick={onMenuClose}
-      />
-      <Header onEditProfile={handleEditProfileModalOpen} isMenuOpen={isMenuOpen} onMenuClose={onMenuClose} onMenuToggle={onMenuToggle} />
-      <Flex
-        direction="column"
-        minHeight="100vh"
-      >
-        <Box
-          position="fixed"
-          zIndex={isMenuOpen ? 1400 : 1000}
-          top={0}
-          left={0}
-          flexShrink={0}
-          width="256px"
-          height="100vh"
-          background="#ffffff"
-          borderRight="1px solid #E4E4E4"
-          transition="all .25s"
-          transform={{ base: isMenuOpen ? 'translateX(0)' : 'translateX(-100%)', xxl: 'none' }}
-        >
-          <AppMenu onEditProfile={handleEditProfileModalOpen} isMenuOpen={isMenuOpen} onMenuClose={onMenuClose} onMenuToggle={onMenuToggle} />
-        </Box>
         <Box
           flexGrow={1}
           paddingLeft={{ base: 0, xxl: '256px' }}
@@ -117,12 +67,6 @@ const Dash = () => {
             </Flex>
           </Box>
         </Box>
-      </Flex>
-      <EditProfile
-        profileBeingEdited={profileBeingEdited}
-        isModalOpen={isEditProfileModalOpen}
-        onModalClose={handleEditProfileModalClose}
-      />
     </>
   )
 }
