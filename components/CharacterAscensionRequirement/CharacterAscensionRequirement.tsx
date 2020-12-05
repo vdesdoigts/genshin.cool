@@ -9,8 +9,8 @@ import DashBox from '../DashBox'
 const Item = ({ ascension }: { ascension: ICharacterAscensionItem[] }) => (
   <DashBox size="xs" shadow>
     <Wrap spacing="8px" wrap="wrap" isInline>
-      {ascension.map((item, index) => (
-        <WrapItem key={index} position="relative">
+      {ascension.map((item) => (
+        <WrapItem key={item.name} position="relative">
           <AspectRatio
             ratio={1}
             flex="0 0 72px"
@@ -71,17 +71,12 @@ const CharacterAscensionRequirement = ({ selectedCharacter }: IProps) => {
           : (
             <SimpleGrid columns={1} spacing="8px">
               {characterascension?.requirements.filter((requirement, index) => index >= (selectedCharacter.ascension || 0)).map((ascension, index) => (
-                <Item key={index} ascension={ascension} />
+                <Item key={`${characterascension.id}${index}`} ascension={ascension} />
               ))}
             </SimpleGrid>
           )
         }
       </DashBox>
-      {/* <DashBox title="Total ascension material" variant="transparent" size="xs">
-        <SimpleGrid columns={1} spacing="16px">
-          <Item ascension={ascension} />
-        </SimpleGrid>
-      </DashBox> */}
     </SimpleGrid>
   )
 }

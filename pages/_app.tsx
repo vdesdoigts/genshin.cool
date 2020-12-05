@@ -84,6 +84,8 @@ function App({ Component, pageProps }) {
             `,
           }}
         />
+
+        <script data-ad-client="ca-pub-8458876784042744" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       </Head>
       
       <Provider store={store}>
