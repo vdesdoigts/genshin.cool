@@ -3,13 +3,17 @@ import { useRouter } from 'next/router'
 import { useTranslation } from 'react-i18next'
 import {
   Box,
+  Button,
   Flex,
+  SimpleGrid,
   Text,
   VStack,
 } from '@chakra-ui/react'
 import { CloseButton } from '@chakra-ui/close-button'
 import Language from './Language'
 import ProfileMenu from './ProfileMenu'
+import DashBox from './../DashBox'
+import Dash from '../../pages'
 
 interface INavButtonProps {
   href: string
@@ -84,7 +88,7 @@ const Menu = ({ onEditProfile, onMenuClose }: IProps) => {
         minH="100%"
         justify="space-between"
         direction="column"
-        pt="140px"
+        pt="90px"
       >
         <Box
           width="215px"
@@ -132,20 +136,32 @@ const Menu = ({ onEditProfile, onMenuClose }: IProps) => {
           </Box>
         </Box>
 
-        <Box>
-          <Box mb="20px">
+        <SimpleGrid columns={1} spacing={2}>
+          <Box>
             <VStack width="100%" align="stretch">
               <ProfileMenu onEditProfile={onEditProfile} />
               <Language />
             </VStack>
           </Box>
-          <Box px="12px" mb="20px">
-            <Text fontSize="12px">{t('site.mihoyo')}</Text>
-          </Box>
+          <DashBox size="sm"  br="sm" variant="purple">
+            <Box
+              as="a"
+              target="_blank"
+              fontSize="12px"
+              href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=LK7MGV4ZXRASW&item_name=We+rely+on+donations+to+maintain+the+website+and+make+more+wishes.+Thank+you+so+much+for+your+generosity%21&currency_code=EUR"
+            >
+              <Text fontSize="12px">
+                {t('site.donate_description')}
+              </Text>
+              <Box w="100%" pt={2}>
+                <Button w="100%" height="48px" borderRadius="12px" bg="white" color="#5F75EE" _hover={{ bg: 'white', color: '#6C5DD3' }}>{t('site.donate')}</Button>
+              </Box>
+            </Box>
+          </DashBox>
           <Box px="12px">
-            <Text fontSize="12px"><a href="https://twitter.com/vdesdoigts" target="_blank">Contact: @vdesdoigts</a></Text>
+            <Text fontSize="12px">{t('site.mihoyo')} <Text as="a" textDecoration="underline" href="https://twitter.com/vdesdoigts" target="_blank">{t('site.contact')}</Text></Text>
           </Box>
-        </Box>
+        </SimpleGrid>
       </Flex>
     </Box>
   )

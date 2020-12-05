@@ -93,6 +93,7 @@
     "character_ascensions": "Character ascensions",
     "character_materials": "Character talents",
     "character_materials_empty": "No character talent materials to farm today.",
+    "contact": "Contact @vdesdoigts for any request.",
     "days": {
       "monday": "Monday",
       "tuesday": "Tuesday",
@@ -107,6 +108,8 @@
       "Tuesday, Friday, Sunday": "Tuesday, Friday, Sunday"
     },
     "delete": "Delete",
+    "donate": "Donate",
+    "donate_description": "We rely on donations to maintain the website and make more wishes. Help us!",
     "edit_profile_modal": {
       "title": "Profil edit"
     },

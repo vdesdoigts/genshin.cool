@@ -93,6 +93,7 @@
     "character_ascensions": "Élévation de personnages",
     "character_materials": "Amélioration d'aptitudes",
     "character_materials_empty": "Aucune amélioration d'aptitudes aujourd'hui.",
+    "contact": "Contactez @vdesdoigts pour toute demande.",
     "days": {
       "monday": "Lundi",
       "tuesday": "Mardi",
@@ -107,6 +108,8 @@
       "Tuesday, Friday, Sunday": "Mardi, Vendredi, Dimanche"
     },
     "delete": "Supprimer",
+    "donate": "Donation",
+    "donate_description": "Nous comptons sur les dons pour maintenir le site et faire toujours plus de voeux.",
     "edit_profile_modal": {
       "title": "Éditer le profil"
     },
