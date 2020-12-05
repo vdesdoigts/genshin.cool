@@ -106,7 +106,7 @@ export const profile = createModel()({
         }
       })
     },
-    updateCharacterAsension(state, payload: { character: ICharacter['id'], ascension: IRosterCharacter['character']['ascension'] }) {
+    updateCharacterAscension(state, payload: { character: ICharacter['id'], ascension: IRosterCharacter['character']['ascension'] }) {
       return produce(state, draftState => {
         const { currentProfileIndex } = state
         const currentRoster = state.userProfiles[currentProfileIndex].roster

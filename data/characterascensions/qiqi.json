@@ -1,0 +1,220 @@
+{
+  "id": 17,
+  "requirements": [
+    [
+      {
+        "name": "shivada_jade_sliver",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/shivada-jade-sliver.png"
+        }
+      },
+      {
+        "name": "violetgrass",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/violetgrass.png"
+        }
+      },
+      {
+        "name": "divining_scroll",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/divining-scroll.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "20k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "shivada_jade_fragment",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/shivada-jade-fragment.png"
+        }
+      },
+      {
+        "name": "hoarfrost_core",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/hoarfrost-core.png"
+        }
+      },
+      {
+        "name": "violetgrass",
+        "count": 10,
+        "images": {
+          "image": "/images/ascensionmaterials/violetgrass.png"
+        }
+      },
+      {
+        "name": "divining_scroll",
+        "count": 15,
+        "images": {
+          "image": "/images/ascensionmaterials/divining-scroll.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "40k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "shivada_jade_fragment",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/shivada-jade-fragment.png"
+        }
+      },
+      {
+        "name": "hoarfrost_core",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/hoarfrost-core.png"
+        }
+      },
+      {
+        "name": "violetgrass",
+        "count": 20,
+        "images": {
+          "image": "/images/ascensionmaterials/violetgrass.png"
+        }
+      },
+      {
+        "name": "sealed-scroll",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/sealed-scroll.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "60k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "shivada_jade_chunk",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/shivada-jade-chunk.png"
+        }
+      },
+      {
+        "name": "hoarfrost_core",
+        "count": 8,
+        "images": {
+          "image": "/images/ascensionmaterials/hoarfrost-core.png"
+        }
+      },
+      {
+        "name": "violetgrass",
+        "count": 30,
+        "images": {
+          "image": "/images/ascensionmaterials/violetgrass.png"
+        }
+      },
+      {
+        "name": "sealed-scroll",
+        "count": 18,
+        "images": {
+          "image": "/images/ascensionmaterials/sealed-scroll.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "80k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "shivada_jade_chunk",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/shivada-jade-chunk.png"
+        }
+      },
+      {
+        "name": "hoarfrost_core",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/hoarfrost-core.png"
+        }
+      },
+      {
+        "name": "violetgrass",
+        "count": 45,
+        "images": {
+          "image": "/images/ascensionmaterials/violetgrass.png"
+        }
+      },
+      {
+        "name": "forbidden_curse_scroll",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/forbidden-curse-scroll.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "100k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "shivada_jade_gemstone",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/shivada-jade-gemstone.png"
+        }
+      },
+      {
+        "name": "hoarfrost_core",
+        "count": 20,
+        "images": {
+          "image": "/images/ascensionmaterials/hoarfrost-core.png"
+        }
+      },
+      {
+        "name": "violetgrass",
+        "count": 60,
+        "images": {
+          "image": "/images/ascensionmaterials/violetgrass.png"
+        }
+      },
+      {
+        "name": "forbidden_curse_scroll",
+        "count": 24,
+        "images": {
+          "image": "/images/ascensionmaterials/forbidden-curse-scroll.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "120k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ]
+  ]
+}

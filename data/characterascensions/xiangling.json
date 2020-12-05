@@ -1,0 +1,220 @@
+{
+  "id": 24,
+  "requirements": [
+    [
+      {
+        "name": "agnidus_agate_sliver",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/agnidus-agate-sliver.png"
+        }
+      },
+      {
+        "name": "jueyun_chili",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/jueyun-chili.png"
+        }
+      },
+      {
+        "name": "slime_condensate",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-condensate.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "20k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "agnidus_agate_fragment",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/agnidus-agate-fragment.png"
+        }
+      },
+      {
+        "name": "everflame_seed",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/everflame-seed.png"
+        }
+      },
+      {
+        "name": "jueyun_chili",
+        "count": 10,
+        "images": {
+          "image": "/images/ascensionmaterials/jueyun-chili.png"
+        }
+      },
+      {
+        "name": "slime_condensate",
+        "count": 15,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-condensate.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "40k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "agnidus_agate_fragment",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/agnidus-agate-fragment.png"
+        }
+      },
+      {
+        "name": "everflame_seed",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/everflame-seed.png"
+        }
+      },
+      {
+        "name": "jueyun_chili",
+        "count": 20,
+        "images": {
+          "image": "/images/ascensionmaterials/jueyun-chili.png"
+        }
+      },
+      {
+        "name": "slime_secretions",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-secretions.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "60k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "agnidus_agate_chunk",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/agnidus-agate-chunk.png"
+        }
+      },
+      {
+        "name": "everflame_seed",
+        "count": 8,
+        "images": {
+          "image": "/images/ascensionmaterials/everflame-seed.png"
+        }
+      },
+      {
+        "name": "jueyun_chili",
+        "count": 30,
+        "images": {
+          "image": "/images/ascensionmaterials/jueyun-chili.png"
+        }
+      },
+      {
+        "name": "slime_secretions",
+        "count": 18,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-secretions.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "80k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "agnidus_agate_chunk",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/agnidus-agate-chunk.png"
+        }
+      },
+      {
+        "name": "everflame_seed",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/everflame-seed.png"
+        }
+      },
+      {
+        "name": "jueyun_chili",
+        "count": 45,
+        "images": {
+          "image": "/images/ascensionmaterials/jueyun-chili.png"
+        }
+      },
+      {
+        "name": "slime_concentrate",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-concentrate.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "100k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "agnidus_agate_gemstone",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/agnidus-agate-gemstone.png"
+        }
+      },
+      {
+        "name": "everflame_seed",
+        "count": 20,
+        "images": {
+          "image": "/images/ascensionmaterials/everflame-seed.png"
+        }
+      },
+      {
+        "name": "jueyun_chili",
+        "count": 60,
+        "images": {
+          "image": "/images/ascensionmaterials/jueyun-chili.png"
+        }
+      },
+      {
+        "name": "slime_concentrate",
+        "count": 24,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-concentrate.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "120k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ]
+  ]
+}

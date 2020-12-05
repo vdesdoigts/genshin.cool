@@ -69,6 +69,7 @@ const Weapon = ({ weapon, isDisabled, onDisabled }: IProps) => {
                 <Image
                   src={weapon.images.image}
                   layout="fill"
+                  objectFit="contain"
                 />
               </Box>
             </Box>

@@ -1,0 +1,220 @@
+{
+  "id": 22,
+  "requirements": [
+    [
+      {
+        "name": "brilliant_diamond_sliver",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/brilliant-diamond-sliver.png"
+        }
+      },
+      {
+        "name": "windwheel_aster",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/windwheel-aster.png"
+        }
+      },
+      {
+        "name": "damaged_mask",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/damaged-mask.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "20k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "brilliant_diamond_fragment",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/brilliant-diamond-fragment.png"
+        }
+      },
+      {
+        "name": "basalt_pillar",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/basalt-pillar.png"
+        }
+      },
+      {
+        "name": "windwheel_aster",
+        "count": 10,
+        "images": {
+          "image": "/images/ascensionmaterials/windwheel-aster.png"
+        }
+      },
+      {
+        "name": "damaged_mask",
+        "count": 15,
+        "images": {
+          "image": "/images/ascensionmaterials/damaged-mask.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "40k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "brilliant_diamond_fragment",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/brilliant-diamond-fragment.png"
+        }
+      },
+      {
+        "name": "basalt_pillar",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/basalt-pillar.png"
+        }
+      },
+      {
+        "name": "windwheel_aster",
+        "count": 20,
+        "images": {
+          "image": "/images/ascensionmaterials/windwheel-aster.png"
+        }
+      },
+      {
+        "name": "stained_mask",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/stained-mask.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "60k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "brilliant_diamond_chunk",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/brilliant-diamond-chunk.png"
+        }
+      },
+      {
+        "name": "basalt_pillar",
+        "count": 8,
+        "images": {
+          "image": "/images/ascensionmaterials/basalt-pillar.png"
+        }
+      },
+      {
+        "name": "windwheel_aster",
+        "count": 30,
+        "images": {
+          "image": "/images/ascensionmaterials/windwheel-aster.png"
+        }
+      },
+      {
+        "name": "stained_mask",
+        "count": 18,
+        "images": {
+          "image": "/images/ascensionmaterials/stained-mask.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "80k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "brilliant_diamond_chunk",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/brilliant-diamond-chunk.png"
+        }
+      },
+      {
+        "name": "basalt_pillar",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/basalt-pillar.png"
+        }
+      },
+      {
+        "name": "windwheel_aster",
+        "count": 45,
+        "images": {
+          "image": "/images/ascensionmaterials/windwheel-aster.png"
+        }
+      },
+      {
+        "name": "ominous_mask",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/ominous-mask.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "100k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "brilliant_diamond_gemstone",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/brilliant-diamond-gemstone.png"
+        }
+      },
+      {
+        "name": "basalt_pillar",
+        "count": 20,
+        "images": {
+          "image": "/images/ascensionmaterials/basalt-pillar.png"
+        }
+      },
+      {
+        "name": "windwheel_aster",
+        "count": 60,
+        "images": {
+          "image": "/images/ascensionmaterials/windwheel-aster.png"
+        }
+      },
+      {
+        "name": "ominous_mask",
+        "count": 24,
+        "images": {
+          "image": "/images/ascensionmaterials/ominous-mask.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "120k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ]
+  ]
+}

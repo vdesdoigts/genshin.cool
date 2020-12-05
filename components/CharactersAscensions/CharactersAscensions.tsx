@@ -35,13 +35,13 @@ const CharactersAscensions = () => {
   const ascensionMaterialsWithCharacters: (IAscensionMaterial & { characters: ICharacter[] })[] = ascensionMaterials.map((ascensionMaterial) => ({
     ...ascensionMaterial,
     characters: currentRosterCharacters.filter((character) => 
-      ascensionMaterial.ascensions.includes(character.ascension || 1) && ascensionMaterial.characters.includes(character.id))
+      ascensionMaterial.ascensions.includes(character.ascension + 1 || 1) && ascensionMaterial.characters.includes(character.id))
       .map((rosterCharacter) => characters.find((character) => character.id === rosterCharacter.id))
   }))
 
   if (ascensionMaterialsWithCharacters.length === 0) {
     return (
-      <DashBox title={t('site.character_ascensions')} variant="pink" shadow size="sm">
+      <DashBox title={t('site.character_ascensions')} variant="pink" shadow size="xs">
         <DashBox>
           {t('site.your_roster_empty')}
         </DashBox>
@@ -50,10 +50,10 @@ const CharactersAscensions = () => {
   }
 
   return (
-    <DashBox title={t('site.character_ascensions')} variant="pink" size="sm">
+    <DashBox title={t('site.character_ascensions')} variant="pink" size="xs">
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing="16px">
         {ascensionMaterialsWithCharacters.map((ascensionMaterial) => (
-          <DashBox key={ascensionMaterial.name}>
+          <DashBox key={ascensionMaterial.name} size="md">
             <AscensionItem
               image={ascensionMaterial.images.image}
               label={t(`ascensionmaterials.${ascensionMaterial.name}`)}
@@ -75,6 +75,7 @@ const CharactersAscensions = () => {
                       <Image
                         src={droppedby.images.image}
                         layout="fill"
+                        objectFit="contain"
                       />
                     </Box>
                   </AspectRatio>}

@@ -4,19 +4,10 @@ import { useTranslation } from 'react-i18next'
 import {
   Box,
   Flex,
-  Icon,
-  Select,
   Text,
   VStack,
 } from '@chakra-ui/react'
-import Image from 'next/image'
 import { CloseButton } from '@chakra-ui/close-button'
-import { FiSettings } from 'react-icons/fi'
-import { MdBookmarkBorder, MdLanguage, MdPeople } from 'react-icons/md'
-import { useSelector } from 'react-redux'
-import { ILangs } from '../../types'
-import useRematchDispatch from '../../hooks/useRematch'
-import { OptionsSelectors, ProfileSelectors } from '../../redux/selectors'
 import Language from './Language'
 import ProfileMenu from './ProfileMenu'
 
@@ -63,19 +54,13 @@ interface IProps {
 }
 
 const Menu = ({ onEditProfile, onMenuClose }: IProps) => {
-  const { i18n, t } = useTranslation()
+  const { t } = useTranslation()
   const router = useRouter()
-  const dispatch = useRematchDispatch()
-  const currentLang = useSelector(OptionsSelectors.getCurrentLang)
-
-  const onChangeLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    dispatch.options.setLang(e.target.value as ILangs)
-    i18n.changeLanguage(e.target.value as ILangs)
-  }
 
   const handleNavigation = (e, href) => {
     e.preventDefault()
     router.push(href)
+    onMenuClose()
   }
 
   return (
@@ -99,7 +84,7 @@ const Menu = ({ onEditProfile, onMenuClose }: IProps) => {
         minH="100%"
         justify="space-between"
         direction="column"
-        padding="140px 0 12px 0"
+        pt="140px"
       >
         <Box
           width="215px"
@@ -154,8 +139,11 @@ const Menu = ({ onEditProfile, onMenuClose }: IProps) => {
               <Language />
             </VStack>
           </Box>
+          <Box px="12px" mb="20px">
+            <Text fontSize="12px">{t('site.mihoyo')}</Text>
+          </Box>
           <Box px="12px">
-            <Text fontSize="12px">This website is a fansite and is not affiliated with or endorsed by miHoYo.</Text>
+            <Text fontSize="12px"><a href="https://twitter.com/vdesdoigts" target="_blank">Contact: @vdesdoigts</a></Text>
           </Box>
         </Box>
       </Flex>

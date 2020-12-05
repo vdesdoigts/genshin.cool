@@ -49,12 +49,14 @@
   },
   "bosses": {
     "anemo_hypostasis": "Anemo Hypostasis",
+    "childe": "Childe",
     "cryo_regisvine": "Cryo Regisvine",
     "electro_hypostasis": "Electro Hypostasis",
     "geo_hypostasis": "Geo Hypostasis",
     "oceanid": "Oceanid",
     "pyro_regisvine": "Pyro Regisvine",
-    "wolf_of_the_north_challenge_reward": "Wolf of the North Challenge Reward"
+    "stormterror": "Stormterror's Lair",
+    "wolf_of_the_north_challenge_reward": "Wolf of the North"
   },
   "domainofforgeries": {
     "cecilia_garden": "Cecilia Garden",
@@ -83,12 +85,14 @@
   },
   "site": {
     "add_a_profile": "Add a profile",
-    "armory_empty": "Your amory is empty, select at weapon",
+    "armory_empty": "Your amory is empty.",
     "ascension_rank": "Ascension rank",
+    "ascension_rank_none": "No ascension rank",
     "cancel": "Cancel",
+    "characters": "Characters",
     "character_ascensions": "Character ascensions",
-    "character_materials": "Character materials",
-    "character_materials_empty": "No character material to farm today.",
+    "character_materials": "Character talents",
+    "character_materials_empty": "No character talent materials to farm today.",
     "days": {
       "monday": "Monday",
       "tuesday": "Tuesday",
@@ -108,15 +112,20 @@
     },
     "genshin_impact_farming_guide_description": "Find out the best farming methods and schedule optimization.",
     "genshin_impact_farming_guide": "Genshin Impact farming guide",
+    "header_characters_title": "Your roster",
     "header_label": "Hi Genshin Player,",
     "header_title": "Welcome back 👋",
     "manage_your_armory": "Manage your armory",
     "manage_your_roster": "Manage your roster",
+    "mihoyo": "This website is a fansite and is not affiliated with or endorsed by miHoYo.",
     "navigation": "Navigation",
     "navigations": {
       "overview": "Schedule",
       "roster": "Your roster"
     },
+    "next_ascension_material": "Next ascension materials",
+    "next_ascension_material_empty": "No elevation",
+    "next_ascension_material_max": "Well done, this character reached the maximum elevation level.",
     "profiles": "Profiles",
     "save": "Save",
     "search_characters_by_name": "Search characters by name",
@@ -125,8 +134,8 @@
     "your_armory": "Your armory",
     "your_roster": "Your roster",
     "your_roster_empty": "No character in your roster.",
-    "weapon_materials": "Weapon materials",
-    "weapon_materials_empty": "No weapon material to farm today."
+    "weapon_materials": "Weapon ascensions",
+    "weapon_materials_empty": "No weapon ascension materials to farm today."
   },
   "talentmaterialtypes": {
     "ballad": "Ballad",

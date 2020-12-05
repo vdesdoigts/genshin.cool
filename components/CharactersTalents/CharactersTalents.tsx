@@ -36,9 +36,9 @@ const CharactersTalents = () => {
   }
 
   return (
-    <DashBox title={t('site.character_materials')} {...(currentSelectedDay === 'all' ? { variant: 'pink', size: 'sm' } : {})} shadow>
+    <DashBox title={t('site.character_materials')} {...(currentSelectedDay === 'all' ? { variant: 'pink', size: 'xs' } : {})} shadow>
       {currentSelectedDay === 'all'
-        ? <DashBox><WeeklyTalentsMaterials talentsMaterials={talentMaterialTypes} /></DashBox>
+        ? <DashBox size="md"><WeeklyTalentsMaterials talentsMaterials={talentMaterialTypes} /></DashBox>
         : <DailyTalentsMaterials talentsMaterials={dailyTalentMaterialTypes} />
       }
     </DashBox>

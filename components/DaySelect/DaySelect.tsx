@@ -68,7 +68,7 @@ const Schedule = () => {
         position="absolute"
         zIndex={1}
         bottom="0px"
-        right="-40px"
+        right={{ base: 0, lg: '-40px' }}
         display={{ base: 'none', sm: 'block' }}
         width={{ base: '400px', md: '580px' }}
         height="360px"

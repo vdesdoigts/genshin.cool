@@ -18,6 +18,13 @@
       "images": {
         "image": "/images/bosses/anemo-hypostasis.png"
       }
+    },
+    {
+      "name": "stormterror",
+      "type": "Weekly Boss",
+      "images": {
+        "image": "/images/bosses/stormterror.png"
+      }
     }
   ],
   "purchasedat": [

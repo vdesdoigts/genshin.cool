@@ -19,6 +19,22 @@
       "images": {
         "image": "/images/bosses/oceanid.png"
       }
+    },
+    {
+      "name": "stormterror",
+      "level": "40+",
+      "type": "Weekly Boss",
+      "images": {
+        "image": "/images/bosses/stormterror.png"
+      }
+    },
+    {
+      "name": "childe",
+      "level": "40+",
+      "type": "Weekly Boss",
+      "images": {
+        "image": "/images/bosses/childe.png"
+      }
     }
   ],
   "craft": [

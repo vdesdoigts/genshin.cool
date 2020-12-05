@@ -1,15 +1,18 @@
 import React from 'react'
-import { Box, Heading } from '@chakra-ui/react'
+import { Box, BoxProps, Flex, Heading } from '@chakra-ui/react'
 
 interface IProps {
   title?: string
-  variant?: 'pink' | 'blue'
-  size?: 'sm'
+  variant?: 'pink' | 'blue' | 'purple' | 'transparent'
+  size?: 'xxs' | 'xs' | 'sm' | 'md'
+  br?: 'sm'
   shadow?: boolean
+  rightButtons?: any
 }
 
-const DashBox: React.FC<IProps> = ({ children, title, variant, size, shadow }) => {
+const DashBox: React.FC<IProps & Omit<BoxProps, 'shadow'>> = ({ children, title, variant, size, br, shadow, rightButtons, ...boxProps }) => {
   let bgcolor
+  let borderRadius
   let px
 
   switch (variant) {
@@ -19,14 +22,37 @@ const DashBox: React.FC<IProps> = ({ children, title, variant, size, shadow }) =
     case 'blue':
       bgcolor = 'rgba(160, 215, 231, 0.85)'
       break
+    case 'purple':
+      bgcolor = '#6C5DD3'
+      break
+    case 'transparent':
+      bgcolor = 'transparent'
+      break
     default:
       bgcolor = '#FFF'
   }
 
-  switch (size) {
+  switch (br) {
     case 'sm':
+      borderRadius = '12px'
+      break
+    default:
+      borderRadius = '24px'
+  }
+
+  switch (size) {
+    case 'xxs':
+      px = '4px'
+      break
+    case 'xs':
       px = '8px'
-      break;
+      break
+    case 'sm':
+      px='16px'
+      break
+    case 'md':
+      px='24px'
+      break
     default:
       px = '32px'
   }
@@ -34,10 +60,12 @@ const DashBox: React.FC<IProps> = ({ children, title, variant, size, shadow }) =
   return (
     <Box
       position="relative"
-      pt="32px"
+      pt={title ? '32px' : px}
       pb={px}
-      borderRadius="24px"
+      borderRadius={borderRadius}
       background={bgcolor}
+      transition="all .25s"
+      {...boxProps}
       _before={shadow ? {
         content: '""',
         position: 'absolute',
@@ -53,7 +81,16 @@ const DashBox: React.FC<IProps> = ({ children, title, variant, size, shadow }) =
         borderRadius: '24px'
       } : {}}
     >
-      {!!title && <Heading as="h2" mb="32px" px="32px" fontSize="18px" fontWeight="medium" lineHeight="1.33333">{title}</Heading>}
+      {!!title && <Heading as="h2" mb="32px" px="32px" fontSize="18px" fontWeight="medium" lineHeight="1.33333" color="">{title}</Heading>}
+      {!!rightButtons && (
+        <Box
+          position="absolute"
+          top="20px"
+          right={px}
+        >
+          {rightButtons}
+        </Box>
+      )}
       <Box px={px}>
         {children}
       </Box>

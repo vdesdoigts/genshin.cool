@@ -1,0 +1,220 @@
+{
+  "id": 6,
+  "requirements": [
+    [
+      {
+        "name": "agnidus_agate_sliver",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/agnidus-agate-sliver.png"
+        }
+      },
+      {
+        "name": "small_lamp_grass",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/small-lamp-grass.png"
+        }
+      },
+      {
+        "name": "recruits_insignia",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/recruits-insignia.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "20k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "agnidus_agate_fragment",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/agnidus-agate-fragment.png"
+        }
+      },
+      {
+        "name": "everflame_seed",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/everflame-seed.png"
+        }
+      },
+      {
+        "name": "small_lamp_grass",
+        "count": 10,
+        "images": {
+          "image": "/images/ascensionmaterials/small-lamp-grass.png"
+        }
+      },
+      {
+        "name": "recruits_insignia",
+        "count": 15,
+        "images": {
+          "image": "/images/ascensionmaterials/recruits-insignia.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "40k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "agnidus_agate_fragment",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/agnidus-agate-fragment.png"
+        }
+      },
+      {
+        "name": "everflame_seed",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/everflame-seed.png"
+        }
+      },
+      {
+        "name": "small_lamp_grass",
+        "count": 20,
+        "images": {
+          "image": "/images/ascensionmaterials/small-lamp-grass.png"
+        }
+      },
+      {
+        "name": "sergeants-insignia",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/sergeants-insignia.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "60k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "agnidus_agate_chunk",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/agnidus-agate-chunk.png"
+        }
+      },
+      {
+        "name": "everflame_seed",
+        "count": 8,
+        "images": {
+          "image": "/images/ascensionmaterials/everflame-seed.png"
+        }
+      },
+      {
+        "name": "small_lamp_grass",
+        "count": 30,
+        "images": {
+          "image": "/images/ascensionmaterials/small-lamp-grass.png"
+        }
+      },
+      {
+        "name": "sergeants-insignia",
+        "count": 18,
+        "images": {
+          "image": "/images/ascensionmaterials/sergeants-insignia.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "80k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "agnidus_agate_chunk",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/agnidus-agate-chunk.png"
+        }
+      },
+      {
+        "name": "everflame_seed",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/everflame-seed.png"
+        }
+      },
+      {
+        "name": "small_lamp_grass",
+        "count": 45,
+        "images": {
+          "image": "/images/ascensionmaterials/small-lamp-grass.png"
+        }
+      },
+      {
+        "name": "lieutenants_insignia",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/lieutenants-insignia.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "100k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "agnidus_agate_gemstone",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/agnidus-agate-gemstone.png"
+        }
+      },
+      {
+        "name": "everflame_seed",
+        "count": 20,
+        "images": {
+          "image": "/images/ascensionmaterials/everflame-seed.png"
+        }
+      },
+      {
+        "name": "small_lamp_grass",
+        "count": 60,
+        "images": {
+          "image": "/images/ascensionmaterials/small-lamp-grass.png"
+        }
+      },
+      {
+        "name": "lieutenants_insignia",
+        "count": 24,
+        "images": {
+          "image": "/images/ascensionmaterials/lieutenants-insignia.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "120k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ]
+  ]
+}

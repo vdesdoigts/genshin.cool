@@ -14,8 +14,9 @@ import {
   Heading,
   HStack,
   Icon,
-  Stack,
+  Select,
   SimpleGrid,
+  Stack,
   Text,
   useDisclosure,
 } from '@chakra-ui/react'
@@ -40,8 +41,12 @@ interface IProps {
   onEdit?: () => void
 }
 
-const Character = ({ artifacts, ascension = 1, character, weapon, isDisabled, onDisabled, onEdit }: IProps) => {
-  const { t, i18n } = useTranslation()
+const Character = ({ artifacts, ascension = 0, character, weapon, isDisabled, onDisabled, onEdit }: IProps) => {
+  const { t } = useTranslation()
+  const dispatch = useRematchDispatch()
+  const onSelectAscension = (character: ICharacter['id'], ascension: IRosterCharacter['character']['ascension']) => {
+    dispatch.profile.updateCharacterAscension({ character, ascension })
+  }
 
   return (
     <Box
@@ -51,7 +56,6 @@ const Character = ({ artifacts, ascension = 1, character, weapon, isDisabled, on
       borderRadius="0.875rem"
       boxShadow="rgba(236, 240, 250, .4) 0px 1px 1px, rgba(236, 240, 250, 0.4) 0px 2px 2px, rgba(236, 240, 250, 1) 0px 4px 4px, rgba(236, 240, 250, .4) 0px 8px 8px, rgba(236, 240, 250, .4) 0px 16px 16px"
       background="#fff"
-      cursor="pointer"
       _before={{
         content: "''",
         position: "absolute",
@@ -69,7 +73,7 @@ const Character = ({ artifacts, ascension = 1, character, weapon, isDisabled, on
           flex="1 1 100%"
           pl="1.25rem"
           py="16px"
-          onClick={onEdit}
+          // onClick={onEdit}
         >
           <Stack direction="row" spacing="1.875rem">
             <Box position="relative" overflow="hidden" flex="0 0 3.5rem" width="3.5rem" height="3.5rem" borderRadius=".5rem" background="#f2f4f8">
@@ -77,9 +81,10 @@ const Character = ({ artifacts, ascension = 1, character, weapon, isDisabled, on
                 <Image
                   src={character.images.image}
                   layout="fill"
+                  objectFit="contain"
                 />
               </Box>
-              <Center
+              {/* <Center
                 opacity={0}
                 position="absolute"
                 top={0}
@@ -92,7 +97,7 @@ const Character = ({ artifacts, ascension = 1, character, weapon, isDisabled, on
                 _groupHover={{ opacity: 1 }}
               >
                 <Icon as={FiEdit2} w={5} h={5} color="#fff" />
-              </Center>
+              </Center> */}
             </Box>
             <Stack spacing={1} justify="center">
               <Text
@@ -104,12 +109,34 @@ const Character = ({ artifacts, ascension = 1, character, weapon, isDisabled, on
               >
                 {character.name}
               </Text>
-              <Box color="#bbbdcb">
-                <Text fontSize="0.875rem" fontWeight="medium">
-                  {t('site.ascension_rank')} {ascension}
-                  {/* &#183; {weapon ? weapon.name : 'No weapon'} */}
-                </Text>
-              </Box>
+              <Select
+                bg="transparent"
+                borderColor="#E2E8F0"
+                // color="#11142D"
+                color="#bbbdcb"
+                fontWeight="medium"
+                maxW="240px"
+                cursor="pointer"
+                size="sm"
+                variant="unstyled"
+                _hover={{
+                  bg: 'transparent'
+                }}
+                _focus={{
+                  bg: 'transparent'
+                }}
+                defaultValue={ascension.toString()}
+                onChange={(e) => onSelectAscension(character.id, (parseInt(e.currentTarget.value) as IRosterCharacter['character']['ascension']))}
+                onClick={(e) => e.stopPropagation()}
+              >
+                <option value="0">{`${t('site.ascension_rank_none')}`}</option>
+                <option value="1">{`${t('site.ascension_rank')} 1`}</option>
+                <option value="2">{`${t('site.ascension_rank')} 2`}</option>
+                <option value="3">{`${t('site.ascension_rank')} 3`}</option>
+                <option value="4">{`${t('site.ascension_rank')} 4`}</option>
+                <option value="5">{`${t('site.ascension_rank')} 5`}</option>
+                <option value="6">{`${t('site.ascension_rank')} 6`}</option>
+              </Select>
             </Stack>
           </Stack>
         </Box>

@@ -1,0 +1,220 @@
+{
+  "id": 13,
+  "requirements": [
+    [
+      {
+        "name": "vajrada_amethyst_sliver",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/vajrada-amethyst-sliver.png"
+        }
+      },
+      {
+        "name": "valberry",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/valberry.png"
+        }
+      },
+      {
+        "name": "slime_condensate",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-condensate.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "20k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "vajrada_amethyst_fragment",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/vajrada-amethyst-fragment.png"
+        }
+      },
+      {
+        "name": "lightning_prism",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/lightning-prism.png"
+        }
+      },
+      {
+        "name": "valberry",
+        "count": 10,
+        "images": {
+          "image": "/images/ascensionmaterials/valberry.png"
+        }
+      },
+      {
+        "name": "slime_condensate",
+        "count": 15,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-condensate.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "40k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "vajrada_amethyst_fragment",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/vajrada-amethyst-fragment.png"
+        }
+      },
+      {
+        "name": "lightning_prism",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/lightning-prism.png"
+        }
+      },
+      {
+        "name": "valberry",
+        "count": 20,
+        "images": {
+          "image": "/images/ascensionmaterials/valberry.png"
+        }
+      },
+      {
+        "name": "slime_secretions",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-secretions.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "60k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "vajrada_amethyst_chunk",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/vajrada-amethyst-chunk.png"
+        }
+      },
+      {
+        "name": "lightning_prism",
+        "count": 8,
+        "images": {
+          "image": "/images/ascensionmaterials/lightning-prism.png"
+        }
+      },
+      {
+        "name": "valberry",
+        "count": 30,
+        "images": {
+          "image": "/images/ascensionmaterials/valberry.png"
+        }
+      },
+      {
+        "name": "slime_secretions",
+        "count": 18,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-secretions.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "80k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "vajrada_amethyst_chunk",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/vajrada-amethyst-chunk.png"
+        }
+      },
+      {
+        "name": "lightning_prism",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/lightning-prism.png"
+        }
+      },
+      {
+        "name": "valberry",
+        "count": 45,
+        "images": {
+          "image": "/images/ascensionmaterials/valberry.png"
+        }
+      },
+      {
+        "name": "slime_concentrate",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-concentrate.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "100k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "vajrada_amethyst_gemstone",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/vajrada-amethyst-gemstone.png"
+        }
+      },
+      {
+        "name": "lightning_prism",
+        "count": 20,
+        "images": {
+          "image": "/images/ascensionmaterials/lightning-prism.png"
+        }
+      },
+      {
+        "name": "valberry",
+        "count": 60,
+        "images": {
+          "image": "/images/ascensionmaterials/valberry.png"
+        }
+      },
+      {
+        "name": "slime_concentrate",
+        "count": 24,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-concentrate.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "120k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ]
+  ]
+}

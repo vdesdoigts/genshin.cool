@@ -1,0 +1,220 @@
+{
+  "id": 9,
+  "requirements": [
+    [
+      {
+        "name": "vayuda_turquoise_sliver",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/vayuda-turquoise-sliver.png"
+        }
+      },
+      {
+        "name": "dandelion_seed",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/dandelion-seed.png"
+        }
+      },
+      {
+        "name": "damaged_mask",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/damaged-mask.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "20k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "vayuda_turquoise_fragment",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/vayuda-turquoise-fragment.png"
+        }
+      },
+      {
+        "name": "hurricane_seed",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/hurricane-seed.png"
+        }
+      },
+      {
+        "name": "dandelion_seed",
+        "count": 10,
+        "images": {
+          "image": "/images/ascensionmaterials/dandelion-seed.png"
+        }
+      },
+      {
+        "name": "damaged_mask",
+        "count": 15,
+        "images": {
+          "image": "/images/ascensionmaterials/damaged-mask.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "40k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "vayuda_turquoise_fragment",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/vayuda-turquoise-fragment.png"
+        }
+      },
+      {
+        "name": "hurricane_seed",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/hurricane-seed.png"
+        }
+      },
+      {
+        "name": "dandelion_seed",
+        "count": 20,
+        "images": {
+          "image": "/images/ascensionmaterials/dandelion-seed.png"
+        }
+      },
+      {
+        "name": "stained_mask",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/stained-mask.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "60k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "vayuda_turquoise_chunk",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/vayuda-turquoise-chunk.png"
+        }
+      },
+      {
+        "name": "hurricane_seed",
+        "count": 8,
+        "images": {
+          "image": "/images/ascensionmaterials/hurricane-seed.png"
+        }
+      },
+      {
+        "name": "dandelion_seed",
+        "count": 30,
+        "images": {
+          "image": "/images/ascensionmaterials/dandelion-seed.png"
+        }
+      },
+      {
+        "name": "stained_mask",
+        "count": 18,
+        "images": {
+          "image": "/images/ascensionmaterials/stained-mask.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "80k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "vayuda_turquoise_chunk",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/vayuda-turquoise-chunk.png"
+        }
+      },
+      {
+        "name": "hurricane_seed",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/hurricane-seed.png"
+        }
+      },
+      {
+        "name": "dandelion_seed",
+        "count": 45,
+        "images": {
+          "image": "/images/ascensionmaterials/dandelion-seed.png"
+        }
+      },
+      {
+        "name": "ominous_mask",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/ominous-mask.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "100k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "vayuda_turquoise_gemstone",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/vayuda-turquoise-gemstone.png"
+        }
+      },
+      {
+        "name": "hurricane_seed",
+        "count": 20,
+        "images": {
+          "image": "/images/ascensionmaterials/hurricane-seed.png"
+        }
+      },
+      {
+        "name": "dandelion_seed",
+        "count": 60,
+        "images": {
+          "image": "/images/ascensionmaterials/dandelion-seed.png"
+        }
+      },
+      {
+        "name": "ominous_mask",
+        "count": 24,
+        "images": {
+          "image": "/images/ascensionmaterials/ominous-mask.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "120k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ]
+  ]
+}

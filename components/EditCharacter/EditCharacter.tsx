@@ -68,7 +68,7 @@ const EditCharacter = ({ character: characterId }: IProps) => {
   const group = getRootProps()
 
   const onSelectAscension = (character: ICharacter['id'], ascension: IRosterCharacter['character']['ascension']) => {
-    dispatch.profile.updateCharacterAsension({ character, ascension })
+    dispatch.profile.updateCharacterAscension({ character, ascension })
   }
 
   return (
@@ -79,6 +79,7 @@ const EditCharacter = ({ character: characterId }: IProps) => {
             <Image
               src={character.images.image}
               layout="fill"
+              objectFit="contain"
             />
           </Box>
           <Stack spacing={1} justify="center">

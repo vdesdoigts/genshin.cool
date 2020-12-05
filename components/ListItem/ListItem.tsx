@@ -47,6 +47,7 @@ const ListItem = ({
             <Image
               src={image}
               layout="fill"
+              objectFit="contain"
             />
           </AspectRatio>
         </Box>

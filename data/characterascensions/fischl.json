@@ -1,0 +1,220 @@
+{
+  "id": 8,
+  "requirements": [
+    [
+      {
+        "name": "vajrada_amethyst_sliver",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/vajrada-amethyst-sliver.png"
+        }
+      },
+      {
+        "name": "small_lamp_grass",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/small-lamp-grass.png"
+        }
+      },
+      {
+        "name": "firm_arrowhead",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/firm-arrowhead.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "20k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "vajrada_amethyst_fragment",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/vajrada-amethyst-fragment.png"
+        }
+      },
+      {
+        "name": "lightning_prism",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/lightning-prism.png"
+        }
+      },
+      {
+        "name": "small_lamp_grass",
+        "count": 10,
+        "images": {
+          "image": "/images/ascensionmaterials/small-lamp-grass.png"
+        }
+      },
+      {
+        "name": "firm_arrowhead",
+        "count": 15,
+        "images": {
+          "image": "/images/ascensionmaterials/firm-arrowhead.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "40k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "vajrada_amethyst_fragment",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/vajrada-amethyst-fragment.png"
+        }
+      },
+      {
+        "name": "lightning_prism",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/lightning-prism.png"
+        }
+      },
+      {
+        "name": "small_lamp_grass",
+        "count": 20,
+        "images": {
+          "image": "/images/ascensionmaterials/small-lamp-grass.png"
+        }
+      },
+      {
+        "name": "sharp_arrowhead",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/sharp-arrowhead.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "60k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "vajrada_amethyst_chunk",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/vajrada-amethyst-chunk.png"
+        }
+      },
+      {
+        "name": "lightning_prism",
+        "count": 8,
+        "images": {
+          "image": "/images/ascensionmaterials/lightning-prism.png"
+        }
+      },
+      {
+        "name": "small_lamp_grass",
+        "count": 30,
+        "images": {
+          "image": "/images/ascensionmaterials/small-lamp-grass.png"
+        }
+      },
+      {
+        "name": "sharp_arrowhead",
+        "count": 18,
+        "images": {
+          "image": "/images/ascensionmaterials/sharp-arrowhead.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "80k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "vajrada_amethyst_chunk",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/vajrada-amethyst-chunk.png"
+        }
+      },
+      {
+        "name": "lightning_prism",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/lightning-prism.png"
+        }
+      },
+      {
+        "name": "small_lamp_grass",
+        "count": 45,
+        "images": {
+          "image": "/images/ascensionmaterials/small-lamp-grass.png"
+        }
+      },
+      {
+        "name": "weathered_arrowhead",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/weathered-arrowhead.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "100k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "vajrada_amethyst_gemstone",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/vajrada-amethyst-gemstone.png"
+        }
+      },
+      {
+        "name": "lightning_prism",
+        "count": 20,
+        "images": {
+          "image": "/images/ascensionmaterials/lightning-prism.png"
+        }
+      },
+      {
+        "name": "small_lamp_grass",
+        "count": 60,
+        "images": {
+          "image": "/images/ascensionmaterials/small-lamp-grass.png"
+        }
+      },
+      {
+        "name": "weathered_arrowhead",
+        "count": 24,
+        "images": {
+          "image": "/images/ascensionmaterials/weathered-arrowhead.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "120k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ]
+  ]
+}

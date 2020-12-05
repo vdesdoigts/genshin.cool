@@ -143,7 +143,7 @@ const ProfileMenu = ({ onEditProfile }: IProps) => {
           background="#f2f4f8"
           fontSize={0}
         >
-          <Image src="/images/characters/razor-thumb.png" layout="fill" />
+          <Image src="/images/characters/razor-thumb.png" layout="fill" objectFit="contain" />
         </Box>
         <Box
           flex="0 0 calc(100% - 64px)"

@@ -1,0 +1,220 @@
+{
+  "id": 26,
+  "requirements": [
+    [
+      {
+        "name": "varunada_lazurite_sliver",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/varunada-lazurite-sliver.png"
+        }
+      },
+      {
+        "name": "silk_flower",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/silk-flower.png"
+        }
+      },
+      {
+        "name": "damaged_mask",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/damaged-mask.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "20k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "varunada_lazurite_fragment",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/varunada-lazurite-fragment.png"
+        }
+      },
+      {
+        "name": "cleansing_heart",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/cleansing-heart.png"
+        }
+      },
+      {
+        "name": "silk_flower",
+        "count": 10,
+        "images": {
+          "image": "/images/ascensionmaterials/silk-flower.png"
+        }
+      },
+      {
+        "name": "damaged_mask",
+        "count": 15,
+        "images": {
+          "image": "/images/ascensionmaterials/damaged-mask.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "40k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "varunada_lazurite_fragment",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/varunada-lazurite-fragment.png"
+        }
+      },
+      {
+        "name": "cleansing_heart",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/cleansing-heart.png"
+        }
+      },
+      {
+        "name": "silk_flower",
+        "count": 20,
+        "images": {
+          "image": "/images/ascensionmaterials/silk-flower.png"
+        }
+      },
+      {
+        "name": "stained_mask",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/stained-mask.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "60k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "varunada_lazurite_chunk",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/varunada-lazurite-chunk.png"
+        }
+      },
+      {
+        "name": "cleansing_heart",
+        "count": 8,
+        "images": {
+          "image": "/images/ascensionmaterials/cleansing-heart.png"
+        }
+      },
+      {
+        "name": "silk_flower",
+        "count": 30,
+        "images": {
+          "image": "/images/ascensionmaterials/silk-flower.png"
+        }
+      },
+      {
+        "name": "stained_mask",
+        "count": 18,
+        "images": {
+          "image": "/images/ascensionmaterials/stained-mask.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "80k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "varunada_lazurite_chunk",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/varunada-lazurite-chunk.png"
+        }
+      },
+      {
+        "name": "cleansing_heart",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/cleansing-heart.png"
+        }
+      },
+      {
+        "name": "silk_flower",
+        "count": 45,
+        "images": {
+          "image": "/images/ascensionmaterials/silk-flower.png"
+        }
+      },
+      {
+        "name": "ominous_mask",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/ominous-mask.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "100k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "varunada_lazurite_gemstone",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/varunada-lazurite-gemstone.png"
+        }
+      },
+      {
+        "name": "cleansing_heart",
+        "count": 20,
+        "images": {
+          "image": "/images/ascensionmaterials/cleansing-heart.png"
+        }
+      },
+      {
+        "name": "silk_flower",
+        "count": 60,
+        "images": {
+          "image": "/images/ascensionmaterials/silk-flower.png"
+        }
+      },
+      {
+        "name": "ominous_mask",
+        "count": 24,
+        "images": {
+          "image": "/images/ascensionmaterials/ominous-mask.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "120k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ]
+  ]
+}

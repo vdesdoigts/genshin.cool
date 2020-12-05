@@ -19,6 +19,14 @@
       "images": {
         "image": "/images/bosses/anemo-hypostasis.png"
       }
+    },
+    {
+      "name": "stormterror",
+      "level": "40+",
+      "type": "Weekly Boss",
+      "images": {
+        "image": "/images/bosses/stormterror.png"
+      }
     }
   ],
   "craft": [

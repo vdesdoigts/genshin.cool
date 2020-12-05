@@ -1,0 +1,220 @@
+{
+  "id": 20,
+  "requirements": [
+    [
+      {
+        "name": "varunada_lazurite_sliver",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/varunada-lazurite-sliver.png"
+        }
+      },
+      {
+        "name": "starconch",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/starconch.png"
+        }
+      },
+      {
+        "name": "recruits_insignia",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/recruits-insignia.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "20k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "varunada_lazurite_fragment",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/varunada-lazurite-fragment.png"
+        }
+      },
+      {
+        "name": "cleansing_heart",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/cleansing-heart.png"
+        }
+      },
+      {
+        "name": "starconch",
+        "count": 10,
+        "images": {
+          "image": "/images/ascensionmaterials/starconch.png"
+        }
+      },
+      {
+        "name": "recruits_insignia",
+        "count": 15,
+        "images": {
+          "image": "/images/ascensionmaterials/recruits-insignia.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "40k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "varunada_lazurite_fragment",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/varunada-lazurite-fragment.png"
+        }
+      },
+      {
+        "name": "cleansing_heart",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/cleansing-heart.png"
+        }
+      },
+      {
+        "name": "starconch",
+        "count": 20,
+        "images": {
+          "image": "/images/ascensionmaterials/starconch.png"
+        }
+      },
+      {
+        "name": "sergeants-insignia",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/sergeants-insignia.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "60k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "varunada_lazurite_chunk",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/varunada-lazurite-chunk.png"
+        }
+      },
+      {
+        "name": "cleansing_heart",
+        "count": 8,
+        "images": {
+          "image": "/images/ascensionmaterials/cleansing-heart.png"
+        }
+      },
+      {
+        "name": "starconch",
+        "count": 30,
+        "images": {
+          "image": "/images/ascensionmaterials/starconch.png"
+        }
+      },
+      {
+        "name": "sergeants-insignia",
+        "count": 18,
+        "images": {
+          "image": "/images/ascensionmaterials/sergeants-insignia.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "80k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "varunada_lazurite_chunk",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/varunada-lazurite-chunk.png"
+        }
+      },
+      {
+        "name": "cleansing_heart",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/cleansing-heart.png"
+        }
+      },
+      {
+        "name": "starconch",
+        "count": 45,
+        "images": {
+          "image": "/images/ascensionmaterials/starconch.png"
+        }
+      },
+      {
+        "name": "lieutenants_insignia",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/lieutenants-insignia.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "100k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "varunada_lazurite_gemstone",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/varunada-lazurite-gemstone.png"
+        }
+      },
+      {
+        "name": "cleansing_heart",
+        "count": 20,
+        "images": {
+          "image": "/images/ascensionmaterials/cleansing-heart.png"
+        }
+      },
+      {
+        "name": "starconch",
+        "count": 60,
+        "images": {
+          "image": "/images/ascensionmaterials/starconch.png"
+        }
+      },
+      {
+        "name": "lieutenants_insignia",
+        "count": 24,
+        "images": {
+          "image": "/images/ascensionmaterials/lieutenants-insignia.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "120k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ]
+  ]
+}

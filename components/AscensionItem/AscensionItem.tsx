@@ -36,6 +36,7 @@ const AscensionItem = ({ image, label, sublabel, characters }: IProps) => {
               <Image
                 src={image}
                 layout="fill"
+                objectFit="contain"
               />
             </Box>
           </Box>

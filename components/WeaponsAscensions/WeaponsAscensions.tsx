@@ -27,7 +27,7 @@ const WeaponsAscensions = () => {
 
   if ((currentSelectedDay === 'all' && weaponMaterialTypes?.length === 0) || (currentSelectedDay !== 'all' && dailyWeaponMaterialTypes?.length === 0)) {
     return (
-      <DashBox title={t('site.weapon_materials')} shadow size="sm">
+      <DashBox title={t('site.weapon_materials')} shadow size="xs">
         <DashBox variant="blue">
           {t('site.weapon_materials_empty')}
         </DashBox>
@@ -36,9 +36,9 @@ const WeaponsAscensions = () => {
   }
 
   return (
-    <DashBox title={t('site.weapon_materials')} {...(currentSelectedDay === 'all' ? { variant: 'pink', size: 'sm' } : {})} shadow>
+    <DashBox title={t('site.weapon_materials')} {...(currentSelectedDay === 'all' ? { variant: 'pink', size: 'xs' } : {})} shadow>
       {currentSelectedDay === 'all'
-        ? <DashBox><WeeklyWeaponsMaterials weaponsMaterials={weaponMaterialTypes} /></DashBox>
+        ? <DashBox size="md"><WeeklyWeaponsMaterials weaponsMaterials={weaponMaterialTypes} /></DashBox>
         : <DailyWeaponsMaterials weaponsMaterials={dailyWeaponMaterialTypes} />
       }
     </DashBox>

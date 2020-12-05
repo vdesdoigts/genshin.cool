@@ -1,6 +1,7 @@
 import artifacts from '../data/artifacts'
 import ascensionsmaterials from '../data/ascensionmaterials'
 import characters from '../data/characters'
+import characterascensions from '../data/characterascensions'
 import talentmaterialtypes from '../data/talentmaterialtypes'
 import weapons from '../data/weapons'
 import weaponmaterialtypes from '../data/weaponmaterialtypes'
@@ -10,6 +11,7 @@ import {
   IArtifactCollection,
   IAscensionMaterial,
   ICharacter,
+  ICharacterAscension,
   IRosterCharacter,
   ITalentMaterialType,
   IWeapon,
@@ -23,6 +25,7 @@ export const getWeapons = () => weapons
 export const getAscensionMaterialByTypeId = (id: IAscensionMaterial['type']['id']) => ascensionsmaterials.find((ascensionsmaterial) => ascensionsmaterial.type.id === id)
 export const getArtifactById = (id: IArtifactItem['id'], type: IArtifactType) => artifacts.find((artifact) => artifact.id === id)![type] as IArtifactItem
 export const getCharacterById = (id: ICharacter['id']) => characters.find((character) => character.id === id) as ICharacter
+export const getCharacterascensionById = (id: ICharacterAscension['id']) => characterascensions.find((characterascension) => characterascension.id === id) as ICharacterAscension
 export const getWeaponById = (id: IWeapon['id']) => weapons.find((weapon) => weapon.id === id) as IWeapon
 
 export const getArtifactsCharacter = (artifactsCharacter?: IRosterCharacter['artifacts']) => {
@@ -53,7 +56,7 @@ export const getWeaponMaterialTypeById = (id: IWeaponMaterialType['id']) => (wea
 
 export const getWeaponsByType = (type: ICharacter['weapontype']) => weapons.filter((weapon) => weapon.weapontype === type)
 
-export const getAscensionMaterialsByTypesAndAscension = (typeIds: IAscensionMaterial['type']['id'][], ascension: number = 1) => {
+export const getAscensionMaterialsByTypesAndAscension = (typeIds: IAscensionMaterial['type']['id'][], ascension: number = 0) => {
   return ascensionsmaterials.filter((ascensionsmaterial) => 
-    typeIds.includes(ascensionsmaterial.type.id) && ascensionsmaterial.ascensions.includes(ascension)) as IAscensionMaterial[]
+    typeIds.includes(ascensionsmaterial.type.id) && ascensionsmaterial.ascensions.includes(ascension + 1)) as IAscensionMaterial[]
 }

@@ -22,9 +22,9 @@
     },
 
     {
-      "name": "wolf_of_the_north_challenge_reward 60+",
+      "name": "wolf_of_the_north_challenge_reward",
       "level": "60+",
-      "type": "Normal Boss",
+      "type": "Weekly Boss",
       "images": {
         "image": "/images/bosses/north-wolf.png"
       }

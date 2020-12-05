@@ -19,6 +19,22 @@
       "images": {
         "image": "/images/bosses/electro-hypostasis.png"
       }
+    },
+    {
+      "name": "stormterror",
+      "level": "75+",
+      "type": "Weekly Boss",
+      "images": {
+        "image": "/images/bosses/stormterror.png"
+      }
+    },
+    {
+      "name": "childe",
+      "level": "75+",
+      "type": "Weekly Boss",
+      "images": {
+        "image": "/images/bosses/childe.png"
+      }
     }
   ],
   "craft": [

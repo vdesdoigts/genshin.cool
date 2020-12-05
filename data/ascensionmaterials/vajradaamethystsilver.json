@@ -18,6 +18,20 @@
       "images": {
         "image": "/images/bosses/electro-hypostasis.png"
       }
+    },
+    {
+      "name": "stormterror",
+      "type": "Weekly Boss",
+      "images": {
+        "image": "/images/bosses/stormterror.png"
+      }
+    },
+    {
+      "name": "childe",
+      "type": "Weekly Boss",
+      "images": {
+        "image": "/images/bosses/childe.png"
+      }
     }
   ],
   "purchasedat": [

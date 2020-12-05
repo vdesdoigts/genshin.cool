@@ -1,0 +1,220 @@
+{
+  "id": 18,
+  "requirements": [
+    [
+      {
+        "name": "vajrada_amethyst_sliver",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/vajrada-amethyst-sliver.png"
+        }
+      },
+      {
+        "name": "wolfhook",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/cor-lapis.png"
+        }
+      },
+      {
+        "name": "damaged_mask",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/damaged-mask.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "20k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "vajrada_amethyst_fragment",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/vajrada-amethyst-fragment.png"
+        }
+      },
+      {
+        "name": "lightning_prism",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/lightning-prism.png"
+        }
+      },
+      {
+        "name": "wolfhook",
+        "count": 10,
+        "images": {
+          "image": "/images/ascensionmaterials/cor-lapis.png"
+        }
+      },
+      {
+        "name": "damaged_mask",
+        "count": 15,
+        "images": {
+          "image": "/images/ascensionmaterials/damaged-mask.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "40k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "vajrada_amethyst_fragment",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/vajrada-amethyst-fragment.png"
+        }
+      },
+      {
+        "name": "lightning_prism",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/lightning-prism.png"
+        }
+      },
+      {
+        "name": "wolfhook",
+        "count": 20,
+        "images": {
+          "image": "/images/ascensionmaterials/cor-lapis.png"
+        }
+      },
+      {
+        "name": "stained_mask",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/stained-mask.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "60k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "vajrada_amethyst_chunk",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/vajrada-amethyst-chunk.png"
+        }
+      },
+      {
+        "name": "lightning_prism",
+        "count": 8,
+        "images": {
+          "image": "/images/ascensionmaterials/lightning-prism.png"
+        }
+      },
+      {
+        "name": "wolfhook",
+        "count": 30,
+        "images": {
+          "image": "/images/ascensionmaterials/cor-lapis.png"
+        }
+      },
+      {
+        "name": "stained_mask",
+        "count": 18,
+        "images": {
+          "image": "/images/ascensionmaterials/stained-mask.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "80k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "vajrada_amethyst_chunk",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/vajrada-amethyst-chunk.png"
+        }
+      },
+      {
+        "name": "lightning_prism",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/lightning-prism.png"
+        }
+      },
+      {
+        "name": "wolfhook",
+        "count": 45,
+        "images": {
+          "image": "/images/ascensionmaterials/cor-lapis.png"
+        }
+      },
+      {
+        "name": "ominous_mask",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/ominous-mask.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "100k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "vajrada_amethyst_gemstone",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/vajrada-amethyst-gemstone.png"
+        }
+      },
+      {
+        "name": "lightning_prism",
+        "count": 20,
+        "images": {
+          "image": "/images/ascensionmaterials/lightning-prism.png"
+        }
+      },
+      {
+        "name": "wolfhook",
+        "count": 60,
+        "images": {
+          "image": "/images/ascensionmaterials/cor-lapis.png"
+        }
+      },
+      {
+        "name": "ominous_mask",
+        "count": 24,
+        "images": {
+          "image": "/images/ascensionmaterials/ominous-mask.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "120k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ]
+  ]
+}

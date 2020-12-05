@@ -144,7 +144,22 @@ export type ICharacter = {
     id: ITalentMaterialType['id']
     name: ITalentMaterialType['name']
   }
+  ascension?: number
   ascensionmaterials?: Pick<IAscensionMaterial, 'id' | 'name'>[]
+}
+
+export type ICharacterAscension = {
+  id: number
+  type: string
+  requirements: ICharacterAscensionItem[][]
+}
+
+export type ICharacterAscensionItem = {
+  name: string
+  count: number | string
+  images: {
+    image: string
+  }
 }
 
 export type ILangs = 'en' | 'fr'

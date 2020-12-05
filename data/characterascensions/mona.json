@@ -1,0 +1,220 @@
+{
+  "id": 14,
+  "requirements": [
+    [
+      {
+        "name": "varunada_lazurite_sliver",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/varunada-lazurite-sliver.png"
+        }
+      },
+      {
+        "name": "philanemo_mushroom",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/philanemo-mushroom.png"
+        }
+      },
+      {
+        "name": "whopperflower_nectar",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/whopperflower-nectar.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "20k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "varunada_lazurite_fragment",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/varunada-lazurite-fragment.png"
+        }
+      },
+      {
+        "name": "cleansing_heart",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/cleansing-heart.png"
+        }
+      },
+      {
+        "name": "philanemo_mushroom",
+        "count": 10,
+        "images": {
+          "image": "/images/ascensionmaterials/philanemo-mushroom.png"
+        }
+      },
+      {
+        "name": "whopperflower_nectar",
+        "count": 15,
+        "images": {
+          "image": "/images/ascensionmaterials/whopperflower-nectar.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "40k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "varunada_lazurite_fragment",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/varunada-lazurite-fragment.png"
+        }
+      },
+      {
+        "name": "cleansing_heart",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/cleansing-heart.png"
+        }
+      },
+      {
+        "name": "philanemo_mushroom",
+        "count": 20,
+        "images": {
+          "image": "/images/ascensionmaterials/philanemo-mushroom.png"
+        }
+      },
+      {
+        "name": "shimmering_nectar",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/shimmering-nectar.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "60k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "varunada_lazurite_chunk",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/varunada-lazurite-chunk.png"
+        }
+      },
+      {
+        "name": "cleansing_heart",
+        "count": 8,
+        "images": {
+          "image": "/images/ascensionmaterials/cleansing-heart.png"
+        }
+      },
+      {
+        "name": "philanemo_mushroom",
+        "count": 30,
+        "images": {
+          "image": "/images/ascensionmaterials/philanemo-mushroom.png"
+        }
+      },
+      {
+        "name": "shimmering_nectar",
+        "count": 18,
+        "images": {
+          "image": "/images/ascensionmaterials/shimmering-nectar.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "80k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "varunada_lazurite_chunk",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/varunada-lazurite-chunk.png"
+        }
+      },
+      {
+        "name": "cleansing_heart",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/cleansing-heart.png"
+        }
+      },
+      {
+        "name": "philanemo_mushroom",
+        "count": 45,
+        "images": {
+          "image": "/images/ascensionmaterials/philanemo-mushroom.png"
+        }
+      },
+      {
+        "name": "energy_nectar",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/energy-nectar.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "100k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "varunada_lazurite_gemstone",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/varunada-lazurite-gemstone.png"
+        }
+      },
+      {
+        "name": "cleansing_heart",
+        "count": 20,
+        "images": {
+          "image": "/images/ascensionmaterials/cleansing-heart.png"
+        }
+      },
+      {
+        "name": "philanemo_mushroom",
+        "count": 60,
+        "images": {
+          "image": "/images/ascensionmaterials/philanemo-mushroom.png"
+        }
+      },
+      {
+        "name": "energy_nectar",
+        "count": 24,
+        "images": {
+          "image": "/images/ascensionmaterials/energy-nectar.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "120k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ]
+  ]
+}
