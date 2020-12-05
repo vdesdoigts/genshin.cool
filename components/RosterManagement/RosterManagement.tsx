@@ -25,6 +25,7 @@ import { ICharacter, IRoster, IRosterCharacter } from '../../types'
 import useRematchDispatch from '../../hooks/useRematch'
 import DashBox from '../DashBox'
 import SelectCharactersMenu from '../SelectCharactersMenu'
+import CharacterItem from '../CharacterItem'
 
 interface IRosterManagementItem {
   character: ICharacter
@@ -107,9 +108,10 @@ const RosterManagement = ({ currentRoster, selectedCharacter, setSelectedCharact
 
   return (
     <>
-      <DashBox
+      {/* <DashBox
         title={t('site.characters')}
         shadow
+        variant="pink"
         rightButtons={(
           <Button
             position="relative"
@@ -128,7 +130,8 @@ const RosterManagement = ({ currentRoster, selectedCharacter, setSelectedCharact
             <Icon as={FiSettings} w={6} h={6} />
           </Button>
         )}
-      >
+      > */}
+      <Box>
         {currentRoster.length > 0
           ? (
             <>
@@ -171,11 +174,19 @@ const RosterManagement = ({ currentRoster, selectedCharacter, setSelectedCharact
                   const isSelected = selectedCharacter.id === roster.character.id
                   
                   return (
-                    <Box key={roster.character.id} onClick={() => setSelectedCharacter(index)} display={{ base: isSelected ? 'block' : 'none', xl: 'block' }}>
-                      <RosterManagementItem
+                    <Box
+                      key={roster.character.id}
+                      onClick={() => setSelectedCharacter(index)}
+                      display={{ base: isSelected ? 'block' : 'none', xl: 'block' }}
+                      cursor="pointer"
+                    >
+                      <CharacterItem
                         character={character}
                         ascension={roster.character.ascension}
                         isSelected={isSelected}
+                        shadow
+                        hover
+                        selectPosition="ascension"
                       />
                     </Box>
                   )
@@ -187,21 +198,8 @@ const RosterManagement = ({ currentRoster, selectedCharacter, setSelectedCharact
             <div></div>
           )
         }
-      </DashBox>
-      <Drawer
-        isOpen={isSelectCharacterDrawerOpen}
-        onClose={onSelectCharacterDrawerClose}
-        size="md"
-      >
-        <DrawerOverlay>
-          <DrawerContent>
-            <DrawerCloseButton />
-              <DrawerBody>
-                <SelectCharactersMenu />
-              </DrawerBody>
-          </DrawerContent>
-        </DrawerOverlay>
-      </Drawer>
+      </Box>
+      {/* </DashBox> */}
     </>
   )
 }

@@ -20,7 +20,7 @@ const DashBox: React.FC<IProps & Omit<BoxProps, 'shadow'>> = ({ children, title,
       bgcolor = '#FFEBF6'
       break
     case 'blue':
-      bgcolor = 'rgba(160, 215, 231, 0.85)'
+      bgcolor = '#E7FAFF'
       break
     case 'purple':
       bgcolor = '#6C5DD3'

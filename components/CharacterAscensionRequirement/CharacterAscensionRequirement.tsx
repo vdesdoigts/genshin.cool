@@ -13,9 +13,9 @@ const Item = ({ ascension }: { ascension: ICharacterAscensionItem[] }) => (
         <WrapItem key={index} position="relative">
           <AspectRatio
             ratio={1}
-            flex="0 0 68px"
-            width="68px"
-            height="68px"
+            flex="0 0 72px"
+            width="72px"
+            height="72px"
             borderRadius="16px"
             background="#f2f4f8"
           >
@@ -60,11 +60,11 @@ const CharacterAscensionRequirement = ({ selectedCharacter }: IProps) => {
   const characterascension = getCharacterascensionById(character.id)
 
   return (
-    <SimpleGrid columns={1} spacing="8px">
-      <DashBox title={t('site.next_ascension_material')} variant="transparent" size="xs">
+    <SimpleGrid columns={1} spacing={2}>
+      <DashBox title={t('site.next_ascension_material')} variant="blue" size="xs">
         {selectedCharacter.ascension === 6
           ? (
-            <DashBox variant="blue">
+            <DashBox>
               {t('site.next_ascension_material_max')}
             </DashBox>
           )

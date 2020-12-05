@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next'
 import {
   Box,
   Button,
-  Center,
   Checkbox,
   Drawer,
   DrawerBody,
@@ -14,7 +13,6 @@ import {
   Heading,
   HStack,
   Icon,
-  Select,
   SimpleGrid,
   Stack,
   Text,
@@ -29,6 +27,7 @@ import { getArtifactsCharacter, getCharacterById, getWeaponById } from '../../ap
 import { IArtifactCollection, ICharacter, IRoster, IRosterCharacter, IWeapon } from '../../types'
 import colors from '../../theme/colors'
 import SelectCharactersMenu from '../SelectCharactersMenu'
+import CharacterItem from '../CharacterItem'
 import EditCharacter from '../EditCharacter'
 
 interface IProps {
@@ -99,7 +98,7 @@ const Character = ({ artifacts, ascension = 0, character, weapon, isDisabled, on
                 <Icon as={FiEdit2} w={5} h={5} color="#fff" />
               </Center> */}
             </Box>
-            <Stack spacing={1} justify="center">
+            <Stack spacing={1} justify="center" position="relative" cursor="pointer">
               <Text
                 color="#4b4d55"
                 fontFamily="heading"
@@ -109,21 +108,20 @@ const Character = ({ artifacts, ascension = 0, character, weapon, isDisabled, on
               >
                 {character.name}
               </Text>
-              <Select
-                bg="transparent"
-                borderColor="#E2E8F0"
-                // color="#11142D"
-                color="#bbbdcb"
-                fontWeight="medium"
-                maxW="240px"
-                cursor="pointer"
-                size="sm"
-                variant="unstyled"
-                _hover={{
-                  bg: 'transparent'
-                }}
-                _focus={{
-                  bg: 'transparent'
+              <Box color="#bbbdcb">
+                <Text fontSize="0.875rem" fontWeight="medium">
+                  {t('site.ascension_rank')} {ascension}
+                  {/* &#183; {weapon ? weapon.name : 'No weapon'} */}
+                </Text>
+              </Box>
+              <select
+                style={{
+                  opacity: 0,
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
                 }}
                 defaultValue={ascension.toString()}
                 onChange={(e) => onSelectAscension(character.id, (parseInt(e.currentTarget.value) as IRosterCharacter['character']['ascension']))}
@@ -136,7 +134,7 @@ const Character = ({ artifacts, ascension = 0, character, weapon, isDisabled, on
                 <option value="4">{`${t('site.ascension_rank')} 4`}</option>
                 <option value="5">{`${t('site.ascension_rank')} 5`}</option>
                 <option value="6">{`${t('site.ascension_rank')} 6`}</option>
-              </Select>
+              </select>
             </Stack>
           </Stack>
         </Box>
@@ -158,11 +156,6 @@ const Roster = () => {
 
   const onDisabledCharacter = (index: number) => {
     dispatch.profile.toggleRoster(index)
-  }
-
-  const onEditCharacter = (index: ICharacter['id']) => {
-    setCurrentCharacter(index)
-    onEditCharacterDrawerOpen()
   }
 
   return (
@@ -197,19 +190,15 @@ const Roster = () => {
           <SimpleGrid columns={1} spacing="0.75rem">
             {currentRoster.map((roster, index) => {
               const character = getCharacterById(roster.character.id)
-              const weapon = getWeaponById(roster.weapon?.id)
-              const artifacts = getArtifactsCharacter(roster?.artifacts)
               
               return (
-                <Character
+                <CharacterItem
                   key={roster.character.id}
-                  artifacts={artifacts}
                   ascension={roster.character.ascension}
                   character={character}
-                  weapon={weapon}
                   isDisabled={roster.isDisabled}
                   onDisabled={() => onDisabledCharacter(index)}
-                  onEdit={() => onEditCharacter(character.id)}
+                  shadow
                 />
               )
             })}
@@ -231,20 +220,6 @@ const Roster = () => {
             <DrawerCloseButton />
               <DrawerBody>
                 <SelectCharactersMenu />
-              </DrawerBody>
-          </DrawerContent>
-        </DrawerOverlay>
-      </Drawer>
-      <Drawer
-        isOpen={isEditCharacterDrawerOpen}
-        onClose={onEditCharacterDrawerClose}
-        size="md"
-      >
-        <DrawerOverlay>
-          <DrawerContent>
-            <DrawerCloseButton />
-              <DrawerBody>
-                <EditCharacter character={currentCharacter} />
               </DrawerBody>
           </DrawerContent>
         </DrawerOverlay>
