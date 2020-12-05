@@ -40,21 +40,23 @@ const Weapon = ({ weapon, isDisabled, onDisabled }: IProps) => {
   return (
     <Box
       role="group"
-      overflow="hidden"
       position="relative"
       borderRadius="0.875rem"
-      boxShadow="rgba(236, 240, 250, .4) 0px 1px 1px, rgba(236, 240, 250, 0.4) 0px 2px 2px, rgba(236, 240, 250, 1) 0px 4px 4px, rgba(236, 240, 250, .4) 0px 8px 8px, rgba(236, 240, 250, .4) 0px 16px 16px"
+      // boxShadow="rgba(236, 240, 250, .4) 0px 1px 1px, rgba(236, 240, 250, 0.4) 0px 2px 2px, rgba(236, 240, 250, 1) 0px 4px 4px, rgba(236, 240, 250, .4) 0px 8px 8px, rgba(236, 240, 250, .4) 0px 16px 16px"
       background="#fff"
       _before={{
-        content: "''",
-        position: "absolute",
-        zIndex: 2,
-        top: 0,
-        left: 0,
-        display: "block",
-        width: "4px",
-        height: "100%",
-        background: 'transparent',
+        content: '""',
+        position: 'absolute',
+        top: '22px',
+        left: '18px',
+        right: '18px',
+        bottom: '-40px',
+        zIndex: '-2',
+        background: '#E3E6EC',
+        opacity: '0.91',
+        // @ts-ignore
+        filter: 'blur(86.985px)',
+        borderRadius: '24px'
       }}
     >
       <Stack direction="row" spacing="0" align="center" justify="space-between">
