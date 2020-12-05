@@ -3,19 +3,68 @@ import { useTranslation } from 'react-i18next'
 import {
   Box,
   Flex,
+  Icon,
   Menu,
   MenuButton,
   MenuList,
   Stack,
+  Text,
   VStack,
 } from '@chakra-ui/react'
-import {
-  ChevronDownIcon,
-} from '@chakra-ui/icons'
+import { FiSettings } from 'react-icons/fi'
+import { ChevronDownIcon } from '@chakra-ui/icons'
 import { useSelector } from 'react-redux'
 import useRematchDispatch from '../../hooks/useRematch'
 import { ProfileSelectors } from '../../redux/selectors'
-import { NavButton } from '../AppMenu/AppMenu'
+
+const NavButton = ({ label, isCurrent, onClick, onEdit, ...rest }: { label: string, isCurrent?: boolean, onClick?: () => void, onEdit?: () => void, as?: any, href?: string }) => (
+  <Flex
+    alignItems="center"
+    justify="space-between"
+    height="56px"
+    padding="0 20px"
+    borderRadius="12px"
+    background={isCurrent ? '#6C5DD3' : 'transparent'}
+    fontSize="14px"
+    fontWeight="600"
+    color={isCurrent ? '#fff' : '#808191'}
+    transition="all .25s"
+    _active={{
+      background: '#6C5DD3',
+      color: '#ffffff',
+    }}
+    {...(!!onClick && !isCurrent ? { onClick, cursor: 'pointer' } : { })}
+  >
+    <Flex
+      align="center"
+      flex="1 1 100%"
+      height="100%"
+      _hover={{
+        color: isCurrent ? '#fff': '#6C5DD3',
+      }}
+    >
+      <Text noOfLines={1} fontSize="inherit" fontWeight="inherit">{label}</Text>
+    </Flex>
+    {!!onEdit && (
+      <Box
+        p={1}
+        cursor="pointer"
+        color={isCurrent ? '#fff' : '#808191'}
+        fontSize={0}
+        transition="all .25s"
+        _hover={{
+          transform: 'rotate(50deg)',
+          color: isCurrent ? '#fff': '#6C5DD3',
+        }}
+        onClick={(e) => {
+          e.stopPropagation();
+          onEdit()
+        }}>
+          <Icon as={FiSettings} w={5} h={5} />
+        </Box>
+      )}
+  </Flex>
+)
 
 interface IProps {
   onEditProfile: (index: number) => void
