@@ -28,7 +28,7 @@ const Roster = () => {
   const { t } = useTranslation()
   const currentRoster: IRoster = useSelector(ProfileSelectors.getCurrentRoster)
   const [selectedRosterCharacterIndex, setSelectedRosterCharacterIndex] = useState<number>(0)
-  const selectedCharacter = currentRoster[selectedRosterCharacterIndex].character
+  const selectedCharacter = currentRoster[selectedRosterCharacterIndex]?.character
   const { isOpen: isSelectCharacterDrawerOpen, onOpen: onSelectCharacterDrawerOpen, onClose: onSelectCharacterDrawerClose } = useDisclosure()
 
   return (
@@ -82,7 +82,7 @@ const Roster = () => {
               px={{ base: '20px', md: '64px', xl: '32px', xxl: '0px' }}
             >
               <SimpleGrid columns={1} spacing="32px">
-                <CharacterAscensionRequirement selectedCharacter={selectedCharacter} />
+                {selectedCharacter && <CharacterAscensionRequirement selectedCharacter={selectedCharacter} />}
               </SimpleGrid>
             </Box>
           </Flex>
