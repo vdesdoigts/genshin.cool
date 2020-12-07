@@ -8,14 +8,12 @@ import DashBox from '../DashBox'
 
 const Item = ({ ascension }: { ascension: ICharacterAscensionItem[] }) => (
   <DashBox size="xs" shadow>
-    <Wrap spacing="8px" wrap="wrap" isInline>
-      {ascension.map((item) => (
-        <WrapItem key={item.name} position="relative">
+    <SimpleGrid columns={5} spacing="8px">
+      {ascension.map((item, index) => (
+        <Box key={`${item.name}${index}`} position="relative">
           <AspectRatio
             ratio={1}
-            flex="0 0 72px"
-            width="72px"
-            height="72px"
+            flex="0 0 1"
             borderRadius="16px"
             background="#f2f4f8"
           >
@@ -44,9 +42,9 @@ const Item = ({ ascension }: { ascension: ICharacterAscensionItem[] }) => (
           >
             {item.count}
           </Box>
-        </WrapItem>
+        </Box>
       ))}
-    </Wrap>
+    </SimpleGrid>
   </DashBox>
 )
 

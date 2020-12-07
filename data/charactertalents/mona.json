@@ -1,0 +1,205 @@
+{
+	"id": 14,
+  "talents": [
+    {
+      "name": "ripple_of_fate"
+    },
+    {
+      "name": "mirror_reflection_of_doom"
+    },
+    {
+      "name": "stellaris_phantasm"
+    }
+  ],
+  "requirements": [
+    [
+      {
+        "name": "teachings_of_resistance",
+        "count": 3,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-teachings.png"
+        }
+      },
+      {
+        "name": "whopperflower_nectar",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/whopperflower-nectar.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_resistance",
+        "count": 2,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-guide.png"
+        }
+      },
+      {
+        "name": "shimmering_nectar",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/shimmering-nectar.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_resistance",
+        "count": 4,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-guide.png"
+        }
+      },
+      {
+        "name": "shimmering_nectar",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/shimmering-nectar.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_resistance",
+        "count": 6,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-guide.png"
+        }
+      },
+      {
+        "name": "shimmering_nectar",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/shimmering-nectar.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_resistance",
+        "count": 9,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-guide.png"
+        }
+      },
+      {
+        "name": "shimmering_nectar",
+        "count": 9,
+        "images": {
+          "image": "/images/ascensionmaterials/shimmering-nectar.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_resistance",
+        "count": 4,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-philosophies.png"
+        }
+      },
+      {
+        "name": "energy_nectar",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/energy-nectar.png"
+        }
+      },
+      {
+        "name": "ring_of_boreas",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/ring-of-boreas.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_resistance",
+        "count": 6,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-philosophies.png"
+        }
+      },
+      {
+        "name": "energy_nectar",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/energy-nectar.png"
+        }
+      },
+      {
+        "name": "ring_of_boreas",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/ring-of-boreas.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_resistance",
+        "count": 12,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-philosophies.png"
+        }
+      },
+      {
+        "name": "energy_nectar",
+        "count": 9,
+        "images": {
+          "image": "/images/ascensionmaterials/energy-nectar.png"
+        }
+      },
+      {
+        "name": "ring_of_boreas",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/ring-of-boreas.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_resistance",
+        "count": 16,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-philosophies.png"
+        }
+      },
+      {
+        "name": "energy_nectar",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/energy-nectar.png"
+        }
+      },
+      {
+        "name": "ring_of_boreas",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/ring-of-boreas.png"
+        }
+      },
+      {
+        "name": "crown_of_sagehood",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/crown-of-sagehood.png"
+        }
+      }
+    ]
+  ]
+}
+

@@ -1,0 +1,205 @@
+{
+	"id": 20,
+  "talents": [
+    {
+      "name": "cutting_torrent"
+    },
+    {
+      "name": "foul_legacy_raging_tide"
+    },
+    {
+      "name": "havoc_obliteration"
+    }
+  ],
+  "requirements": [
+    [
+      {
+        "name": "teachings_of_freedom",
+        "count": 3,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/freedom-teachings.png"
+        }
+      },
+      {
+        "name": "recruits_insignia",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/recruits-insignia.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_freedom",
+        "count": 2,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/freedom-guide.png"
+        }
+      },
+      {
+        "name": "sergeants-insignia",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/sergeants-insignia.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_freedom",
+        "count": 4,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/freedom-guide.png"
+        }
+      },
+      {
+        "name": "sergeants-insignia",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/sergeants-insignia.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_freedom",
+        "count": 6,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/freedom-guide.png"
+        }
+      },
+      {
+        "name": "sergeants-insignia",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/sergeants-insignia.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_freedom",
+        "count": 9,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/freedom-guide.png"
+        }
+      },
+      {
+        "name": "sergeants-insignia",
+        "count": 9,
+        "images": {
+          "image": "/images/ascensionmaterials/sergeants-insignia.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_freedom",
+        "count": 4,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/freedom-philosophies.png"
+        }
+      },
+      {
+        "name": "lieutenants_insignia",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/lieutenants-insignia.png"
+        }
+      },
+      {
+        "name": "shard_of_foul_legacy",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/shard-of-foul-legacy.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_freedom",
+        "count": 6,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/freedom-philosophies.png"
+        }
+      },
+      {
+        "name": "lieutenants_insignia",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/lieutenants-insignia.png"
+        }
+      },
+      {
+        "name": "shard_of_foul_legacy",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/shard-of-foul-legacy.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_freedom",
+        "count": 12,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/freedom-philosophies.png"
+        }
+      },
+      {
+        "name": "lieutenants_insignia",
+        "count": 9,
+        "images": {
+          "image": "/images/ascensionmaterials/lieutenants-insignia.png"
+        }
+      },
+      {
+        "name": "shard_of_foul_legacy",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/shard-of-foul-legacy.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_freedom",
+        "count": 16,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/freedom-philosophies.png"
+        }
+      },
+      {
+        "name": "lieutenants_insignia",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/lieutenants-insignia.png"
+        }
+      },
+      {
+        "name": "shard_of_foul_legacy",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/shard-of-foul-legacy.png"
+        }
+      },
+      {
+        "name": "crown_of_sagehood",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/crown-of-sagehood.png"
+        }
+      }
+    ]
+  ]
+}
+

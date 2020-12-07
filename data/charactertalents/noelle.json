@@ -1,0 +1,205 @@
+{
+	"id": 16,
+  "talents": [
+    {
+      "name": "favonius_bladework_maid"
+    },
+    {
+      "name": "breastplate"
+    },
+    {
+      "name": "sweeping_time"
+    }
+  ],
+  "requirements": [
+    [
+      {
+        "name": "teachings_of_resistance",
+        "count": 3,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-teachings.png"
+        }
+      },
+      {
+        "name": "damaged_mask",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/damaged-mask.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_resistance",
+        "count": 2,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-guide.png"
+        }
+      },
+      {
+        "name": "stained_mask",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/stained-mask.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_resistance",
+        "count": 4,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-guide.png"
+        }
+      },
+      {
+        "name": "stained_mask",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/stained-mask.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_resistance",
+        "count": 6,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-guide.png"
+        }
+      },
+      {
+        "name": "stained_mask",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/stained-mask.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_resistance",
+        "count": 9,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-guide.png"
+        }
+      },
+      {
+        "name": "stained_mask",
+        "count": 9,
+        "images": {
+          "image": "/images/ascensionmaterials/stained-mask.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_resistance",
+        "count": 4,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-philosophies.png"
+        }
+      },
+      {
+        "name": "ominous_mask",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/ominous-mask.png"
+        }
+      },
+      {
+        "name": "dvalins_claw",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/dvalins-claw.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_resistance",
+        "count": 6,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-philosophies.png"
+        }
+      },
+      {
+        "name": "ominous_mask",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/ominous-mask.png"
+        }
+      },
+      {
+        "name": "dvalins_claw",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/dvalins-claw.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_resistance",
+        "count": 12,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-philosophies.png"
+        }
+      },
+      {
+        "name": "ominous_mask",
+        "count": 9,
+        "images": {
+          "image": "/images/ascensionmaterials/ominous-mask.png"
+        }
+      },
+      {
+        "name": "dvalins_claw",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/dvalins-claw.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_resistance",
+        "count": 16,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-philosophies.png"
+        }
+      },
+      {
+        "name": "ominous_mask",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/ominous-mask.png"
+        }
+      },
+      {
+        "name": "dvalins_claw",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/dvalins-claw.png"
+        }
+      },
+      {
+        "name": "crown_of_sagehood",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/crown-of-sagehood.png"
+        }
+      }
+    ]
+  ]
+}
+

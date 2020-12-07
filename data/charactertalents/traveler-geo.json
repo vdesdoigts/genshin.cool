@@ -1,0 +1,204 @@
+{
+	"id": 22,
+  "talents": [
+    {
+      "name": "foreign_rockblade"
+    },
+    {
+      "name": "starfell_sword"
+    },
+    {
+      "name": "wake_of_earth"
+    }
+  ],
+  "requirements": [
+    [
+      {
+        "name": "teachings_of_freedom",
+        "count": 3,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/freedom-teachings.png"
+        }
+      },
+      {
+        "name": "divining_scroll",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/divining-scroll.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_resistance",
+        "count": 2,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-guide.png"
+        }
+      },
+      {
+        "name": "sealed_scroll",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/sealed-scroll.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_ballad",
+        "count": 4,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/ballad-guide.png"
+        }
+      },
+      {
+        "name": "sealed_scroll",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/sealed-scroll.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_freedom",
+        "count": 6,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/freedom-guide.png"
+        }
+      },
+      {
+        "name": "sealed_scroll",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/sealed-scroll.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_resistance",
+        "count": 9,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-guide.png"
+        }
+      },
+      {
+        "name": "sealed_scroll",
+        "count": 9,
+        "images": {
+          "image": "/images/ascensionmaterials/sealed-scroll.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_ballad",
+        "count": 4,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/ballad-philosophies.png"
+        }
+      },
+      {
+        "name": "forbidden_curse_scroll",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/forbidden-curse-scroll.png"
+        }
+      },
+      {
+        "name": "dvalins_sigh",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/dvalins-sigh.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_freedom",
+        "count": 6,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/freedom-philosophies.png"
+        }
+      },
+      {
+        "name": "forbidden_curse_scroll",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/forbidden-curse-scroll.png"
+        }
+      },
+      {
+        "name": "dvalins_sigh",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/dvalins-sigh.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_resistance",
+        "count": 12,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-philosophies.png"
+        }
+      },
+      {
+        "name": "forbidden_curse_scroll",
+        "count": 9,
+        "images": {
+          "image": "/images/ascensionmaterials/forbidden-curse-scroll.png"
+        }
+      },
+      {
+        "name": "dvalins_sigh",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/dvalins-sigh.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_ballad",
+        "count": 16,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/ballad-philosophies.png"
+        }
+      },
+      {
+        "name": "forbidden_curse_scroll",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/forbidden-curse-scroll.png"
+        }
+      },
+      {
+        "name": "dvalins_sigh",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/dvalins-sigh.png"
+        }
+      },
+      {
+        "name": "crown_of_sagehood",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/crown-of-sagehood.png"
+        }
+      }
+    ]
+  ]
+}

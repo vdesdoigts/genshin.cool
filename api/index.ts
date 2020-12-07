@@ -2,6 +2,7 @@ import artifacts from '../data/artifacts'
 import ascensionsmaterials from '../data/ascensionmaterials'
 import characters from '../data/characters'
 import characterascensions from '../data/characterascensions'
+import charactertalents from '../data/charactertalents'
 import talentmaterialtypes from '../data/talentmaterialtypes'
 import weapons from '../data/weapons'
 import weaponmaterialtypes from '../data/weaponmaterialtypes'
@@ -12,6 +13,7 @@ import {
   IAscensionMaterial,
   ICharacter,
   ICharacterAscension,
+  ICharacterTalent,
   IRosterCharacter,
   ITalentMaterialType,
   IWeapon,
@@ -26,6 +28,7 @@ export const getAscensionMaterialByTypeId = (id: IAscensionMaterial['type']['id'
 export const getArtifactById = (id: IArtifactItem['id'], type: IArtifactType) => artifacts.find((artifact) => artifact.id === id)![type] as IArtifactItem
 export const getCharacterById = (id: ICharacter['id']) => characters.find((character) => character.id === id) as ICharacter
 export const getCharacterascensionById = (id: ICharacterAscension['id']) => characterascensions.find((characterascension) => characterascension.id === id) as ICharacterAscension
+export const getCharacterTalentById = (id: ICharacterTalent['id']) => charactertalents.find((charactertalent) => charactertalent.id === id) as ICharacterTalent
 export const getWeaponById = (id: IWeapon['id']) => weapons.find((weapon) => weapon.id === id) as IWeapon
 
 export const getArtifactsCharacter = (artifactsCharacter?: IRosterCharacter['artifacts']) => {

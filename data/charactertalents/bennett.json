@@ -1,0 +1,205 @@
+{
+	"id": 4,
+  "talents": [
+    {
+      "name": "strike_of_fortune"
+    },
+    {
+      "name": "passion_overload"
+    },
+    {
+      "name": "fantastic_voyage"
+    }
+  ],
+  "requirements": [
+    [
+      {
+        "name": "teachings_of_resistance",
+        "count": 3,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-teachings.png"
+        }
+      },
+      {
+        "name": "treasure_hoarder_insignia",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/treasure-hoarder-insignia.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_resistance",
+        "count": 2,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-guide.png"
+        }
+      },
+      {
+        "name": "silver_raven_insignia",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/silver-raven-insignia.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_resistance",
+        "count": 4,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-guide.png"
+        }
+      },
+      {
+        "name": "silver_raven_insignia",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/silver-raven-insignia.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_resistance",
+        "count": 6,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-guide.png"
+        }
+      },
+      {
+        "name": "silver_raven_insignia",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/silver-raven-insignia.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_resistance",
+        "count": 9,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-guide.png"
+        }
+      },
+      {
+        "name": "silver_raven_insignia",
+        "count": 9,
+        "images": {
+          "image": "/images/ascensionmaterials/silver-raven-insignia.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_resistance",
+        "count": 4,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-philosophies.png"
+        }
+      },
+      {
+        "name": "golden_raven_insignia",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/golden-raven-insignia.png"
+        }
+      },
+      {
+        "name": "dvalins_plume",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/dvalins-plume.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_resistance",
+        "count": 6,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-philosophies.png"
+        }
+      },
+      {
+        "name": "golden_raven_insignia",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/golden-raven-insignia.png"
+        }
+      },
+      {
+        "name": "dvalins_plume",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/dvalins-plume.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_resistance",
+        "count": 12,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-philosophies.png"
+        }
+      },
+      {
+        "name": "golden_raven_insignia",
+        "count": 9,
+        "images": {
+          "image": "/images/ascensionmaterials/golden-raven-insignia.png"
+        }
+      },
+      {
+        "name": "dvalins_plume",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/dvalins-plume.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_resistance",
+        "count": 16,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/resistance-philosophies.png"
+        }
+      },
+      {
+        "name": "golden_raven_insignia",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/golden-raven-insignia.png"
+        }
+      },
+      {
+        "name": "dvalins_plume",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/dvalins-plume.png"
+        }
+      },
+      {
+        "name": "crown_of_sagehood",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/crown-of-sagehood.png"
+        }
+      }
+    ]
+  ]
+}
+

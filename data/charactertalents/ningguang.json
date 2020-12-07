@@ -1,0 +1,205 @@
+{
+	"id": 15,
+  "talents": [
+    {
+      "name": "sparkling_scatter"
+    },
+    {
+      "name": "jade_screen"
+    },
+    {
+      "name": "starshatter"
+    }
+  ],
+  "requirements": [
+    [
+      {
+        "name": "teachings_of_prosperity",
+        "count": 3,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/prosperity-teachings.png"
+        }
+      },
+      {
+        "name": "recruits_insignia",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/recruits-insignia.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_prosperity",
+        "count": 2,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/prosperity-guide.png"
+        }
+      },
+      {
+        "name": "sergeants-insignia",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/sergeants-insignia.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_prosperity",
+        "count": 4,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/prosperity-guide.png"
+        }
+      },
+      {
+        "name": "sergeants-insignia",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/sergeants-insignia.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_prosperity",
+        "count": 6,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/prosperity-guide.png"
+        }
+      },
+      {
+        "name": "sergeants-insignia",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/sergeants-insignia.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_prosperity",
+        "count": 9,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/prosperity-guide.png"
+        }
+      },
+      {
+        "name": "sergeants-insignia",
+        "count": 9,
+        "images": {
+          "image": "/images/ascensionmaterials/sergeants-insignia.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_prosperity",
+        "count": 4,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/prosperity-philosophies.png"
+        }
+      },
+      {
+        "name": "lieutenants_insignia",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/lieutenants-insignia.png"
+        }
+      },
+      {
+        "name": "spirit_locket_of_boreas",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/spirit-locket-of-boreas.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_prosperity",
+        "count": 6,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/prosperity-philosophies.png"
+        }
+      },
+      {
+        "name": "lieutenants_insignia",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/lieutenants-insignia.png"
+        }
+      },
+      {
+        "name": "spirit_locket_of_boreas",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/spirit-locket-of-boreas.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_prosperity",
+        "count": 12,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/prosperity-philosophies.png"
+        }
+      },
+      {
+        "name": "lieutenants_insignia",
+        "count": 9,
+        "images": {
+          "image": "/images/ascensionmaterials/lieutenants-insignia.png"
+        }
+      },
+      {
+        "name": "spirit_locket_of_boreas",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/spirit-locket-of-boreas.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_prosperity",
+        "count": 16,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/prosperity-philosophies.png"
+        }
+      },
+      {
+        "name": "lieutenants_insignia",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/lieutenants-insignia.png"
+        }
+      },
+      {
+        "name": "spirit_locket_of_boreas",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/spirit-locket-of-boreas.png"
+        }
+      },
+      {
+        "name": "crown_of_sagehood",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/crown-of-sagehood.png"
+        }
+      }
+    ]
+  ]
+}
+

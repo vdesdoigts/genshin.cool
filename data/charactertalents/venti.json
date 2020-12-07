@@ -1,0 +1,205 @@
+{
+	"id": 23,
+  "talents": [
+    {
+      "name": "divine_marksmanship"
+    },
+    {
+      "name": "skyward_sonnet"
+    },
+    {
+      "name": "winds_grand_ode"
+    }
+  ],
+  "requirements": [
+    [
+      {
+        "name": "teachings_of_ballad",
+        "count": 3,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/ballad-teachings.png"
+        }
+      },
+      {
+        "name": "slime_condensate",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-condensate.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_ballad",
+        "count": 2,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/ballad-guide.png"
+        }
+      },
+      {
+        "name": "slime_secretions",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-secretions.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_ballad",
+        "count": 4,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/ballad-guide.png"
+        }
+      },
+      {
+        "name": "slime_secretions",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-secretions.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_ballad",
+        "count": 6,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/ballad-guide.png"
+        }
+      },
+      {
+        "name": "slime_secretions",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-secretions.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_ballad",
+        "count": 9,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/ballad-guide.png"
+        }
+      },
+      {
+        "name": "slime_secretions",
+        "count": 9,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-secretions.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_ballad",
+        "count": 4,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/ballad-philosophies.png"
+        }
+      },
+      {
+        "name": "slime_concentrate",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-concentrate.png"
+        }
+      },
+      {
+        "name": "tail_of_boreas",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/tail-of-boreas.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_ballad",
+        "count": 6,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/ballad-philosophies.png"
+        }
+      },
+      {
+        "name": "slime_concentrate",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-concentrate.png"
+        }
+      },
+      {
+        "name": "tail_of_boreas",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/tail-of-boreas.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_ballad",
+        "count": 12,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/ballad-philosophies.png"
+        }
+      },
+      {
+        "name": "slime_concentrate",
+        "count": 9,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-concentrate.png"
+        }
+      },
+      {
+        "name": "tail_of_boreas",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/tail-of-boreas.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_ballad",
+        "count": 16,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/ballad-philosophies.png"
+        }
+      },
+      {
+        "name": "slime_concentrate",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-concentrate.png"
+        }
+      },
+      {
+        "name": "tail_of_boreas",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/tail-of-boreas.png"
+        }
+      },
+      {
+        "name": "crown_of_sagehood",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/crown-of-sagehood.png"
+        }
+      }
+    ]
+  ]
+}
+

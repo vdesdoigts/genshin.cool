@@ -1,0 +1,205 @@
+{
+	"id": 17,
+  "talents": [
+    {
+      "name": "ancient_sword_art"
+    },
+    {
+      "name": "adeptus_art_herald_of_the_frost"
+    },
+    {
+      "name": "adeptus_art_preserver_of_fortune"
+    }
+  ],
+  "requirements": [
+    [
+      {
+        "name": "teachings_of_prosperity",
+        "count": 3,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/prosperity-teachings.png"
+        }
+      },
+      {
+        "name": "divining_scroll",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/divining-scroll.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_prosperity",
+        "count": 2,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/prosperity-guide.png"
+        }
+      },
+      {
+        "name": "sealed_scroll",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/sealed-scroll.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_prosperity",
+        "count": 4,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/prosperity-guide.png"
+        }
+      },
+      {
+        "name": "sealed_scroll",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/sealed-scroll.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_prosperity",
+        "count": 6,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/prosperity-guide.png"
+        }
+      },
+      {
+        "name": "sealed_scroll",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/sealed-scroll.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_prosperity",
+        "count": 9,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/prosperity-guide.png"
+        }
+      },
+      {
+        "name": "sealed_scroll",
+        "count": 9,
+        "images": {
+          "image": "/images/ascensionmaterials/sealed-scroll.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_prosperity",
+        "count": 4,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/prosperity-philosophies.png"
+        }
+      },
+      {
+        "name": "forbidden_curse_scroll",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/forbidden-curse-scroll.png"
+        }
+      },
+      {
+        "name": "tail_of_boreas",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/tail-of-boreas.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_prosperity",
+        "count": 6,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/prosperity-philosophies.png"
+        }
+      },
+      {
+        "name": "forbidden_curse_scroll",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/forbidden-curse-scroll.png"
+        }
+      },
+      {
+        "name": "tail_of_boreas",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/tail-of-boreas.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_prosperity",
+        "count": 12,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/prosperity-philosophies.png"
+        }
+      },
+      {
+        "name": "forbidden_curse_scroll",
+        "count": 9,
+        "images": {
+          "image": "/images/ascensionmaterials/forbidden-curse-scroll.png"
+        }
+      },
+      {
+        "name": "tail_of_boreas",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/tail-of-boreas.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_prosperity",
+        "count": 16,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/prosperity-philosophies.png"
+        }
+      },
+      {
+        "name": "forbidden_curse_scroll",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/forbidden-curse-scroll.png"
+        }
+      },
+      {
+        "name": "tail_of_boreas",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/tail-of-boreas.png"
+        }
+      },
+      {
+        "name": "crown_of_sagehood",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/crown-of-sagehood.png"
+        }
+      }
+    ]
+  ]
+}
+

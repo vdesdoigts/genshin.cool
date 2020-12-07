@@ -22,6 +22,7 @@ export type IRosterCharacter = {
   character: {
     id: ICharacter['id']
     ascension?: number
+    talents?: number[]
   }
   artifacts?: {
     flower?: {
@@ -150,13 +151,27 @@ export type ICharacter = {
 
 export type ICharacterAscension = {
   id: number
-  type: string
   requirements: ICharacterAscensionItem[][]
 }
 
 export type ICharacterAscensionItem = {
   name: string
   count: number | string
+  images: {
+    image: string
+  }
+}
+
+export type ICharacterTalent = {
+  id: number
+  talents: { name: string }[]
+  requirements: ICharacterTalentItem[][]
+}
+
+export type ICharacterTalentItem = {
+  name: string
+  count: number | string
+  domainofmastery?: string
   images: {
     image: string
   }

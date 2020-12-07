@@ -1,0 +1,205 @@
+{
+	"id": 25,
+  "talents": [
+    {
+      "name": "whirlwind_thrust"
+    },
+    {
+      "name": "lemniscatic_wind_cycling"
+    },
+    {
+      "name": "bane_of_all_evil"
+    }
+  ],
+  "requirements": [
+    [
+      {
+        "name": "teachings_of_prosperity",
+        "count": 3,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/prosperity-teachings.png"
+        }
+      },
+      {
+        "name": "slime_condensate",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-condensate.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_prosperity",
+        "count": 2,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/prosperity-guide.png"
+        }
+      },
+      {
+        "name": "slime_secretions",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-secretions.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_prosperity",
+        "count": 4,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/prosperity-guide.png"
+        }
+      },
+      {
+        "name": "slime_secretions",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-secretions.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_prosperity",
+        "count": 6,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/prosperity-guide.png"
+        }
+      },
+      {
+        "name": "slime_secretions",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-secretions.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_prosperity",
+        "count": 9,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/prosperity-guide.png"
+        }
+      },
+      {
+        "name": "slime_secretions",
+        "count": 9,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-secretions.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_prosperity",
+        "count": 4,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/prosperity-philosophies.png"
+        }
+      },
+      {
+        "name": "slime_concentrate",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-concentrate.png"
+        }
+      },
+      {
+        "name": "shadow_of_the_warrior",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/shadow-of-the-warrior.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_prosperity",
+        "count": 6,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/prosperity-philosophies.png"
+        }
+      },
+      {
+        "name": "slime_concentrate",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-concentrate.png"
+        }
+      },
+      {
+        "name": "shadow_of_the_warrior",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/shadow-of-the-warrior.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_prosperity",
+        "count": 12,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/prosperity-philosophies.png"
+        }
+      },
+      {
+        "name": "slime_concentrate",
+        "count": 9,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-concentrate.png"
+        }
+      },
+      {
+        "name": "shadow_of_the_warrior",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/shadow-of-the-warrior.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_prosperity",
+        "count": 16,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/prosperity-philosophies.png"
+        }
+      },
+      {
+        "name": "slime_concentrate",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-concentrate.png"
+        }
+      },
+      {
+        "name": "shadow_of_the_warrior",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/shadow-of-the-warrior.png"
+        }
+      },
+      {
+        "name": "crown_of_sagehood",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/crown-of-sagehood.png"
+        }
+      }
+    ]
+  ]
+}
+
