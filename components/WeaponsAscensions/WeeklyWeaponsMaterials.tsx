@@ -21,7 +21,7 @@ const WeeklyWeaponsMaterials = ({ weaponsMaterials }: IProps) => {
     <SimpleGrid columns={1} spacing={12}>
       {Object.keys(weaponsMaterialsByDays).map((key) => {
         return (
-          <Box>
+          <Box key={key}>
             <Heading mb="16px" fontSize="14px" fontWeight="semibold" lineHeight="1.33333">
               {t(`site.days.${key.split(',').join(', ')}`)}
             </Heading>

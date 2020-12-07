@@ -42,7 +42,7 @@ function App({ Component, pageProps }) {
   }, [])
 
   return (
-    <ChakraProvider theme={theme}>
+    <ChakraProvider resetCSS theme={theme}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Genshin Impact - Farming Guide</title>
