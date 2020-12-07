@@ -23,6 +23,7 @@ const Item = ({ ascension }: { ascension: ICharacterAscensionItem[] }) => (
                 src={item.images.image}
                 layout="fill"
                 objectFit="contain"
+                loading="eager"
               />
             </Box>
           </Box>
