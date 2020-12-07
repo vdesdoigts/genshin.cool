@@ -123,6 +123,22 @@ export const profile = createModel()({
         }
       })
     },
+    updateCharacterTalent(state, payload: { character: ICharacter['id'], talent: number, value: number }) {
+      return produce(state, draftState => {
+        const { currentProfileIndex } = state
+        const currentRoster = state.userProfiles[currentProfileIndex].roster
+        const characterIndex = findIndex(currentRoster, (roster) => roster.character.id === payload.character)
+
+        if (characterIndex !== -1) {
+          const talents = state.userProfiles[currentProfileIndex].roster[characterIndex].character.talents
+
+          if (!talents) {
+            draftState.userProfiles[currentProfileIndex].roster[characterIndex].character.talents = [0, 0, 0]
+          }
+          draftState.userProfiles[currentProfileIndex].roster[characterIndex].character.talents[payload.talent] = payload.value
+        }
+      })
+    },
     toggleRoster(state, payload: number) {
       return produce(state, draftState => {
         const { currentProfileIndex } = state

@@ -40,13 +40,6 @@
         }
       },
       {
-        "name": "basalt_pillar",
-        "count": 2,
-        "images": {
-          "image": "/images/ascensionmaterials/basalt-pillar.png"
-        }
-      },
-      {
         "name": "windwheel_aster",
         "count": 10,
         "images": {
@@ -74,13 +67,6 @@
         "count": 6,
         "images": {
           "image": "/images/ascensionmaterials/brilliant-diamond-fragment.png"
-        }
-      },
-      {
-        "name": "basalt_pillar",
-        "count": 4,
-        "images": {
-          "image": "/images/ascensionmaterials/basalt-pillar.png"
         }
       },
       {
@@ -114,13 +100,6 @@
         }
       },
       {
-        "name": "basalt_pillar",
-        "count": 8,
-        "images": {
-          "image": "/images/ascensionmaterials/basalt-pillar.png"
-        }
-      },
-      {
         "name": "windwheel_aster",
         "count": 30,
         "images": {
@@ -151,13 +130,6 @@
         }
       },
       {
-        "name": "basalt_pillar",
-        "count": 12,
-        "images": {
-          "image": "/images/ascensionmaterials/basalt-pillar.png"
-        }
-      },
-      {
         "name": "windwheel_aster",
         "count": 45,
         "images": {
@@ -185,13 +157,6 @@
         "count": 6,
         "images": {
           "image": "/images/ascensionmaterials/brilliant-diamond-gemstone.png"
-        }
-      },
-      {
-        "name": "basalt_pillar",
-        "count": 20,
-        "images": {
-          "image": "/images/ascensionmaterials/basalt-pillar.png"
         }
       },
       {

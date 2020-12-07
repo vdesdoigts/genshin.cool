@@ -1,0 +1,268 @@
+{
+	"id": 1,
+  "talents": [
+    {
+      "name": "sharpshooter"
+    },
+    {
+      "name": "explosive_puppet"
+    },
+    {
+      "name": "fiery_rain"
+    }
+  ],
+  "requirements": [
+    [
+      {
+        "name": "teachings_of_freedom",
+        "count": 3,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/freedom-teachings.png"
+        }
+      },
+      {
+        "name": "firm_arrowhead",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/firm-arrowhead.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "12.5k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_freedom",
+        "count": 2,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/freedom-guide.png"
+        }
+      },
+      {
+        "name": "sharp_arrowhead",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/sharp-arrowhead.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "17.5k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_freedom",
+        "count": 4,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/freedom-guide.png"
+        }
+      },
+      {
+        "name": "sharp_arrowhead",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/sharp-arrowhead.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "25k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_freedom",
+        "count": 6,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/freedom-guide.png"
+        }
+      },
+      {
+        "name": "sharp_arrowhead",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/sharp-arrowhead.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "30k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_freedom",
+        "count": 9,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/freedom-guide.png"
+        }
+      },
+      {
+        "name": "sharp_arrowhead",
+        "count": 9,
+        "images": {
+          "image": "/images/ascensionmaterials/sharp-arrowhead.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "35k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_freedom",
+        "count": 4,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/freedom-philosophies.png"
+        }
+      },
+      {
+        "name": "weathered_arrowhead",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/weathered-arrowhead.png"
+        }
+      },
+      {
+        "name": "dvalins_sigh",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/dvalins-sigh.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "120k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_freedom",
+        "count": 6,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/freedom-philosophies.png"
+        }
+      },
+      {
+        "name": "weathered_arrowhead",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/weathered-arrowhead.png"
+        }
+      },
+      {
+        "name": "dvalins_sigh",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/dvalins-sigh.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "260k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_freedom",
+        "count": 12,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/freedom-philosophies.png"
+        }
+      },
+      {
+        "name": "weathered_arrowhead",
+        "count": 9,
+        "images": {
+          "image": "/images/ascensionmaterials/weathered-arrowhead.png"
+        }
+      },
+      {
+        "name": "dvalins_sigh",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/dvalins-sigh.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "450k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_freedom",
+        "count": 16,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/freedom-philosophies.png"
+        }
+      },
+      {
+        "name": "weathered_arrowhead",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/weathered-arrowhead.png"
+        }
+      },
+      {
+        "name": "dvalins_sigh",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/dvalins-sigh.png"
+        }
+      },
+      {
+        "name": "crown_of_sagehood",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/crown-of-sagehood.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "700k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ]
+  ]
+}
+

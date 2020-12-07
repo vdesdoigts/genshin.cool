@@ -1,0 +1,268 @@
+{
+	"id": 8,
+  "talents": [
+    {
+      "name": "bolts_of_downfall"
+    },
+    {
+      "name": "nightrider"
+    },
+    {
+      "name": "midnight_phantasmagoria"
+    }
+  ],
+  "requirements": [
+    [
+      {
+        "name": "teachings_of_ballad",
+        "count": 3,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/ballad-teachings.png"
+        }
+      },
+      {
+        "name": "firm_arrowhead",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/firm-arrowhead.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "12.5k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_ballad",
+        "count": 2,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/ballad-guide.png"
+        }
+      },
+      {
+        "name": "sharp_arrowhead",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/sharp-arrowhead.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "17.5k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_ballad",
+        "count": 4,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/ballad-guide.png"
+        }
+      },
+      {
+        "name": "sharp_arrowhead",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/sharp-arrowhead.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "25k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_ballad",
+        "count": 6,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/ballad-guide.png"
+        }
+      },
+      {
+        "name": "sharp_arrowhead",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/sharp-arrowhead.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "30k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_ballad",
+        "count": 9,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/ballad-guide.png"
+        }
+      },
+      {
+        "name": "sharp_arrowhead",
+        "count": 9,
+        "images": {
+          "image": "/images/ascensionmaterials/sharp-arrowhead.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "35k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_ballad",
+        "count": 4,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/ballad-philosophies.png"
+        }
+      },
+      {
+        "name": "weathered_arrowhead",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/weathered-arrowhead.png"
+        }
+      },
+      {
+        "name": "spirit_locket_of_boreas",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/spirit-locket-of-boreas.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "120k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_ballad",
+        "count": 6,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/ballad-philosophies.png"
+        }
+      },
+      {
+        "name": "weathered_arrowhead",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/weathered-arrowhead.png"
+        }
+      },
+      {
+        "name": "spirit_locket_of_boreas",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/spirit-locket-of-boreas.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "260k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_ballad",
+        "count": 12,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/ballad-philosophies.png"
+        }
+      },
+      {
+        "name": "weathered_arrowhead",
+        "count": 9,
+        "images": {
+          "image": "/images/ascensionmaterials/weathered-arrowhead.png"
+        }
+      },
+      {
+        "name": "spirit_locket_of_boreas",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/spirit-locket-of-boreas.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "450k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_ballad",
+        "count": 16,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/ballad-philosophies.png"
+        }
+      },
+      {
+        "name": "weathered_arrowhead",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/weathered-arrowhead.png"
+        }
+      },
+      {
+        "name": "spirit_locket_of_boreas",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/spirit-locket-of-boreas.png"
+        }
+      },
+      {
+        "name": "crown_of_sagehood",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/crown-of-sagehood.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "700k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ]
+  ]
+}
+

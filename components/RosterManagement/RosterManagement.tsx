@@ -25,7 +25,7 @@ const RosterManagement = ({ currentRoster, selectedCharacter, setSelectedCharact
           ? (
             <>
               <Box display={{ base: 'block', xl: 'none' }}>
-                <Grid templateColumns="repeat(auto-fit, minmax(90px, 1fr) )" spacing={2}>
+                <Grid templateColumns="repeat(auto-fill, minmax(90px, 1fr) )" spacing={2}>
                   {currentRoster.map((roster, index) => {
                     const character = getCharacterById(roster.character.id)
                     const isSelected = selectedCharacter.id === roster.character.id

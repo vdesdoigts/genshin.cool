@@ -1,0 +1,268 @@
+{
+	"id": 27,
+  "talents": [
+    {
+      "name": "rain_of_stone"
+    },
+    {
+      "name": "dominus_lapidis"
+    },
+    {
+      "name": "planet_befall"
+    }
+  ],
+  "requirements": [
+    [
+      {
+        "name": "teachings_of_gold",
+        "count": 3,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/gold-teachings.png"
+        }
+      },
+      {
+        "name": "slime_condensate",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-condensate.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "12.5k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_gold",
+        "count": 2,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/gold-guide.png"
+        }
+      },
+      {
+        "name": "slime_secretions",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-secretions.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "17.5k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_gold",
+        "count": 4,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/gold-guide.png"
+        }
+      },
+      {
+        "name": "slime_secretions",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-secretions.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "25k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_gold",
+        "count": 6,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/gold-guide.png"
+        }
+      },
+      {
+        "name": "slime_secretions",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-secretions.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "30k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_gold",
+        "count": 9,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/gold-guide.png"
+        }
+      },
+      {
+        "name": "slime_secretions",
+        "count": 9,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-secretions.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "35k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_gold",
+        "count": 4,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/gold-philosophies.png"
+        }
+      },
+      {
+        "name": "slime_concentrate",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-concentrate.png"
+        }
+      },
+      {
+        "name": "tusk_of_monoceros_caeli",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/tusk-of-monoceros-caeli.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "120k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_gold",
+        "count": 6,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/gold-philosophies.png"
+        }
+      },
+      {
+        "name": "slime_concentrate",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-concentrate.png"
+        }
+      },
+      {
+        "name": "tusk_of_monoceros_caeli",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/tusk-of-monoceros-caeli.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "260k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_gold",
+        "count": 12,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/gold-philosophies.png"
+        }
+      },
+      {
+        "name": "slime_concentrate",
+        "count": 9,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-concentrate.png"
+        }
+      },
+      {
+        "name": "tusk_of_monoceros_caeli",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/tusk-of-monoceros-caeli.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "450k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_gold",
+        "count": 16,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/gold-philosophies.png"
+        }
+      },
+      {
+        "name": "slime_concentrate",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/slime-concentrate.png"
+        }
+      },
+      {
+        "name": "tusk_of_monoceros_caeli",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/tusk-of-monoceros-caeli.png"
+        }
+      },
+      {
+        "name": "crown_of_sagehood",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/crown-of-sagehood.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "700k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ]
+  ]
+}
+

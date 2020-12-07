@@ -1,0 +1,268 @@
+{
+	"id": 5,
+  "talents": [
+    {
+      "name": "demonbane"
+    },
+    {
+      "name": "chonghua_s_layered_frost"
+    },
+    {
+      "name": "cloud_parting_star"
+    }
+  ],
+  "requirements": [
+    [
+      {
+        "name": "teachings_of_diligence",
+        "count": 3,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/diligence-teachings.png"
+        }
+      },
+      {
+        "name": "damaged_mask",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/damaged-mask.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "12.5k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_diligence",
+        "count": 2,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/diligence-guide.png"
+        }
+      },
+      {
+        "name": "stained_mask",
+        "count": 3,
+        "images": {
+          "image": "/images/ascensionmaterials/stained-mask.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "17.5k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_diligence",
+        "count": 4,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/diligence-guide.png"
+        }
+      },
+      {
+        "name": "stained_mask",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/stained-mask.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "25k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_diligence",
+        "count": 6,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/diligence-guide.png"
+        }
+      },
+      {
+        "name": "stained_mask",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/stained-mask.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "30k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_diligence",
+        "count": 9,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/diligence-guide.png"
+        }
+      },
+      {
+        "name": "stained_mask",
+        "count": 9,
+        "images": {
+          "image": "/images/ascensionmaterials/stained-mask.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "35k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_diligence",
+        "count": 4,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/diligence-philosophies.png"
+        }
+      },
+      {
+        "name": "ominous_mask",
+        "count": 4,
+        "images": {
+          "image": "/images/ascensionmaterials/ominous-mask.png"
+        }
+      },
+      {
+        "name": "dvalins_sigh",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/dvalins-sigh.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "120k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_diligence",
+        "count": 6,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/diligence-philosophies.png"
+        }
+      },
+      {
+        "name": "ominous_mask",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/ominous-mask.png"
+        }
+      },
+      {
+        "name": "dvalins_sigh",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/dvalins-sigh.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "260k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_diligence",
+        "count": 12,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/diligence-philosophies.png"
+        }
+      },
+      {
+        "name": "ominous_mask",
+        "count": 9,
+        "images": {
+          "image": "/images/ascensionmaterials/ominous-mask.png"
+        }
+      },
+      {
+        "name": "dvalins_sigh",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/dvalins-sigh.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "450k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "philosophies_of_diligence",
+        "count": 16,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/diligence-philosophies.png"
+        }
+      },
+      {
+        "name": "ominous_mask",
+        "count": 12,
+        "images": {
+          "image": "/images/ascensionmaterials/ominous-mask.png"
+        }
+      },
+      {
+        "name": "dvalins_sigh",
+        "count": 2,
+        "images": {
+          "image": "/images/ascensionmaterials/dvalins-sigh.png"
+        }
+      },
+      {
+        "name": "crown_of_sagehood",
+        "count": 1,
+        "images": {
+          "image": "/images/ascensionmaterials/crown-of-sagehood.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "700k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ]
+  ]
+}
+
