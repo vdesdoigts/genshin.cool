@@ -58,6 +58,9 @@ const CharacterTalentRequirement = ({ selectedCharacter }: IProps) => {
   const characterTalent = getCharacterTalentById(character.id)
   const characterTalentLevels = selectedCharacter.talents || [0, 0, 0]
 
+  // edge case Traveler Geo
+  const travelerAnemoCharacterTalents = selectedCharacter.id === 22 ? getCharacterTalentById(21) : null
+
   return (
     <SimpleGrid columns={1} spacing={2}>
       <DashBox title={t('site.next_talent_material')} variant="blue" size="xs">
@@ -90,7 +93,13 @@ const CharacterTalentRequirement = ({ selectedCharacter }: IProps) => {
                   </Select>
                 </WrapItem>
               </Wrap>
-              <Item key={talent.name} ascension={characterTalent.requirements[characterTalentLevels[index]]} />
+              <Item
+                key={talent.name}
+                ascension={index === 0 && travelerAnemoCharacterTalents
+                  ? travelerAnemoCharacterTalents.requirements[characterTalentLevels[index]]
+                  : characterTalent.requirements[characterTalentLevels[index]]
+                }
+              />
             </DashBox>
           ))}
         </SimpleGrid>

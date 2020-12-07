@@ -14,182 +14,238 @@
   "requirements": [
     [
       {
-        "name": "teachings_of_freedom",
+        "name": "teachings_of_prosperity",
         "count": 3,
         "domainofmastery": "forsaken_rift",
         "images": {
-          "image": "/images/talentmaterials/freedom-teachings.png"
+          "image": "/images/talentmaterials/prosperity-teachings.png"
         }
       },
       {
-        "name": "divining_scroll",
+        "name": "firm_arrowhead",
         "count": 6,
         "images": {
-          "image": "/images/ascensionmaterials/divining-scroll.png"
+          "image": "/images/ascensionmaterials/firm-arrowhead.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "12.5k",
+        "images": {
+          "image": "/images/common/mora.png"
         }
       }
     ],
     [
       {
-        "name": "guide_of_resistance",
+        "name": "guide_of_diligence",
         "count": 2,
         "domainofmastery": "forsaken_rift",
         "images": {
-          "image": "/images/talentmaterials/resistance-guide.png"
+          "image": "/images/talentmaterials/diligence-guide.png"
         }
       },
       {
-        "name": "sealed_scroll",
+        "name": "sharp_arrowhead",
         "count": 3,
         "images": {
-          "image": "/images/ascensionmaterials/sealed-scroll.png"
-        }
-      }
-    ],
-    [
-      {
-        "name": "guide_of_ballad",
-        "count": 4,
-        "domainofmastery": "forsaken_rift",
-        "images": {
-          "image": "/images/talentmaterials/ballad-guide.png"
+          "image": "/images/ascensionmaterials/sharp-arrowhead.png"
         }
       },
       {
-        "name": "sealed_scroll",
-        "count": 4,
+        "name": "mora",
+        "count": "17.5k",
         "images": {
-          "image": "/images/ascensionmaterials/sealed-scroll.png"
+          "image": "/images/common/mora.png"
         }
       }
     ],
     [
       {
-        "name": "guide_of_freedom",
-        "count": 6,
+        "name": "guide_of_gold",
+        "count": 4,
         "domainofmastery": "forsaken_rift",
         "images": {
-          "image": "/images/talentmaterials/freedom-guide.png"
+          "image": "/images/talentmaterials/gold-guide.png"
         }
       },
       {
-        "name": "sealed_scroll",
-        "count": 6,
+        "name": "sharp_arrowhead",
+        "count": 4,
         "images": {
-          "image": "/images/ascensionmaterials/sealed-scroll.png"
+          "image": "/images/ascensionmaterials/sharp-arrowhead.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "25k",
+        "images": {
+          "image": "/images/common/mora.png"
         }
       }
     ],
     [
       {
-        "name": "guide_of_resistance",
+        "name": "guide_of_prosperity",
+        "count": 6,
+        "domainofmastery": "forsaken_rift",
+        "images": {
+          "image": "/images/talentmaterials/prosperity-guide.png"
+        }
+      },
+      {
+        "name": "sharp_arrowhead",
+        "count": 6,
+        "images": {
+          "image": "/images/ascensionmaterials/sharp-arrowhead.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "30k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
+      }
+    ],
+    [
+      {
+        "name": "guide_of_diligence",
         "count": 9,
         "domainofmastery": "forsaken_rift",
         "images": {
-          "image": "/images/talentmaterials/resistance-guide.png"
+          "image": "/images/talentmaterials/diligence-guide.png"
         }
       },
       {
-        "name": "sealed_scroll",
+        "name": "sharp_arrowhead",
         "count": 9,
         "images": {
-          "image": "/images/ascensionmaterials/sealed-scroll.png"
+          "image": "/images/ascensionmaterials/sharp-arrowhead.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "35k",
+        "images": {
+          "image": "/images/common/mora.png"
         }
       }
     ],
     [
       {
-        "name": "philosophies_of_ballad",
+        "name": "philosophies_of_gold",
         "count": 4,
         "domainofmastery": "forsaken_rift",
         "images": {
-          "image": "/images/talentmaterials/ballad-philosophies.png"
+          "image": "/images/talentmaterials/gold-philosophies.png"
         }
       },
       {
-        "name": "forbidden_curse_scroll",
+        "name": "weathered_arrowhead",
         "count": 4,
         "images": {
-          "image": "/images/ascensionmaterials/forbidden-curse-scroll.png"
+          "image": "/images/ascensionmaterials/weathered-arrowhead.png"
         }
       },
       {
-        "name": "dvalins_sigh",
+        "name": "tail_of_boreas",
         "count": 1,
         "images": {
-          "image": "/images/ascensionmaterials/dvalins-sigh.png"
+          "image": "/images/ascensionmaterials/tail-of-boreas.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "120k",
+        "images": {
+          "image": "/images/common/mora.png"
         }
       }
     ],
     [
       {
-        "name": "philosophies_of_freedom",
+        "name": "philosophies_of_prosperity",
         "count": 6,
         "domainofmastery": "forsaken_rift",
         "images": {
-          "image": "/images/talentmaterials/freedom-philosophies.png"
+          "image": "/images/talentmaterials/prosperity-philosophies.png"
         }
       },
       {
-        "name": "forbidden_curse_scroll",
+        "name": "weathered_arrowhead",
         "count": 6,
         "images": {
-          "image": "/images/ascensionmaterials/forbidden-curse-scroll.png"
+          "image": "/images/ascensionmaterials/weathered-arrowhead.png"
         }
       },
       {
-        "name": "dvalins_sigh",
+        "name": "tail_of_boreas",
         "count": 1,
         "images": {
-          "image": "/images/ascensionmaterials/dvalins-sigh.png"
+          "image": "/images/ascensionmaterials/tail-of-boreas.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "260k",
+        "images": {
+          "image": "/images/common/mora.png"
         }
       }
     ],
     [
       {
-        "name": "philosophies_of_resistance",
+        "name": "philosophies_of_diligence",
         "count": 12,
         "domainofmastery": "forsaken_rift",
         "images": {
-          "image": "/images/talentmaterials/resistance-philosophies.png"
+          "image": "/images/talentmaterials/diligence-philosophies.png"
         }
       },
       {
-        "name": "forbidden_curse_scroll",
+        "name": "weathered_arrowhead",
         "count": 9,
         "images": {
-          "image": "/images/ascensionmaterials/forbidden-curse-scroll.png"
+          "image": "/images/ascensionmaterials/weathered-arrowhead.png"
         }
       },
       {
-        "name": "dvalins_sigh",
+        "name": "tail_of_boreas",
         "count": 2,
         "images": {
-          "image": "/images/ascensionmaterials/dvalins-sigh.png"
+          "image": "/images/ascensionmaterials/tail-of-boreas.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "450k",
+        "images": {
+          "image": "/images/common/mora.png"
         }
       }
     ],
     [
       {
-        "name": "philosophies_of_ballad",
+        "name": "philosophies_of_gold",
         "count": 16,
         "domainofmastery": "forsaken_rift",
         "images": {
-          "image": "/images/talentmaterials/ballad-philosophies.png"
+          "image": "/images/talentmaterials/gold-philosophies.png"
         }
       },
       {
-        "name": "forbidden_curse_scroll",
+        "name": "weathered_arrowhead",
         "count": 12,
         "images": {
-          "image": "/images/ascensionmaterials/forbidden-curse-scroll.png"
+          "image": "/images/ascensionmaterials/weathered-arrowhead.png"
         }
       },
       {
-        "name": "dvalins_sigh",
+        "name": "tail_of_boreas",
         "count": 2,
         "images": {
-          "image": "/images/ascensionmaterials/dvalins-sigh.png"
+          "image": "/images/ascensionmaterials/tail-of-boreas.png"
         }
       },
       {
@@ -197,6 +253,13 @@
         "count": 1,
         "images": {
           "image": "/images/ascensionmaterials/crown-of-sagehood.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "700k",
+        "images": {
+          "image": "/images/common/mora.png"
         }
       }
     ]

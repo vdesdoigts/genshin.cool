@@ -27,6 +27,13 @@
         "images": {
           "image": "/images/ascensionmaterials/recruits-insignia.png"
         }
+      },
+      {
+        "name": "mora",
+        "count": "12.5k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
       }
     ],
     [
@@ -44,6 +51,13 @@
         "images": {
           "image": "/images/ascensionmaterials/sergeants-insignia.png"
         }
+      },
+      {
+        "name": "mora",
+        "count": "17.5k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
       }
     ],
     [
@@ -60,6 +74,13 @@
         "count": 4,
         "images": {
           "image": "/images/ascensionmaterials/sergeants-insignia.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "25k",
+        "images": {
+          "image": "/images/common/mora.png"
         }
       }
     ],
@@ -78,6 +99,13 @@
         "images": {
           "image": "/images/ascensionmaterials/sergeants-insignia.png"
         }
+      },
+      {
+        "name": "mora",
+        "count": "30k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
       }
     ],
     [
@@ -94,6 +122,13 @@
         "count": 9,
         "images": {
           "image": "/images/ascensionmaterials/sergeants-insignia.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "35k",
+        "images": {
+          "image": "/images/common/mora.png"
         }
       }
     ],
@@ -119,6 +154,13 @@
         "images": {
           "image": "/images/ascensionmaterials/spirit-locket-of-boreas.png"
         }
+      },
+      {
+        "name": "mora",
+        "count": "120k",
+        "images": {
+          "image": "/images/common/mora.png"
+        }
       }
     ],
     [
@@ -142,6 +184,13 @@
         "count": 1,
         "images": {
           "image": "/images/ascensionmaterials/spirit-locket-of-boreas.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "260k",
+        "images": {
+          "image": "/images/common/mora.png"
         }
       }
     ],
@@ -166,6 +215,13 @@
         "count": 2,
         "images": {
           "image": "/images/ascensionmaterials/spirit-locket-of-boreas.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "450k",
+        "images": {
+          "image": "/images/common/mora.png"
         }
       }
     ],
@@ -197,6 +253,13 @@
         "count": 1,
         "images": {
           "image": "/images/ascensionmaterials/crown-of-sagehood.png"
+        }
+      },
+      {
+        "name": "mora",
+        "count": "700k",
+        "images": {
+          "image": "/images/common/mora.png"
         }
       }
     ]
