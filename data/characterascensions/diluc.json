@@ -91,7 +91,7 @@
         }
       },
       {
-        "name": "sergeants-insignia",
+        "name": "sergeants_insignia",
         "count": 12,
         "images": {
           "image": "/images/ascensionmaterials/sergeants-insignia.png"
@@ -128,7 +128,7 @@
         }
       },
       {
-        "name": "sergeants-insignia",
+        "name": "sergeants_insignia",
         "count": 18,
         "images": {
           "image": "/images/ascensionmaterials/sergeants-insignia.png"

@@ -91,7 +91,7 @@
         }
       },
       {
-        "name": "sealed-scroll",
+        "name": "sealed_scroll",
         "count": 12,
         "images": {
           "image": "/images/ascensionmaterials/sealed-scroll.png"
@@ -128,7 +128,7 @@
         }
       },
       {
-        "name": "sealed-scroll",
+        "name": "sealed_scroll",
         "count": 18,
         "images": {
           "image": "/images/ascensionmaterials/sealed-scroll.png"
