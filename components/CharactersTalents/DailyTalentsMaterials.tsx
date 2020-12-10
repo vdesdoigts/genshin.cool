@@ -15,7 +15,7 @@ const DailyTalentsMaterials = ({ talentsMaterials }: IProps) => {
     <SimpleGrid columns={1} spacing={4}>
       {talentsMaterials.map((talentMaterialType) => (
         <AscensionItem
-          key={talentMaterialType.id}
+          key={talentMaterialType.name}
           image={talentMaterialType.images.image}
           label={t(`talentmaterialtypes.${talentMaterialType.name}`)}
           sublabel={t(`domainofmasteries.${talentMaterialType.domainofmastery}`)}
