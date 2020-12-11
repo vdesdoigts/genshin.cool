@@ -9,6 +9,8 @@ import WeeklyWeaponsMaterials from './WeeklyWeaponsMaterials'
 import DailyWeaponsMaterials from './DailyWeaponsMaterials'
 import { IWeapon, IWeaponMaterialType } from '../../types'
 
+const isServer = () => typeof window === 'undefined'
+
 const WeaponsAscensions = () => {
   const { t } = useTranslation()
   const currentSelectedDay = useSelector(AppSelectors.getCurrentSelectedDay)
@@ -26,6 +28,10 @@ const WeaponsAscensions = () => {
   const dailyWeaponMaterialTypes = weaponMaterialTypes.filter((weaponMaterialType) => weaponMaterialType?.day.includes(currentSelectedDay))
 
   if ((currentSelectedDay === 'all' && weaponMaterialTypes?.length === 0) || (currentSelectedDay !== 'all' && dailyWeaponMaterialTypes?.length === 0)) {
+    if (isServer) {
+      return null
+    }
+
     return (
       <DashBox title={t('site.weapon_materials')} shadow size="xs">
         <DashBox variant="blue">

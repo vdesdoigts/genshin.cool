@@ -9,6 +9,8 @@ import DashBox from '../DashBox'
 import DailyTalentsMaterials from './DailyTalentsMaterials'
 import WeeklyTalentsMaterials from './WeeklyTalentsMaterials'
 
+const isServer = () => typeof window === 'undefined'
+
 const CharactersTalents = () => {
   const { t } = useTranslation()
   const currentSelectedDay = useSelector(AppSelectors.getCurrentSelectedDay)
@@ -26,6 +28,10 @@ const CharactersTalents = () => {
   const dailyTalentMaterialTypes = talentMaterialTypes.filter((talentMaterialType) => talentMaterialType?.day.includes(currentSelectedDay))
 
   if ((currentSelectedDay === 'all' && talentMaterialTypes?.length === 0) || (currentSelectedDay !== 'all' && dailyTalentMaterialTypes?.length === 0)) {
+    if (isServer) {
+      return null
+    }
+
     return (
       <DashBox title={t('site.character_materials')} shadow size="sm">
         <DashBox variant="blue">
