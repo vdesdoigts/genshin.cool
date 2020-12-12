@@ -13,6 +13,9 @@ const getCharacterById = (id, options) => {
   return
 }
 
+const getCharacterByIds = (ids, options) => ids.map((id) => getCharacterById(id, options))
+
 export default {
   getCharacterById,
+  getCharacterByIds,
 }

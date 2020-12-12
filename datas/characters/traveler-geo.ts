@@ -1,4 +1,16 @@
-{
+import { IGetCharacterOptions } from './types'
+
+import brilliantDiamondChunk from '../materials/gems/brilliant-diamond/brilliant-diamond-chunk'
+import brilliantDiamondFragment from '../materials/gems/brilliant-diamond/brilliant-diamond-fragment'
+import brilliantDiamondGemstone from '../materials/gems/brilliant-diamond/brilliant-diamond-gemstone'
+import brilliantDiamondSliver from '../materials/gems/brilliant-diamond/brilliant-diamond-sliver'
+
+import damagedMask from '../materials/common/mask/damaged-mask'
+import ominousMask from '../materials/common/mask/ominous-mask'
+import stainedMask from '../materials/common/mask/stained-mask'
+import windwheelAster from '../materials/wild/windwheel-aster'
+
+export const travelerGeo = {
 	id: 22,
   name: "Traveler Geo",
   titles: [
@@ -27,4 +39,26 @@
   },
   "ascensionmaterials": [],
   "url": "/wiki/Traveler"
+}
+
+export const travelerGeoAscension = [
+  [brilliantDiamondSliver, windwheelAster, damagedMask],
+  [brilliantDiamondFragment, null, windwheelAster, damagedMask],
+  [brilliantDiamondFragment, null, windwheelAster, stainedMask],
+  [brilliantDiamondChunk, null, windwheelAster, stainedMask],
+  [brilliantDiamondChunk, null, windwheelAster, ominousMask],
+  [brilliantDiamondGemstone, null, windwheelAster, ominousMask],
+]
+
+export const getTravelerGeo = (options?: IGetCharacterOptions) => {
+  const { withAscension } = options || {}
+  return {
+    ...travelerGeo,
+    ...(withAscension ? { ascension: travelerGeoAscension } : {})
+  }
+}
+
+export default {
+  id: 22,
+  get: getTravelerGeo
 }

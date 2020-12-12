@@ -1,8 +1,8 @@
-import agnidusAgateChunk from '../materials/agnidus-agate/agnidus-agate-chunk'
-import agnidusAgateFragment from '../materials/agnidus-agate/agnidus-agate-fragment'
-import agnidusAgateGemstone from '../materials/agnidus-agate/agnidus-agate-gemstone'
-import agnidusAgateSliver from '../materials/agnidus-agate/agnidus-agate-sliver'
-import everflameSeed from '../materials/everflame-seed'
+import agnidusAgateChunk from '../materials/gems/agnidus-agate/agnidus-agate-chunk'
+import agnidusAgateFragment from '../materials/gems/agnidus-agate/agnidus-agate-fragment'
+import agnidusAgateGemstone from '../materials/gems/agnidus-agate/agnidus-agate-gemstone'
+import agnidusAgateSliver from '../materials/gems/agnidus-agate/agnidus-agate-sliver'
+import everflameSeed from '../materials/bosses/everflame-seed'
 
 export default [
   [

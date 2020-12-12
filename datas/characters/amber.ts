@@ -1,14 +1,14 @@
 import { IGetCharacterOptions } from './types'
 
-import agnidusAgateChunk from '../materials/agnidus-agate/agnidus-agate-chunk'
-import agnidusAgateFragment from '../materials/agnidus-agate//agnidus-agate-fragment'
-import agnidusAgateGemstone from '../materials/agnidus-agate/agnidus-agate-gemstone'
-import agnidusAgateSliver from '../materials/agnidus-agate/agnidus-agate-sliver'
+import agnidusAgateChunk from '../materials/gems/agnidus-agate/agnidus-agate-chunk'
+import agnidusAgateFragment from '../materials/gems/agnidus-agate/agnidus-agate-fragment'
+import agnidusAgateGemstone from '../materials/gems/agnidus-agate/agnidus-agate-gemstone'
+import agnidusAgateSliver from '../materials/gems/agnidus-agate/agnidus-agate-sliver'
 
 import firmArrowhead from '../materials/common/arrow/firm-arrowhead'
 import sharpArrowhead from '../materials/common/arrow/sharp-arrowhead'
 import weatheredArrowhead from '../materials/common/arrow/weathered-arrowhead'
-import everflameSeed from '../materials/everflame-seed'
+import everflameSeed from '../materials/bosses/everflame-seed'
 import smallLampGrass from '../materials/wild/small-lamp-grass'
 
 export const amber = {
