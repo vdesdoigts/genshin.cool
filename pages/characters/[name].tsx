@@ -75,8 +75,6 @@ export default function Post({ character }) {
     return <ErrorPage statusCode={404} />
   }
 
-  console.log('character: ', character)
-
   return (
     <>
         {router.isFallback ? (
@@ -113,9 +111,13 @@ export default function Post({ character }) {
                           {character.ascension.map((ascension, ascensionIndex) => {
                             return (
                               <SimpleGrid columns={5} spacing="8px">
-                                {ascension.map((item, index) => (
-                                  <Item item={item} amount={ascensions[ascensionIndex].amount[index]} />
-                                ))}
+                                {ascension.map((item, index) => {
+                                  if (item === null) {
+                                    return null
+                                  }
+
+                                  return <Item item={item} amount={ascensions[ascensionIndex].amount[index]} />
+                                })}
                                 <Item item={mora} amount={ascensions[ascensionIndex].cost} />
                               </SimpleGrid>
                             )
