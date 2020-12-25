@@ -132,6 +132,12 @@ const Menu = ({ onEditProfile, onMenuClose }: IProps) => {
                 label={t('site.navigations.character_ascension_materials')}
                 isCurrent={router.pathname === '/character-ascension-materials'}
               />
+              <NavButton
+                href="/characters"
+                onClick={(e) => handleNavigation(e, '/characters')}
+                label={t('site.navigations.characters')}
+                isCurrent={router.pathname.split('/')[1] === 'characters'}
+              />
             </VStack>
           </Box>
         </Box>

@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { useRouter } from 'next/router'
+import { useTranslation } from 'react-i18next'
 import { Provider } from 'react-redux'
 import { getPersistor } from '@rematch/persist'
 import { PersistGate } from 'redux-persist/lib/integration/react'
@@ -15,9 +17,15 @@ import Header from '../components/Header'
 const persistor = getPersistor()
 
 function App({ Component, pageProps }) {
+  const router = useRouter()
+  const { i18n } = useTranslation()
   const { isOpen: isMenuOpen, onOpen: onMenuOpen, onClose: onMenuClose, onToggle: onMenuToggle } = useDisclosure()
   const { isOpen: isEditProfileModalOpen, onOpen: onEditProfileModalOpen, onClose: onEditProfileModalClose } = useDisclosure()
   const [profileBeingEdited, setProfileBeingEdited] = useState<number | null>()
+
+  React.useEffect(() => {
+    i18n.changeLanguage(router.locale)
+  }, [])
 
   const handleEditProfileModalOpen = (index: number) => {
     setProfileBeingEdited(index)
@@ -120,15 +128,7 @@ function App({ Component, pageProps }) {
                   >
                     <AppMenu onEditProfile={handleEditProfileModalOpen} isMenuOpen={isMenuOpen} onMenuClose={onMenuClose} onMenuToggle={onMenuToggle} />
                   </Box>
-                  <Box
-                    flexGrow={1}
-                    paddingLeft={{ base: 0, xxl: '256px' }}
-                    transition="all .25s"
-                  >
-                    <Box maxW={{ base: '600px', md: '1000px', xl: '1400px' }} margin="0 auto">
-                      <Component {...pageProps} />
-                    </Box>
-                  </Box>
+                  <Component {...pageProps} />
                 </Flex>
                 <EditProfile
                   profileBeingEdited={profileBeingEdited}

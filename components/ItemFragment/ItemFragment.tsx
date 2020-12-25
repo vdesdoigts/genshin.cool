@@ -7,7 +7,6 @@ import {
   Text,
 } from '@chakra-ui/react'
 import Image from 'next/image'
-import Avatars from '../Avatars'
 
 interface IProps {
   image: string 
