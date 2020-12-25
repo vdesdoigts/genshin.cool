@@ -1,76 +1,99 @@
 
 import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
-import { AspectRatio, Box, SimpleGrid, Tooltip } from '@chakra-ui/react'
+import { AspectRatio, Box, Grid, SimpleGrid, Stack, Text } from '@chakra-ui/react'
 import Image from 'next/image'
-import Head from 'next/head'
-import ErrorPage from 'next/error'
 import api from '../../api'
+import { getNameTranslation } from '../../utils/character-ascension'
 import AppHeading from '../../components/AppHeading'
 import DashBox from '../../components/DashBox'
-import ascensions from '../../data/characters-ascensions'
-import talents from '../../data/characters-talents'
-import { getNameTranslation } from '../../utils/character-ascension'
-import mora from '../../data/materials/common/mora'
+import colors from '../../theme/colors'
 
-const Item = ({ item, amount}) => {
+const Item = ({ character, isSelected }) => {
   const { t } = useTranslation()
   return (
-    <Box>
-      <Tooltip
-        label={t(getNameTranslation(item))}
-        placement="bottom-start"
-        openDelay={100}
-        borderRadius="8px"
-        bg="rgba(0, 0, 0, .8)"
-        px={4}
-        py={2}
-        offset={[0, 2]}
-        color="#fff"
+    <Box
+      role="group"
+      position="relative"
+      _before={{
+        content: '""',
+        position: 'absolute',
+        top: '22px',
+        left: '18px',
+        right: '18px',
+        bottom: '-40px',
+        zIndex: '-2',
+        background: '#E3E6EC',
+        opacity: '0.91',
+        // @ts-ignore
+        filter: 'blur(86.985px)',
+        borderRadius: '24px'
+      }}
+    >
+      <Box
+        overflow="hidden"
+        position="relative"
+        borderRadius="0.875rem"
+        background={isSelected ? '#6C5DD3' : '#fff'}
+        transition="all .25s"
+        _before={{
+          content: "''",
+          position: "absolute",
+          zIndex: 2,
+          top: 0,
+          left: 0,
+          display: "block",
+          width: "4px",
+          height: "100%",
+          background: isSelected ? '#6C5DD3' : colors[character.element.toLowerCase()],
+          transition: "all .25s",
+        }}
       >
-        <Box position="relative">
-          <AspectRatio
-            ratio={1}
-            flex="0 0 1"
-            borderRadius="16px"
-            bg="#f2f4f8"
-          >
-            <Box width="100%" height="100%" p={2}>
-              <Box position="relative" width="100%" height="100%">
-                <Image
-                  src={item.images.image}
-                  layout="fill"
-                  objectFit="contain"
-                  loading="eager"
-                />
-              </Box>
-            </Box>
-          </AspectRatio>
+        <Stack direction="row" spacing="0" align="center" justify="space-between">
           <Box
-            position="absolute"
-            bottom={0}
-            right={0}
-            mt="8px"
-            padding="3px 10px"
-            background="rgba(160, 215, 231, 0.85)"
-            borderRadius="8px"
-            color="#ffffff"
-            fontSize="13px"
-            fontWeight="600"
-            lineHeight="1.38462"
+            flex="1 1 100%"
+            pl="1.25rem"
+            py="16px"
           >
-            {amount}
+            <Stack direction="row" spacing="1.875rem">
+              <Box position="relative" overflow="hidden" flex="0 0 3.5rem" width="3.5rem" height="3.5rem" borderRadius=".5rem" background={isSelected ? '#fff' : '#f2f4f8'}>
+                <Box position="relative" width="100%" height="100%">
+                  <Image
+                    src={character.images.image}
+                    layout="fill"
+                    objectFit="contain"
+                  />
+                </Box>
+              </Box>
+              <Stack flexGrow={1} spacing={1} justify="center">
+                <Text
+                  color={isSelected ? '#fff' : '#4b4d55'}
+                  fontFamily="heading"
+                  fontSize="1.125rem"
+                  fontWeight="semibold"
+                  lineHeight="1"
+                >
+                  {character.name}
+                </Text>
+                <Box>
+                  <Box color={isSelected ? '#fff' : '#bbbdcb'}>
+                    <Text fontSize="0.875rem" fontWeight="medium">
+                      {t(`affiliations.${character.affiliation}`)}
+                    </Text>
+                  </Box>
+                </Box>
+              </Stack>
+            </Stack>
           </Box>
-        </Box>
-      </Tooltip>
+        </Stack>
+      </Box>
     </Box>
   )
 }
 
-export default function Post({ character }) {
+export default function Characters() {
   const { t } = useTranslation()
   const characters = api.getCharacters()
-
 
   return (
     <Box
@@ -86,13 +109,73 @@ export default function Post({ character }) {
           pb="32px"
           px={{ base: '20px', md: '64px', xl: '32px', xxl: '64px' }}
         >
-          {characters.map((character) => (
+          <AppHeading
+            subtitle={t('site.header.characters_list_subtitle')}
+            title={t('site.header.characters_list_title')}
+          />
+          {/* {characters.map((character) => (
             <Link
               href={`/characters/${character.name.toLowerCase()}`}
             >
               {character.name}
             </Link>
-          ))}
+          ))} */}
+          {/* <Box display={{ base: 'block', xl: 'none' }} pt={{ base: '22px', md: '44px' }}>
+            <Grid templateColumns="repeat(auto-fill, minmax(90px, 1fr) )" spacing={2}>
+              {characters.map((character, index) => {
+                // const isSelected = selectedCharacter.id === roster.character.id
+                
+                return (
+                  <DashBox
+                    key={character.id}
+                    // onClick={() => setSelectedCharacter(index)}
+                    // variant={isSelected ? 'purple' : null}
+                    br="sm"
+                    size="xs"
+                    // _hover={!isSelected ? { cursor: 'pointer', bg: 'rgba(228, 228, 228, 0.3)' } : {}}
+                  >
+                    <AspectRatio
+                      ratio={1}
+                      width="100%"
+                      borderRadius=".5rem"
+                      background="#f2f4f8"
+                      fontSize="0"
+                    >
+                      <Image
+                        src={character.images.image}
+                        layout="fill" 
+                        objectFit="contain"
+                      />
+                    </AspectRatio>
+                  </DashBox>
+                )
+              })}
+            </Grid>
+          </Box> */}
+          <SimpleGrid columns={{ base: 1, md: 3 }} spacing="16px" pt={{ base: '22px', md: '44px' }}>
+            {characters.map((character) => {
+              return (
+                <Link
+                  key={character.id}
+                  href={{
+                    pathname: '/characters/[name]',
+                    query: { name: character.name.toLowerCase() },
+                  }}
+                >
+                  <Box
+                    // onClick={() => setSelectedCharacter(index)}
+                    // display={{ base: isSelected ? 'block' : 'none', xl: 'block' }}
+                    cursor="pointer"
+                  >
+                    <Item
+                      character={character}
+                      isSelected={false}
+                    />
+                  </Box>
+                </Link>
+              )
+            })}
+          </SimpleGrid>
         </Box>
       </Box>
     </Box>

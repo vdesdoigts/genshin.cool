@@ -12,6 +12,7 @@ import ascensions from '../../data/characters-ascensions'
 import talents from '../../data/characters-talents'
 import { getNameTranslation } from '../../utils/character-ascension'
 import mora from '../../data/materials/common/mora'
+import { kFormatter } from '../../utils/common'
 
 const Item = ({ item, amount}) => {
   const { t } = useTranslation()
@@ -59,7 +60,7 @@ const Item = ({ item, amount}) => {
             fontWeight="600"
             lineHeight="1.38462"
           >
-            {amount}
+            {kFormatter(amount)}
           </Box>
         </Box>
       </Tooltip>
@@ -102,11 +103,11 @@ export default function Post({ character }) {
                     px={{ base: '20px', md: '64px', xl: '32px', xxl: '64px' }}
                   >
                     <AppHeading
-                      subtitle={t('site.header_character_subtitle')}
+                      subtitle={t('site.header.character_subtitle')}
                       title={`${character.name}, ${t(`affiliations.${character.affiliation}`)}`}
                     />
                     <SimpleGrid columns={{ base: 1, md: 3 }} spacing="16px" pt="24px">
-                      <DashBox title={t('site.header_characters_ascensions_title')} size="sm" shadow>
+                      <DashBox title={t('site.header.characters_ascensions_title')} size="sm" shadow>
                         <SimpleGrid columns={1} spacing="16px">
                           {character.ascension.map((ascension, ascensionIndex) => {
                             return (

@@ -41,10 +41,10 @@ const CharacterAscensionMaterials = () => {
             px={{ base: '20px', md: '64px', xl: '32px', xxl: '64px' }}
           >
             <AppHeading
-              subtitle={t('site.header_characters_ascensions_subtitle')}
-              title={t('site.header_characters_ascensions_title')}
+              subtitle={t('site.header.characters_ascensions_subtitle')}
+              title={t('site.header.characters_ascensions_title')}
             />
-            <SimpleGrid spacing="32px" pt={{ base: '32px' }}>
+            <SimpleGrid spacing="32px" pt={{ base: '22px', md: '44px' }}>
               <CharactersAscensions currentRoster={currentRoster} />
             </SimpleGrid>
           </Box>

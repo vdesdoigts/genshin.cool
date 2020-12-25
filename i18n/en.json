@@ -216,13 +216,19 @@
     },
     "genshin_impact_farming_guide_description": "Find out the best talent level-up materials schedule optimization.",
     "genshin_impact_farming_guide": "Genshin Impact farming guide",
-    "header_characters_ascensions_subtitle": "Farming guide,",
-    "header_characters_ascensions_title": "Character ascension materials",
-    "header_characters_title": "Your roster",
-    "header_talents_subtitle": "Farming guide,",
-    "header_talents_title": "Talent level-up materials",
-    "header_weapon_subtitle": "Farming guide",
-    "header_weapon_title": "Weapon level-up materials",
+    "header": {
+      "characters_ascensions_subtitle": "Farming guide,",
+      "characters_ascensions_title": "Character ascension materials",
+      "character_subtitle": "Character,",
+      "characters_subtitle": "Characters,",
+      "characters_title": "Overview",
+      "characters_list_subtitle": "Database,",
+      "characters_list_title": "Genshin Impact Characters",
+      "talents_subtitle": "Farming guide,",
+      "talents_title": "Talent level-up materials",
+      "weapon_subtitle": "Farming guide",
+      "weapon_title": "Weapon level-up materials"
+    },
     "manage_your_armory": "Manage your armory",
     "manage_your_roster": "Manage your roster",
     "material_types": {
@@ -237,10 +243,12 @@
     "mihoyo": "This website is a fansite and is not affiliated with or endorsed by miHoYo.",
     "navigation": "Navigation",
     "navigations": {
-      "characters": "Characters overview",
-      "character_ascension_materials": "Character ascension",
-      "talent_level_up_material": "Talent level-up",
-      "weapon_level_up_material": "Weapon level-up"
+      "characters": "Characters",
+      "characters_list": "Database",
+      "character_ascension_materials": "Ascension materials",
+      "talent_level_up_material": "Talent level-up materials",
+      "weapons": "Weapons",
+      "weapon_level_up_material": "Level-up materials"
     },
     "next_ascension_material": "Next ascension materials",
     "next_ascension_material_empty": "No elevation",
@@ -266,6 +274,7 @@
     "resistance": "Resistance"
   },
   "talentnames": {
+    "abiogenesis_solar_isotoma": "Abiogenesis solar isotoma",
     "adeptus_art_herald_of_the_frost": "Herald of the frost",
     "adeptus_art_preserver_of_fortune": "Preserver of fortune",
     "ancient_sword_art": "Ancient sword art",
@@ -287,6 +296,7 @@
     "explosive_puppet": "Explosive puppet",
     "fantastic_voyage": "Fantastic voyage",
     "favonius_bladework": "Favonius bladework",
+    "favonius_bladework_weiss": "Favonius bladework weiss",
     "favonius_bladework_maid": "Favonius bladework - Maid",
     "fiery_rain": "Fiery Rain",
     "forbidden_creation_isomer_75": "Forbidden creation isomer 75",
@@ -322,6 +332,7 @@
     "pyronado": "Pyronado",
     "rain_of_stone": "Rain of stone",
     "ripple_of_fate": "Ripple of fate",
+    "rite_of_progeniture_tectonic_tide": "Rite of progeniture tectonic tide",
     "searing_onslaugth": "Searing onslaugth",
     "sharpshooter": "Sharpshooter",
     "shining_miracle": "Shining miracle",

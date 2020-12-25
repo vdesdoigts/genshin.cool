@@ -210,19 +210,25 @@
     },
     "delete": "Supprimer",
     "donate": "Donation",
-    "donate_description": "Nous comptons sur les dons pour maintenir le site et faire toujours plus de voeux.",
+    "donate_description": "Nous comptons sur les dons pour maintenir le site.",
     "edit_profile_modal": {
       "title": "Éditer le profil"
     },
     "genshin_impact_farming_guide_description": "Optimisez l'obtention des ressources nécessaires à l'élévation de vos personnages.",
     "genshin_impact_farming_guide": "Guide de farming Genshin Impact",
-    "header_characters_ascensions_subtitle": "Farming guide,",
-    "header_characters_ascensions_title": "Character ascension materials",
-    "header_characters_title": "Personnages",
-    "header_talents_subtitle": "Farming guide,",
-    "header_talents_title": "Talent level-up materials",
-    "header_weapon_subtitle": "Farming guide",
-    "header_weapon_title": "Weapon level-up materials",
+    "header": {
+      "characters_ascensions_subtitle": "Farming guide,",
+      "characters_ascensions_title": "Character ascension materials",
+      "character_subtitle": "Characters overview",
+      "characters_subtitle": "Characters,",
+      "characters_title": "Overview",
+      "characters_list_subtitle": "Database,",
+      "characters_list_title": "Genshin Impact Characters",
+      "talents_subtitle": "Farming guide,",
+      "talents_title": "Talent level-up materials",
+      "weapon_subtitle": "Farming guide",
+      "weapon_title": "Weapon level-up materials"
+    },
     "manage_your_armory": "Gérez votre armurerie",
     "manage_your_roster": "Gérez vos personnages",
     "material_types": {
@@ -234,12 +240,14 @@
       "gems": "Jewels",
       "wild": "Local material"
     },
-    "mihoyo": "Ce site Web est un site de fans et n'est ni affilié ni approuvé par miHoYo.",
+    "mihoyo": "Ce site Web n'est ni affilié ni approuvé par miHoYo.",
     "navigation": "Navigation",
     "navigations": {
+      "armory": "Armurerie",
       "characters": "Personnages",
       "character_ascension_materials": "Ascension",
       "talent_level_up_material": "Amélioration talents",
+      "weapons": "Armes",
       "weapon_level_up_material": "Amélioration armes"
     },
     "next_ascension_material": "Materiaux d'élévation suivant",
@@ -266,6 +274,7 @@
     "resistance": "Résistance"
   },
   "talentnames": {
+    "abiogenesis_solar_isotoma": "Abiogenesis solar isotoma",
     "adeptus_art_herald_of_the_frost": "Héraut de givre",
     "adeptus_art_preserver_of_fortune": "Talisman sacré",
     "ancient_sword_art": "Escrime ancienne des nuages",
@@ -287,6 +296,7 @@
     "explosive_puppet": "Poupée explosive",
     "fantastic_voyage": "Merveilleux voyage",
     "favonius_bladework": "Escrime de Favonius",
+    "favonius_bladework_weiss": "Favonius bladework weiss",
     "favonius_bladework_maid": "Escrime de Favonius - Servante",
     "fiery_rain": "Pluie de flèches",
     "forbidden_creation_isomer_75": "Esprit du vent : Isomorphe 75",
@@ -322,6 +332,7 @@
     "pyronado": "Pyrotation",
     "rain_of_stone": "Rain of stone",
     "ripple_of_fate": "Ondes du destin",
+    "rite_of_progeniture_tectonic_tide": "Rite of progeniture tectonic tide",
     "searing_onslaugth": "Assaut brûlant",
     "sharpshooter": "Archerie revisitée",
     "shining_miracle": "Miracle brillant",

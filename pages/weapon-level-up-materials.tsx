@@ -38,10 +38,10 @@ const WeaponMaterials = () => {
             px={{ base: '20px', md: '64px', xl: '32px', xxl: '64px' }}
           >
             <AppHeading
-              subtitle={t('site.header_weapon_subtitle')}
-              title={t('site.header_weapon_title')}
+              subtitle={t('site.header.weapon_subtitle')}
+              title={t('site.header.weapon_title')}
             />
-            <SimpleGrid spacing="32px" pt={{ base: '32px' }}>
+            <SimpleGrid spacing="32px" pt={{ base: '22px', md: '44px' }}>
               <ScheduleBox />
               <WeaponsAscensions />
             </SimpleGrid>
