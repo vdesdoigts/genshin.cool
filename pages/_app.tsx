@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
-import { useTranslation } from 'react-i18next'
 import { Provider } from 'react-redux'
 import { getPersistor } from '@rematch/persist'
 import { PersistGate } from 'redux-persist/lib/integration/react'
-import { Box, ChakraProvider, Flex, Spinner, useDisclosure, useMediaQuery } from '@chakra-ui/react'
+import { Box, ChakraProvider, Flex, useDisclosure } from '@chakra-ui/react'
 import Head from 'next/head'
 import 'typeface-poppins'
 import '../i18n'
@@ -16,12 +15,9 @@ import Header from '../components/Header'
 const persistor = getPersistor()
 
 function App({ Component, pageProps }) {
-  const { i18n } = useTranslation()
   const { isOpen: isMenuOpen, onOpen: onMenuOpen, onClose: onMenuClose, onToggle: onMenuToggle } = useDisclosure()
   const { isOpen: isEditProfileModalOpen, onOpen: onEditProfileModalOpen, onClose: onEditProfileModalClose } = useDisclosure()
   const [profileBeingEdited, setProfileBeingEdited] = useState<number | null>()
-  const [isLoading, setIsLoading] = useState<boolean>(true)
-  const [isDisplayingInBrowser] = useMediaQuery('(display-mode: browser)')
 
   const handleEditProfileModalOpen = (index: number) => {
     setProfileBeingEdited(index)
@@ -32,14 +28,6 @@ function App({ Component, pageProps }) {
     onEditProfileModalClose()
     setProfileBeingEdited(null)
   }
-
-  React.useEffect(() => {
-    i18n.changeLanguage(store.getState().options.lang)
-
-    if (isDisplayingInBrowser) {
-      setIsLoading(false)
-    }
-  }, [])
 
   return (
     <ChakraProvider resetCSS theme={theme}>
@@ -93,27 +81,7 @@ function App({ Component, pageProps }) {
 
         <script data-ad-client="ca-pub-8458876784042744" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       </Head>
-      
-      <Box
-        display={isLoading ? 'flex' : 'none'}
-        position="fixed"
-        zIndex={2000}
-        top={0}
-        left={0}
-        alignItems="center"
-        justifyContent="center"
-        width="100%"
-        height="100%"
-        bg="#fff"
-      >
-        <Spinner
-          thickness="4px"
-          speed="0.65s"
-          emptyColor="gray.200"
-          color="#6C5DD3"
-          size="xl"
-        />
-      </Box>
+
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
           {() => {
@@ -152,7 +120,15 @@ function App({ Component, pageProps }) {
                   >
                     <AppMenu onEditProfile={handleEditProfileModalOpen} isMenuOpen={isMenuOpen} onMenuClose={onMenuClose} onMenuToggle={onMenuToggle} />
                   </Box>
-                    <Component {...pageProps} />
+                  <Box
+                    flexGrow={1}
+                    paddingLeft={{ base: 0, xxl: '256px' }}
+                    transition="all .25s"
+                  >
+                    <Box maxW={{ base: '600px', md: '1000px', xl: '1400px' }} margin="0 auto">
+                      <Component {...pageProps} />
+                    </Box>
+                  </Box>
                 </Flex>
                 <EditProfile
                   profileBeingEdited={profileBeingEdited}

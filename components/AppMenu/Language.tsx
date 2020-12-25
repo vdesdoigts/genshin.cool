@@ -1,4 +1,5 @@
 import React from 'react'
+import { useRouter } from 'next/router'
 import { useTranslation } from 'react-i18next'
 import {
   Flex,
@@ -6,18 +7,14 @@ import {
   Select,
 } from '@chakra-ui/react'
 import { MdKeyboardArrowDown, MdKeyboardArrowUp, MdLanguage } from 'react-icons/md'
-import { useSelector } from 'react-redux'
 import { ILangs } from '../../types'
-import useRematchDispatch from '../../hooks/useRematch'
-import { OptionsSelectors } from '../../redux/selectors'
 
 const Language = () => {
+  const router = useRouter()
   const { i18n, t } = useTranslation()
-  const dispatch = useRematchDispatch()
-  const currentLang = useSelector(OptionsSelectors.getCurrentLang)
 
   const onChangeLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    dispatch.options.setLang(e.target.value as ILangs)
+    router.replace(router.route, router.route, { locale: e.target.value as ILangs })
     i18n.changeLanguage(e.target.value as ILangs)
   }
 
@@ -49,7 +46,7 @@ const Language = () => {
         }}
         iconSize="0"
         onChange={onChangeLanguage}
-        defaultValue={currentLang}
+        defaultValue={router.locale}
         css={{ fontFamily: '-apple-system,system-ui,sans-serif', fontSize: '14px', fontWeight: 600 }}
       >
         <option value="en">{t('langs.english')}</option>

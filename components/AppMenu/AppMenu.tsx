@@ -12,7 +12,7 @@ import {
 import { CloseButton } from '@chakra-ui/close-button'
 import Language from './Language'
 import ProfileMenu from './ProfileMenu'
-import DashBox from './../DashBox'
+import DashBox from '../DashBox'
 import Dash from '../../pages'
 
 interface INavButtonProps {
@@ -131,12 +131,6 @@ const Menu = ({ onEditProfile, onMenuClose }: IProps) => {
                 onClick={(e) => handleNavigation(e, '/character-ascension-materials')}
                 label={t('site.navigations.character_ascension_materials')}
                 isCurrent={router.pathname === '/character-ascension-materials'}
-              />
-              <NavButton
-                href="/roster"
-                onClick={(e) => handleNavigation(e, '/roster')}
-                label={t('site.navigations.roster')}
-                isCurrent={router.pathname === '/roster'}
               />
             </VStack>
           </Box>

@@ -1,65 +1,38 @@
-import artifacts from '../data/artifacts'
-import ascensionsmaterials from '../data/ascensionmaterials'
 import characters from '../data/characters'
-import characterascensions from '../data/characterascensions'
-import charactertalents from '../data/charactertalents'
-import talentmaterialtypes from '../data/talentmaterialtypes'
-import weapons from '../data/weapons'
-import weaponmaterialtypes from '../data/weaponmaterialtypes'
-import {
-  IArtifactItem,
-  IArtifactType,
-  IArtifactCollection,
-  IAscensionMaterial,
-  ICharacter,
-  ICharacterAscension,
-  ICharacterTalent,
-  IRosterCharacter,
-  ITalentMaterialType,
-  IWeapon,
-  IWeaponMaterialType,
-} from '../types'
 
-export const getCharacters = () => characters
-export const getAscensionMaterials = () => ascensionsmaterials
-export const getWeapons = () => weapons
+const getCharacters = () => characters.map((character) => ({ id: character.id,  ...character.get() }))
 
-export const getAscensionMaterialByTypeId = (id: IAscensionMaterial['type']['id']) => ascensionsmaterials.find((ascensionsmaterial) => ascensionsmaterial.type.id === id)
-export const getArtifactById = (id: IArtifactItem['id'], type: IArtifactType) => artifacts.find((artifact) => artifact.id === id)![type] as IArtifactItem
-export const getCharacterById = (id: ICharacter['id']) => characters.find((character) => character.id === id) as ICharacter
-export const getCharacterascensionById = (id: ICharacterAscension['id']) => characterascensions.find((characterascension) => characterascension.id === id) as ICharacterAscension
-export const getCharacterTalentById = (id: ICharacterTalent['id']) => charactertalents.find((charactertalent) => charactertalent.id === id) as ICharacterTalent
-export const getWeaponById = (id: IWeapon['id']) => weapons.find((weapon) => weapon.id === id) as IWeapon
+const getCharacterById = (id, options) => {
+  const character = characters.find((character) => character.id === id)
 
-export const getArtifactsCharacter = (artifactsCharacter?: IRosterCharacter['artifacts']) => {
-  const { flower, plume, sands, goblet, circlet } = artifactsCharacter || {}
-  const artifacts: IArtifactCollection = {}
-
-  if (flower) {
-    artifacts.flower = getArtifactById(flower.id, 'flower')
-  }
-  if (plume) {
-    artifacts.plume = getArtifactById(flower.id, 'plume')
-  }
-  if (sands) {
-    artifacts.sands = getArtifactById(flower.id, 'sands')
-  }
-  if (goblet) {
-    artifacts.goblet = getArtifactById(flower.id, 'goblet')
-  }
-  if (circlet) {
-    artifacts.circlet = getArtifactById(flower.id, 'circlet')
+  if (character) {
+    return {
+      id: character.id,
+      ...character.get(options)
+    }
   }
 
-  return artifacts
+  return
 }
 
-export const getTalentMaterialTypeById = (id: ITalentMaterialType['id']) => (talentmaterialtypes.find((talentmaterialtype) => talentmaterialtype.id === id) as ITalentMaterialType)
-export const getWeaponMaterialTypeById = (id: IWeaponMaterialType['id']) => (weaponmaterialtypes.find((weaponmaterialtype) => weaponmaterialtype.id === id) as IWeaponMaterialType)
+const getCharacterByName = (name, options) => {
+  const character = characters.find((character) => character.get().name.toLowerCase() === name)
 
-export const getWeaponsByType = (type: ICharacter['weapontype']) => weapons.filter((weapon) => weapon.weapontype === type)
+  if (character) {
+    return {
+      id: character.id,
+      ...character.get(options)
+    }
+  }
 
-export const getAscensionMaterialsByTypesAndAscension = (typeIds: IAscensionMaterial['type']['id'][], ascension: number = 0) => {
-  return ascensionsmaterials.filter((ascensionsmaterial) => 
-    typeIds.includes(ascensionsmaterial.type.id) && ascensionsmaterial.ascensions.includes(ascension + 1)) as IAscensionMaterial[]
+  return
+}
+
+const getCharacterByIds = (ids, options) => ids.map((id) => getCharacterById(id, options))
+
+export default {
+  getCharacters,
+  getCharacterById,
+  getCharacterByName,
+  getCharacterByIds,
 }

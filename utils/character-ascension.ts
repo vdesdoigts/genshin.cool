@@ -1,4 +1,4 @@
-import ascensions from '../datas/characters-ascensions'
+import ascensions from '../data/characters-ascensions'
 
 export const groupCharactersByAscension = (characters, roster) => {
   const materials = {

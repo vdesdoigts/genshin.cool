@@ -1,4 +1,4 @@
-import talents from '../datas/characters-talents'
+import talents from '../data/characters-talents'
 import { sort } from './character-ascension'
 
 export const groupCharactersByTalent = (characters, roster) => {

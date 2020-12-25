@@ -1,109 +1,70 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import uniqBy from 'lodash.uniqby'
-import {
-  AspectRatio,
-  Box,
-  Flex,
-  HStack,
-  SimpleGrid,
-  Text,
-} from '@chakra-ui/react'
-import Image from 'next/image'
-import { useSelector } from 'react-redux'
-import { ProfileSelectors } from '../../redux/selectors'
-import { getAscensionMaterialsByTypesAndAscension, getCharacterById } from '../../api'
-import AscensionItem from '../AscensionItem'
+import { Box, SimpleGrid, Wrap, WrapItem } from '@chakra-ui/react'
+import { IRoster } from '../../types'
+import api from '../../api'
+import { groupCharactersByAscension, getNameTranslation } from '../../utils/character-ascension'
 import DashBox from '../DashBox'
-import { IAscensionMaterial, ICharacter } from '../../types'
+import ItemFragment from '../ItemFragment'
+import ItemStack from '../ItemStack'
 
-const CharactersAscensions = () => {
+interface IProps {
+  currentRoster: IRoster
+}
+
+const CharactersAscensions = ({ currentRoster }: IProps) => {
   const { t } = useTranslation()
-  const currentRosterCharacters = useSelector(ProfileSelectors.getCurrentEnabledRosterCharacters)
-  const characters = currentRosterCharacters.map((character) => getCharacterById(character.id))
+  const characters = api.getCharacterByIds(currentRoster.map((roster) => roster.character.id), {
+    withAscension: true,
+  })
 
-  const ascensionMaterials = uniqBy(currentRosterCharacters.map((character, index) => 
-    getAscensionMaterialsByTypesAndAscension(characters[index].ascensionmaterials.map((ascensionmaterial) =>
-      ascensionmaterial.id).flat(), character.ascension)).flat(), 'id').sort(function (a, b) {
-        if (a.type.id === b.type.id) {
-          return a.rarity - b.rarity
-        } else {
-          return a.type.id - b.type.id
-        }
-      });
-
-  const ascensionMaterialsWithCharacters: (IAscensionMaterial & { characters: ICharacter[] })[] = ascensionMaterials.map((ascensionMaterial) => ({
-    ...ascensionMaterial,
-    characters: currentRosterCharacters.filter((character) => 
-      ascensionMaterial.ascensions.includes(character.ascension + 1 || 1) && ascensionMaterial.characters.includes(character.id))
-      .map((rosterCharacter) => characters.find((character) => character.id === rosterCharacter.id))
-  }))
-
-  if (ascensionMaterialsWithCharacters.length === 0) {
-    return (
-      <DashBox title={t('site.character_ascensions')} variant="pink" shadow size="xs">
-        <DashBox>
-          {t('site.your_roster_empty')}
-        </DashBox>
-      </DashBox>
-    )
-  }
+  const charactersAscensions = groupCharactersByAscension(characters, currentRoster)
 
   return (
-    <DashBox title={t('site.character_ascensions')} variant="pink" size="xs">
-      <SimpleGrid columns={{ base: 1, md: 2 }} spacing="16px">
-        {ascensionMaterialsWithCharacters.map((ascensionMaterial) => (
-          <DashBox key={ascensionMaterial.name} size="md">
-            <AscensionItem
-              image={ascensionMaterial.images.image}
-              label={t(`ascensionmaterials.${ascensionMaterial.name}`)}
-              characters={ascensionMaterial.characters}
-            />
-            <SimpleGrid columns={1} pt="12px" spacing="8px">
-              {ascensionMaterial.droppedby.map((droppedby) => (
-                <HStack key={droppedby.name} spacing="8px">
-                  {droppedby.images?.image && <AspectRatio
-                    ratio={1}
-                    overflow="hidden"
-                    flex="0 0 32px"
-                    width="32px"
-                    height="32px"
-                    borderRadius="8px"
-                    background="#f2f4f8"
-                  >
-                    <Box position="relative" width="100%" height="100%">
-                      <Image
-                        src={droppedby.images.image}
-                        layout="fill"
-                        objectFit="contain"
+    <>
+      {Object.keys(charactersAscensions).map((key) => {
+
+        if (charactersAscensions[key].length === 0) {
+          return null
+        }
+
+        return (
+          <DashBox key={key} title={t(`site.material_types.${key}`)} variant="pink" size="xs">
+            <SimpleGrid columns={{ base: 1, md: 2 }} spacing="16px">
+              {charactersAscensions[key].map((item) => (
+                <Box key={charactersAscensions[key].name}>
+                  <DashBox size="md">
+                    <ItemFragment
+                      image={item.images.image}
+                      title={t(getNameTranslation(item))}
+                    />
+                    {!!item.amounts && <Wrap pt="12px" spacing="8px">
+                      {item.amounts.map((amount) => (
+                        <WrapItem key={amount.amount}>
+                          <ItemStack
+                            items={amount.characters}
+                            title={`x${amount.amount}`}
+                            showFullText={amount.characters.length < 3}
+                          />
+                        </WrapItem>
+                      ))}
+                    </Wrap>}
+                    {!!item.droppedBy && <Box pt="8px">
+                      <ItemStack
+                        items={item.droppedBy}
+                        itemsTranslationPrefix="bosses"
+                        title={item.droppedBy[0].level ? `${item.droppedBy[0].level}+` : 'B'}
+                        showFullText={item.droppedBy.length < 2}
                       />
-                    </Box>
-                  </AspectRatio>}
-                  <Flex
-                    align="center"
-                    flex="1 1 auto"
-                    alignSelf="stretch"
-                    minH="32px"
-                    px={4}
-                    borderRadius=".5rem"
-                    background="#f2f4f8"
-                  >
-                    <Text
-                      mb="3px"
-                      fontSize="14px"
-                      lineHeight="1.1875"
-                      fontWeight="500"
-                    >
-                      {t(`bosses.${droppedby.name}`)} {droppedby.level}
-                    </Text>
-                  </Flex>
-                </HStack>
+                    </Box>}
+                  </DashBox>
+                </Box>
               ))}
             </SimpleGrid>
           </DashBox>
-        ))}
-      </SimpleGrid>
-    </DashBox>
+        )
+      })}
+    </>
   )
 }
 

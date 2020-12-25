@@ -81,7 +81,7 @@ const DashBox: React.FC<IProps & Omit<BoxProps, 'shadow'>> = ({ children, title,
         borderRadius: '24px'
       } : {}}
     >
-      {!!title && <Heading as="h2" mb="32px" px="32px" fontSize="18px" fontWeight="medium" lineHeight="1.33333" color="">{title}</Heading>}
+      {!!title && <Heading as="h2" mb="24px" px="32px" fontSize="18px" fontWeight="medium" lineHeight="1.33333" color="">{title}</Heading>}
       {!!rightButtons && (
         <Box
           position="absolute"
