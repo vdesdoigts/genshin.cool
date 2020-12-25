@@ -11,6 +11,12 @@ import sergeantsInsignia from '../materials/common/soldier-insignia/sergeants-in
 import everflameSeed from '../materials/bosses/everflame-seed'
 import smallLampGrass from '../materials/wild/small-lamp-grass'
 
+import guideOfResistance from '../materials/talents/resistance/guide-resistance'
+import philosophiesOfResistance from '../materials/talents/resistance/philosophies-resistance'
+import teachingsResistance from '../materials/talents/resistance/teachings-resistance'
+import dvalinsPlume from '../materials/bosses/dvalins-plume'
+import crownOfSagehood from '../materials/events/crown-sagehood'
+
 export const diluc = {
   name: "Diluc",
   titles: [
@@ -37,11 +43,42 @@ export const dilucAscension = [
   [agnidusAgateGemstone, everflameSeed, smallLampGrass, lieutenantsInsignia],
 ]
 
+const dilucTalents = [
+  {
+    name: "tempered_sword",
+    requirements: [
+      [teachingsResistance, recruitsInsignia],
+      [guideOfResistance, sergeantsInsignia], [guideOfResistance, sergeantsInsignia], [guideOfResistance, sergeantsInsignia], [guideOfResistance, sergeantsInsignia],
+      [philosophiesOfResistance, lieutenantsInsignia, dvalinsPlume], [philosophiesOfResistance, lieutenantsInsignia, dvalinsPlume], [philosophiesOfResistance, lieutenantsInsignia, dvalinsPlume],
+      [philosophiesOfResistance, lieutenantsInsignia, dvalinsPlume, crownOfSagehood],
+    ]
+  },
+  {
+    name: "searing_onslaugth",
+    requirements: [
+      [teachingsResistance, recruitsInsignia],
+      [guideOfResistance, sergeantsInsignia], [guideOfResistance, sergeantsInsignia], [guideOfResistance, sergeantsInsignia], [guideOfResistance, sergeantsInsignia],
+      [philosophiesOfResistance, lieutenantsInsignia, dvalinsPlume], [philosophiesOfResistance, lieutenantsInsignia, dvalinsPlume], [philosophiesOfResistance, lieutenantsInsignia, dvalinsPlume],
+      [philosophiesOfResistance, lieutenantsInsignia, dvalinsPlume, crownOfSagehood],
+    ]
+  },
+  {
+    name: "dawn",
+    requirements: [
+      [teachingsResistance, recruitsInsignia],
+      [guideOfResistance, sergeantsInsignia], [guideOfResistance, sergeantsInsignia], [guideOfResistance, sergeantsInsignia], [guideOfResistance, sergeantsInsignia],
+      [philosophiesOfResistance, lieutenantsInsignia, dvalinsPlume], [philosophiesOfResistance, lieutenantsInsignia, dvalinsPlume], [philosophiesOfResistance, lieutenantsInsignia, dvalinsPlume],
+      [philosophiesOfResistance, lieutenantsInsignia, dvalinsPlume, crownOfSagehood],
+    ]
+  }
+]
+
 export const getDiluc = (options?: IGetCharacterOptions) => {
-  const { withAscension } = options || {}
+  const { withAscension, withTalents } = options || {}
   return {
     ...diluc,
-    ...(withAscension ? { ascension: dilucAscension } : {})
+    ...(withAscension ? { ascension: dilucAscension } : {}),
+    ...(withTalents ? { talents: dilucTalents } : {})
   }
 }
 

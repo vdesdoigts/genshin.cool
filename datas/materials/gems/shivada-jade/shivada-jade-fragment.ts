@@ -15,15 +15,15 @@ export default {
   droppedBy: [
     {
       ...cryoRegisvine,
-      level: "40+",
+      level: 40,
     },
     {
       ...wolfOfTheNorth,
-      level: "40+",
+      level: 40,
     },
     {
       ...childe,
-      level: "40+",
+      level: 40,
     }
   ],
   "craft": [

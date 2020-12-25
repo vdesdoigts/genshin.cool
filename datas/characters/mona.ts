@@ -11,6 +11,12 @@ import whopperflowerNectar from '../materials/common/nectar/whopperflower-nectar
 import cleansingHeart from '../materials/bosses/cleansing-heart'
 import philanemoMushroom from '../materials/wild/philanemo-mushroom'
 
+import guideOfResistance from '../materials/talents/resistance/guide-resistance'
+import philosophiesOfResistance from '../materials/talents/resistance/philosophies-resistance'
+import teachingsResistance from '../materials/talents/resistance/teachings-resistance'
+import ringOfBoreas from '../materials/bosses/ring-of-boreas'
+import crownOfSagehood from '../materials/events/crown-sagehood'
+
 export const mona = {
   name: "Mona",
   titles: [
@@ -38,11 +44,40 @@ export const monaAscension = [
   [varunadaLazuriteGemstone, cleansingHeart, philanemoMushroom, energyNectar],
 ]
 
+const monaTalents = [
+  {
+    name: "ripple_of_fate",
+    requirements: [
+      [teachingsResistance, whopperflowerNectar],
+      [guideOfResistance, shimmeringNectar], [guideOfResistance, shimmeringNectar], [guideOfResistance, shimmeringNectar], [guideOfResistance, shimmeringNectar],
+      [philosophiesOfResistance, energyNectar, ringOfBoreas], [philosophiesOfResistance, energyNectar, ringOfBoreas], [philosophiesOfResistance, energyNectar, ringOfBoreas],
+      [philosophiesOfResistance, energyNectar, ringOfBoreas, crownOfSagehood],
+    ]
+  },
+  {
+    name: "mirror_reflection_of_doom",
+    requirements: [
+      [teachingsResistance, whopperflowerNectar],
+      [guideOfResistance, shimmeringNectar], [guideOfResistance, shimmeringNectar], [guideOfResistance, shimmeringNectar], [guideOfResistance, shimmeringNectar],
+      [philosophiesOfResistance, energyNectar, ringOfBoreas], [philosophiesOfResistance, energyNectar, ringOfBoreas], [philosophiesOfResistance, energyNectar, ringOfBoreas],
+      [philosophiesOfResistance, energyNectar, ringOfBoreas, crownOfSagehood],]
+  },
+  {
+    name: "stellaris_phantasm",
+    requirements: [
+      [teachingsResistance, whopperflowerNectar],
+      [guideOfResistance, shimmeringNectar], [guideOfResistance, shimmeringNectar], [guideOfResistance, shimmeringNectar], [guideOfResistance, shimmeringNectar],
+      [philosophiesOfResistance, energyNectar, ringOfBoreas], [philosophiesOfResistance, energyNectar, ringOfBoreas], [philosophiesOfResistance, energyNectar, ringOfBoreas],
+      [philosophiesOfResistance, energyNectar, ringOfBoreas, crownOfSagehood],]
+  }
+]
+
 export const getMona = (options?: IGetCharacterOptions) => {
-  const { withAscension } = options || {}
+  const { withAscension, withTalents } = options || {}
   return {
     ...mona,
-    ...(withAscension ? { ascension: monaAscension } : {})
+    ...(withAscension ? { ascension: monaAscension } : {}),
+    ...(withTalents ? { talents: monaTalents } : {})
   }
 }
 

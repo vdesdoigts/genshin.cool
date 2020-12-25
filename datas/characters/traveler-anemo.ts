@@ -10,6 +10,16 @@ import ominousMask from '../materials/common/mask/ominous-mask'
 import stainedMask from '../materials/common/mask/stained-mask'
 import windwheelAster from '../materials/wild/windwheel-aster'
 
+import diviningScroll from '../materials/common/scroll/divining-scroll'
+import forbiddenCurseScroll from '../materials/common/scroll/forbidden-curse-scroll'
+import sealedScroll from '../materials/common/scroll/sealed-scroll'
+
+import guideOfResistance from '../materials/talents/resistance/guide-resistance'
+import philosophiesOfBallad from '../materials/talents/ballad/philosophies-ballad'
+import teachingsFreedom from '../materials/talents/freedom/teachings-freedom'
+import dvalinsSigh from '../materials/bosses/dvalins-sigh'
+import crownOfSagehood from '../materials/events/crown-sagehood'
+
 export const travelerAnemo = {
   id: 21,
   name: "Traveler Anemo",
@@ -37,11 +47,40 @@ export const travelerAnemoAscension = [
   [brilliantDiamondGemstone, null, windwheelAster, ominousMask],
 ]
 
+const travelerAnemoTalents = [
+  {
+    name: "foreign_ironwind",
+    requirements: [
+      [teachingsFreedom, diviningScroll],
+      [guideOfResistance, sealedScroll], [guideOfResistance, sealedScroll], [guideOfResistance, sealedScroll], [guideOfResistance, sealedScroll],
+      [philosophiesOfBallad, forbiddenCurseScroll, dvalinsSigh], [philosophiesOfBallad, forbiddenCurseScroll, dvalinsSigh], [philosophiesOfBallad, forbiddenCurseScroll, dvalinsSigh],
+      [philosophiesOfBallad, forbiddenCurseScroll, dvalinsSigh, crownOfSagehood],
+    ]
+  },
+  {
+    name: "palm_vortex",
+    requirements: [
+      [teachingsFreedom, diviningScroll],
+      [guideOfResistance, sealedScroll], [guideOfResistance, sealedScroll], [guideOfResistance, sealedScroll], [guideOfResistance, sealedScroll],
+      [philosophiesOfBallad, forbiddenCurseScroll, dvalinsSigh], [philosophiesOfBallad, forbiddenCurseScroll, dvalinsSigh], [philosophiesOfBallad, forbiddenCurseScroll, dvalinsSigh],
+      [philosophiesOfBallad, forbiddenCurseScroll, dvalinsSigh, crownOfSagehood],]
+  },
+  {
+    name: "gust_surge",
+    requirements: [
+      [teachingsFreedom, diviningScroll],
+      [guideOfResistance, sealedScroll], [guideOfResistance, sealedScroll], [guideOfResistance, sealedScroll], [guideOfResistance, sealedScroll],
+      [philosophiesOfBallad, forbiddenCurseScroll, dvalinsSigh], [philosophiesOfBallad, forbiddenCurseScroll, dvalinsSigh], [philosophiesOfBallad, forbiddenCurseScroll, dvalinsSigh],
+      [philosophiesOfBallad, forbiddenCurseScroll, dvalinsSigh, crownOfSagehood],]
+  }
+]
+
 export const getTravelerAnemo = (options?: IGetCharacterOptions) => {
-  const { withAscension } = options || {}
+  const { withAscension, withTalents } = options || {}
   return {
     ...travelerAnemo,
-    ...(withAscension ? { ascension: travelerAnemoAscension } : {})
+    ...(withAscension ? { ascension: travelerAnemoAscension } : {}),
+    ...(withTalents ? { talents: travelerAnemoTalents } : {})
   }
 }
 

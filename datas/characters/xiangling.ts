@@ -11,6 +11,12 @@ import slimeSecretions from '../materials/common/slime/slime-secretions'
 import everflameSeed from '../materials/bosses/everflame-seed'
 import jueyunChili from '../materials/wild/jueyun-chili'
 
+import guideOfDiligence from '../materials/talents/diligence/guide-diligence'
+import philosophiesOfDiligence from '../materials/talents/diligence/philosophies-diligence'
+import teachingsDiligence from '../materials/talents/diligence/teachings-diligence'
+import dvalinsClaw from '../materials/bosses/dvalins-claw'
+import crownOfSagehood from '../materials/events/crown-sagehood'
+
 const xiangling = {
   name: "Xiangling",
   titles: [
@@ -38,11 +44,40 @@ export const xianglingAscension = [
   [agnidusAgateGemstone, everflameSeed, jueyunChili, slimeConcentrate],
 ]
 
+const xianglingTalents = [
+  {
+    name: "dough_fu",
+    requirements: [
+      [teachingsDiligence, slimeCondensate],
+      [guideOfDiligence, slimeSecretions], [guideOfDiligence, slimeSecretions], [guideOfDiligence, slimeSecretions], [guideOfDiligence, slimeSecretions],
+      [philosophiesOfDiligence, slimeConcentrate, dvalinsClaw], [philosophiesOfDiligence, slimeConcentrate, dvalinsClaw], [philosophiesOfDiligence, slimeConcentrate, dvalinsClaw],
+      [philosophiesOfDiligence, slimeConcentrate, dvalinsClaw, crownOfSagehood],
+    ]
+  },
+  {
+    name: "guoba_attack",
+    requirements: [
+      [teachingsDiligence, slimeCondensate],
+      [guideOfDiligence, slimeSecretions], [guideOfDiligence, slimeSecretions], [guideOfDiligence, slimeSecretions], [guideOfDiligence, slimeSecretions],
+      [philosophiesOfDiligence, slimeConcentrate, dvalinsClaw], [philosophiesOfDiligence, slimeConcentrate, dvalinsClaw], [philosophiesOfDiligence, slimeConcentrate, dvalinsClaw],
+      [philosophiesOfDiligence, slimeConcentrate, dvalinsClaw, crownOfSagehood],]
+  },
+  {
+    name: "pyronado",
+    requirements: [
+      [teachingsDiligence, slimeCondensate],
+      [guideOfDiligence, slimeSecretions], [guideOfDiligence, slimeSecretions], [guideOfDiligence, slimeSecretions], [guideOfDiligence, slimeSecretions],
+      [philosophiesOfDiligence, slimeConcentrate, dvalinsClaw], [philosophiesOfDiligence, slimeConcentrate, dvalinsClaw], [philosophiesOfDiligence, slimeConcentrate, dvalinsClaw],
+      [philosophiesOfDiligence, slimeConcentrate, dvalinsClaw, crownOfSagehood],]
+  }
+]
+
 export const getXiangling = (options?: IGetCharacterOptions) => {
-  const { withAscension } = options || {}
+  const { withAscension, withTalents } = options || {}
   return {
     ...xiangling,
-    ...(withAscension ? { ascension: xianglingAscension } : {})
+    ...(withAscension ? { ascension: xianglingAscension } : {}),
+    ...(withTalents ? { talents: xianglingTalents } : {})
   }
 }
 

@@ -11,6 +11,12 @@ import treasureHoarderInsignia from '../materials/common/treasure-insignia/treas
 import everflameSeed from '../materials/bosses/everflame-seed'
 import windwheelAster from '../materials/wild/windwheel-aster'
 
+import guideOfResistance from '../materials/talents/resistance/guide-resistance'
+import philosophiesOfResistance from '../materials/talents/resistance/philosophies-resistance'
+import teachingsResistance from '../materials/talents/resistance/teachings-resistance'
+import dvalinsPlume from '../materials/bosses/dvalins-plume'
+import crownOfSagehood from '../materials/events/crown-sagehood'
+
 export const bennett = {
   name: "Bennett",
   titles: [
@@ -24,14 +30,6 @@ export const bennett = {
   rarity: 4,
   images: {
     image: "/images/characters/bennett-thumb.png",
-    card: "/gensin-impact/images/7/7f/Character_Bennett_Card.jpg",
-    portrait: "/gensin-impact/images/7/73/Character_Bennett_Portrait.png"
-  },
-  cv: {
-    english: "Cristina Vee Valenzuela",
-    japanese: "Ryōta Ōsaka",
-    korean: "Song HaRim",
-    chinese: "Xueting Mu"
   },
   affiliation: "adventurers_guild",
   description: "The few young adventurers that the Mondstadt Adventurers' Guild has always found themselves tangled up in baffling bouts of bad luck. He is the only active member of his own adventure group, known as Benny's Adventure Team, after all the other members decided to take leave following a series of unfortunate incidents. As a result, the team is currently on the verge of being dissolved. Being unable to break the poor boy's heart, Katheryne of the Adventurers' Guild has kept Benny's Adventure Team on the books, whilst also hiding from him the fact that all the other members have long since officially left the team.",
@@ -46,11 +44,40 @@ export const bennettAscension = [
   [agnidusAgateGemstone, everflameSeed, windwheelAster, goldenRavenInsignia],
 ]
 
+const bennettTalents = [
+  {
+    name: "strike_of_fortune",
+    requirements: [
+      [teachingsResistance, treasureHoarderInsignia],
+      [guideOfResistance, silverRavenInsignia], [guideOfResistance, silverRavenInsignia], [guideOfResistance, silverRavenInsignia], [guideOfResistance, silverRavenInsignia],
+      [philosophiesOfResistance, goldenRavenInsignia, dvalinsPlume], [philosophiesOfResistance, goldenRavenInsignia, dvalinsPlume], [philosophiesOfResistance, goldenRavenInsignia, dvalinsPlume],
+      [philosophiesOfResistance, goldenRavenInsignia, dvalinsPlume, crownOfSagehood],
+    ]
+  },
+  {
+    name: "passion_overload",
+    requirements: [
+      [teachingsResistance, treasureHoarderInsignia],
+      [guideOfResistance, silverRavenInsignia], [guideOfResistance, silverRavenInsignia], [guideOfResistance, silverRavenInsignia], [guideOfResistance, silverRavenInsignia],
+      [philosophiesOfResistance, goldenRavenInsignia, dvalinsPlume], [philosophiesOfResistance, goldenRavenInsignia, dvalinsPlume], [philosophiesOfResistance, goldenRavenInsignia, dvalinsPlume],
+      [philosophiesOfResistance, goldenRavenInsignia, dvalinsPlume, crownOfSagehood],]
+  },
+  {
+    name: "fantastic_voyage",
+    requirements: [
+      [teachingsResistance, treasureHoarderInsignia],
+      [guideOfResistance, silverRavenInsignia], [guideOfResistance, silverRavenInsignia], [guideOfResistance, silverRavenInsignia], [guideOfResistance, silverRavenInsignia],
+      [philosophiesOfResistance, goldenRavenInsignia, dvalinsPlume], [philosophiesOfResistance, goldenRavenInsignia, dvalinsPlume], [philosophiesOfResistance, goldenRavenInsignia, dvalinsPlume],
+      [philosophiesOfResistance, goldenRavenInsignia, dvalinsPlume, crownOfSagehood],]
+  }
+]
+
 export const getBennett = (options?: IGetCharacterOptions) => {
-  const { withAscension } = options || {}
+  const { withAscension, withTalents } = options || {}
   return {
     ...bennett,
-    ...(withAscension ? { ascension: bennettAscension } : {})
+    ...(withAscension ? { ascension: bennettAscension } : {}),
+    ...(withTalents ? { talents: bennettTalents } : {})
   }
 }
 

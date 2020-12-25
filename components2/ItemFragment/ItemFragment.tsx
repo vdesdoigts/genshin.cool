@@ -7,6 +7,7 @@ import {
   Text,
 } from '@chakra-ui/react'
 import Image from 'next/image'
+import Avatars from '../../components2/Avatars'
 
 interface IProps {
   image: string 
@@ -15,7 +16,7 @@ interface IProps {
   characters?: any[]
 }
 
-const ItemFragment = ({ image, title, description, characters }: IProps) => (
+const ItemFragment = ({ image, title, description }: IProps) => (
   <Stack spacing={2}>
     <HStack spacing="16px" align="center">
       <AspectRatio

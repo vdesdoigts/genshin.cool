@@ -14,12 +14,12 @@ export default {
   droppedBy: [
     {
       ...geoHypostasis,
-      level: "40+",
+      level: 40,
     },
 
     {
       ...wolfOfTheNorth,
-      level: "40+",
+      level: 40,
     }
   ],
   craft: [

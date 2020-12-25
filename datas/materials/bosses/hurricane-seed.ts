@@ -9,7 +9,7 @@ export default {
   droppedBy: [
     {
       ...anemoHypostasis,
-      level: "+30",
+      level: 30,
     },
   ],
 }

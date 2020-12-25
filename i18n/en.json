@@ -15,13 +15,64 @@
     "wangsheng_funeral_parlor": "Wangsheng Funeral Parlor",
     "wanmin_restaurant": "Wanmin Restaurant"
   },
+  "book": {
+    "ballad": {
+      "guide_of_ballad": "Guide of ballad",
+      "philosophies_of_ballad": "Philosophies of ballad",
+      "teachings_of_ballad": "Teachings of ballad"
+    },
+    "diligence": {
+      "guide_of_diligence": "Guide of diligence",
+      "philosophies_of_diligence": "Philosophies of diligence",
+      "teachings_of_diligence": "Teachings of diligence"
+    },
+    "freedom": {
+      "guide_of_freedom": "Guide of freedom",
+      "philosophies_of_freedom": "Philosophies of freedom",
+      "teachings_of_freedom": "Teachings of freedom"
+    },
+    "gold": {
+      "guide_of_gold": "Guide of gold",
+      "philosophies_of_gold": "Philosophies of gold",
+      "teachings_of_gold": "Teachings of gold"
+    },
+    "prosperity": {
+      "guide_of_prosperity": "Guide of prosperity",
+      "philosophies_of_prosperity": "Philosophies of prosperity",
+      "teachings_of_prosperity": "Teachings of prosperity"
+    },
+    "resistance": {
+      "guide_of_resistance": "Guide of resistance",
+      "philosophies_of_resistance": "Philosophies of resistance",
+      "teachings_of_resistance": "Teachings of resistance"
+    }
+  },
+  "bosses": {
+    "anemo_hypostasis": "Anemo Hypostasis",
+    "childe": "Childe",
+    "cryo_regisvine": "Cryo Regisvine",
+    "electro_hypostasis": "Electro Hypostasis",
+    "geo_hypostasis": "Geo Hypostasis",
+    "oceanid": "Oceanid",
+    "pyro_regisvine": "Pyro Regisvine",
+    "stormterror": "Stormterror's Lair",
+    "wolf_of_the_north_challenge_reward": "Wolf of the North"
+  },
   "boss_reward": {
     "basalt_pillar": "Basalt pillar",
     "cleansing_heart": "Cleansing heart",
+    "dvalins_claw": "Dvalins claw",
+    "dvalins_plume": "Dvalins plume",
+    "dvalins_sigh": "Dvalins sigh",
     "everflame_seed": "Everflame seed",
     "hoarfrost_core": "Hoarfrost core",
     "hurricane_seed": "Hurricane seed",
-    "lightning_prism": "Lightning prism"
+    "lightning_prism": "Lightning prism",
+    "ring_of_boreas": "Ring of boreas",
+    "shard_of_foul_legacy": "Shard of foul legacy",
+    "spirit_locket_of_boreas": "Spirit locket of boreas",
+    "tail_of_boreas": "Tail of boreas",
+    "tusk_of_monoceros_caeli": "Tusk of monoceros caeli"
   },
   "common": {
     "arrowhead": {
@@ -60,6 +111,26 @@
       "treasure_hoarder_insignia": "Treasure hoarder insignia"
     }
   },
+  "domainofforgeries": {
+    "cecilia_garden": "Cecilia Garden",
+    "hidden_palace_of_lianshan_formula": "Hidden Palace of Lianshan Formula"
+  },
+  "domainofmasteries": {
+    "forsaken_rift": "Forsaken Rift",
+    "taishan_mansion": "Taishan Mansion"
+  },
+  "elements": {
+    "anemo": "Anemo",
+    "cryo": "Cryo",
+    "dendro": "Dendro",
+    "electro": "Electro",
+    "geo": "Geo",
+    "hydro": "Hydro",
+    "pyro": "Pyro"
+  },
+  "event": {
+    "crown_of_sagehood": "Crown of Insight"
+  },
   "gem": {
     "agnidus_agate": {
       "chunk": "Agnidus Agate Chunk",
@@ -68,15 +139,16 @@
       "sliver": "Agnidus Agate Sliver"
     },
     "brilliant_diamond": {
-      "chunk": "brilliant_diamond_chunk",
-      "fragment": "Brilliant diamond fragment",
-      "gemstone": "brilliant_diamond_gemstone"
+      "chunk": "Brilliant Diamond Chunk",
+      "fragment": "Brilliant Diamond Fragment",
+      "gemstone": "brilliant Diamond Gemstone",
+      "sliver": "Brilliant Diamond Sliver"
     },
     "prithiva_topaz": {
-      "prithiva_topaz": "Prithiva Topaz",
-      "prithiva_topaz_chunk": "Prithiva Topaz Chunk",
-      "prithiva_topaz_fragment": "Prithiva Topaz Fragment",
-      "prithiva_topaz_gemstone": "Prithiva Topaz Gemstone"
+      "chunk": "Prithiva Topaz Chunk",
+      "fragment": "Prithiva Topaz Fragment",
+      "gemstone": "Prithiva Topaz Gemstone",
+      "sliver": "Prithiva Topaz Sliver"
     },
     "shivada_jade": {
       "chunk": "Shivada Jade Chunk",
@@ -103,53 +175,6 @@
       "sliver": "Varunada Lazurite Sliver"
     }
   },
-  "wild": {
-    "calla_lily": "Calla lily",
-    "cecilia": "Cecilia",
-    "cor_lapis": "Cor lapis",
-    "dandelion_seed": "Dandelion seed",
-    "glaze_lily": "Glaze lily",
-    "jueyun_chili": "Jueyun chili",
-    "mora": "Mora",
-    "noctilucous_jade": "Noctilucous jade",
-    "small_lamp_grass": "Small lamp grass",
-    "philanemo_mushroom": "Philanemo mushroom",
-    "qingxin": "Qingxin",
-    "silk_flower": "Silk flower",
-    "starconch": "Starconch",
-    "valberry": "Valberry",
-    "violetgrass": "Violetgrass",
-    "windwheel_aster": "Windwheel aster",
-    "wolfhook": "Wolfhook"
-  },
-  "bosses": {
-    "anemo_hypostasis": "Anemo Hypostasis",
-    "childe": "Childe",
-    "cryo_regisvine": "Cryo Regisvine",
-    "electro_hypostasis": "Electro Hypostasis",
-    "geo_hypostasis": "Geo Hypostasis",
-    "oceanid": "Oceanid",
-    "pyro_regisvine": "Pyro Regisvine",
-    "stormterror": "Stormterror's Lair",
-    "wolf_of_the_north_challenge_reward": "Wolf of the North"
-  },
-  "domainofforgeries": {
-    "cecilia_garden": "Cecilia Garden",
-    "hidden_palace_of_lianshan_formula": "Hidden Palace of Lianshan Formula"
-  },
-  "domainofmasteries": {
-    "forsaken_rift": "Forsaken Rift",
-    "taishan_mansion": "Taishan Mansion"
-  },
-  "elements": {
-    "anemo": "Anemo",
-    "cryo": "Cryo",
-    "dendro": "Dendro",
-    "electro": "Electro",
-    "geo": "Geo",
-    "hydro": "Hydro",
-    "pyro": "Pyro"
-  },
   "genders": {
     "female": "Female",
     "male": "Male"
@@ -166,15 +191,19 @@
     "cancel": "Cancel",
     "characters": "Characters",
     "character_ascensions": "Character ascensions",
-    "character_ascensions_types": {
-      "common": "Common Ascension Material",
-      "bosses": "Character Ascension Material",
-      "gems": "Character Ascension Material",
-      "wild": "Farming Ascension Material"
+    "material_types": {
+      "bosses": "Elemental stone",
+      "common": "Common material",
+      "abyssal_domain_daily": "Abyssal domains of the day",
+      "abyssal_domain_weekly": "Abyssal domains",
+      "events": "Events",
+      "gems": "Jewels",
+      "wild": "Local material"
     },
     "character_materials": "Character talents",
-    "character_materials_empty": "No character talent materials to farm today.",
+    "character_materials_empty": "No talent level-up materials to farm.",
     "contact": "Contact @vdesdoigts for any request.",
+    "daily_talents_materials": "Daily talent materials farming",
     "days": {
       "monday": "Monday",
       "tuesday": "Tuesday",
@@ -194,18 +223,22 @@
     "edit_profile_modal": {
       "title": "Profil edit"
     },
-    "genshin_impact_farming_guide_description": "Find out the best farming methods and schedule optimization.",
+    "genshin_impact_farming_guide_description": "Find out the best talent level-up materials schedule optimization.",
     "genshin_impact_farming_guide": "Genshin Impact farming guide",
+    "header_characters_ascensions_subtitle": "Farming guide,",
+    "header_characters_ascensions_title": "Character ascension materials",
     "header_characters_title": "Your roster",
-    "header_label": "Hi Genshin Player,",
-    "header_title": "Welcome back 👋",
+    "header_talents_subtitle": "Farming guide,",
+    "header_talents_title": "Talent level-up materials",
     "manage_your_armory": "Manage your armory",
     "manage_your_roster": "Manage your roster",
     "mihoyo": "This website is a fansite and is not affiliated with or endorsed by miHoYo.",
     "navigation": "Navigation",
     "navigations": {
+      "character_ascension_materials": "Character ascension",
       "overview": "Schedule",
-      "roster": "Your roster"
+      "roster": "Your roster",
+      "talent_level_up_material": "Talent level-up"
     },
     "next_ascension_material": "Next ascension materials",
     "next_ascension_material_empty": "No elevation",
@@ -486,5 +519,24 @@
     "decarabian": "Decarabian",
     "guyun": "Guyun",
     "mist_veiled_elixir": "Mist Veiled Elixir"
+  },
+  "wild": {
+    "calla_lily": "Calla lily",
+    "cecilia": "Cecilia",
+    "cor_lapis": "Cor lapis",
+    "dandelion_seed": "Dandelion seed",
+    "glaze_lily": "Glaze lily",
+    "jueyun_chili": "Jueyun chili",
+    "mora": "Mora",
+    "noctilucous_jade": "Noctilucous jade",
+    "small_lamp_grass": "Small lamp grass",
+    "philanemo_mushroom": "Philanemo mushroom",
+    "qingxin": "Qingxin",
+    "silk_flower": "Silk flower",
+    "starconch": "Starconch",
+    "valberry": "Valberry",
+    "violetgrass": "Violetgrass",
+    "windwheel_aster": "Windwheel aster",
+    "wolfhook": "Wolfhook"
   }
 }

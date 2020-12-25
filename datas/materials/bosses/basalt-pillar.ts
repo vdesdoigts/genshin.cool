@@ -9,7 +9,7 @@ export default {
   droppedBy: [
     {
       ...geoHypostasis,
-      level: "30+",
+      level: 30,
     },
   ],
 }

@@ -11,6 +11,12 @@ import stainedMask from '../materials/common/mask/stained-mask'
 import cleansingHeart from '../materials/bosses/cleansing-heart'
 import silkFlower from '../materials/wild/silk-flower'
 
+import guideOfGold from '../materials/talents/gold/guide-gold'
+import philosophiesOfGold from '../materials/talents/gold/philosophies-gold'
+import teachingsGold from '../materials/talents/gold/teachings-gold'
+import tailOfBoreas from '../materials/bosses/tail-of-boreas'
+import crownOfSagehood from '../materials/events/crown-sagehood'
+
 export const xingqiu = {
 	id: 26,
   name: "Xingqiu",
@@ -40,11 +46,40 @@ export const xingqiuAscension = [
   [varunadaLazuriteGemstone, cleansingHeart, silkFlower, ominousMask],
 ]
 
+const xingqiuTalents = [
+  {
+    name: "guhua_style",
+    requirements: [
+      [teachingsGold, damagedMask],
+      [guideOfGold, stainedMask], [guideOfGold, stainedMask], [guideOfGold, stainedMask], [guideOfGold, stainedMask],
+      [philosophiesOfGold, ominousMask, tailOfBoreas], [philosophiesOfGold, ominousMask, tailOfBoreas], [philosophiesOfGold, ominousMask, tailOfBoreas],
+      [philosophiesOfGold, ominousMask, tailOfBoreas, crownOfSagehood],
+    ]
+  },
+  {
+    name: "guhua_sword_fatal_rainscreen",
+    requirements: [
+      [teachingsGold, damagedMask],
+      [guideOfGold, stainedMask], [guideOfGold, stainedMask], [guideOfGold, stainedMask], [guideOfGold, stainedMask],
+      [philosophiesOfGold, ominousMask, tailOfBoreas], [philosophiesOfGold, ominousMask, tailOfBoreas], [philosophiesOfGold, ominousMask, tailOfBoreas],
+      [philosophiesOfGold, ominousMask, tailOfBoreas, crownOfSagehood],]
+  },
+  {
+    name: "guhua_sword_raincutter",
+    requirements: [
+      [teachingsGold, damagedMask],
+      [guideOfGold, stainedMask], [guideOfGold, stainedMask], [guideOfGold, stainedMask], [guideOfGold, stainedMask],
+      [philosophiesOfGold, ominousMask, tailOfBoreas], [philosophiesOfGold, ominousMask, tailOfBoreas], [philosophiesOfGold, ominousMask, tailOfBoreas],
+      [philosophiesOfGold, ominousMask, tailOfBoreas, crownOfSagehood],]
+  }
+]
+
 export const getXingqiu = (options?: IGetCharacterOptions) => {
-  const { withAscension } = options || {}
+  const { withAscension, withTalents } = options || {}
   return {
     ...xingqiu,
-    ...(withAscension ? { ascension: xingqiuAscension } : {})
+    ...(withAscension ? { ascension: xingqiuAscension } : {}),
+    ...(withTalents ? { talents: xingqiuTalents } : {})
   }
 }
 

@@ -11,6 +11,12 @@ import weatheredArrowhead from '../materials/common/arrow/weathered-arrowhead'
 import hoarfrostCore from '../materials/bosses/hoarfrost-core'
 import callaLily from '../materials/wild/calla-lily'
 
+import guideOfFreedom from '../materials/talents/freedom/guide-freedom'
+import philosophiesOfFreedom from '../materials/talents/freedom/philosophies-freedom'
+import teachingsFreedom from '../materials/talents/freedom/teachings-freedom'
+import shardOfFoulLegacy from '../materials/bosses/shard-of-foul-legacy'
+import crownOfSagehood from '../materials/events/crown-sagehood'
+
 export const diona = {
   name: "Diona",
   titles: [
@@ -29,7 +35,7 @@ export const diona = {
   description: "The incredibly popular bartender of the Cat's Tail tavern, rising star of Mondstadt's wine industry, and the greatest challenger to its traditional powerhouses.\nA feisty feline young lady from Springvale, any drink mixed by Diona's hand tastes delicious beyond belief.\nYet given her extreme distaste for alcohol, is her talent a blessing or a curse?",
 }
 
-export const chongyunAscension = [
+export const dionaAscension = [
   [shivadaJadeSliver, callaLily, firmArrowhead],
   [shivadaJadeFragment, hoarfrostCore, callaLily, firmArrowhead],
   [shivadaJadeFragment, hoarfrostCore, callaLily, sharpArrowhead],
@@ -38,11 +44,40 @@ export const chongyunAscension = [
   [shivadaJadeGemstone, hoarfrostCore, callaLily, weatheredArrowhead],
 ]
 
+const dionaTalents = [
+  {
+    name: "katzlein_style",
+    requirements: [
+      [teachingsFreedom, firmArrowhead],
+      [guideOfFreedom, sharpArrowhead], [guideOfFreedom, sharpArrowhead], [guideOfFreedom, sharpArrowhead], [guideOfFreedom, sharpArrowhead],
+      [philosophiesOfFreedom, weatheredArrowhead, shardOfFoulLegacy], [philosophiesOfFreedom, weatheredArrowhead, shardOfFoulLegacy], [philosophiesOfFreedom, weatheredArrowhead, shardOfFoulLegacy],
+      [philosophiesOfFreedom, weatheredArrowhead, shardOfFoulLegacy, crownOfSagehood],
+    ]
+  },
+  {
+    name: "icy_paws",
+    requirements: [
+      [teachingsFreedom, firmArrowhead],
+      [guideOfFreedom, sharpArrowhead], [guideOfFreedom, sharpArrowhead], [guideOfFreedom, sharpArrowhead], [guideOfFreedom, sharpArrowhead],
+      [philosophiesOfFreedom, weatheredArrowhead, shardOfFoulLegacy], [philosophiesOfFreedom, weatheredArrowhead, shardOfFoulLegacy], [philosophiesOfFreedom, weatheredArrowhead, shardOfFoulLegacy],
+      [philosophiesOfFreedom, weatheredArrowhead, shardOfFoulLegacy, crownOfSagehood],]
+  },
+  {
+    name: "signature_mix",
+    requirements: [
+      [teachingsFreedom, firmArrowhead],
+      [guideOfFreedom, sharpArrowhead], [guideOfFreedom, sharpArrowhead], [guideOfFreedom, sharpArrowhead], [guideOfFreedom, sharpArrowhead],
+      [philosophiesOfFreedom, weatheredArrowhead, shardOfFoulLegacy], [philosophiesOfFreedom, weatheredArrowhead, shardOfFoulLegacy], [philosophiesOfFreedom, weatheredArrowhead, shardOfFoulLegacy],
+      [philosophiesOfFreedom, weatheredArrowhead, shardOfFoulLegacy, crownOfSagehood],]
+  }
+]
+
 export const getDiona = (options?: IGetCharacterOptions) => {
-  const { withAscension } = options || {}
+  const { withAscension, withTalents } = options || {}
   return {
     ...diona,
-    ...(withAscension ? { ascension: chongyunAscension } : {})
+    ...(withAscension ? { ascension: dionaAscension } : {}),
+    ...(withTalents ? { talents: dionaTalents } : {})
   }
 }
 

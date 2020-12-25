@@ -6,15 +6,17 @@ import {
   Heading,
   SimpleGrid,
 } from '@chakra-ui/react'
-import CharactersAscension from '../components/CharactersAscensions'
-import CharactersTalents from '../components/CharactersTalents'
-import DaySelect from '../components/DaySelect'
-import Roster from '../components/Roster'
-import WeaponsAscensions from '../components/WeaponsAscensions'
-import Armory from '../components/Armory'
+import { useSelector } from 'react-redux'
+import { ProfileSelectors } from '../redux/selectors'
+import { IRoster } from '../types'
+import AppHeading from '../components2/AppHeading'
+import CharactersTalents from '../components2/CharactersTalents'
+import RosterList from '../components2/RosterList'
+import ScheduleBox from '../components2/ScheduleBox'
 
-const Dash = () => {
+const Dashboard = () => {
   const { t } = useTranslation()
+  const currentRoster: IRoster = useSelector(ProfileSelectors.getCurrentRoster)
 
   return (
     <Box
@@ -31,22 +33,13 @@ const Dash = () => {
             pb="32px"
             px={{ base: '20px', md: '64px', xl: '32px', xxl: '64px' }}
           >
-            <Heading as="h3" pl={{ base: '16px', md: 0 }} fontSize={{ base: '16px', md: '24px' }} lineHeight="1.33333" fontWeight="500">{t('site.header_label')}</Heading>
-            <Heading as="h4" pl={{ base: '16px', md: 0 }} fontSize={{ base: '32px', md: '48px' }} lineHeight="1.5" fontWeight="600" letterSpacing="-1px">{t('site.header_title')}</Heading>
-
+            <AppHeading
+              subtitle={t('site.header_talents_subtitle')}
+              title={t('site.header_talents_title')}
+            />
             <SimpleGrid columns={1} spacing="32px" pt={{ base: '22px', md: '44px' }}>
-              <DaySelect />
-              <SimpleGrid columns={{ base: 1, md: 2 }} spacing="24px">
-                <Box>
-                  <CharactersTalents />
-                </Box>
-                <Box>
-                  <WeaponsAscensions />
-                </Box>
-              </SimpleGrid>
-            </SimpleGrid>
-            <SimpleGrid pt={{ base: '32px' }}>
-              <CharactersAscension />
+              <ScheduleBox />
+              <CharactersTalents currentRoster={currentRoster} />
             </SimpleGrid>
           </Box>
           <Box
@@ -59,8 +52,7 @@ const Dash = () => {
             px={{ base: '20px', md: '64px', xl: '32px', xxl: '64px' }}
           >
             <SimpleGrid columns={1} spacing="32px">
-              <Roster />
-              <Armory />
+              <RosterList currentRoster={currentRoster} />
             </SimpleGrid>
           </Box>
         </Flex>
@@ -69,4 +61,4 @@ const Dash = () => {
   )
 }
 
-export default Dash
+export default Dashboard

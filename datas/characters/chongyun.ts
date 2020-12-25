@@ -11,6 +11,12 @@ import stainedMask from '../materials/common/mask/stained-mask'
 import hoarfrostCore from '../materials/bosses/hoarfrost-core'
 import corLapis from '../materials/wild/cor-lapis'
 
+import guideOfDiligence from '../materials/talents/diligence/guide-diligence'
+import philosophiesOfDiligence from '../materials/talents/diligence/philosophies-diligence'
+import teachingsDiligence from '../materials/talents/diligence/teachings-diligence'
+import dvalinsSigh from '../materials/bosses/dvalins-sigh'
+import crownOfSagehood from '../materials/events/crown-sagehood'
+
 export const chongyun = {
   name: "Chongyun",
   titles: [
@@ -25,12 +31,6 @@ export const chongyun = {
   images: {
     image: "/images/characters/chongyun-thumb.png",
   },
-  cv: {
-    english: "Beau Bridgland",
-    japanese: "Sōma Saitō",
-    korean: "Yang JeongHwa",
-    chinese: "Jinchuan"
-  },
   affiliation: "n/a",
   description: "An exorcist who roams the land with Liyue as his base of operations, evil spirits fleeing wherever he goes. As the heir to a clan of exorcists, he has always possessed abilities superior to most. However, these abilities are not the result of training, but of an inborn trait - congenital positivity.",
 }
@@ -44,11 +44,40 @@ export const chongyunAscension = [
   [shivadaJadeGemstone, hoarfrostCore, corLapis, ominousMask],
 ]
 
+const chongyungTalents = [
+  {
+    name: "demonbane",
+    requirements: [
+      [teachingsDiligence, damagedMask],
+      [guideOfDiligence, stainedMask], [guideOfDiligence, stainedMask], [guideOfDiligence, stainedMask], [guideOfDiligence, stainedMask],
+      [philosophiesOfDiligence, ominousMask, dvalinsSigh], [philosophiesOfDiligence, ominousMask, dvalinsSigh], [philosophiesOfDiligence, ominousMask, dvalinsSigh],
+      [philosophiesOfDiligence, ominousMask, dvalinsSigh, crownOfSagehood],
+    ]
+  },
+  {
+    name: "chonghua_s_layered_frost",
+    requirements: [
+      [teachingsDiligence, damagedMask],
+      [guideOfDiligence, stainedMask], [guideOfDiligence, stainedMask], [guideOfDiligence, stainedMask], [guideOfDiligence, stainedMask],
+      [philosophiesOfDiligence, ominousMask, dvalinsSigh], [philosophiesOfDiligence, ominousMask, dvalinsSigh], [philosophiesOfDiligence, ominousMask, dvalinsSigh],
+      [philosophiesOfDiligence, ominousMask, dvalinsSigh, crownOfSagehood],]
+  },
+  {
+    name: "cloud_parting_star",
+    requirements: [
+      [teachingsDiligence, damagedMask],
+      [guideOfDiligence, stainedMask], [guideOfDiligence, stainedMask], [guideOfDiligence, stainedMask], [guideOfDiligence, stainedMask],
+      [philosophiesOfDiligence, ominousMask, dvalinsSigh], [philosophiesOfDiligence, ominousMask, dvalinsSigh], [philosophiesOfDiligence, ominousMask, dvalinsSigh],
+      [philosophiesOfDiligence, ominousMask, dvalinsSigh, crownOfSagehood],]
+  }
+]
+
 export const getChongyun = (options?: IGetCharacterOptions) => {
-  const { withAscension } = options || {}
+  const { withAscension, withTalents } = options || {}
   return {
     ...chongyun,
-    ...(withAscension ? { ascension: chongyunAscension } : {})
+    ...(withAscension ? { ascension: chongyunAscension } : {}),
+    ...(withTalents ? { talents: chongyungTalents } : {})
   }
 }
 

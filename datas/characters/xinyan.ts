@@ -11,6 +11,12 @@ import treasureHoarderInsignia from '../materials/common/treasure-insignia/treas
 import everflameSeed from '../materials/bosses/everflame-seed'
 import violetgrass from '../materials/wild/violetgrass'
 
+import guideOfGold from '../materials/talents/gold/guide-gold'
+import philosophiesOfGold from '../materials/talents/gold/philosophies-gold'
+import teachingsGold from '../materials/talents/gold/teachings-gold'
+import tuskOfMonocerosCaeli from '../materials/bosses/tusk-of-monoceros-caeli'
+import crownOfSagehood from '../materials/events/crown-sagehood'
+
 export const xinyan = {
   name: "Xinyan",
   titles: [
@@ -37,15 +43,44 @@ export const xinyanAscension = [
   [agnidusAgateGemstone, everflameSeed, violetgrass, goldenRavenInsignia],
 ]
 
-export const getAmber = (options?: IGetCharacterOptions) => {
-  const { withAscension } = options || {}
+const xinyanTalents = [
+  {
+    name: "dance_on_fire",
+    requirements: [
+      [teachingsGold, treasureHoarderInsignia],
+      [guideOfGold, silverRavenInsignia], [guideOfGold, silverRavenInsignia], [guideOfGold, silverRavenInsignia], [guideOfGold, silverRavenInsignia],
+      [philosophiesOfGold, goldenRavenInsignia, tuskOfMonocerosCaeli], [philosophiesOfGold, goldenRavenInsignia, tuskOfMonocerosCaeli], [philosophiesOfGold, goldenRavenInsignia, tuskOfMonocerosCaeli],
+      [philosophiesOfGold, goldenRavenInsignia, tuskOfMonocerosCaeli, crownOfSagehood],
+    ]
+  },
+  {
+    name: "sweeping_fervor",
+    requirements: [
+      [teachingsGold, treasureHoarderInsignia],
+      [guideOfGold, silverRavenInsignia], [guideOfGold, silverRavenInsignia], [guideOfGold, silverRavenInsignia], [guideOfGold, silverRavenInsignia],
+      [philosophiesOfGold, goldenRavenInsignia, tuskOfMonocerosCaeli], [philosophiesOfGold, goldenRavenInsignia, tuskOfMonocerosCaeli], [philosophiesOfGold, goldenRavenInsignia, tuskOfMonocerosCaeli],
+      [philosophiesOfGold, goldenRavenInsignia, tuskOfMonocerosCaeli, crownOfSagehood],]
+  },
+  {
+    name: "riff_revolution",
+    requirements: [
+      [teachingsGold, treasureHoarderInsignia],
+      [guideOfGold, silverRavenInsignia], [guideOfGold, silverRavenInsignia], [guideOfGold, silverRavenInsignia], [guideOfGold, silverRavenInsignia],
+      [philosophiesOfGold, goldenRavenInsignia, tuskOfMonocerosCaeli], [philosophiesOfGold, goldenRavenInsignia, tuskOfMonocerosCaeli], [philosophiesOfGold, goldenRavenInsignia, tuskOfMonocerosCaeli],
+      [philosophiesOfGold, goldenRavenInsignia, tuskOfMonocerosCaeli, crownOfSagehood],]
+  }
+]
+
+export const getXinyan = (options?: IGetCharacterOptions) => {
+  const { withAscension, withTalents } = options || {}
   return {
     ...xinyan,
-    ...(withAscension ? { ascension: xinyanAscension } : {})
+    ...(withAscension ? { ascension: xinyanAscension } : {}),
+    ...(withTalents ? { talents: xinyanTalents } : {})
   }
 }
 
 export default {
   id: 28,
-  get: getAmber
+  get: getXinyan
 }

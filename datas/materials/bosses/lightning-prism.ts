@@ -9,7 +9,7 @@ export default {
   droppedBy: [
     {
       ...electroHypostasis,
-      level: "30+",
+      level: 30,
     },
   ],
 }

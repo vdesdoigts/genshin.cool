@@ -11,6 +11,11 @@ import sealedScroll from '../materials/common/scroll/sealed-scroll'
 import everflameSeed from '../materials/bosses/everflame-seed'
 import philanemoMushroom from '../materials/wild/philanemo-mushroom'
 
+import guideOfFreedom from '../materials/talents/freedom/guide-freedom'
+import philosophiesOfFreedom from '../materials/talents/freedom/philosophies-freedom'
+import teachingsFreedom from '../materials/talents/freedom/teachings-freedom'
+import ringOfBoreas from '../materials/bosses/ring-of-boreas'
+import crownOfSagehood from '../materials/events/crown-sagehood'
 
 export const klee = {
   name: "Klee",
@@ -39,11 +44,40 @@ export const kleeAscension = [
   [agnidusAgateGemstone, everflameSeed, philanemoMushroom, forbiddenCurseScroll],
 ]
 
+const kleeTalents = [
+  {
+    name: "kaboom",
+    requirements: [
+      [teachingsFreedom, diviningScroll],
+      [guideOfFreedom, sealedScroll], [guideOfFreedom, sealedScroll], [guideOfFreedom, sealedScroll], [guideOfFreedom, sealedScroll],
+      [philosophiesOfFreedom, forbiddenCurseScroll, ringOfBoreas], [philosophiesOfFreedom, forbiddenCurseScroll, ringOfBoreas], [philosophiesOfFreedom, forbiddenCurseScroll, ringOfBoreas],
+      [philosophiesOfFreedom, forbiddenCurseScroll, ringOfBoreas, crownOfSagehood],
+    ]
+  },
+  {
+    name: "jumpy_dumpy",
+    requirements: [
+      [teachingsFreedom, diviningScroll],
+      [guideOfFreedom, sealedScroll], [guideOfFreedom, sealedScroll], [guideOfFreedom, sealedScroll], [guideOfFreedom, sealedScroll],
+      [philosophiesOfFreedom, forbiddenCurseScroll, ringOfBoreas], [philosophiesOfFreedom, forbiddenCurseScroll, ringOfBoreas], [philosophiesOfFreedom, forbiddenCurseScroll, ringOfBoreas],
+      [philosophiesOfFreedom, forbiddenCurseScroll, ringOfBoreas, crownOfSagehood],]
+  },
+  {
+    name: "sparks_n_splash",
+    requirements: [
+      [teachingsFreedom, diviningScroll],
+      [guideOfFreedom, sealedScroll], [guideOfFreedom, sealedScroll], [guideOfFreedom, sealedScroll], [guideOfFreedom, sealedScroll],
+      [philosophiesOfFreedom, forbiddenCurseScroll, ringOfBoreas], [philosophiesOfFreedom, forbiddenCurseScroll, ringOfBoreas], [philosophiesOfFreedom, forbiddenCurseScroll, ringOfBoreas],
+      [philosophiesOfFreedom, forbiddenCurseScroll, ringOfBoreas, crownOfSagehood],]
+  }
+]
+
 export const getKlee = (options?: IGetCharacterOptions) => {
-  const { withAscension } = options || {}
+  const { withAscension, withTalents } = options || {}
   return {
     ...klee,
-    ...(withAscension ? { ascension: kleeAscension } : {})
+    ...(withAscension ? { ascension: kleeAscension } : {}),
+    ...(withTalents ? { talents: kleeTalents } : {})
   }
 }
 

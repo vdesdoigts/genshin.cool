@@ -11,6 +11,12 @@ import sergeantsInsignia from '../materials/common/soldier-insignia/sergeants-in
 import basaltPillar from '../materials/bosses/basalt-pillar'
 import glazeLily from '../materials/wild/glaze-lily'
 
+import guideOfProsperity from '../materials/talents/prosperity/guide-prosperity'
+import philosophiesOfProsperity from '../materials/talents/prosperity/philosophies-prosperity'
+import teachingsProsperity from '../materials/talents/prosperity/teachings-prosperity'
+import spiritLocketOfBoreas from '../materials/bosses/spirit-locket-of-boreas'
+import crownOfSagehood from '../materials/events/crown-sagehood'
+
 export const ningguang = {
   name: "Ningguang",
   titles: [
@@ -38,11 +44,40 @@ export const ningguangAscension = [
   [prithivaTopazGemstone, basaltPillar, glazeLily, lieutenantsInsignia],
 ]
 
+const ningguangTalents = [
+  {
+    name: "sparkling_scatter",
+    requirements: [
+      [teachingsProsperity, recruitsInsignia],
+      [guideOfProsperity, sergeantsInsignia], [guideOfProsperity, sergeantsInsignia], [guideOfProsperity, sergeantsInsignia], [guideOfProsperity, sergeantsInsignia],
+      [philosophiesOfProsperity, lieutenantsInsignia, spiritLocketOfBoreas], [philosophiesOfProsperity, lieutenantsInsignia, spiritLocketOfBoreas], [philosophiesOfProsperity, lieutenantsInsignia, spiritLocketOfBoreas],
+      [philosophiesOfProsperity, lieutenantsInsignia, spiritLocketOfBoreas, crownOfSagehood],
+    ]
+  },
+  {
+    name: "jade_screen",
+    requirements: [
+      [teachingsProsperity, recruitsInsignia],
+      [guideOfProsperity, sergeantsInsignia], [guideOfProsperity, sergeantsInsignia], [guideOfProsperity, sergeantsInsignia], [guideOfProsperity, sergeantsInsignia],
+      [philosophiesOfProsperity, lieutenantsInsignia, spiritLocketOfBoreas], [philosophiesOfProsperity, lieutenantsInsignia, spiritLocketOfBoreas], [philosophiesOfProsperity, lieutenantsInsignia, spiritLocketOfBoreas],
+      [philosophiesOfProsperity, lieutenantsInsignia, spiritLocketOfBoreas, crownOfSagehood],]
+  },
+  {
+    name: "starshatter",
+    requirements: [
+      [teachingsProsperity, recruitsInsignia],
+      [guideOfProsperity, sergeantsInsignia], [guideOfProsperity, sergeantsInsignia], [guideOfProsperity, sergeantsInsignia], [guideOfProsperity, sergeantsInsignia],
+      [philosophiesOfProsperity, lieutenantsInsignia, spiritLocketOfBoreas], [philosophiesOfProsperity, lieutenantsInsignia, spiritLocketOfBoreas], [philosophiesOfProsperity, lieutenantsInsignia, spiritLocketOfBoreas],
+      [philosophiesOfProsperity, lieutenantsInsignia, spiritLocketOfBoreas, crownOfSagehood],]
+  }
+]
+
 export const getNingguang = (options?: IGetCharacterOptions) => {
-  const { withAscension } = options || {}
+  const { withAscension, withTalents } = options || {}
   return {
     ...ningguang,
-    ...(withAscension ? { ascension: ningguangAscension } : {})
+    ...(withAscension ? { ascension: ningguangAscension } : {}),
+    ...(withTalents ? { talents: ningguangTalents } : {})
   }
 }
 

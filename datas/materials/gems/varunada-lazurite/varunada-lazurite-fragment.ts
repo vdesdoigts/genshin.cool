@@ -15,15 +15,15 @@ export default {
   droppedBy: [
     {
       ...oceanid,
-      level: "40+",
+      level: 40,
     },
     {
       ...stormterror,
-      level: "40+",
+      level: 40,
     },
     {
       ...childe,
-      level: "40+",
+      level: 40,
     }
     ,
   ],

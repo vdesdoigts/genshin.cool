@@ -28,7 +28,7 @@ const ItemSliverCharacters = ({ characters, title, showCharacter }: IProps) => (
         {title}
       </Text>
     </Flex>}
-    <HStack spacing={0}>
+    <HStack spacing={1}>
       {characters.map((character) => (
         <HStack
           key={character.name}

@@ -15,15 +15,15 @@ export default {
   droppedBy: [
     {
       ...electroHypostasis,
-      level: "60+",
+      level: 60,
     },
     {
       ...stormterror,
-      level: "60+",
+      level: 60,
     },
     {
       ...childe,
-      level: "60+",
+      level: 60,
     }
   ],
   craft: [

@@ -11,6 +11,12 @@ import stainedMask from '../materials/common/mask/stained-mask'
 import lightningPrism from '../materials/bosses/lightning-prism'
 import wolfhook from '../materials/wild/wolfhook'
 
+import guideOfResistance from '../materials/talents/resistance/guide-resistance'
+import philosophiesOfResistance from '../materials/talents/resistance/philosophies-resistance'
+import teachingsResistance from '../materials/talents/resistance/teachings-resistance'
+import dvalinsClaw from '../materials/bosses/dvalins-claw'
+import crownOfSagehood from '../materials/events/crown-sagehood'
+
 export const razor = {
   name: "Razor",
   titles: [
@@ -37,11 +43,42 @@ export const razorAscension = [
   [vajradaAmethystGemstone, lightningPrism, wolfhook, ominousMask],
 ]
 
+const razorTalents = [
+  {
+    name: "steel_fang",
+    requirements: [
+      [teachingsResistance, damagedMask],
+      [guideOfResistance, stainedMask], [guideOfResistance, stainedMask], [guideOfResistance, stainedMask], [guideOfResistance, stainedMask],
+      [philosophiesOfResistance, ominousMask, dvalinsClaw], [philosophiesOfResistance, ominousMask, dvalinsClaw], [philosophiesOfResistance, ominousMask, dvalinsClaw],
+      [philosophiesOfResistance, ominousMask, dvalinsClaw, crownOfSagehood],
+    ]
+  },
+  {
+    name: "claw_and_thunder",
+    requirements: [
+      [teachingsResistance, damagedMask],
+      [guideOfResistance, stainedMask], [guideOfResistance, stainedMask], [guideOfResistance, stainedMask], [guideOfResistance, stainedMask],
+      [philosophiesOfResistance, ominousMask, dvalinsClaw], [philosophiesOfResistance, ominousMask, dvalinsClaw], [philosophiesOfResistance, ominousMask, dvalinsClaw],
+      [philosophiesOfResistance, ominousMask, dvalinsClaw, crownOfSagehood],
+    ]
+  },
+  {
+    name: "lightning_fang",
+    requirements: [
+      [teachingsResistance, damagedMask],
+      [guideOfResistance, stainedMask], [guideOfResistance, stainedMask], [guideOfResistance, stainedMask], [guideOfResistance, stainedMask],
+      [philosophiesOfResistance, ominousMask, dvalinsClaw], [philosophiesOfResistance, ominousMask, dvalinsClaw], [philosophiesOfResistance, ominousMask, dvalinsClaw],
+      [philosophiesOfResistance, ominousMask, dvalinsClaw, crownOfSagehood],
+    ]
+  }
+]
+
 export const getRazor = (options?: IGetCharacterOptions) => {
-  const { withAscension } = options || {}
+  const { withAscension, withTalents } = options || {}
   return {
     ...razor,
-    ...(withAscension ? { ascension: razorAscension } : {})
+    ...(withAscension ? { ascension: razorAscension } : {}),
+    ...(withTalents ? { talents: razorTalents } : {})
   }
 }
 

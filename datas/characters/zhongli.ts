@@ -11,6 +11,12 @@ import slimeSecretions from '../materials/common/slime/slime-secretions'
 import basaltPillar from '../materials/bosses/basalt-pillar'
 import corLapis from '../materials/wild/cor-lapis'
 
+import guideOfGold from '../materials/talents/gold/guide-gold'
+import philosophiesOfGold from '../materials/talents/gold/philosophies-gold'
+import teachingsGold from '../materials/talents/gold/teachings-gold'
+import tuskOfMonocerosCaeli from '../materials/bosses/tusk-of-monoceros-caeli'
+import crownOfSagehood from '../materials/events/crown-sagehood'
+
 export const zhongli = {
 	id: 27,
   name: "Zhongli",
@@ -39,11 +45,40 @@ export const zhongliAscension = [
   [prithivaTopazGemstone, basaltPillar, corLapis, slimeConcentrate],
 ]
 
+const zhongliTalents = [
+  {
+    name: "rain_of_stone",
+    requirements: [
+      [teachingsGold, slimeCondensate],
+      [guideOfGold, slimeSecretions], [guideOfGold, slimeSecretions], [guideOfGold, slimeSecretions], [guideOfGold, slimeSecretions],
+      [philosophiesOfGold, slimeConcentrate, tuskOfMonocerosCaeli], [philosophiesOfGold, slimeConcentrate, tuskOfMonocerosCaeli], [philosophiesOfGold, slimeConcentrate, tuskOfMonocerosCaeli],
+      [philosophiesOfGold, slimeConcentrate, tuskOfMonocerosCaeli, crownOfSagehood],
+    ]
+  },
+  {
+    name: "dominus_lapidis",
+    requirements: [
+      [teachingsGold, slimeCondensate],
+      [guideOfGold, slimeSecretions], [guideOfGold, slimeSecretions], [guideOfGold, slimeSecretions], [guideOfGold, slimeSecretions],
+      [philosophiesOfGold, slimeConcentrate, tuskOfMonocerosCaeli], [philosophiesOfGold, slimeConcentrate, tuskOfMonocerosCaeli], [philosophiesOfGold, slimeConcentrate, tuskOfMonocerosCaeli],
+      [philosophiesOfGold, slimeConcentrate, tuskOfMonocerosCaeli, crownOfSagehood],]
+  },
+  {
+    name: "planet_befall",
+    requirements: [
+      [teachingsGold, slimeCondensate],
+      [guideOfGold, slimeSecretions], [guideOfGold, slimeSecretions], [guideOfGold, slimeSecretions], [guideOfGold, slimeSecretions],
+      [philosophiesOfGold, slimeConcentrate, tuskOfMonocerosCaeli], [philosophiesOfGold, slimeConcentrate, tuskOfMonocerosCaeli], [philosophiesOfGold, slimeConcentrate, tuskOfMonocerosCaeli],
+      [philosophiesOfGold, slimeConcentrate, tuskOfMonocerosCaeli, crownOfSagehood],]
+  }
+]
+
 export const getZhongli = (options?: IGetCharacterOptions) => {
-  const { withAscension } = options || {}
+  const { withAscension, withTalents } = options || {}
   return {
     ...zhongli,
-    ...(withAscension ? { ascension: zhongliAscension } : {})
+    ...(withAscension ? { ascension: zhongliAscension } : {}),
+    ...(withTalents ? { talents: zhongliTalents } : {})
   }
 }
 

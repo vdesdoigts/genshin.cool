@@ -64,7 +64,7 @@ export const groupCharactersByAscension = (characters, roster) => {
   }
 }
 
-const sort = (materials) => {
+export const sort = (materials) => {
   return materials.sort(function (a, b) {
     if (a.id < b.id) { return -1 }
     if (a.id > b.id) { return 1 }

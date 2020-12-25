@@ -11,6 +11,12 @@ import weatheredArrowhead from '../materials/common/arrow/weathered-arrowhead'
 import lightningPrism from '../materials/bosses/lightning-prism'
 import smallLampGrass from '../materials/wild/small-lamp-grass'
 
+import guideOfBallad from '../materials/talents/ballad/guide-ballad'
+import philosophiesOfBallad from '../materials/talents/ballad/philosophies-ballad'
+import teachingsBallad from '../materials/talents/ballad/teachings-ballad'
+import spiritLocketOfBoreas from '../materials/bosses/spirit-locket-of-boreas'
+import crownOfSagehood from '../materials/events/crown-sagehood'
+
 export const fischl = {
   name: "Fischl",
   titles: [
@@ -38,11 +44,42 @@ export const fischlAscension = [
   [vajradaAmethystGemstone, lightningPrism, smallLampGrass, weatheredArrowhead],
 ]
 
+const fischlTalents = [
+  {
+    name: "bolts_of_downfall",
+    requirements: [
+      [teachingsBallad, firmArrowhead],
+      [guideOfBallad, sharpArrowhead], [guideOfBallad, sharpArrowhead], [guideOfBallad, sharpArrowhead], [guideOfBallad, sharpArrowhead],
+      [philosophiesOfBallad, weatheredArrowhead, spiritLocketOfBoreas], [philosophiesOfBallad, weatheredArrowhead, spiritLocketOfBoreas], [philosophiesOfBallad, weatheredArrowhead, spiritLocketOfBoreas],
+      [philosophiesOfBallad, weatheredArrowhead, spiritLocketOfBoreas, crownOfSagehood],
+    ]
+  },
+  {
+    name: "nightrider",
+    requirements: [
+      [teachingsBallad, firmArrowhead],
+      [guideOfBallad, sharpArrowhead], [guideOfBallad, sharpArrowhead], [guideOfBallad, sharpArrowhead], [guideOfBallad, sharpArrowhead],
+      [philosophiesOfBallad, weatheredArrowhead, spiritLocketOfBoreas], [philosophiesOfBallad, weatheredArrowhead, spiritLocketOfBoreas], [philosophiesOfBallad, weatheredArrowhead, spiritLocketOfBoreas],
+      [philosophiesOfBallad, weatheredArrowhead, spiritLocketOfBoreas, crownOfSagehood],
+    ]
+  },
+  {
+    name: "midnight_phantasmagoria",
+    requirements: [
+      [teachingsBallad, firmArrowhead],
+      [guideOfBallad, sharpArrowhead], [guideOfBallad, sharpArrowhead], [guideOfBallad, sharpArrowhead], [guideOfBallad, sharpArrowhead],
+      [philosophiesOfBallad, weatheredArrowhead, spiritLocketOfBoreas], [philosophiesOfBallad, weatheredArrowhead, spiritLocketOfBoreas], [philosophiesOfBallad, weatheredArrowhead, spiritLocketOfBoreas],
+      [philosophiesOfBallad, weatheredArrowhead, spiritLocketOfBoreas, crownOfSagehood],
+    ]
+  }
+]
+
 export const getFischl = (options?: IGetCharacterOptions) => {
-  const { withAscension } = options || {}
+  const { withAscension, withTalents } = options || {}
   return {
     ...fischl,
-    ...(withAscension ? { ascension: fischlAscension } : {})
+    ...(withAscension ? { ascension: fischlAscension } : {}),
+    ...(withTalents ? { talents: fischlTalents } : {})
   }
 }
 

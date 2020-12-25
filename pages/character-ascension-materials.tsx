@@ -9,8 +9,11 @@ import {
 import { useSelector } from 'react-redux'
 import { ProfileSelectors } from '../redux/selectors'
 import { IRoster } from '../types'
+import AppHeading from '../components2/AppHeading'
 import CharactersAscensions from '../components2/CharactersAscensions'
-import Roster from '../components/Roster'
+import CharactersTalents from '../components2/CharactersTalents'
+import RosterList from '../components2/RosterList'
+import ScheduleBox from '../components2/ScheduleBox'
 
 const Dashboard = () => {
   const { t } = useTranslation()
@@ -31,18 +34,10 @@ const Dashboard = () => {
             pb="32px"
             px={{ base: '20px', md: '64px', xl: '32px', xxl: '64px' }}
           >
-            <Heading as="h3" pl={{ base: '16px', md: 0 }} fontSize={{ base: '16px', md: '24px' }} lineHeight="1.33333" fontWeight="500">{t('site.header_label')}</Heading>
-            <Heading as="h4" pl={{ base: '16px', md: 0 }} fontSize={{ base: '32px', md: '48px' }} lineHeight="1.5" fontWeight="600" letterSpacing="-1px">{t('site.header_title')}</Heading>
-
-            <SimpleGrid columns={1} spacing="32px" pt={{ base: '22px', md: '44px' }}>
-              <SimpleGrid columns={{ base: 1, md: 2 }} spacing="24px">
-                <Box>
-
-                </Box>
-                <Box>
-                </Box>
-              </SimpleGrid>
-            </SimpleGrid>
+            <AppHeading
+              subtitle={t('site.header_characters_ascensions_subtitle')}
+              title={t('site.header_characters_ascensions_title')}
+            />
             <SimpleGrid spacing="32px" pt={{ base: '32px' }}>
               <CharactersAscensions currentRoster={currentRoster} />
             </SimpleGrid>
@@ -57,7 +52,7 @@ const Dashboard = () => {
             px={{ base: '20px', md: '64px', xl: '32px', xxl: '64px' }}
           >
             <SimpleGrid columns={1} spacing="32px">
-              <Roster />
+              <RosterList currentRoster={currentRoster} />
             </SimpleGrid>
           </Box>
         </Flex>

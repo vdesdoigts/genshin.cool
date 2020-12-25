@@ -14,11 +14,11 @@ export default {
   droppedBy: [
     {
       ...anemoHypostasis,
-      level: "+40",
+      level: 40,
     },
     {
       ...stormterror,
-      level: "+40",
+      level: 40,
     }
   ],
   craft: [

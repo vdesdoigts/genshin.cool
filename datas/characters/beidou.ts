@@ -11,6 +11,12 @@ import treasureHoarderInsignia from '../materials/common/treasure-insignia/treas
 import lightningPrism from '../materials/bosses/lightning-prism'
 import noctilucousJade from '../materials/wild/noctilucous-jade'
 
+import guideOfGold from '../materials/talents/gold/guide-gold'
+import philosophiesOfGold from '../materials/talents/gold/philosophies-gold'
+import teachingsGold from '../materials/talents/gold/teachings-gold'
+import dvalinsSigh from '../materials/bosses/dvalins-sigh'
+import crownOfSagehood from '../materials/events/crown-sagehood'
+
 export const beidou = {
   name: "Beidou",
   titles: [
@@ -39,11 +45,40 @@ export const beidouAscension = [
   [vajradaAmethystGemstone, lightningPrism, noctilucousJade, goldenRavenInsignia],
 ]
 
+const beidouTalents = [
+  {
+    name: "oceanborne",
+    requirements: [
+      [teachingsGold, treasureHoarderInsignia],
+      [guideOfGold, silverRavenInsignia], [guideOfGold, silverRavenInsignia], [guideOfGold, silverRavenInsignia], [guideOfGold, silverRavenInsignia],
+      [philosophiesOfGold, goldenRavenInsignia, dvalinsSigh], [philosophiesOfGold, goldenRavenInsignia, dvalinsSigh], [philosophiesOfGold, goldenRavenInsignia, dvalinsSigh],
+      [philosophiesOfGold, goldenRavenInsignia, dvalinsSigh, crownOfSagehood],
+    ]
+  },
+  {
+    name: "tidecaller",
+    requirements: [
+      [teachingsGold, treasureHoarderInsignia],
+      [guideOfGold, silverRavenInsignia], [guideOfGold, silverRavenInsignia], [guideOfGold, silverRavenInsignia], [guideOfGold, silverRavenInsignia],
+      [philosophiesOfGold, goldenRavenInsignia, dvalinsSigh], [philosophiesOfGold, goldenRavenInsignia, dvalinsSigh], [philosophiesOfGold, goldenRavenInsignia, dvalinsSigh],
+      [philosophiesOfGold, goldenRavenInsignia, dvalinsSigh, crownOfSagehood],]
+  },
+  {
+    name: "stormbreaker",
+    requirements: [
+      [teachingsGold, treasureHoarderInsignia],
+      [guideOfGold, silverRavenInsignia], [guideOfGold, silverRavenInsignia], [guideOfGold, silverRavenInsignia], [guideOfGold, silverRavenInsignia],
+      [philosophiesOfGold, goldenRavenInsignia, dvalinsSigh], [philosophiesOfGold, goldenRavenInsignia, dvalinsSigh], [philosophiesOfGold, goldenRavenInsignia, dvalinsSigh],
+      [philosophiesOfGold, goldenRavenInsignia, dvalinsSigh, crownOfSagehood],]
+  }
+]
+
 export const getBeidou = (options?: IGetCharacterOptions) => {
-  const { withAscension } = options || {}
+  const { withAscension, withTalents } = options || {}
   return {
     ...beidou,
-    ...(withAscension ? { ascension: beidouAscension } : {})
+    ...(withAscension ? { ascension: beidouAscension } : {}),
+    ...(withTalents ? { talents: beidouTalents } : {})
   }
 }
 

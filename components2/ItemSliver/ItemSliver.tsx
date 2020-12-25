@@ -2,7 +2,12 @@ import React from 'react'
 import { AspectRatio, Box, HStack, Flex, Text } from '@chakra-ui/react'
 import Image from 'next/image'
 
-const ItemSliver = ({ image, title, background = '#f2f4f8' }) => (
+interface IProps {
+  image?: string
+  title: string
+  background?: string
+}
+const ItemSliver = ({ image, title, background = '#f2f4f8' }: IProps) => (
   <HStack spacing="8px">
     {image && <AspectRatio
       ratio={1}

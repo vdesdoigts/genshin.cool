@@ -9,7 +9,7 @@ export default {
   droppedBy: [
     {
       ...cryoRegisvine,
-      level: "30+",
+      level: 30,
     },
   ],
 }

@@ -11,6 +11,12 @@ import stainedMask from '../materials/common/mask/stained-mask'
 import basaltPillar from '../materials/bosses/basalt-pillar'
 import valberry from '../materials/wild/valberry'
 
+import guideOfResistance from '../materials/talents/resistance/guide-resistance'
+import philosophiesOfResistance from '../materials/talents/resistance/philosophies-resistance'
+import teachingsResistance from '../materials/talents/resistance/teachings-resistance'
+import dvalinsClaw from '../materials/bosses/dvalins-claw'
+import crownOfSagehood from '../materials/events/crown-sagehood'
+
 export const noelle = {
   name: "Noelle",
   titles: [
@@ -38,11 +44,42 @@ export const noelleAscension = [
   [prithivaTopazGemstone, basaltPillar, valberry, ominousMask],
 ]
 
+const noelleTalents = [
+  {
+    name: "favonius_bladework_maid",
+    requirements: [
+      [teachingsResistance, damagedMask],
+      [guideOfResistance, stainedMask], [guideOfResistance, stainedMask], [guideOfResistance, stainedMask], [guideOfResistance, stainedMask],
+      [philosophiesOfResistance, ominousMask, dvalinsClaw], [philosophiesOfResistance, ominousMask, dvalinsClaw], [philosophiesOfResistance, ominousMask, dvalinsClaw],
+      [philosophiesOfResistance, ominousMask, dvalinsClaw, crownOfSagehood],
+    ]
+  },
+  {
+    name: "breastplate",
+    requirements: [
+      [teachingsResistance, damagedMask],
+      [guideOfResistance, stainedMask], [guideOfResistance, stainedMask], [guideOfResistance, stainedMask], [guideOfResistance, stainedMask],
+      [philosophiesOfResistance, ominousMask, dvalinsClaw], [philosophiesOfResistance, ominousMask, dvalinsClaw], [philosophiesOfResistance, ominousMask, dvalinsClaw],
+      [philosophiesOfResistance, ominousMask, dvalinsClaw, crownOfSagehood],
+    ]
+  },
+  {
+    name: "sweeping_time",
+    requirements: [
+      [teachingsResistance, damagedMask],
+      [guideOfResistance, stainedMask], [guideOfResistance, stainedMask], [guideOfResistance, stainedMask], [guideOfResistance, stainedMask],
+      [philosophiesOfResistance, ominousMask, dvalinsClaw], [philosophiesOfResistance, ominousMask, dvalinsClaw], [philosophiesOfResistance, ominousMask, dvalinsClaw],
+      [philosophiesOfResistance, ominousMask, dvalinsClaw, crownOfSagehood],
+    ]
+  }
+]
+
 export const getNoelle = (options?: IGetCharacterOptions) => {
-  const { withAscension } = options || {}
+  const { withAscension, withTalents } = options || {}
   return {
     ...noelle,
-    ...(withAscension ? { ascension: noelleAscension } : {})
+    ...(withAscension ? { ascension: noelleAscension } : {}),
+    ...(withTalents ? { talents: noelleTalents } : {})
   }
 }
 

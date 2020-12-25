@@ -25,26 +25,18 @@
     "brilliant_diamond_chunk": "brilliant_diamond_chunk",
     "brilliant_diamond_fragment": "Brilliant diamond fragment",
     "brilliant_diamond_gemstone": "brilliant_diamond_gemstone",
-    "calla_lily": "Calla lily",
-    "cecilia": "Cecilia",
     "cleansing_heart": "Cleansing heart",
-    "cor_lapis": "Cor lapis",
     "damaged_mask": "Damaged mask",
-    "dandelion_seed": "Dandelion seed",
     "divining_scroll": "Divining scroll",
     "energy_nectar": "Energy nectar",
     "everflame_seed": "Everflame seed",
     "firm_arrowhead": "Tête de flèche ferme",
     "forbidden_curse_scroll": "Forbidden curse scroll",
-    "glaze_lily": "Glaze lily",
     "golden_raven_insignia": "Golden raven insignia",
     "hoarfrost_core": "Hoarfrost core",
     "hurricane_seed": "Hurricane seed",
-    "jueyun_chili": "Jueyun chili",
     "lieutenants_insignia": "Lieutenants insignia",
     "lightning_prism": "Lightning prism",
-    "mora": "Mora",
-    "noctilucous_jade": "Noctilucous jade",
     "ominous_mask": "Ominous mask",
     "small_lamp_grass": "Herbe à lampe",
     "philanemo_mushroom": "Philanemo mushroom",
@@ -53,7 +45,6 @@
     "prithiva_topaz_fragment": "Prithiva Topaz Fragment",
     "prithiva_topaz_gemstone": "Prithiva Topaz Gemstone",
     "prithiva_topaz_sliver": "Prithiva Topaz Sliver",
-    "qingxin": "Qingxin",
     "recruits_insignia": "Recruits insignia",
     "sealed_scroll": "Sealed scroll",
     "sergeants_insignia": "Sergeants insignia",
@@ -64,20 +55,17 @@
     "shivada_jade_fragment": "Shivada Jade Fragment",
     "shivada_jade_gemstone": "Shivada Jade Gemstone",
     "shivada_jade_sliver": "Shivada Jade Sliver",
-    "silk_flower": "Silk flower",
     "silver_raven_insignia": "Silver raven insignia",
     "slime_concentrate": "Slime concentrate",
     "slime_condensate": "Slime condensate",
     "slime_secretions": "Slime secretions",
     "stained_mask": "Stained mask",
-    "starconch": "Starconch",
     "treasure_hoarder_insignia": "Treasure hoarder insignia",
     "vajrada_amethyst": "Vajrada Amethyst",
     "vajrada_amethyst_chunk": "Vajrada Amethyst Chunk",
     "vajrada_amethyst_fragment": "Vajrada Amethyst Fragment",
     "vajrada_amethyst_gemstone": "Vajrada Amethyst Gemstone",
     "vajrada_amethyst_sliver": "Vajrada Amethyst Sliver",
-    "valberry": "Valberry",
     "varunada_lazurite": "Varunada Lazurite",
     "varunada_lazurite_chunk": "Varunada Lazurite Chunk",
     "varunada_lazurite_fragment": "Varunada Lazurite Fragment",
@@ -88,11 +76,85 @@
     "vayuda_turquoise_fragment": "Varunada Lazurite Fragment",
     "vayuda_turquoise_gemstone": "Varunada Lazurite Gemstone",
     "vayuda_turquoise_sliver": "Varunada Lazurite Sliver",
-    "violetgrass": "Violetgrass",
     "weathered_arrowhead": "Pointe de flèche altérée",
-    "whopperflower_nectar": "Whopperflower nectar",
-    "windwheel_aster": "Windwheel aster",
-    "wolfhook": "Wolfhook"
+    "whopperflower_nectar": "Whopperflower nectar"
+  },
+  "book": {
+    "ballad": {
+      "guide_of_ballad": "Guide of ballad",
+      "philosophies_of_ballad": "Philosophies of ballad",
+      "teachings_of_ballad": "Teachings of ballad"
+    },
+    "diligence": {
+      "guide_of_diligence": "Guide of diligence",
+      "philosophies_of_diligence": "Philosophies of diligence",
+      "teachings_of_diligence": "Teachings of diligence"
+    },
+    "freedom": {
+      "guide_of_freedom": "Guide of freedom",
+      "philosophies_of_freedom": "Philosophies of freedom",
+      "teachings_of_freedom": "Teachings of freedom"
+    },
+    "gold": {
+      "guide_of_gold": "Guide of gold",
+      "philosophies_of_gold": "Philosophies of gold",
+      "teachings_of_gold": "Teachings of gold"
+    },
+    "prosperity": {
+      "guide_of_prosperity": "Guide of prosperity",
+      "philosophies_of_prosperity": "Philosophies of prosperity",
+      "teachings_of_prosperity": "Teachings of prosperity"
+    },
+    "resistance": {
+      "guide_of_resistance": "Guide of resistance",
+      "philosophies_of_resistance": "Philosophies of resistance",
+      "teachings_of_resistance": "Teachings of resistance"
+    }
+  },
+  "boss_reward": {
+    "basalt_pillar": "Basalt pillar",
+    "cleansing_heart": "Cleansing heart",
+    "everflame_seed": "Everflame seed",
+    "hoarfrost_core": "Hoarfrost core",
+    "hurricane_seed": "Hurricane seed",
+    "lightning_prism": "Lightning prism"
+  },
+  "common": {
+    "arrowhead": {
+      "firm_arrowhead": "Firm arrowhead",
+      "sharp_arrowhead": "Sharp arrowhead",
+      "weathered_arrowhead": "Weathered arrowhead"
+    },
+    "mask": {
+      "damaged_mask": "Damaged mask",
+      "ominous_mask": "Ominous mask",
+      "stained_mask": "Stained mask"
+    },
+    "nectar": {
+      "energy_nectar": "Energy nectar",
+      "shimmering_nectar": "Shimmering nectar",
+      "whopperflower_nectar": "Whopperflower nectar"
+    },
+    "scroll": {
+      "divining_scroll": "Divining scroll",
+      "sealed_scroll": "Sealed scroll",
+      "forbidden_curse_scroll": "Forbidden curse scroll"
+    },
+    "slime": {
+      "slime_concentrate": "Slime concentrate",
+      "slime_condensate": "Slime condensate",
+      "slime_secretions": "Slime secretions"
+    },
+    "soldier_insignia": {
+      "recruits_insignia": "Recruits insignia",
+      "sergeants_insignia": "Sergeants insignia",
+      "lieutenants_insignia": "Lieutenants insignia"
+    },
+    "treasure_insignia": {
+      "golden_raven_insignia": "Golden raven insignia",
+      "silver_raven_insignia": "Silver raven insignia",
+      "treasure_hoarder_insignia": "Treasure hoarder insignia"
+    }
   },
   "bosses": {
     "anemo_hypostasis": "Hypostase Anémo",
@@ -121,6 +183,49 @@
     "geo": "Geo",
     "hydro": "Hydro",
     "pyro": "Pyro"
+  },
+  "gem": {
+    "agnidus_agate": {
+      "chunk": "Agnidus Agate Chunk",
+      "fragment": "Agnidus Agate Fragment",
+      "gemstone": "Agnidus Agate Gemstone",
+      "sliver": "Agnidus Agate Sliver"
+    },
+    "brilliant_diamond": {
+      "chunk": "Brilliant Diamond Chunk",
+      "fragment": "Brilliant Diamond Fragment",
+      "gemstone": "brilliant Diamond Gemstone"
+    },
+    "prithiva_topaz": {
+      "chunk": "Prithiva Topaz Chunk",
+      "fragment": "Prithiva Topaz Fragment",
+      "gemstone": "Prithiva Topaz Gemstone",
+      "sliver": "Prithiva Topaz Sliver"
+    },
+    "shivada_jade": {
+      "chunk": "Shivada Jade Chunk",
+      "fragment": "Shivada Jade Fragment",
+      "gemstone": "Shivada Jade Gemstone",
+      "sliver": "Shivada Jade Sliver"
+    },
+    "vajrada_amethyst": {
+      "chunk": "Vajrada Amethyst Chunk",
+      "fragment": "Vajrada Amethyst Fragment",
+      "gemstone": "Vajrada Amethyst Gemstone",
+      "sliver": "Vajrada Amethyst Sliver"
+    },
+    "varunada_lazurite": {
+      "chunk": "Varunada Lazurite Chunk",
+      "fragment": "Varunada Lazurite Fragment",
+      "gemstone": "Varunada Lazurite Gemstone",
+      "sliver": "Varunada Lazurite Sliver"
+    },
+    "vayuda_turquoise": {
+      "chunk": "Varunada Lazurite Chunk",
+      "fragment": "Varunada Lazurite Fragment",
+      "gemstone": "Varunada Lazurite Gemstone",
+      "sliver": "Varunada Lazurite Sliver"
+    }
   },
   "genders": {
     "female": "Féminin",
@@ -452,5 +557,24 @@
     "decarabian": "Décarabian",
     "guyun": "Guyun",
     "mist_veiled_elixir": "Élixir de plomb"
+  },
+  "wild": {
+    "calla_lily": "Calla lily",
+    "cecilia": "Cecilia",
+    "cor_lapis": "Cor lapis",
+    "dandelion_seed": "Dandelion seed",
+    "glaze_lily": "Glaze lily",
+    "jueyun_chili": "Jueyun chili",
+    "mora": "Mora",
+    "noctilucous_jade": "Noctilucous jade",
+    "small_lamp_grass": "Herbe à lampe",
+    "philanemo_mushroom": "Philanemo mushroom",
+    "qingxin": "Qingxin",
+    "silk_flower": "Silk flower",
+    "starconch": "Starconch",
+    "valberry": "Valberry",
+    "violetgrass": "Violetgrass",
+    "windwheel_aster": "Windwheel aster",
+    "wolfhook": "Wolfhook"
   }
 }

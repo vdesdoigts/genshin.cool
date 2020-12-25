@@ -11,6 +11,12 @@ import slimeSecretions from '../materials/common/slime/slime-secretions'
 import hurricaneSeed from '../materials/bosses/hurricane-seed'
 import cecilia from '../materials/wild/cecilia'
 
+import guideOfBallad from '../materials/talents/ballad/guide-ballad'
+import philosophiesOfBallad from '../materials/talents/ballad/philosophies-ballad'
+import teachingsBallad from '../materials/talents/ballad/teachings-ballad'
+import tailOfBoreas from '../materials/bosses/tail-of-boreas'
+import crownOfSagehood from '../materials/events/crown-sagehood'
+
 export const venti = {
 	id: 23,
   name: "Venti",
@@ -40,11 +46,42 @@ export const ventiAscension = [
   [vayudaTurquoiseGemstone, hurricaneSeed, cecilia, slimeConcentrate],
 ]
 
+const ventiTalents = [
+  {
+    name: "divine_marksmanship",
+    requirements: [
+      [teachingsBallad, slimeCondensate],
+      [guideOfBallad, slimeCondensate], [guideOfBallad, slimeCondensate], [guideOfBallad, slimeCondensate], [guideOfBallad, slimeCondensate],
+      [philosophiesOfBallad, slimeConcentrate, tailOfBoreas], [philosophiesOfBallad, slimeConcentrate, tailOfBoreas], [philosophiesOfBallad, slimeConcentrate, tailOfBoreas],
+      [philosophiesOfBallad, slimeConcentrate, tailOfBoreas, crownOfSagehood],
+    ]
+  },
+  {
+    name: "skyward_sonnet",
+    requirements: [
+      [teachingsBallad, slimeCondensate],
+      [guideOfBallad, slimeCondensate], [guideOfBallad, slimeCondensate], [guideOfBallad, slimeCondensate], [guideOfBallad, slimeCondensate],
+      [philosophiesOfBallad, slimeConcentrate, tailOfBoreas], [philosophiesOfBallad, slimeConcentrate, tailOfBoreas], [philosophiesOfBallad, slimeConcentrate, tailOfBoreas],
+      [philosophiesOfBallad, slimeConcentrate, tailOfBoreas, crownOfSagehood],
+    ]
+  },
+  {
+    name: "winds_grand_ode",
+    requirements: [
+      [teachingsBallad, slimeCondensate],
+      [guideOfBallad, slimeCondensate], [guideOfBallad, slimeCondensate], [guideOfBallad, slimeCondensate], [guideOfBallad, slimeCondensate],
+      [philosophiesOfBallad, slimeConcentrate, tailOfBoreas], [philosophiesOfBallad, slimeConcentrate, tailOfBoreas], [philosophiesOfBallad, slimeConcentrate, tailOfBoreas],
+      [philosophiesOfBallad, slimeConcentrate, tailOfBoreas, crownOfSagehood],
+    ]
+  }
+]
+
 export const getVenti = (options?: IGetCharacterOptions) => {
-  const { withAscension } = options || {}
+  const { withAscension, withTalents } = options || {}
   return {
     ...venti,
-    ...(withAscension ? { ascension: ventiAscension } : {})
+    ...(withAscension ? { ascension: ventiAscension } : {}),
+    ...(withTalents ? { talents: ventiTalents } : {})
   }
 }
 

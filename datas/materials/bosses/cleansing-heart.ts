@@ -9,7 +9,7 @@ export default {
   droppedBy: [
     {
       ...oceanid,
-      level: "30+",
+      level: 30,
     },
   ],
 }

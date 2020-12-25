@@ -11,6 +11,12 @@ import whopperflowerNectar from '../materials/common/nectar/whopperflower-nectar
 import lightningPrism from '../materials/bosses/lightning-prism'
 import corLapis from '../materials/wild/cor-lapis'
 
+import guideOfPropsperity from '../materials/talents/ballad/guide-ballad'
+import philosophiesOfPropsperity from '../materials/talents/ballad/philosophies-ballad'
+import teachingsPropsperity from '../materials/talents/ballad/teachings-ballad'
+import ringOfBoreas from '../materials/bosses/ring-of-boreas'
+import crownOfSagehood from '../materials/events/crown-sagehood'
+
 export const keqing = {
   name: "Keqing",
   titles: [
@@ -38,11 +44,42 @@ export const KeqingAscension = [
   [vajradaAmethystGemstone, lightningPrism, corLapis, energyNectar],
 ]
 
+const keqingTalents = [
+  {
+    name: "yunlai_swordmanship",
+    requirements: [
+      [teachingsPropsperity, whopperflowerNectar],
+      [guideOfPropsperity, shimmeringNectar], [guideOfPropsperity, shimmeringNectar], [guideOfPropsperity, shimmeringNectar], [guideOfPropsperity, shimmeringNectar],
+      [philosophiesOfPropsperity, energyNectar, ringOfBoreas], [philosophiesOfPropsperity, energyNectar, ringOfBoreas], [philosophiesOfPropsperity, energyNectar, ringOfBoreas],
+      [philosophiesOfPropsperity, energyNectar, ringOfBoreas, crownOfSagehood],
+    ]
+  },
+  {
+    name: "stellar_resonator",
+    requirements: [
+      [teachingsPropsperity, whopperflowerNectar],
+      [guideOfPropsperity, shimmeringNectar], [guideOfPropsperity, shimmeringNectar], [guideOfPropsperity, shimmeringNectar], [guideOfPropsperity, shimmeringNectar],
+      [philosophiesOfPropsperity, energyNectar, ringOfBoreas], [philosophiesOfPropsperity, energyNectar, ringOfBoreas], [philosophiesOfPropsperity, energyNectar, ringOfBoreas],
+      [philosophiesOfPropsperity, energyNectar, ringOfBoreas, crownOfSagehood],
+    ]
+  },
+  {
+    name: "starward_sword",
+    requirements: [
+      [teachingsPropsperity, whopperflowerNectar],
+      [guideOfPropsperity, shimmeringNectar], [guideOfPropsperity, shimmeringNectar], [guideOfPropsperity, shimmeringNectar], [guideOfPropsperity, shimmeringNectar],
+      [philosophiesOfPropsperity, energyNectar, ringOfBoreas], [philosophiesOfPropsperity, energyNectar, ringOfBoreas], [philosophiesOfPropsperity, energyNectar, ringOfBoreas],
+      [philosophiesOfPropsperity, energyNectar, ringOfBoreas, crownOfSagehood],
+    ]
+  }
+]
+
 export const getKeqing = (options?: IGetCharacterOptions) => {
-  const { withAscension } = options || {}
+  const { withAscension, withTalents } = options || {}
   return {
     ...keqing,
-    ...(withAscension ? { ascension: KeqingAscension } : {})
+    ...(withAscension ? { ascension: KeqingAscension } : {}),
+    ...(withTalents ? { talents: keqingTalents } : {})
   }
 }
 

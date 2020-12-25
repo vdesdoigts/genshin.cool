@@ -11,6 +11,12 @@ import stainedMask from '../materials/common/mask/stained-mask'
 import hurricaneSeed from '../materials/bosses/hurricane-seed'
 import dandelionSeed from '../materials/wild/dandelion-seed'
 
+import guideOfResistance from '../materials/talents/resistance/guide-resistance'
+import philosophiesOfResistance from '../materials/talents/resistance/philosophies-resistance'
+import teachingsResistance from '../materials/talents/resistance/teachings-resistance'
+import dvalinsPlume from '../materials/bosses/dvalins-plume'
+import crownOfSagehood from '../materials/events/crown-sagehood'
+
 export const jean = {
   name: "Jean",
   titles: [
@@ -25,14 +31,6 @@ export const jean = {
   rarity: 5,
   images: {
     image: "/images/characters/jean-thumb.png",
-    card: "/gensin-impact/images/0/0e/Character_Jean_Card.jpg",
-    portrait: "/gensin-impact/images/0/02/Character_Jean_Portrait.png"
-  },
-  cv: {
-    english: "Stephanie Southerland",
-    japanese: "Chiwa Saitō",
-    korean: "Yeong-mi Ahn",
-    chinese: "Su Lin"
   },
   affiliation: "knights_of_favonius",
   description: "As the Acting Grand Master of the Knights, Jean has always been devoted to her duties and maintaining peace in Mondstadt. She had taken precautions long before the onset of Stormterror's assault, and she will guard Mondstadt with her life as always.",
@@ -47,11 +45,42 @@ export const jeanAscension = [
   [vayudaTurquoiseGemstone, hurricaneSeed, dandelionSeed, ominousMask],
 ]
 
+const jeanTalents = [
+  {
+    name: "favonius_bladework",
+    requirements: [
+      [teachingsResistance, damagedMask],
+      [guideOfResistance, stainedMask], [guideOfResistance, stainedMask], [guideOfResistance, stainedMask], [guideOfResistance, stainedMask],
+      [philosophiesOfResistance, ominousMask, dvalinsPlume], [philosophiesOfResistance, ominousMask, dvalinsPlume], [philosophiesOfResistance, ominousMask, dvalinsPlume],
+      [philosophiesOfResistance, ominousMask, dvalinsPlume, crownOfSagehood],
+    ]
+  },
+  {
+    name: "gale_blade",
+    requirements: [
+      [teachingsResistance, damagedMask],
+      [guideOfResistance, stainedMask], [guideOfResistance, stainedMask], [guideOfResistance, stainedMask], [guideOfResistance, stainedMask],
+      [philosophiesOfResistance, ominousMask, dvalinsPlume], [philosophiesOfResistance, ominousMask, dvalinsPlume], [philosophiesOfResistance, ominousMask, dvalinsPlume],
+      [philosophiesOfResistance, ominousMask, dvalinsPlume, crownOfSagehood],
+    ]
+  },
+  {
+    name: "dandelion_breeze",
+    requirements: [
+      [teachingsResistance, damagedMask],
+      [guideOfResistance, stainedMask], [guideOfResistance, stainedMask], [guideOfResistance, stainedMask], [guideOfResistance, stainedMask],
+      [philosophiesOfResistance, ominousMask, dvalinsPlume], [philosophiesOfResistance, ominousMask, dvalinsPlume], [philosophiesOfResistance, ominousMask, dvalinsPlume],
+      [philosophiesOfResistance, ominousMask, dvalinsPlume, crownOfSagehood],
+    ]
+  }
+]
+
 export const getJean = (options?: IGetCharacterOptions) => {
-  const { withAscension } = options || {}
+  const { withAscension, withTalents } = options || {}
   return {
     ...jean,
-    ...(withAscension ? { ascension: jeanAscension } : {})
+    ...(withAscension ? { ascension: jeanAscension } : {}),
+    ...(withTalents ? { talents: jeanTalents } : {})
   }
 }
 

@@ -11,6 +11,12 @@ import weatheredArrowhead from '../materials/common/arrow/weathered-arrowhead'
 import everflameSeed from '../materials/bosses/everflame-seed'
 import smallLampGrass from '../materials/wild/small-lamp-grass'
 
+import guideOfFreedom from '../materials/talents/freedom/guide-freedom'
+import philosophiesOfFreedom from '../materials/talents/freedom/philosophies-freedom'
+import teachingsFreedom from '../materials/talents/freedom/teachings-freedom'
+import dvalinsSigh from '../materials/bosses/dvalins-sigh'
+import crownOfSagehood from '../materials/events/crown-sagehood'
+
 export const amber = {
   name: "Amber",
   titles: [
@@ -38,11 +44,40 @@ export const amberAscension = [
   [agnidusAgateGemstone, everflameSeed, smallLampGrass, weatheredArrowhead],
 ]
 
+const amberTalents = [
+  {
+    name: "sharpshooter",
+    requirements: [
+      [teachingsFreedom, firmArrowhead],
+      [guideOfFreedom, sharpArrowhead], [guideOfFreedom, sharpArrowhead], [guideOfFreedom, sharpArrowhead], [guideOfFreedom, sharpArrowhead],
+      [philosophiesOfFreedom, weatheredArrowhead, dvalinsSigh], [philosophiesOfFreedom, weatheredArrowhead, dvalinsSigh], [philosophiesOfFreedom, weatheredArrowhead, dvalinsSigh],
+      [philosophiesOfFreedom, weatheredArrowhead, dvalinsSigh, crownOfSagehood],
+    ]
+  },
+  {
+    name: "explosive_puppet",
+    requirements: [
+      [teachingsFreedom, firmArrowhead],
+      [guideOfFreedom, sharpArrowhead], [guideOfFreedom, sharpArrowhead], [guideOfFreedom, sharpArrowhead], [guideOfFreedom, sharpArrowhead],
+      [philosophiesOfFreedom, weatheredArrowhead, dvalinsSigh], [philosophiesOfFreedom, weatheredArrowhead, dvalinsSigh], [philosophiesOfFreedom, weatheredArrowhead, dvalinsSigh],
+      [philosophiesOfFreedom, weatheredArrowhead, dvalinsSigh, crownOfSagehood],]
+  },
+  {
+    name: "fiery_rain",
+    requirements: [
+      [teachingsFreedom, firmArrowhead],
+      [guideOfFreedom, sharpArrowhead], [guideOfFreedom, sharpArrowhead], [guideOfFreedom, sharpArrowhead], [guideOfFreedom, sharpArrowhead],
+      [philosophiesOfFreedom, weatheredArrowhead, dvalinsSigh], [philosophiesOfFreedom, weatheredArrowhead, dvalinsSigh], [philosophiesOfFreedom, weatheredArrowhead, dvalinsSigh],
+      [philosophiesOfFreedom, weatheredArrowhead, dvalinsSigh, crownOfSagehood],]
+  }
+]
+
 export const getAmber = (options?: IGetCharacterOptions) => {
-  const { withAscension } = options || {}
+  const { withAscension, withTalents } = options || {}
   return {
     ...amber,
-    ...(withAscension ? { ascension: amberAscension } : {})
+    ...(withAscension ? { ascension: amberAscension } : {}),
+    ...(withTalents ? { talents: amberTalents } : {})
   }
 }
 
