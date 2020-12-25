@@ -1,0 +1,27 @@
+{
+  "id": 38,
+  "name": "lion_s_roar",
+  "weapontype": "sword",
+  "rarity": 4,
+  "images": {
+    "image": "/images/weapons/lion-roar.png"
+  },
+  "baseatk": "42",
+  "ability": "ATK 9%",
+  "passive": {
+    "passive_name": "Bane of Fire and Thunder",
+    "refinement_effect": {
+      "refine_one": "Increases DMG against enemies affected by Pyro or Electro by 20%.",
+      "refine_two": "Increases DMG against enemies affected by Pyro or Electro by 24%.",
+      "refine_three": "Increases DMG against enemies affected by Pyro or Electro by 28%.",
+      "refine_four": "Increases DMG against enemies affected by Pyro or Electro by 32%.",
+      "refine_five": "Increases DMG against enemies affected by Pyro or Electro by 36%."
+    }
+  },
+  "description": "A sharp blade with extravagant carvings that somehow does not compromise on durability and sharpness. It roars like a lion as it cuts through the air.",
+  "weaponmaterialtype": {
+    "id": 5,
+    "name": "Guyun"
+  },
+  "url": "/wiki/Lion%27s_Roar"
+}

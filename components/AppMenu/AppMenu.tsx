@@ -127,6 +127,12 @@ const Menu = ({ onEditProfile, onMenuClose }: IProps) => {
                 isCurrent={router.pathname === '/'}
               />
               <NavButton
+                href="/weapon-level-up-materials"
+                onClick={(e) => handleNavigation(e, '/weapon-level-up-materials')}
+                label={t('site.navigations.weapon_level_up_material')}
+                isCurrent={router.pathname === '/weapon-level-up-materials'}
+              />
+              <NavButton
                 href="/character-ascension-materials"
                 onClick={(e) => handleNavigation(e, '/character-ascension-materials')}
                 label={t('site.navigations.character_ascension_materials')}

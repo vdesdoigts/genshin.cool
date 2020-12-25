@@ -10,18 +10,15 @@ import { useSelector } from 'react-redux'
 import { ProfileSelectors } from '../redux/selectors'
 import { IRoster } from '../types'
 import AppHeading from '../components/AppHeading'
+import ScheduleBox from '../components/ScheduleBox'
+import Armory from '../components/Armory'
 
-const RosterList = dynamic(
-  () => import('../components/RosterList'),
+const WeaponsAscensions = dynamic(
+  () => import('../components/WeaponsAscensions'),
   { ssr: false }
 )
 
-const CharactersAscensions = dynamic(
-  () => import('../components/CharactersAscensions'),
-  { ssr: false }
-)
-
-const CharacterAscensionMaterials = () => {
+const WeaponMaterials = () => {
   const { t } = useTranslation()
   const currentRoster: IRoster = useSelector(ProfileSelectors.getCurrentRoster)
 
@@ -41,11 +38,12 @@ const CharacterAscensionMaterials = () => {
             px={{ base: '20px', md: '64px', xl: '32px', xxl: '64px' }}
           >
             <AppHeading
-              subtitle={t('site.header_characters_ascensions_subtitle')}
-              title={t('site.header_characters_ascensions_title')}
+              subtitle={t('site.header_weapon_subtitle')}
+              title={t('site.header_weapon_title')}
             />
             <SimpleGrid spacing="32px" pt={{ base: '32px' }}>
-              <CharactersAscensions currentRoster={currentRoster} />
+              <ScheduleBox />
+              <WeaponsAscensions />
             </SimpleGrid>
           </Box>
           <Box
@@ -58,7 +56,7 @@ const CharacterAscensionMaterials = () => {
             px={{ base: '20px', md: '64px', xl: '32px', xxl: '64px' }}
           >
             <SimpleGrid columns={1} spacing="32px">
-              <RosterList currentRoster={currentRoster} />
+              <Armory />
             </SimpleGrid>
           </Box>
         </Flex>
@@ -67,4 +65,4 @@ const CharacterAscensionMaterials = () => {
   )
 }
 
-export default CharacterAscensionMaterials
+export default WeaponMaterials

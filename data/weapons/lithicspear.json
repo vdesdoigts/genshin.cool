@@ -1,0 +1,24 @@
+{
+  "id": 40,
+  "name": "lithic_spear",
+  "weapontype": "polearm",
+  "rarity": 4,
+  "images": {
+    "image": "/images/weapons/lithic-spear.png"
+  },
+  "baseatk": "42",
+  "ability": "Physhical Dmg Bonus 9%",
+  "passive": {
+    "passive_name": "Lithic Axiom - Subjugating Evil",
+    "refinement_effect": {
+      "refine_one": "Normal Attack hits have a 20% chance of causing the next Charged Attack performed in the following 10s to deal 40% increased DMG.",
+      "refine_two": "Unknown",
+      "refine_three": "Unknown",
+      "refine_four": "Unknown",
+      "refine_five": "Unknown"
+    }
+  },
+  "description": "A spear forged from the rocks of the Guyun Stone Forest. Its hardness knows no equal.",
+  "weaponmaterialtype": "",
+  "url": "/wiki/Lithic_Spear"
+}

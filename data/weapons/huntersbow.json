@@ -1,0 +1,27 @@
+{
+  "id": 34,
+  "name": "hunter_s_bow",
+  "weapontype": "box",
+  "rarity": 1,
+  "images": {
+    "image": "/images/weapons/hunter-bow.png"
+  },
+  "baseatk": "23",
+  "ability": "None",
+  "passive": {
+    "passive_name": "None",
+    "refinement_effect": {
+      "refine_one": "None",
+      "refine_two": "None",
+      "refine_three": "None",
+      "refine_four": "None",
+      "refine_five": "None"
+    }
+  },
+  "description": "A hunter's music consists of but two sounds: the twang of the bowstring and the whoosh of soaring arrows.",
+  "weaponmaterialtype": {
+    "id": 2,
+    "name": "Boreal Wolf"
+  },
+  "url": "/wiki/Hunter%27s_Bow"
+}

@@ -230,6 +230,8 @@
     "header_characters_title": "Your roster",
     "header_talents_subtitle": "Farming guide,",
     "header_talents_title": "Talent level-up materials",
+    "header_weapon_subtitle": "Farming guide",
+    "header_weapon_title": "Weapon level-up materials",
     "manage_your_armory": "Manage your armory",
     "manage_your_roster": "Manage your roster",
     "mihoyo": "This website is a fansite and is not affiliated with or endorsed by miHoYo.",
@@ -239,7 +241,8 @@
       "character_ascension_materials": "Character ascension",
       "overview": "Schedule",
       "roster": "Your roster",
-      "talent_level_up_material": "Talent level-up"
+      "talent_level_up_material": "Talent level-up",
+      "weapon_level_up_material": "Weapon level-up"
     },
     "next_ascension_material": "Next ascension materials",
     "next_ascension_material_empty": "No elevation",

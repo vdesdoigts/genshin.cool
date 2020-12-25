@@ -1,0 +1,27 @@
+{
+  "id": 85,
+  "name": "the_stringless",
+  "weapontype": "box",
+  "rarity": 4,
+  "images": {
+    "image": "/images/weapons/the-stringless.png"
+  },
+  "baseatk": "42",
+  "ability": "Elemental Mastery 36",
+  "passive": {
+    "passive_name": "Arrowless Song",
+    "refinement_effect": {
+      "refine_one": "Increases Elemental Skill and Elemental Burst DMG by 24%.",
+      "refine_two": "Increases Elemental Skill and Elemental Burst DMG by 30%.",
+      "refine_three": "Increases Elemental Skill and Elemental Burst DMG by 36%.",
+      "refine_four": "Increases Elemental Skill and Elemental Burst DMG by 42%.",
+      "refine_five": "Increases Elemental Skill and Elemental Burst DMG by 48%."
+    }
+  },
+  "description": "A bow that once served as an extraordinary instrument. It is no longer capable of getting people up and dancing.",
+  "weaponmaterialtype": {
+    "id": 4,
+    "name": "Decarabian"
+  },
+  "url": "/wiki/The_Stringless"
+}

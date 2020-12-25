@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import uniq from 'lodash.uniq'
 import { useSelector } from 'react-redux'
 import { AppSelectors, ProfileSelectors } from '../../redux/selectors'
-import { getWeaponMaterialTypeById, getWeaponById } from '../../api'
+import api from '../../api'
 import DashBox from '../DashBox'
 import WeeklyWeaponsMaterials from './WeeklyWeaponsMaterials'
 import DailyWeaponsMaterials from './DailyWeaponsMaterials'
@@ -15,13 +15,13 @@ const WeaponsAscensions = () => {
   const { t } = useTranslation()
   const currentSelectedDay = useSelector(AppSelectors.getCurrentSelectedDay)
   const currentEnabledArmoryWeapons = useSelector(ProfileSelectors.getCurrentEnabledArmoryWeapons)
-  const weapons = currentEnabledArmoryWeapons.map((weapon) => getWeaponById(weapon.id)).filter((weapon) => weapon)
+  const weapons = currentEnabledArmoryWeapons.map((weapon) => api.getWeaponById(weapon.id)).filter((weapon) => weapon)
 
   const weaponMaterialTypeIds = weapons.filter((weapon) => weapon.weaponmaterialtype?.id).map((weapon) => weapon.weaponmaterialtype.id)
 
   const weaponMaterialTypes: (IWeaponMaterialType & { weapons: IWeapon[] })[] = uniq(weaponMaterialTypeIds).map(
     (weaponMaterialType) => ({
-      ...getWeaponMaterialTypeById(weaponMaterialType),
+      ...api.getWeaponMaterialTypeById(weaponMaterialType),
       weapons: weapons.filter((weapon) => weapon.weaponmaterialtype.id === weaponMaterialType)
     })
   )

@@ -1,0 +1,24 @@
+{
+  "id": 81,
+  "name": "the_alley_flash",
+  "weapontype": "sword",
+  "rarity": 4,
+  "images": {
+    "image": "/images/weapons/the-alley-flash.png"
+  },
+  "baseatk": "44",
+  "ability": "CRIT Rate 4%",
+  "passive": {
+    "passive_name": "Ittinerant Hero",
+    "refinement_effect": {
+      "refine_one": "Continuosly sprinting for at least 1s increases ATK by 28% for 6s. This effect cannot stack.",
+      "refine_two": "Unknown.",
+      "refine_three": "Unknown.",
+      "refine_four": "Unknown.",
+      "refine_five": "Unknown."
+    }
+  },
+  "description": "A straight sword as black as the night. It once belonged to a thief who roamed the benighted streets.",
+  "weaponmaterialtype": "",
+  "url": "/wiki/The_Alley_Flash"
+}

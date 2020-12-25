@@ -1,0 +1,27 @@
+{
+  "id": 46,
+  "name": "otherworldly_story",
+  "weapontype": "catalyst",
+  "rarity": 3,
+  "images": {
+    "image": "/images/weapons/otherworldly-story.png"
+  },
+  "baseatk": "39",
+  "ability": "Energy Recharge 8,5%",
+  "passive": {
+    "passive_name": "Energy Shower",
+    "refinement_effect": {
+      "refine_one": "Each Elemental Orb or Particle collected restores 1% HP.",
+      "refine_two": "Each Elemental Orb or Particle collected restores 1.25% HP.",
+      "refine_three": "Each Elemental Orb or Particle collected restores 1.5% HP.",
+      "refine_four": "Each Elemental Orb or Particle collected restores 1.75% HP.",
+      "refine_five": "Each Elemental Orb or Particle collected restores 2% HP."
+    }
+  },
+  "description": "A cheap fantasy novel with no value whatsoever. Any claim that it possesses the power of catalysis is also pure fantasy.",
+  "weaponmaterialtype": {
+    "id": 3,
+    "name": "Dandelion Gladiator"
+  },
+  "url": "/wiki/Otherworldly_Story"
+}

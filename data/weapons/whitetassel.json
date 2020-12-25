@@ -1,0 +1,27 @@
+{
+  "id": 94,
+  "name": "white_tassel",
+  "weapontype": "polearm",
+  "rarity": 3,
+  "images": {
+    "image": "/images/weapons/white-tassel.png"
+  },
+  "baseatk": "39",
+  "ability": "Crit Rate 5,1%",
+  "passive": {
+    "passive_name": "Sharp",
+    "refinement_effect": {
+      "refine_one": "Increases Normal Attack DMG by 24%.",
+      "refine_two": "Increases Normal Attack DMG by 30%.",
+      "refine_three": "Increases Normal Attack DMG by 36%.",
+      "refine_four": "Increases Normal Attack DMG by 42%.",
+      "refine_five": "Increases Normal Attack DMG by 48%."
+    }
+  },
+  "description": "A standard-issue weapon of the Millelith soldiers. It has a sturdy shaft and sharp spearhead. It's a reliable weapon.",
+  "weaponmaterialtype": {
+    "id": 5,
+    "name": "Guyun"
+  },
+  "url": "/wiki/White_Tassel"
+}
