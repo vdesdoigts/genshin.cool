@@ -12,6 +12,10 @@ export const groupCharactersByAscension = (characters, roster) => {
     const rosterItem = roster.find((item) => item.character.id === character.id)
     const rank = rosterItem.character.ascension || 0
 
+    if (!character.ascension[rank]) {
+      return
+    }
+
     character.ascension[rank].forEach((ascensionItem, index) => {
       if (ascensionItem === null) {
         return

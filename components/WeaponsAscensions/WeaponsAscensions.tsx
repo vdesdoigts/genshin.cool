@@ -5,11 +5,9 @@ import { useSelector } from 'react-redux'
 import { AppSelectors, ProfileSelectors } from '../../redux/selectors'
 import api from '../../api'
 import DashBox from '../DashBox'
-import WeeklyWeaponsMaterials from './WeeklyWeaponsMaterials'
 import DailyWeaponsMaterials from './DailyWeaponsMaterials'
 import { IWeapon, IWeaponMaterialType } from '../../types'
 
-const isServer = () => typeof window === 'undefined'
 
 const WeaponsAscensions = () => {
   const { t } = useTranslation()
