@@ -17,34 +17,34 @@
   },
   "book": {
     "ballad": {
-      "guide_of_ballad": "Guide of ballad",
-      "philosophies_of_ballad": "Philosophies of ballad",
-      "teachings_of_ballad": "Teachings of ballad"
+      "guide_of_ballad": "Guide de la Poésie",
+      "philosophies_of_ballad": "Philosophie de la Poésie",
+      "teachings_of_ballad": "Enseignement de la Poésie"
     },
     "diligence": {
-      "guide_of_diligence": "Guide of diligence",
-      "philosophies_of_diligence": "Philosophies of diligence",
-      "teachings_of_diligence": "Teachings of diligence"
+      "guide_of_diligence": "Guide de la Diligence",
+      "philosophies_of_diligence": "Philosophie de la Diligence",
+      "teachings_of_diligence": "Enseignement de la Diligence"
     },
     "freedom": {
-      "guide_of_freedom": "Guide of freedom",
-      "philosophies_of_freedom": "Philosophies of freedom",
-      "teachings_of_freedom": "Teachings of freedom"
+      "guide_of_freedom": "Guide de la Liberté",
+      "philosophies_of_freedom": "Philosophie de la Liberté",
+      "teachings_of_freedom": "Enseignement de la Liberté"
     },
     "gold": {
-      "guide_of_gold": "Guide of gold",
-      "philosophies_of_gold": "Philosophies of gold",
-      "teachings_of_gold": "Teachings of gold"
+      "guide_of_gold": "Guide de l'Or",
+      "philosophies_of_gold": "Philosophie de l'Or",
+      "teachings_of_gold": "Enseignement de l'Or"
     },
     "prosperity": {
-      "guide_of_prosperity": "Guide of prosperity",
-      "philosophies_of_prosperity": "Philosophies of prosperity",
-      "teachings_of_prosperity": "Teachings of prosperity"
+      "guide_of_prosperity": "Guide de la Prosperité",
+      "philosophies_of_prosperity": "Philosophie de la Prosperité",
+      "teachings_of_prosperity": "Enseignement de la Prosperité"
     },
     "resistance": {
-      "guide_of_resistance": "Guide of resistance",
-      "philosophies_of_resistance": "Philosophies of resistance",
-      "teachings_of_resistance": "Teachings of resistance"
+      "guide_of_resistance": "Guide de la Resistance",
+      "philosophies_of_resistance": "Philosophie de la Resistance",
+      "teachings_of_resistance": "Enseignement de la Resistance"
     }
   },
   "bosses": {
@@ -59,56 +59,56 @@
     "wolf_of_the_north_challenge_reward": "Défi du Loup du Nord"
   },
   "boss_reward": {
-    "basalt_pillar": "Basalt pillar",
-    "cleansing_heart": "Cleansing heart",
-    "dvalins_claw": "Dvalins claw",
-    "dvalins_plume": "Dvalins plume",
-    "dvalins_sigh": "Dvalins sigh",
-    "everflame_seed": "Everflame seed",
-    "hoarfrost_core": "Hoarfrost core",
-    "hurricane_seed": "Hurricane seed",
-    "lightning_prism": "Lightning prism",
-    "ring_of_boreas": "Ring of boreas",
-    "shard_of_foul_legacy": "Shard of foul legacy",
-    "spirit_locket_of_boreas": "Spirit locket of boreas",
-    "tail_of_boreas": "Tail of boreas",
-    "tusk_of_monoceros_caeli": "Tusk of monoceros caeli"
+    "basalt_pillar": "Pillier de basalte",
+    "cleansing_heart": "Coeur d'eau pur",
+    "dvalins_claw": "Griffe de Stormterror",
+    "dvalins_plume": "Plume de Stormterror",
+    "dvalins_sigh": "Soupir de Stormterror",
+    "everflame_seed": "Graine de feu",
+    "hoarfrost_core": "Duramen de glace",
+    "hurricane_seed": "Graine d'ouragan",
+    "lightning_prism": "Prisme d'éclair",
+    "ring_of_boreas": "Anneau de Boréas",
+    "shard_of_foul_legacy": "Fragment du démon",
+    "spirit_locket_of_boreas": "Esprit de Boréas",
+    "tail_of_boreas": "Queue de Boréas",
+    "tusk_of_monoceros_caeli": "Corne de Monoceros Caeli"
   },
   "common": {
     "arrowhead": {
-      "firm_arrowhead": "Tête de flèche ferme",
-      "sharp_arrowhead": "Pointe de flèche pointue",
-      "weathered_arrowhead": "Pointe de flèche altérée"
+      "firm_arrowhead": "Tête de flèche robuste",
+      "sharp_arrowhead": "Pointe de flèche aiguisée",
+      "weathered_arrowhead": "Pointe de flèche usée"
     },
     "mask": {
-      "damaged_mask": "Damaged mask",
-      "ominous_mask": "Ominous mask",
-      "stained_mask": "Stained mask"
+      "damaged_mask": "Masque endommagé",
+      "ominous_mask": "Masque sinistre",
+      "stained_mask": "Masque sale"
     },
     "nectar": {
-      "energy_nectar": "Energy nectar",
-      "shimmering_nectar": "Shimmering nectar",
-      "whopperflower_nectar": "Whopperflower nectar"
+      "energy_nectar": "Nectar élémentaire",
+      "shimmering_nectar": "Nectar miroitant",
+      "whopperflower_nectar": "Nectar léger"
     },
     "scroll": {
-      "divining_scroll": "Divining scroll",
-      "sealed_scroll": "Sealed scroll",
-      "forbidden_curse_scroll": "Forbidden curse scroll"
+      "divining_scroll": "Parchemin divinatoire",
+      "sealed_scroll": "Parchemin sigillé",
+      "forbidden_curse_scroll": "Parchemin maudit"
     },
     "slime": {
-      "slime_concentrate": "Slime concentrate",
-      "slime_condensate": "Slime condensate",
-      "slime_secretions": "Slime secretions"
+      "slime_concentrate": "Essence de Blob",
+      "slime_condensate": "Bave de Blob",
+      "slime_secretions": "Mucus de Blob"
     },
     "soldier_insignia": {
-      "recruits_insignia": "Recruits insignia",
-      "sergeants_insignia": "Sergeants insignia",
-      "lieutenants_insignia": "Lieutenants insignia"
+      "recruits_insignia": "Insigne de nouvelle recrue",
+      "sergeants_insignia": "Insigne de sergent",
+      "lieutenants_insignia": "Insigne d'officier"
     },
     "treasure_insignia": {
-      "golden_raven_insignia": "Golden raven insignia",
-      "silver_raven_insignia": "Silver raven insignia",
-      "treasure_hoarder_insignia": "Treasure hoarder insignia"
+      "golden_raven_insignia": "Insigne de corbeau en or",
+      "silver_raven_insignia": "Insigne de corbeau en argent",
+      "treasure_hoarder_insignia": "Insigne du Pilleur"
     }
   },
   "domainofforgeries": {
@@ -129,7 +129,7 @@
     "pyro": "Pyro"
   },
   "event": {
-    "crown_of_sagehood": "Crown of Insight"
+    "crown_of_sagehood": "Couronne de la sagesse"
   },
   "gem": {
     "agnidus_agate": {
@@ -534,22 +534,22 @@
     "mist_veiled_elixir": "Élixir de plomb"
   },
   "wild": {
-    "calla_lily": "Calla lily",
-    "cecilia": "Cecilia",
-    "cor_lapis": "Cor lapis",
-    "dandelion_seed": "Dandelion seed",
-    "glaze_lily": "Glaze lily",
-    "jueyun_chili": "Jueyun chili",
+    "calla_lily": "Lys calla",
+    "cecilia": "Cécilia",
+    "cor_lapis": "Coeur de lapis",
+    "dandelion_seed": "Graine de pissenlit",
+    "glaze_lily": "Lys verni",
+    "jueyun_chili": "Piment de Jueyun",
     "mora": "Mora",
-    "noctilucous_jade": "Noctilucous jade",
+    "noctilucous_jade": "Jade noctiluque",
     "small_lamp_grass": "Herbe à lampe",
-    "philanemo_mushroom": "Philanemo mushroom",
-    "qingxin": "Qingxin",
-    "silk_flower": "Silk flower",
-    "starconch": "Starconch",
+    "philanemo_mushroom": "Champignon anémophile",
+    "qingxin": "Fleur de Qingxin",
+    "silk_flower": "Fleur de soie",
+    "starconch": "Conque d'étoile",
     "valberry": "Valberry",
-    "violetgrass": "Violetgrass",
-    "windwheel_aster": "Windwheel aster",
-    "wolfhook": "Wolfhook"
+    "violetgrass": "Muguet bleu",
+    "windwheel_aster": "Chrysanthème à aube",
+    "wolfhook": "Baie à crochet"
   }
 }
