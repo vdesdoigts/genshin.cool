@@ -25,29 +25,52 @@ const WeaponsAscensions = () => {
       weapons: weapons.filter((weapon) => weapon.weaponmaterialtype.id === weaponMaterialType)
     })
   )
-  const dailyWeaponMaterialTypes = weaponMaterialTypes.filter((weaponMaterialType) => weaponMaterialType?.day.includes(currentSelectedDay))
-
-  if ((currentSelectedDay === 'all' && weaponMaterialTypes?.length === 0) || (currentSelectedDay !== 'all' && dailyWeaponMaterialTypes?.length === 0)) {
-    if (isServer) {
-      return null
-    }
-
-    return (
-      <DashBox title={t('site.weapon_materials')} shadow size="xs">
-        <DashBox variant="blue">
-          {t('site.weapon_materials_empty')}
-        </DashBox>
-      </DashBox>
-    )
-  }
+  const dailyWeaponMaterialTypes = weaponMaterialTypes.filter((weaponMaterialType) => weaponMaterialType?.day.includes(currentSelectedDay.toLowerCase()))
 
   return (
-    <DashBox title={t('site.weapon_materials')} {...(currentSelectedDay === 'all' ? { variant: 'pink', size: 'xs' } : {})} shadow>
-      {currentSelectedDay === 'all'
-        ? <DashBox size="md"><WeeklyWeaponsMaterials weaponsMaterials={weaponMaterialTypes} /></DashBox>
-        : <DailyWeaponsMaterials weaponsMaterials={dailyWeaponMaterialTypes} />
+    <>
+      {(currentSelectedDay === 'all' && weaponMaterialTypes?.length === 0) || (currentSelectedDay !== 'all' && dailyWeaponMaterialTypes?.length === 0)
+      ? (
+        <DashBox
+          {...(currentSelectedDay === 'all' 
+            ? { title: t('site.material_types.abyssal_domain_weekly'), variant: 'pink' }
+            : { title: t('site.material_types.abyssal_domain_daily'),variant: 'blue' }
+          )}
+          size="xs"
+          shadow
+        >
+          <DashBox>
+            {t('site.weapon_materials_empty')}
+          </DashBox>
+        </DashBox>
+      )
+      : currentSelectedDay === 'all'
+        ? (
+          <DashBox
+            {...(currentSelectedDay === 'all' 
+              ? { title: t('site.material_types.abyssal_domain_weekly'), variant: 'pink' }
+              : { title: t('site.material_types.abyssal_domain_daily'),variant: 'blue' }
+            )}
+            size="xs"
+            shadow
+          >
+            <DailyWeaponsMaterials weaponsMaterials={weaponMaterialTypes} showDays={true} />
+          </DashBox>
+        )
+        : (
+          <DashBox
+            {...(currentSelectedDay === 'all' 
+              ? { title: t('site.material_types.abyssal_domain_weekly'), variant: 'pink' }
+              : { title: t('site.material_types.abyssal_domain_daily'),variant: 'blue' }
+            )}
+            size="xs"
+            shadow
+          >
+            <DailyWeaponsMaterials weaponsMaterials={dailyWeaponMaterialTypes} />
+          </DashBox>
+        )
       }
-    </DashBox>
+    </>
   )
 }
 

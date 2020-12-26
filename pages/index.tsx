@@ -42,8 +42,8 @@ const Dashboard = () => {
             px={{ base: '20px', md: '64px', xl: '32px', xxl: '64px' }}
           >
             <AppHeading
-              subtitle={t('site.header_talents_subtitle')}
-              title={t('site.header_talents_title')}
+              subtitle={t('site.header.talents_subtitle')}
+              title={t('site.header.talents_title')}
             />
             <SimpleGrid columns={1} spacing="32px" pt={{ base: '22px', md: '44px' }}>
               <ScheduleBox />

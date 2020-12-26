@@ -1,26 +1,44 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import { SimpleGrid } from '@chakra-ui/react'
-import { IWeapon, IWeaponMaterialType } from '../../types'
-import AscensionItem from './AscensionItem'
+import { Box, Heading, SimpleGrid, Wrap, WrapItem } from '@chakra-ui/react'
+import { getNameTranslation } from '../../utils/character-ascension'
+import DashBox from '../DashBox'
+import ItemFragment from '../ItemFragment'
+import ItemStack from '../ItemStack'
+import ItemSliver from './ItemSliver'
 
 interface IProps {
-  weaponsMaterials: (IWeaponMaterialType & { weapons: IWeapon[] })[]
+  weaponsMaterials: any
+  showDays?: boolean
 }
 
-const DailyWeaponsMaterials = ({ weaponsMaterials }: IProps) => {
+const DailyWeaponsMaterials = ({ weaponsMaterials, showDays }: IProps) => {
   const { t } = useTranslation()
 
   return (
     <SimpleGrid columns={{ base: 1, md: 2 }} spacing="16px">
-      {weaponsMaterials.map((weaponsMaterial) => (
-        <AscensionItem
-          key={weaponsMaterial.id}
-          image={weaponsMaterial.images.image}
-          label={t(`weaponmaterialtypes.${weaponsMaterial.name}`)}
-          sublabel={t(`domainofforgeries.${weaponsMaterial.domainofforgery}`)}
-          characters={weaponsMaterial.weapons}
-        />
+      {weaponsMaterials.map((item) => (
+        <Box>
+          <DashBox size="md" key={item.name}>
+            {showDays && <Heading mb="16px" fontSize="14px" fontWeight="semibold" lineHeight="1.33333">
+              {item.day.map((day) => t(`site.days.${day}`)).join(', ') }
+            </Heading>}
+            <ItemFragment
+              image={item.images.image}
+              title={t(`weaponmaterialtypes.${item.name}`)}
+              description={t(`domainofforgeries.${item.domainofforgery}`)}
+            />
+            {!!item.weapons && <SimpleGrid columns={1} pt="12px" spacing="16px">
+              {item.weapons.map((weapon) => (
+                <ItemSliver
+                  key={weapon.name}
+                  title={t(`weapons.${weapon.name}`)}
+                  image={weapon.images.image}
+                />
+              ))}
+            </SimpleGrid>}
+          </DashBox>
+        </Box>
       ))}
     </SimpleGrid>
   )

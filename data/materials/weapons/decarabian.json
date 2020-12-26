@@ -5,7 +5,7 @@
 	"3starname": "Debris of Decarabian's City",
 	"4starname": "Fragment of Decarabian's Epic",
 	"5starname": "Scattered Piece of Decarabian's Dream",
-	"day": ["Monday", "Thursday", "Sunday"],
+	"day": ["monday", "thursday", "sunday"],
 	"location": "Wolvendom",
 	"region": "Mondstadt",
 	"domainofforgery": "cecilia_garden",

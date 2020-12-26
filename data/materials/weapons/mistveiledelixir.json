@@ -5,7 +5,7 @@
 	"3starname": "Mist Veiled Mercury Elixir",
 	"4starname": "Mist Veiled Gold Elixir",
 	"5starname": "Mist Veiled Primo Elixir",
-	"day": ["Tuesday", "Friday", "Sunday"],
+	"day": ["tuesday", "friday", "sunday"],
 	"location": "Mingyun Village",
 	"region": "Liyue",
 	"domainofforgery": "hidden_palace_of_lianshan_formula",

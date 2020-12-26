@@ -88,9 +88,9 @@ const Weapon = ({ weapon, isDisabled, onDisabled }: IProps) => {
             </Stack>
           </Stack>
         </Box>
-        <Flex align="center" justify="center" p={4} pr="1.25rem">
+        {/* <Flex align="center" justify="center" p={4} pr="1.25rem">
           <Checkbox isChecked={!isDisabled} onChange={(e) => { e.preventDefault(); onDisabled() }} />
-        </Flex>
+        </Flex> */}
       </Stack>
     </Box>
   )

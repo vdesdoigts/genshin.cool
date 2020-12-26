@@ -217,17 +217,17 @@
     "genshin_impact_farming_guide_description": "Find out the best talent level-up materials schedule optimization.",
     "genshin_impact_farming_guide": "Genshin Impact farming guide",
     "header": {
-      "characters_ascensions_subtitle": "Farming guide,",
-      "characters_ascensions_title": "Character ascension materials",
+      "characters_ascensions_subtitle": "Character,",
+      "characters_ascensions_title": "Ascension materials",
       "character_subtitle": "Character,",
       "characters_subtitle": "Characters,",
       "characters_title": "Overview",
       "characters_list_subtitle": "Database,",
       "characters_list_title": "Genshin Impact Characters",
-      "talents_subtitle": "Farming guide,",
+      "talents_subtitle": "Character,",
       "talents_title": "Talent level-up materials",
-      "weapon_subtitle": "Farming guide",
-      "weapon_title": "Weapon level-up materials"
+      "weapon_subtitle": "Weapon",
+      "weapon_title": "Level-up materials"
     },
     "manage_your_armory": "Manage your armory",
     "manage_your_roster": "Manage your roster",
@@ -263,7 +263,7 @@
     "your_roster": "Your roster",
     "your_roster_empty": "No character in your roster.",
     "weapon_materials": "Weapon ascensions",
-    "weapon_materials_empty": "No weapon ascension materials to farm today."
+    "weapon_materials_empty": "No weapon level-up materials to farm."
   },
   "talentmaterialtypes": {
     "ballad": "Ballad",
