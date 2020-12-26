@@ -1,0 +1,15 @@
+{
+	"id": 2,
+	"name": "boreal_wolf",
+	"2starname": "Boreal Wolf's Milk Tooth",
+	"3starname": "Boreal Wolf's Cracked Tooth",
+	"4starname": "Boreal Wolf's Broken Fang",
+	"5starname": "Boreal Wolf's Nostalgia",
+	"day": ["tuesday", "friday", "sunday"],
+	"location": "Mingyun Village",
+	"region": "Mondstadt",
+	"domainofforgery": "cecilia_garden",
+	"images": {
+		"image": "/images/weaponmaterialtypes/boreal-wolf-milk-tooth.png"
+	}
+}

@@ -12,7 +12,7 @@ import {
 import { CloseButton } from '@chakra-ui/close-button'
 import Language from './Language'
 import ProfileMenu from './ProfileMenu'
-import DashBox from './../DashBox'
+import DashBox from '../DashBox'
 import Dash from '../../pages'
 
 interface INavButtonProps {
@@ -88,7 +88,7 @@ const Menu = ({ onEditProfile, onMenuClose }: IProps) => {
         minH="100%"
         justify="space-between"
         direction="column"
-        pt="90px"
+        pt="60px"
       >
         <Box
           width="215px"
@@ -117,20 +117,59 @@ const Menu = ({ onEditProfile, onMenuClose }: IProps) => {
               fontWeight="500"
               line-height="1.33333"
             >
-              {t('site.navigation')}
+              {t('site.navigations.characters')}
             </Text>
             <VStack width="100%" align="stretch">
               <NavButton
                 href="/"
                 onClick={(e) => handleNavigation(e, '/')}
-                label={t('site.navigations.overview')}
+                label={t('site.navigations.talent_level_up_material')}
                 isCurrent={router.pathname === '/'}
               />
               <NavButton
-                href="/roster"
-                onClick={(e) => handleNavigation(e, '/roster')}
-                label={t('site.navigations.roster')}
-                isCurrent={router.pathname === '/roster'}
+                href="/character-ascension-materials"
+                onClick={(e) => handleNavigation(e, '/character-ascension-materials')}
+                label={t('site.navigations.character_ascension_materials')}
+                isCurrent={router.pathname === '/character-ascension-materials'}
+              />
+              <NavButton
+                href="/characters"
+                onClick={(e) => handleNavigation(e, '/characters')}
+                label={t('site.navigations.characters_list')}
+                isCurrent={router.pathname.split('/')[1] === 'characters'}
+              />
+            </VStack>
+          </Box>
+          <Box
+            position="relative"
+            mb="40px"
+            pb="30px"
+            _before={{
+              content: '""',
+              position: 'absolute',
+              left: '20px',
+              right: '20px',
+              bottom: 0,
+              height: '1px',
+              background: '#F0F3F6',
+            }}
+          >
+            <Text
+              mb="16px"
+              pl="20px"
+              color="#808191"
+              fontSize="12px"
+              fontWeight="500"
+              line-height="1.33333"
+            >
+              {t('site.navigations.weapons')}
+            </Text>
+            <VStack width="100%" align="stretch">
+              <NavButton
+                href="/weapon-level-up-materials"
+                onClick={(e) => handleNavigation(e, '/weapon-level-up-materials')}
+                label={t('site.navigations.weapon_level_up_material')}
+                isCurrent={router.pathname === '/weapon-level-up-materials'}
               />
             </VStack>
           </Box>

@@ -1,33 +1,34 @@
-import amber from './amber.json'
-import barbara from './barbara.json'
-import beidou from './beidou.json'
-import bennett from './bennett.json'
-import chongyun from './chongyun.json'
-import diluc from './diluc.json'
-import diona from './diona.json'
-import fischl from './fischl.json'
-import jean from './jean.json'
-import kaeya from './kaeya.json'
-import keqing from './keqing.json'
-import klee from './klee.json'
-import lisa from './lisa.json'
-import mona from './mona.json'
-import ningguang from './ningguang.json'
-import noelle from './noelle.json'
-import qiqi from './qiqi.json'
-import razor from './razor.json'
-import sucrose from './sucrose.json'
-import tartaglia from './tartaglia.json'
-import travelerAnemo from './traveler-anemo.json'
-import travelerGeo from './traveler-geo.json'
-import venti from './venti.json'
-import xiangling from './xiangling.json'
-import xiao from './xiao.json'
-import xingqiu from './xingqiu.json'
-import xinyan from './xinyan.json'
-import zhongli from './zhongli.json'
+import albedo from './albedo'
+import amber from './amber'
+import barbara from './barbara'
+import beidou from './beidou'
+import bennett from './bennett'
+import chongyun from './chongyun'
+import diluc from './diluc'
+import diona from './diona'
+import fischl from './fischl'
+import jean from './jean'
+import kaeya from './kaeya'
+import keqing from './keqing'
+import klee from './klee'
+import lisa from './lisa'
+import mona from './mona'
+import ningguang from './ningguang'
+import noelle from './noelle'
+import qiqi from './qiqi'
+import razor from './razor'
+import sucrose from './sucrose'
+import tartaglia from './tartaglia'
+import travelerAnemo from './traveler-anemo'
+import travelerGeo from './traveler-geo'
+import venti from './venti'
+import xiangling from './xiangling'
+import xingqiu from './xingqiu'
+import xinyan from './xinyan'
+import zhongli from './zhongli'
 
 export default [
+  albedo,
   amber,
   barbara,
   beidou,
@@ -52,7 +53,6 @@ export default [
   travelerGeo,
   venti,
   xiangling,
-  xiao,
   xingqiu,
   xinyan,
   zhongli,

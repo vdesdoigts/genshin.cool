@@ -23,7 +23,7 @@ import { FiSettings } from 'react-icons/fi'
 import { useSelector } from 'react-redux'
 import useRematchDispatch from '../../hooks/useRematch'
 import { ProfileSelectors } from '../../redux/selectors'
-import { getWeaponById } from '../../api'
+import api from '../../api'
 import { IArmory, IWeapon } from '../../types'
 import WeaponsMenu from '../WeaponsMenu'
 
@@ -88,9 +88,9 @@ const Weapon = ({ weapon, isDisabled, onDisabled }: IProps) => {
             </Stack>
           </Stack>
         </Box>
-        <Flex align="center" justify="center" p={4} pr="1.25rem">
+        {/* <Flex align="center" justify="center" p={4} pr="1.25rem">
           <Checkbox isChecked={!isDisabled} onChange={(e) => { e.preventDefault(); onDisabled() }} />
-        </Flex>
+        </Flex> */}
       </Stack>
     </Box>
   )
@@ -137,7 +137,7 @@ const Armory = () => {
         ? (
           <SimpleGrid columns={1} spacing="0.75rem">
             {currentArmory.map((armory, index) => {
-              const weapon = getWeaponById(armory.weapon.id)
+              const weapon = api.getWeaponById(armory.weapon.id)
 
               if (!weapon) {
                 return null
@@ -146,6 +146,7 @@ const Armory = () => {
               return (
                 <Weapon
                   key={armory.weapon.id}
+                  // @ts-ignore
                   weapon={weapon}
                   isDisabled={armory.isDisabled}
                   onDisabled={() => onDisabledWeapon(index)}

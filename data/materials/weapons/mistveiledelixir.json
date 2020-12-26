@@ -1,0 +1,15 @@
+{
+	"id": 6,
+	"name": "mist_veiled_elixir",
+	"2starname": "Mist Veiled Lead Elixir",
+	"3starname": "Mist Veiled Mercury Elixir",
+	"4starname": "Mist Veiled Gold Elixir",
+	"5starname": "Mist Veiled Primo Elixir",
+	"day": ["tuesday", "friday", "sunday"],
+	"location": "Mingyun Village",
+	"region": "Liyue",
+	"domainofforgery": "hidden_palace_of_lianshan_formula",
+	"images": {
+		"image": "/images/weaponmaterialtypes/mist-veiled-lead-elixir.png"
+	}
+}

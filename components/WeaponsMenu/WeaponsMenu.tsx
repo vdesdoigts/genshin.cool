@@ -9,7 +9,7 @@ import {
 import { useSelector } from 'react-redux'
 import useRematchDispatch from '../../hooks/useRematch'
 import { ProfileSelectors } from '../../redux/selectors'
-import { getWeapons } from '../../api'
+import api from '../../api'
 import ListItem from '../ListItem'
 import { IWeapon } from '../../types'
 
@@ -17,7 +17,7 @@ const WeaponsMenu = () => {
   const { t } = useTranslation()
   const dispatch = useRematchDispatch()
   const currentArmoryWeapons = useSelector(ProfileSelectors.getCurrentArmoryWeapons)
-  const weapons = getWeapons()
+  const weapons = api.getWeapons()
   const [value, setValue] = useState('')
 
   const handleChange = (event) => {
