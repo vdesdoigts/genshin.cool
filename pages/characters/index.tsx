@@ -1,12 +1,12 @@
 
 import Link from 'next/link'
 import { useTranslation } from 'react-i18next'
-import { AspectRatio, Box, Grid, SimpleGrid, Stack, Text } from '@chakra-ui/react'
+import { Box, SimpleGrid, Stack, Text } from '@chakra-ui/react'
+import Head from 'next/head'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import api from '../../api'
-import { getNameTranslation } from '../../utils/character-ascension'
 import AppHeading from '../../components/AppHeading'
-import DashBox from '../../components/DashBox'
 import colors from '../../theme/colors'
 
 const Item = ({ character, isSelected }) => {
@@ -92,92 +92,59 @@ const Item = ({ character, isSelected }) => {
 }
 
 export default function Characters() {
+  const router = useRouter()
   const { t } = useTranslation()
   const characters = api.getCharacters()
 
   return (
-    <Box
-      flexGrow={1}
-      paddingLeft={{ base: 0, xxl: '256px' }}
-      transition="all .25s"
-    >
-      <Box maxW={{ base: '600px', md: '1000px', xl: '1400px' }} margin="0 auto">
-        <Box
-          flex={{ base: '0 0 100%' }}
-          maxW={{ base: '100%' }}
-          pt="48px"
-          pb="32px"
-          px={{ base: '20px', md: '64px', xl: '32px', xxl: '64px' }}
-        >
-          <AppHeading
-            subtitle={t('site.header.characters_list_subtitle')}
-            title={t('site.header.characters_list_title')}
-          />
-          {/* {characters.map((character) => (
-            <Link
-              href={`/characters/${character.name.toLowerCase()}`}
-            >
-              {character.name}
-            </Link>
-          ))} */}
-          {/* <Box display={{ base: 'block', xl: 'none' }} pt={{ base: '22px', md: '44px' }}>
-            <Grid templateColumns="repeat(auto-fill, minmax(90px, 1fr) )" spacing={2}>
-              {characters.map((character, index) => {
-                // const isSelected = selectedCharacter.id === roster.character.id
-                
+    <>
+      <Head>
+        <title>{t('seo.characters')} - Genshin Impact {router.locale}</title>
+      </Head>
+      <Box
+        flexGrow={1}
+        paddingLeft={{ base: 0, xxl: '256px' }}
+        transition="all .25s"
+      >
+        <Box maxW={{ base: '600px', md: '1000px', xl: '1400px' }} margin="0 auto">
+          <Box
+            flex={{ base: '0 0 100%' }}
+            maxW={{ base: '100%' }}
+            pt="48px"
+            pb="32px"
+            px={{ base: '20px', md: '64px', xl: '32px', xxl: '64px' }}
+          >
+            <AppHeading
+              subtitle={t('site.header.characters_list_subtitle')}
+              title={t('site.header.characters_list_title')}
+            />
+            <SimpleGrid columns={{ base: 1, md: 3 }} spacing="16px" pt={{ base: '22px', md: '44px' }}>
+              {characters.map((character) => {
                 return (
-                  <DashBox
+                  <Link
                     key={character.id}
-                    // onClick={() => setSelectedCharacter(index)}
-                    // variant={isSelected ? 'purple' : null}
-                    br="sm"
-                    size="xs"
-                    // _hover={!isSelected ? { cursor: 'pointer', bg: 'rgba(228, 228, 228, 0.3)' } : {}}
+                    href={{
+                      pathname: '/characters/[name]',
+                      query: { name: character.name.toLowerCase() },
+                    }}
                   >
-                    <AspectRatio
-                      ratio={1}
-                      width="100%"
-                      borderRadius=".5rem"
-                      background="#f2f4f8"
-                      fontSize="0"
+                    <Box
+                      // onClick={() => setSelectedCharacter(index)}
+                      // display={{ base: isSelected ? 'block' : 'none', xl: 'block' }}
+                      cursor="pointer"
                     >
-                      <Image
-                        src={character.images.image}
-                        layout="fill" 
-                        objectFit="contain"
+                      <Item
+                        character={character}
+                        isSelected={false}
                       />
-                    </AspectRatio>
-                  </DashBox>
+                    </Box>
+                  </Link>
                 )
               })}
-            </Grid>
-          </Box> */}
-          <SimpleGrid columns={{ base: 1, md: 3 }} spacing="16px" pt={{ base: '22px', md: '44px' }}>
-            {characters.map((character) => {
-              return (
-                <Link
-                  key={character.id}
-                  href={{
-                    pathname: '/characters/[name]',
-                    query: { name: character.name.toLowerCase() },
-                  }}
-                >
-                  <Box
-                    // onClick={() => setSelectedCharacter(index)}
-                    // display={{ base: isSelected ? 'block' : 'none', xl: 'block' }}
-                    cursor="pointer"
-                  >
-                    <Item
-                      character={character}
-                      isSelected={false}
-                    />
-                  </Box>
-                </Link>
-              )
-            })}
-          </SimpleGrid>
+            </SimpleGrid>
+          </Box>
         </Box>
       </Box>
-    </Box>
+    </>
   )
 }

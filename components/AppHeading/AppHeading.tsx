@@ -4,7 +4,7 @@ import { Heading } from '@chakra-ui/react'
 const AppHeading = ({ title, subtitle }) => (
   <>
     <Heading
-      as="h3"
+      as="h2"
       pl={{ base: '16px', md: 0 }}
       fontSize={{ base: '16px', md: '24px' }}
       lineHeight="1.33333"
@@ -13,7 +13,7 @@ const AppHeading = ({ title, subtitle }) => (
       {subtitle}
     </Heading>
     <Heading
-      as="h4"
+      as="h1"
       pl={{ base: '16px', md: 0 }}
       fontSize={{ base: '32px', md: '48px' }}
       lineHeight="1.5"

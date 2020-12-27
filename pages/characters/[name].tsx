@@ -84,9 +84,11 @@ export default function Post({ character }) {
           <>
             <article>
               <Head>
-                <title>
-                  {character.name}
-                </title>
+                <title>{character.name}, {t(`affiliations.${character.affiliation}`)} - {character.element} - Genshin Impact {router.locale}</title>
+                <meta
+                  property="og:title"
+                  content={`${character.name}, ${t(`affiliations.${character.affiliation}`)} - ${character.element} - Genshin Impact ${router.locale}`}
+                />
                 <meta property="og:image" content={character.images.image} />
               </Head>
               <Box
@@ -111,13 +113,13 @@ export default function Post({ character }) {
                         <SimpleGrid columns={1} spacing="16px">
                           {character.ascension.map((ascension, ascensionIndex) => {
                             return (
-                              <SimpleGrid columns={5} spacing="8px">
+                              <SimpleGrid key={ascensionIndex} columns={5} spacing="8px">
                                 {ascension.map((item, index) => {
                                   if (item === null) {
                                     return null
                                   }
 
-                                  return <Item item={item} amount={ascensions[ascensionIndex].amount[index]} />
+                                  return <Item key={item.name} item={item} amount={ascensions[ascensionIndex].amount[index]} />
                                 })}
                                 <Item item={mora} amount={ascensions[ascensionIndex].cost} />
                               </SimpleGrid>
@@ -127,20 +129,17 @@ export default function Post({ character }) {
                       </DashBox>
                     </SimpleGrid>
                     <SimpleGrid columns={{ base: 1, md: 3 }} pt="16px" spacing="16px">
-                      {character.talents.map((talent, talentIndex) => {
-                        
+                      {character.talents.map((talent) => {
                         return (
-                          <DashBox title={t(`talentnames.${talent.name}`)} shadow>
+                          <DashBox key={talent.name} title={t(`talentnames.${talent.name}`)} size="sm" shadow>
                             <SimpleGrid columns={1} spacing="16px">
                               {talent.requirements.map((requirement, requirementIndex) => (
-                                <>
-                                  <SimpleGrid columns={5} spacing="8px">
-                                    {requirement.map((item, index) => (
-                                      <Item item={item} amount={talents[requirementIndex].amount[index]} />
-                                    ))}
-                                    <Item item={mora} amount={talents[requirementIndex].cost} />
-                                  </SimpleGrid>
-                                </>
+                                <SimpleGrid key={requirementIndex} columns={5} spacing="8px">
+                                  {requirement.map((item, index) => (
+                                    <Item key={item.name} item={item} amount={talents[requirementIndex].amount[index]} />
+                                  ))}
+                                  <Item item={mora} amount={talents[requirementIndex].cost} />
+                                </SimpleGrid>
                               ))}
                             </SimpleGrid>
                           </DashBox>
@@ -189,6 +188,6 @@ export const getStaticPaths = () => {
         }
       }),
     ],
-    fallback: true,
+    fallback: false,
   }
 }

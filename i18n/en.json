@@ -183,6 +183,11 @@
     "mondstadt": "Mondstadt",
     "liyue": "Liyue"
   },
+  "seo": {
+    "characters": "Characters",
+    "farming_guide": "Farming guide",
+    "site_description": "Find out the best farming methods and schedule optimization in this guide for Genshin Impact."
+  },
   "site": {
     "add_a_profile": "Add a profile",
     "armory_empty": "Your amory is empty.",

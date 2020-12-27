@@ -18,7 +18,7 @@ const persistor = getPersistor()
 
 function App({ Component, pageProps }) {
   const router = useRouter()
-  const { i18n } = useTranslation()
+  const { i18n, t } = useTranslation()
   const { isOpen: isMenuOpen, onOpen: onMenuOpen, onClose: onMenuClose, onToggle: onMenuToggle } = useDisclosure()
   const { isOpen: isEditProfileModalOpen, onOpen: onEditProfileModalOpen, onClose: onEditProfileModalClose } = useDisclosure()
   const [profileBeingEdited, setProfileBeingEdited] = useState<number | null>()
@@ -41,7 +41,7 @@ function App({ Component, pageProps }) {
     <ChakraProvider resetCSS theme={theme}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Genshin Impact - Farming Guide</title>
+        <title>{t('seo.farming_guide')} - Genshin Impact {router.locale}</title>
         <meta
           name="description"
           content="Find out the best farming methods and schedule optimization in this guide for Genshin Impact."
@@ -53,19 +53,19 @@ function App({ Component, pageProps }) {
 
         <meta
           property="og:title"
-          content="Genshin Impact - Farming Guide"
+          content={`${t('seo.farming_guide')} - Genshin Impact ${router.locale}`}
         />
         <meta property="og:description" content="Find out the best farming methods and schedule optimization in this guide for Genshin Impact." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.genshin.cool" />
-        <meta property="og:locale" content="eng" />
-        <meta property="og:site_name" content="Genshin Impact - Farming Guide" />
+        <meta property="og:url" content={`https://www.genshin.cool${router.asPath}`} />
+        <meta property="og:locale" content={router.locale} />
+        <meta property="og:site_name" content={`${t('seo.farming_guide')} - Genshin Impact ${router.locale}`} />
         {/* <meta property="og:image" content="https://www.genshin.cool/assets/images/logo-1200x630.png" /> */}
         {/* <meta property="og:image:url" content="https://www.genshin.cool/assets/images/logo-1200x630.png" /> */}
         <meta property="og:image:url:width" content="1200" />
         <meta property="og:image:url:height" content="630" />
 
-        <meta name="twitter:title" content="Genshin Impact - Farming Guide" />
+        <meta name="twitter:title" content={`${t('seo.farming_guide')} - Genshin Impact ${router.locale}`} />
         <meta name="twitter:site" content="@vdesdoigts" />
         <meta name="twitter:creator" content="@vdesdoigts" />
         <meta name="twitter:card" content="summary_large_image" />

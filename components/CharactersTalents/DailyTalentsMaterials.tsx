@@ -17,8 +17,8 @@ const DailyTalentsMaterials = ({ talentsMaterials, showDays }: IProps) => {
   return (
     <SimpleGrid columns={{ base: 1, md: 2 }} spacing="16px">
       {talentsMaterials.map((item) => (
-        <Box>
-          <DashBox size="md" key={item.id}>
+        <Box key={item.id}>
+          <DashBox size="md">
             {showDays && <Heading mb="16px" fontSize="14px" fontWeight="semibold" lineHeight="1.33333">
               {item.day.map((day) => t(`site.days.${day}`)).join(', ') }
             </Heading>}
