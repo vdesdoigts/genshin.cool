@@ -188,6 +188,6 @@ export const getStaticPaths = () => {
         }
       }),
     ],
-    fallback: false,
+    fallback: true,
   }
 }
