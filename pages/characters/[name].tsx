@@ -88,10 +88,10 @@ export default function Post({ character }) {
                 <meta name="description" content={`${character.name} - ${t(character.description)}`}></meta>
                 <meta
                   property="og:title"
-                  content={`${character.name}, ${t(`affiliations.${character.affiliation}`)} - ${character.element} - Genshin Impact ${router.locale}`}
+                  content={`${character.name}, ${t(`affiliations.${character.affiliation}`)} - ${character.element} - Genshin Impact ${router.locale}.toUpperCase()`}
                 />
                 <meta property="og:image" content={character.images.image} />
-                <meta name="twitter:title" content={`${t(character.name)}, ${t(`affiliations.${character.affiliation}`)} - ${character.element} - Genshin Impact ${router.locale}`} />
+                <meta name="twitter:title" content={`${t(character.name)}, ${t(`affiliations.${character.affiliation}`)} - ${character.element} - Genshin Impact ${router.locale}.toUpperCase()`} />
               </Head>
               <Box
                 flexGrow={1}

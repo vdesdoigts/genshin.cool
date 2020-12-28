@@ -102,9 +102,9 @@ export default function Characters() {
         <title>{t('seo.characters')} - Genshin Impact {router.locale.toUpperCase()}</title>
         <meta
           property="og:title"
-          content={`${t('seo.characters')} - Genshin Impact ${router.locale}`}
+          content={`${t('seo.characters')} - Genshin Impact ${router.locale}.toUpperCase()`}
         />
-        <meta name="twitter:title" content={`${t('seo.characters')} - Genshin Impact ${router.locale}`} />
+        <meta name="twitter:title" content={`${t('seo.characters')} - Genshin Impact ${router.locale}.toUpperCase()`} />
       </Head>
       <Box
         flexGrow={1}
