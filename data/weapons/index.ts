@@ -18,6 +18,7 @@ import darkironsword from './darkironsword.json'
 import deathmatch from './deathmatch.json'
 import debateclub from './debateclub.json'
 import dragonsbane from './dragonsbane.json'
+import dragonspincespear from './dragonspinespear.json'
 import dullblade from './dullblade.json'
 import ebonybow from './ebonybow.json'
 import emeraldorb from './emeraldorb.json'
@@ -28,7 +29,9 @@ import favoniuslance from './favoniuslance.json'
 import favoniussword from './favoniussword.json'
 import favoniuswarbow from './favoniuswarbow.json'
 import ferrousshadow from './ferrousshadow.json'
+import festeringDesire from './festering-desire.json'
 import filletblade from './filletblade.json'
+import frostbear from './frostbearer.json'
 import halberd from './halberd.json'
 import harbingerofdawn from './harbingerofdawn.json'
 import huntersbow from './huntersbow.json'
@@ -76,7 +79,9 @@ import skywardharp from './skywardharp.json'
 import skywardpride from './skywardpride.json'
 import skywardspine from './skywardspine.json'
 import slingshot from './slingshot.json'
+import snowtombedstarsilver from './snowtombedstarsilver.json'
 import solarpearl from './solarpearl.json'
+import summitshaper from './summitshaper.json'
 import swordofdescension from './swordofdescension.json'
 import thealleyflash from './thealleyflash.json'
 import thebell from './thebell.json'
@@ -119,6 +124,7 @@ export default [
   deathmatch,
   debateclub,
   dragonsbane,
+  dragonspincespear,
   dullblade,
   ebonybow,
   emeraldorb,
@@ -129,7 +135,9 @@ export default [
   favoniussword,
   favoniuswarbow,
   ferrousshadow,
+  festeringDesire,
   filletblade,
+  frostbear,
   halberd,
   harbingerofdawn,
   huntersbow,
@@ -178,7 +186,9 @@ export default [
   skywardpride,
   skywardspine,
   slingshot,
+  snowtombedstarsilver,
   solarpearl,
+  summitshaper,
   swordofdescension,
   thealleyflash,
   thebell,

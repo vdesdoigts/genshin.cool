@@ -136,13 +136,13 @@ const CharacterItem = ({
               {/* {!!onDisabled && <Flex align="center" justify="center" p={4} pr="1.25rem">
                 <Checkbox isChecked={!isDisabled} onChange={(e) => { e.preventDefault(); onDisabled() }} />
               </Flex>} */}
-              <Wrap align="center" justify="space-between" mb="4px">
+              <Wrap align="center" justify="space-between" mb="4px" flexWrap="nowrap">
                 <WrapItem>
-                  <Heading color="#4b4d55" fontSize="14px" fontWeight="semibold" lineHeight="1.33333">
+                  <Heading isTruncated as="span" noOfLines={1} color="#4b4d55" fontSize="14px" fontWeight="semibold" lineHeight="1.33333">
                     {t('site.ascension_rank')}
                   </Heading>
                 </WrapItem>
-                <WrapItem>
+                <WrapItem flex="0 0 auto">
                   <Select
                     variant="filled"
                     size="sm"
@@ -167,13 +167,13 @@ const CharacterItem = ({
             
               {/* @ts-ignore */}
               {character.talents.map((talent, index) => (
-                <Wrap align="center" justify="space-between" mb="4px">
+                <Wrap align="center" justify="space-between" mb="4px" flexWrap="nowrap">
                   <WrapItem>
-                    <Heading color="#4b4d55" fontSize="14px" fontWeight="semibold" lineHeight="1.33333">
+                    <Heading isTruncated as="span" noOfLines={1} color="#4b4d55" fontSize="14px" fontWeight="semibold" lineHeight="1.33333">
                       {t(`talentnames.${talent.name}`)}
                     </Heading>
                   </WrapItem>
-                  <WrapItem>
+                  <WrapItem flex="0 0 auto">
                     <Select
                       variant="filled"
                       size="sm"

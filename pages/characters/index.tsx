@@ -100,6 +100,10 @@ export default function Characters() {
     <>
       <Head>
         <title>{t('seo.characters')} - Genshin Impact {router.locale}</title>
+        <meta
+          property="og:title"
+          content={`${t('seo.characters')} - Genshin Impact ${router.locale}`}
+        />
       </Head>
       <Box
         flexGrow={1}

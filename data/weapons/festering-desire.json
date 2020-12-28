@@ -1,0 +1,27 @@
+{
+  "id": 101,
+  "name": "festering_desire",
+  "weapontype": "sword",
+  "rarity": 4,
+  "images": {
+    "image": "/images/weapons/summit-shaper.png"
+  },
+  "baseatk": "42",
+  "ability": "Energy recharge 10%",
+  "passive": {
+    "passive_name": "Solar Shine",
+    "refinement_effect": {
+      "refine_one": "Increases Elemental Skill DMG by 16% and Elemental Skill CRIT Rate by 6%.",
+      "refine_two": "Increases Elemental Skill DMG by 20% and Elemental Skill CRIT Rate by 7.5%.",
+      "refine_three": "Increases Elemental Skill DMG by 24% and Elemental Skill CRIT Rate by 9%.",
+      "refine_four": "Increases Elemental Skill DMG by 28% and Elemental Skill CRIT Rate by 10.5%.",
+      "refine_five": "Increases Elemental Skill DMG by 32% and Elemental Skill CRIT Rate by 12%."
+    }
+  },
+  "description": "A creepy straight sword that almost seems to yearn for life. It drips with a shriveling venom that could even corrupt a mighty dragon.",
+  "weaponmaterialtype": {
+    "id": 3,
+    "name": "Dandelion"
+  },
+  "url": "/wiki/Festering_Desire"
+}
