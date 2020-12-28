@@ -41,10 +41,10 @@ function App({ Component, pageProps }) {
     <ChakraProvider resetCSS theme={theme}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>{t('seo.farming_guide')} - Genshin Impact {router.locale}</title>
+        <title>{t('seo.farming_guide')} - Genshin Impact {router.locale.toUpperCase()}</title>
         <meta
           name="description"
-          content="Find out the best farming methods and schedule optimization in this guide for Genshin Impact."
+          content={t('seo.site_description')}
         />
         <meta
           name="keywords"
@@ -55,7 +55,7 @@ function App({ Component, pageProps }) {
           property="og:title"
           content={`${t('seo.farming_guide')} - Genshin Impact ${router.locale}`}
         />
-        <meta property="og:description" content="Find out the best farming methods and schedule optimization in this guide for Genshin Impact." />
+        <meta property="og:description" content={t('seo.site_description')} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`https://www.genshin.cool${router.asPath}`} />
         <meta property="og:locale" content={router.locale} />

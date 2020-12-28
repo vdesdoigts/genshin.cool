@@ -84,12 +84,14 @@ export default function Post({ character }) {
           <>
             <article>
               <Head>
-                <title>{character.name}, {t(`affiliations.${character.affiliation}`)} - {character.element} - Genshin Impact {router.locale}</title>
+                <title>{character.name}, {t(`affiliations.${character.affiliation}`)} - {character.element} - Genshin Impact {router.locale.toUpperCase()}</title>
+                <meta name="description" content={`${character.name} - ${t(character.description)}`}></meta>
                 <meta
                   property="og:title"
                   content={`${character.name}, ${t(`affiliations.${character.affiliation}`)} - ${character.element} - Genshin Impact ${router.locale}`}
                 />
                 <meta property="og:image" content={character.images.image} />
+                <meta name="twitter:title" content={`${t(character.name)}, ${t(`affiliations.${character.affiliation}`)} - ${character.element} - Genshin Impact ${router.locale}`} />
               </Head>
               <Box
                 flexGrow={1}
