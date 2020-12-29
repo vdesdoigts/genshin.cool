@@ -32,7 +32,7 @@ export const albedo = {
     image: "/images/characters/albedo-thumb.png",
   },
   affiliation: "knights_of_favonius",
-  description: "Albedo — an alchemist based in Mondstadt, in the service of the Knights of Favonius.",
+  description: "albedo.description",
 }
 
 export const albedoAscension = [

@@ -32,7 +32,7 @@ export const noelle = {
     image: "/images/characters/noelle-thumb.png",
   },
   affiliation: "knights_of_favonius",
-  description: "Like most of Mondstadt's young people, Noelle always dreamed of being a knight of Favonius when she grew up. She may not have what it takes to be a knight just yet, but she is learning. Working as a maid at the Knights' headquarters, she is constantly taking notes on what constitutes knightly speech, knightly conduct, and knightly customs. She holds firm to her belief that one day she will join their ranks - she just needs to keep trying her hardest at everything she does.",
+  description: "noelle.description",
 }
 
 export const noelleAscension = [

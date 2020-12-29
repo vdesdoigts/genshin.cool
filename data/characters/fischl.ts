@@ -32,7 +32,7 @@ export const fischl = {
     image: "/images/characters/fischl-thumb.png",
   },
   affiliation: "adventurers_guild",
-  description: "A mysterious girl who calls herself 'Prinzessin der Verurteilung' and travels with a night raven named Oz. Currently serves as an investigator in the Adventurers' Guild. Through her unique abilities, eccentric character, and (while she would never admit it herself) hard work, Fischl has become a rising star among the Adventurers' Guild's investigators, earning the recognition of all.",
+  description: "fischl.description",
 }
 
 export const fischlAscension = [

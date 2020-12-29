@@ -33,7 +33,7 @@ export const jean = {
     image: "/images/characters/jean-thumb.png",
   },
   affiliation: "knights_of_favonius",
-  description: "As the Acting Grand Master of the Knights, Jean has always been devoted to her duties and maintaining peace in Mondstadt. She had taken precautions long before the onset of Stormterror's assault, and she will guard Mondstadt with her life as always.",
+  description: "jean.description",
 }
 
 export const jeanAscension = [

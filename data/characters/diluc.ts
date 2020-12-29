@@ -30,8 +30,8 @@ export const diluc = {
   images: {
     image: "/images/characters/diluc-thumb.png",
   },
-  affiliation: "n/a",
-  description: "As the wealthiest gentleman in Mondstadt, the ever-dapper Diluc always presents himself as the epitome of perfection. But behind the courteous visage burns a zealous soul that has sworn to protect Mondstadt at all costs, allowing him to mercilessly vanquish all who threaten his city.",
+  affiliation: null,
+  description: "diluc.description",
 }
 
 export const dilucAscension = [

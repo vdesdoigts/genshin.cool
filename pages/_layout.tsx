@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>{t('seo.farming_guide')} - Genshin Impact {router.locale.toUpperCase()}</title>
+        <title>{t('seo.farming_guide')} | Genshin Impact | {router.locale.toUpperCase()}</title>
         <meta
           name="description"
           content={t('seo.site_description')}
@@ -42,19 +42,19 @@ const Layout = ({ children }) => {
 
         <meta
           property="og:title"
-          content={`${t('seo.farming_guide')} - Genshin Impact ${router.locale}.toUpperCase()`}
+          content={`${t('seo.farming_guide')} | Genshin Impact | ${router.locale.toUpperCase()}`}
         />
         <meta property="og:description" content={t('seo.site_description')} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`https://www.genshin.cool${router.asPath}`} />
         <meta property="og:locale" content={router.locale} />
-        <meta property="og:site_name" content={`${t('seo.farming_guide')} - Genshin Impact ${router.locale}.toUpperCase()`} />
+        {/* <meta property="og:site_name" content={`${t('seo.farming_guide')} | Genshin Impact | ${router.locale.toUpperCase()}`} /> */}
         {/* <meta property="og:image" content="https://www.genshin.cool/assets/images/logo-1200x630.png" /> */}
         {/* <meta property="og:image:url" content="https://www.genshin.cool/assets/images/logo-1200x630.png" /> */}
         <meta property="og:image:url:width" content="1200" />
         <meta property="og:image:url:height" content="630" />
 
-        <meta name="twitter:title" content={`${t('seo.farming_guide')} - Genshin Impact ${router.locale}.toUpperCase()`} />
+        <meta name="twitter:title" content={`${t('seo.farming_guide')} | Genshin Impact | ${router.locale.toUpperCase()}`} />
         <meta name="twitter:site" content="@vdesdoigts" />
         <meta name="twitter:creator" content="@vdesdoigts" />
         <meta name="twitter:card" content="summary_large_image" />

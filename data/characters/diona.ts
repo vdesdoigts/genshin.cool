@@ -32,7 +32,7 @@ export const diona = {
     image: "/images/characters/diona-thumb.png",
   },
   affiliation: "the_cat_s_tail_bar",
-  description: "The incredibly popular bartender of the Cat's Tail tavern, rising star of Mondstadt's wine industry, and the greatest challenger to its traditional powerhouses.\nA feisty feline young lady from Springvale, any drink mixed by Diona's hand tastes delicious beyond belief.\nYet given her extreme distaste for alcohol, is her talent a blessing or a curse?",
+  description: "diona.description",
 }
 
 export const dionaAscension = [

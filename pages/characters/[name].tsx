@@ -1,7 +1,7 @@
 
 import { useRouter } from 'next/router'
 import { useTranslation } from 'react-i18next'
-import { AspectRatio, Box, SimpleGrid, Tooltip } from '@chakra-ui/react'
+import { AspectRatio, Box, SimpleGrid, Text, Tooltip } from '@chakra-ui/react'
 import Image from 'next/image'
 import Head from 'next/head'
 import ErrorPage from 'next/error'
@@ -84,16 +84,15 @@ export default function Post({ character }) {
           <>
             <article>
               <Head>
-                <title>{character.name}, {t(`affiliations.${character.affiliation}`)} - {character.element} - Genshin Impact {router.locale.toUpperCase()}</title>
-                <meta name="description" content={`${character.name} - ${t(character.description)}`}></meta>
-                <meta
-                  property="og:title"
-                  content={`${character.name}, ${t(`affiliations.${character.affiliation}`)} - ${character.element} - Genshin Impact ${router.locale}.toUpperCase()`}
-                />
-                <meta property="og:image" content={character.images.image} />
-                <meta name="twitter:title" content={`${t(character.name)}, ${t(`affiliations.${character.affiliation}`)} - ${character.element} - Genshin Impact ${router.locale}.toUpperCase()`} />
+                <title>{character.name}, {t(`affiliations.${character.affiliation}`)} | Genshin Impact | {router.locale.toUpperCase()}</title>
+                <meta property="og:title" content={`${character.name}, ${t(`affiliations.${character.affiliation}`)} | Genshin Impact | ${router.locale.toUpperCase()}`} />
+                <meta name="twitter:title" content={`${character.name}, ${t(`affiliations.${character.affiliation}`)} | Genshin Impact | ${router.locale.toUpperCase()}`} />
+
+                <meta name="description" content={t(`characters.${character.description}`)} />
+                <meta property="og:description" content={t(`characters.${character.description}`)} />
               </Head>
               <Box
+                as="article"
                 flexGrow={1}
                 paddingLeft={{ base: 0, xxl: '256px' }}
                 transition="all .25s"
@@ -110,6 +109,7 @@ export default function Post({ character }) {
                       subtitle={t('site.header.character_subtitle')}
                       title={`${character.name}, ${t(`affiliations.${character.affiliation}`)}`}
                     />
+                    <Text fontSize="18px">{t(`characters.${character.description}`)}</Text>
                     <SimpleGrid columns={{ base: 1, md: 3 }} spacing="16px" pt="24px">
                       <DashBox title={t('site.header.characters_ascensions_title')} size="sm" shadow>
                         <SimpleGrid columns={1} spacing="16px">

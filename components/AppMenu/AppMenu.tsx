@@ -28,7 +28,7 @@ export const NavButton = ({ href, label, isCurrent, onClick }: INavButtonProps) 
     href={href}
     alignItems="center"
     justify="space-between"
-    height="56px"
+    height="50px"
     padding="0 20px"
     borderRadius="12px"
     background={isCurrent ? '#6C5DD3' : '#f2f2f2'}
@@ -166,10 +166,10 @@ const Menu = ({ onEditProfile, onMenuClose }: IProps) => {
             </Text>
             <VStack width="100%" align="stretch">
               <NavButton
-                href="/weapon-level-up-materials"
-                onClick={(e) => handleNavigation(e, '/weapon-level-up-materials')}
+                href="/weapon-leveling-materials"
+                onClick={(e) => handleNavigation(e, '/weapon-leveling-materials')}
                 label={t('site.navigations.weapon_level_up_material')}
-                isCurrent={router.pathname === '/weapon-level-up-materials'}
+                isCurrent={router.pathname === '/weapon-leveling-materials'}
               />
             </VStack>
           </Box>

@@ -33,8 +33,8 @@ export const venti = {
   images: {
     image: "/images/characters/venti-thumb.png",
   },
-  affiliation: "Archons",
-  description: "A bard that seems to have arrived on some unknown wind - sometimes sings songs as old as the hills, and other times sings poems fresh and new. Likes apples and lively places, but is not a fan of cheese or anything sticky. When using his Anemo power to control the wind, it often appears as feathers, as he's fond of that which appears light and breezy.",
+  affiliation: "archons",
+  description: "venti.description",
 }
 
 export const ventiAscension = [

@@ -8,6 +8,7 @@ import { useRouter } from 'next/router'
 import api from '../../api'
 import AppHeading from '../../components/AppHeading'
 import colors from '../../theme/colors'
+import { FiLink } from 'react-icons/fi'
 
 const Item = ({ character, isSelected }) => {
   const { t } = useTranslation()
@@ -75,13 +76,13 @@ const Item = ({ character, isSelected }) => {
                 >
                   {character.name}
                 </Text>
-                <Box>
+                {character.affiliation && <Box>
                   <Box color={isSelected ? '#fff' : '#bbbdcb'}>
                     <Text fontSize="0.875rem" fontWeight="medium">
                       {t(`affiliations.${character.affiliation}`)}
                     </Text>
                   </Box>
-                </Box>
+                </Box>}
               </Stack>
             </Stack>
           </Box>
@@ -99,12 +100,12 @@ export default function Characters() {
   return (
     <>
       <Head>
-        <title>{t('seo.characters')} - Genshin Impact {router.locale.toUpperCase()}</title>
-        <meta
-          property="og:title"
-          content={`${t('seo.characters')} - Genshin Impact ${router.locale}.toUpperCase()`}
-        />
-        <meta name="twitter:title" content={`${t('seo.characters')} - Genshin Impact ${router.locale}.toUpperCase()`} />
+        <title>{t('seo.characters_list')} | Genshin Impact | {router.locale.toUpperCase()}</title>
+        <meta property="og:title" content={`${t('seo.characters_list')} | Genshin Impact | ${router.locale.toUpperCase()}`} />
+        <meta name="twitter:title" content={`${t('seo.characters_list')} | Genshin Impact | ${router.locale.toUpperCase()}`} />
+
+        <meta name="description" content={t('seo.characters_list_description')} />
+        <meta property="og:description" content={t('characters_list_description')} />
       </Head>
       <Box
         flexGrow={1}
@@ -132,11 +133,11 @@ export default function Characters() {
                       pathname: '/characters/[name]',
                       query: { name: character.name.toLowerCase() },
                     }}
+                    passHref
                   >
                     <Box
-                      // onClick={() => setSelectedCharacter(index)}
-                      // display={{ base: isSelected ? 'block' : 'none', xl: 'block' }}
-                      cursor="pointer"
+                      as="a"
+                      title={`${character.name} - ${t(`elements.${character.element}`)}`}
                     >
                       <Item
                         character={character}

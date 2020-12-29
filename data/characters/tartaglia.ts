@@ -32,7 +32,7 @@ export const tartaglia = {
     image: "/images/characters/tartaglia-thumb.png",
   },
   affiliation: "Fatui",
-  description: "Meet Tartaglia — the cunning Snezhnayan whose unpredictable personality keeps people guessing his every move.\nDon't be under any illusion as to what he might be thinking or what his intentions are. Just remember this: Behind that innocent, childlike exterior lies a finely honed instrument of war.",
+  description: "tartaglia.description",
 }
 
 export const tartagliaAscension = [

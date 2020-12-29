@@ -32,7 +32,7 @@ export const keqing = {
     image: "/images/characters/keqing-thumb.png",
   },
   affiliation: "liyue_qixing",
-  description: "The Yuheng of the Liyue Qixing. Keqing has much to say about Rex Lapis' unilateral approach to policymaking in Liyue ⁠— but in truth, gods admire skeptics such as her quite a lot. She firmly believes that humanity's future should be determined by humans themselves, and that they can even do better than the archons and adepti have done for them. In order to prove this, she works harder than anyone else.",
+  description: "kaeya.description",
 }
 
 export const KeqingAscension = [

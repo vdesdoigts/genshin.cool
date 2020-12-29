@@ -39,7 +39,7 @@ export const travelerGeo = {
     image: "/images/characters/traveler-thumb.png",
   },
   affiliation: "neutral",
-  description: "A traveler from another world who had their only kin taken away, forcing them to embark on a journey to find The Seven.",
+  description: "traveler_geo.description",
 }
 
 export const travelerGeoAscension = [

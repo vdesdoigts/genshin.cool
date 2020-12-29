@@ -30,8 +30,8 @@ export const razor = {
   images: {
     image: "/images/characters/razor-thumb.png",
   },
-  affiliation: "n/a",
-  description: "Some say he is an orphan raised by wolves. Others say he is a wolf spirit in human form. He is most at home in the wild, fighting with claw and thunder. To this day the wolf boy can be found prowling the forest, where he and his wolf pack hunt to survive using nothing more than their animal instincts.",
+  affiliation: null,
+  description: "razor.description",
 }
 
 export const razorAscension = [

@@ -30,8 +30,8 @@ export const xinyan = {
   images: {
     image: "/images/characters/xinyan-thumb.png",
   },
-  affiliation: "n/a",
-  description: "Rock 'n' roll is an avant-garde art in Liyue Harbor and Xinyan is the pioneer in this field. She rebels against ossified prejudices, using her music and passionate singing to awaken dazed souls fatigued by worldly matters. If you get the chance, do not miss out on her next performance!",
+  affiliation: null,
+  description: "xinyan.description",
 }
 
 export const xinyanAscension = [

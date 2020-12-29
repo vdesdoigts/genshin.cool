@@ -32,7 +32,7 @@ export const bennett = {
     image: "/images/characters/bennett-thumb.png",
   },
   affiliation: "adventurers_guild",
-  description: "The few young adventurers that the Mondstadt Adventurers' Guild has always found themselves tangled up in baffling bouts of bad luck. He is the only active member of his own adventure group, known as Benny's Adventure Team, after all the other members decided to take leave following a series of unfortunate incidents. As a result, the team is currently on the verge of being dissolved. Being unable to break the poor boy's heart, Katheryne of the Adventurers' Guild has kept Benny's Adventure Team on the books, whilst also hiding from him the fact that all the other members have long since officially left the team.",
+  bennett: "amber.description",
 }
 
 export const bennettAscension = [

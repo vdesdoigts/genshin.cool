@@ -31,8 +31,8 @@ export const chongyun = {
   images: {
     image: "/images/characters/chongyun-thumb.png",
   },
-  affiliation: "n/a",
-  description: "An exorcist who roams the land with Liyue as his base of operations, evil spirits fleeing wherever he goes. As the heir to a clan of exorcists, he has always possessed abilities superior to most. However, these abilities are not the result of training, but of an inborn trait - congenital positivity.",
+  affiliation: null,
+  description: "chongyung.description",
 }
 
 export const chongyunAscension = [

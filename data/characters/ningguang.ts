@@ -32,7 +32,7 @@ export const ningguang = {
     image: "/images/characters/ningguang-thumb.png",
   },
   affiliation: "liyue_qixing",
-  description: "Owner of the Jade Chamber in the skies above Liyue, there are stories abound about Ningguang, with her elegance and mysterious smile. As a Tianquan of the Liyue Qixing, not only does she embody law and order, she also represents fortune and wit.",
+  description: "ningguang.description",
 }
 
 export const ningguangAscension = [

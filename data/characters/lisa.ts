@@ -32,7 +32,7 @@ export const lisa = {
     image: "/images/characters/lisa-thumb.png",
   },
   affiliation: "knights_of_favonius",
-  description: "She is an intellectual witch who can never get enough naps. As the Librarian of the Knights of Favonius, Lisa is smart in that she always knows exactly what to do with whatever troubles her. As much as she loves her sleep, she still manages to keep everything under control in a calm, composed manner.",
+  description: "lisa.description",
 }
 
 export const lisaAscension = [

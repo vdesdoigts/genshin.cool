@@ -31,7 +31,7 @@ export const kaeya = {
     image: "/images/characters/kaeya-thumb.png",
   },
   affiliation: "knights_of_favonius",
-  description: "In the Knights of Favonius, Kaeya is the most trusted aide for the Acting Grand Master Jean. You can always count on him to solve any intractable problems. Everyone in Mondstadt loves Kaeya, but no one knows what secrets this witty, charming knight has...",
+  description: "kaeya.description",
 }
 
 export const kaeyaAscension = [

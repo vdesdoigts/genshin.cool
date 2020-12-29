@@ -74,6 +74,92 @@
     "tail_of_boreas": "Tail of boreas",
     "tusk_of_monoceros_caeli": "Tusk of monoceros caeli"
   },
+  "characters": {
+    "albedo": {
+      "description": "Albedo — an alchemist based in Mondstadt, in the service of the Knights of Favonius. \"Genius,\" \"Kreideprinz,\" or \"Captain of the Investigation Team\"... Such titles and honors are of no consequence to him when there is so much more research to conduct. The pursuit of fortune and connections cannot hold a candle to his heart's desire — acquiring the limitless, obscure knowledge left behind by previous generations of scholars."
+    },
+    "amber": {
+      "description": "A perky, straightforward girl, who is also the only Outrider of the Knights of Favonius. Her amazing mastery of the glider has made her a three-time winner of the Gliding Championship in Mondstadt. As a rising star within the Knights of Favonius, Amber is always ready for any challenging tasks."
+    },
+    "barbara": {
+      "description": "The Deaconess of the Favonius Church and a shining starlet adored by all. Although the concept of a starlet is rather novel in a city of bards, the people of Mondstadt love Barbara nonetheless. 'I owe everything to the city's spirit of freedom'"
+    },
+    "beidou": {
+      "description": "Captain of the Crux, with quite the reputation in Liyue. There are those who say she can split mountains and part the sea. Others say she draws lightning through her sword. Some say that even the mightiest of sea beasts are no match for her. For those not from Liyue, it may sound like a hearty joke, but those that have sailed with her will say."
+    },
+    "bennett": {
+      "description": "The few young adventurers that the Mondstadt Adventurers' Guild has always found themselves tangled up in baffling bouts of bad luck. He is the only active member of his own adventure group, known as Benny's Adventure Team, after all the other members decided to take leave following a series of unfortunate incidents. As a result, the team is currently on the verge of being dissolved. Being unable to break the poor boy's heart, Katheryne of the Adventurers' Guild has kept Benny's Adventure Team on the books, whilst also hiding from him the fact that all the other members have long since officially left the team."
+    },
+    "chongyung": {
+      "description": "An exorcist who roams the land with Liyue as his base of operations, evil spirits fleeing wherever he goes. As the heir to a clan of exorcists, he has always possessed abilities superior to most. However, these abilities are not the result of training, but of an inborn trait - congenital positivity."
+    },
+    "diluc": {
+      "description": "As the wealthiest gentleman in Mondstadt, the ever-dapper Diluc always presents himself as the epitome of perfection. But behind the courteous visage burns a zealous soul that has sworn to protect Mondstadt at all costs, allowing him to mercilessly vanquish all who threaten his city."
+    },
+    "diona": {
+      "description": "The incredibly popular bartender of the Cat's Tail tavern, rising star of Mondstadt's wine industry, and the greatest challenger to its traditional powerhouses.\nA feisty feline young lady from Springvale, any drink mixed by Diona's hand tastes delicious beyond belief.\nYet given her extreme distaste for alcohol, is her talent a blessing or a curse?"
+    },
+    "fischl": {
+      "description": "A mysterious girl who calls herself 'Prinzessin der Verurteilung' and travels with a night raven named Oz. Currently serves as an investigator in the Adventurers' Guild. Through her unique abilities, eccentric character, and (while she would never admit it herself) hard work, Fischl has become a rising star among the Adventurers' Guild's investigators, earning the recognition of all."
+    },
+    "jean": {
+      "description": "As the Acting Grand Master of the Knights, Jean has always been devoted to her duties and maintaining peace in Mondstadt. She had taken precautions long before the onset of Stormterror's assault, and she will guard Mondstadt with her life as always."
+    },
+    "kaeya": {
+      "description": "In the Knights of Favonius, Kaeya is the most trusted aide for the Acting Grand Master Jean. You can always count on him to solve any intractable problems. Everyone in Mondstadt loves Kaeya, but no one knows what secrets this witty, charming knight has..."
+    },
+    "keqing": {
+      "description": "The Yuheng of the Liyue Qixing. Keqing has much to say about Rex Lapis' unilateral approach to policymaking in Liyue ⁠— but in truth, gods admire skeptics such as her quite a lot. She firmly believes that humanity's future should be determined by humans themselves, and that they can even do better than the archons and adepti have done for them. In order to prove this, she works harder than anyone else."
+    },
+    "klee": {
+      "description": "Knights of Favonius Spark Knight! Forever with a bang and a flash! —And then disappearing from the stern gaze of Acting Grand Master Jean. Sure, time in solitary confinement gives lots of time to think about new gunpowder formulas...But it'd still be better to not be in solitary in the first place."
+    },
+    "lisa": {
+      "description": "She is an intellectual witch who can never get enough naps. As the Librarian of the Knights of Favonius, Lisa is smart in that she always knows exactly what to do with whatever troubles her. As much as she loves her sleep, she still manages to keep everything under control in a calm, composed manner."
+    },
+    "mona": {
+      "description": "A mysterious young astrologer who proclaims herself to be 'Astrologist Mona Megistus,' and who possesses abilities to match the title. Erudite, but prideful.Though she is often strapped for cash and lives a life of thrift, she is resolved to never use astrology for profit... It is this very resolution that has caused her to constantly fret about money."
+    },
+    "ningguang": {
+      "description": "Owner of the Jade Chamber in the skies above Liyue, there are stories abound about Ningguang, with her elegance and mysterious smile. As a Tianquan of the Liyue Qixing, not only does she embody law and order, she also represents fortune and wit."
+    },
+    "noelle": {
+      "description": "Like most of Mondstadt's young people, Noelle always dreamed of being a knight of Favonius when she grew up. She may not have what it takes to be a knight just yet, but she is learning. Working as a maid at the Knights' headquarters, she is constantly taking notes on what constitutes knightly speech, knightly conduct, and knightly customs. She holds firm to her belief that one day she will join their ranks - she just needs to keep trying her hardest at everything she does."
+    },
+    "qiqi": {
+      "description": "An apprentice and herb gatherer at Bubu Pharmacy. 'Blessed' by the adepti with a body that cannot die, this petite zombie cannot do anything without first giving herself orders to do it. Qiqi's memory is like a sieve. Out of necessity, she always carries around a notebook in which she writes anything important that she is sure to forget later. But on her worst days, she even forgets to look at her notebook..."
+    },
+    "razor": {
+      "description": "Some say he is an orphan raised by wolves. Others say he is a wolf spirit in human form. He is most at home in the wild, fighting with claw and thunder. To this day the wolf boy can be found prowling the forest, where he and his wolf pack hunt to survive using nothing more than their animal instincts."
+    },
+    "sucrose": {
+      "description": "An alchemist with an insatiable curiosity towards the world and everything in it. Attached to the Knights of Favonius as an assistant to Albedo, her area of focus is 'bio-alchemy.' She strives to enrich the world by transforming living things with the power of alchemy. Granted, the products of her research sometimes prove to be more weird than wonderful — but on the whole, she has made monumental contributions to the field of bio-alchemy."
+    },
+    "tartaglia": {
+      "description": "Meet Tartaglia — the cunning Snezhnayan whose unpredictable personality keeps people guessing his every move.\nDon't be under any illusion as to what he might be thinking or what his intentions are. Just remember this: Behind that innocent, childlike exterior lies a finely honed instrument of war."
+    },
+    "traveler_anemo": {
+      "description": "A traveler from another world who had their only kin taken away, forcing them to embark on a journey to find The Seven."
+    },
+    "traveler_geo": {
+      "description": "A traveler from another world who had their only kin taken away, forcing them to embark on a journey to find The Seven."
+    },
+    "venti": {
+      "description": "A bard that seems to have arrived on some unknown wind - sometimes sings songs as old as the hills, and other times sings poems fresh and new. Likes apples and lively places, but is not a fan of cheese or anything sticky. When using his Anemo power to control the wind, it often appears as feathers, as he's fond of that which appears light and breezy."
+    },
+    "xiangling": {
+      "description": "The Head Chef at the Wanmin Restaurant and also a waitress there, Xiangling is extremely passionate about cooking and excels at her signature hot and spicy dishes. Though still young, Xiangling is a true master of the culinary arts with all the skills of a kitchen veteran. She enjoys a good reputation among the hearty eaters at Chihu Rock. There's absolutely no need to be nervous if she wants you to sample her latest creation. It will not disappoint. Promise."
+    },
+    "xingqiu": {
+      "description": "The second son of the Feiyun Commerce Guild, Xingqiu has had a reputation for being studious and polite ever since he was a young child. But there is another side to the mild-mannered Xingqiu everyone knows. A daring, adventurous and much more mischievous side..."
+    },
+    "xinyan": {
+      "description": "Rock 'n' roll is an avant-garde art in Liyue Harbor and Xinyan is the pioneer in this field. She rebels against ossified prejudices, using her music and passionate singing to awaken dazed souls fatigued by worldly matters. If you get the chance, do not miss out on her next performance!"
+    },
+    "zhongli": {
+      "description": "Wangsheng Funeral Parlor's mysterious consultant. Handsome, elegant, and surpassingly learned. Though no one knows where Zhongli is from, he is a master of courtesy and rules. From his seat at Wangsheng Funeral Parlor, he performs all manner of rituals."
+    }
+  },
   "common": {
     "arrowhead": {
       "firm_arrowhead": "Firm arrowhead",
@@ -184,9 +270,16 @@
     "liyue": "Liyue"
   },
   "seo": {
-    "characters": "Characters",
+    "characters_list": "Characters",
+    "characters_list_description": "Characters can primarily be obtained by using Intertwined Fates or Acquaint Fates (purchased with Primogems though also available through Events, Quests or exchanged monthly for Stardust/Starglitter at Paimon's Bargains) to perform Wishes (Gacha pulls).",
+    "characters_ascensions": "Character ascension materials",
+    "characters_ascensions_decription": "A Genshin Impact helper. Know exactly what character ascension materials you need and where to get it based on your own roster of characters.",
     "farming_guide": "Farming guide",
-    "site_description": "Find out the best farming methods and schedule optimization in this guide for Genshin Impact."
+    "site_description": "A Genshin Impact companion. Find out exactly what you need and where to get it based on your own roster of characters and weapons.",
+    "talents": "Character talent leveling materials",
+    "talents_description": "A Genshin Impact companion. Know exactly what talents leveling materials you need and where to get it based on your own roster of characters.",
+    "weapons_levelup": "Weapon talents leveling materials",
+    "weapons_levelup_description": "A Genshin Impact companion. Know exactly what weapons materials you need and where to get it based on your own weapons."
   },
   "site": {
     "add_a_profile": "Add a profile",
@@ -197,7 +290,7 @@
     "characters": "Characters",
     "character_ascensions": "Character ascensions",
     "character_materials": "Character talents",
-    "character_materials_empty": "No talent level-up materials to farm.",
+    "character_materials_empty": "No talent leveling materials to farm.",
     "contact": "Contact @vdesdoigts for any request.",
     "daily_talents_materials": "Daily talent materials farming",
     "days": {
@@ -219,7 +312,7 @@
     "edit_profile_modal": {
       "title": "Profil edit"
     },
-    "genshin_impact_farming_guide_description": "Find out the best talent level-up materials schedule optimization.",
+    "genshin_impact_farming_guide_description": "Find out the best talent leveling materials schedule optimization.",
     "genshin_impact_farming_guide": "Genshin Impact farming guide",
     "header": {
       "characters_ascensions_subtitle": "Characters,",
@@ -230,9 +323,9 @@
       "characters_list_subtitle": "Database,",
       "characters_list_title": "Genshin Impact Characters",
       "talents_subtitle": "Talents,",
-      "talents_title": "Level-up materials",
+      "talents_title": "Leveling materials",
       "weapon_subtitle": "Weapons",
-      "weapon_title": "Level-up materials"
+      "weapon_title": "Leveling materials"
     },
     "manage_your_armory": "Manage your armory",
     "manage_your_roster": "Manage your roster",
@@ -251,9 +344,9 @@
       "characters": "Characters",
       "characters_list": "Database",
       "character_ascension_materials": "Ascension materials",
-      "talent_level_up_material": "Talent level-up materials",
+      "talent_level_up_material": "Talent leveling materials",
       "weapons": "Weapons",
-      "weapon_level_up_material": "Level-up materials"
+      "weapon_level_up_material": "Leveling materials"
     },
     "next_ascension_material": "Next ascension materials",
     "next_ascension_material_empty": "No elevation",
@@ -268,7 +361,7 @@
     "your_roster": "Your roster",
     "your_roster_empty": "No character in your roster.",
     "weapon_materials": "Weapon ascensions",
-    "weapon_materials_empty": "No weapon level-up materials to farm."
+    "weapon_materials_empty": "No weapon leveling materials to farm."
   },
   "talentmaterialtypes": {
     "ballad": "Ballad",

@@ -31,12 +31,12 @@ const CharacterAscensionMaterials = () => {
   return (
     <>
       <Head>
-        <title>{t('site.header.characters_ascensions_subtitle')} {t('site.header.characters_ascensions_title')} - Genshin Impact {router.locale.toUpperCase()}</title>
-        <meta
-          property="og:title"
-          content={`${t('site.header.characters_ascensions_subtitle')} ${t('site.header.characters_ascensions_title')} - Genshin Impact ${router.locale}.toUpperCase()`}
-        />
-        <meta name="twitter:title" content={`${t('site.header.characters_ascensions_subtitle')} ${t('site.header.characters_ascensions_title')} - Genshin Impact ${router.locale}.toUpperCase()`} />
+        <title>{t('site.seo.characters_ascensions')} | Genshin Impact | {router.locale.toUpperCase()}</title>
+        <meta property="og:title" content={`${t('site.seo.characters_ascensions')} | Genshin Impact | ${router.locale.toUpperCase()}`} />
+        <meta name="twitter:title" content={`${t('site.seo.characters_ascensions')} | Genshin Impact | ${router.locale.toUpperCase()}`} />
+
+        <meta name="description" content={t('seo.characters_ascensions_decription')} />
+        <meta property="og:description" content={t('seo.characters_ascensions_decription')} />
       </Head>
       <Box
         flexGrow={1}

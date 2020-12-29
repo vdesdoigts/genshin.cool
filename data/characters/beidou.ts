@@ -33,7 +33,7 @@ export const beidou = {
     image: "/images/characters/beidou-thumb.png",
   },
   affiliation: "crux_fleet",
-  description: "Captain of the Crux, with quite the reputation in Liyue. There are those who say she can split mountains and part the sea. Others say she draws lightning through her sword. Some say that even the mightiest of sea beasts are no match for her. For those not from Liyue, it may sound like a hearty joke, but those that have sailed with her will say",
+  description: "beidou.description",
 }
 
 export const beidouAscension = [

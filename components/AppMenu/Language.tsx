@@ -14,7 +14,6 @@ const Language = () => {
   const { i18n, t } = useTranslation()
 
   const onChangeLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    console.log('router.route: ', router.route)
     router.replace(router.asPath, router.asPath, { locale: e.target.value as ILangs })
     i18n.changeLanguage(e.target.value as ILangs)
   }

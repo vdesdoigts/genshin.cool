@@ -32,7 +32,7 @@ export const amber = {
     image: "/images/characters/amber-thumb.png",
   },
   affiliation: "knights_of_favonius",
-  description: "A perky, straightforward girl, who is also the only Outrider of the Knights of Favonius. Her amazing mastery of the glider has made her a three-time winner of the Gliding Championship in Mondstadt. As a rising star within the Knights of Favonius, Amber is always ready for any challenging tasks.",
+  description: "amber.description",
 }
 
 export const amberAscension = [

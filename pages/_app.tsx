@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useRouter } from 'next/router'
-import { I18nextProvider, useTranslation } from 'react-i18next'
+import { I18nextProvider } from 'react-i18next'
 import { Provider } from 'react-redux'
 import { getPersistor } from '@rematch/persist'
 import { PersistGate } from 'redux-persist/lib/integration/react'
-import { Box, ChakraProvider, Flex, useDisclosure } from '@chakra-ui/react'
-import Head from 'next/head'
+import { ChakraProvider } from '@chakra-ui/react'
 import 'typeface-poppins'
 import i18n from 'i18next'
 import theme from '../theme'
@@ -36,7 +35,7 @@ function App({ Component, pageProps }) {
         },
       },
       lng: router.locale,
-      fallbackLng: "en",
+      fallbackLng: 'en',
       interpolation: {
         escapeValue: false, // react already safes from xss
       },

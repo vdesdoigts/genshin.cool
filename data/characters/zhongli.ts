@@ -32,7 +32,7 @@ export const zhongli = {
     image: "/images/characters/zhongli-thumb.png",
   },
   affiliation: "wangsheng_funeral_parlor",
-  description: "",
+  description: "zhongli.description",
 }
 
 

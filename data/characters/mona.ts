@@ -31,8 +31,8 @@ export const mona = {
   images: {
     image: "/images/characters/mona-thumb.png",
   },
-  affiliation: "n/a",
-  description: "A mysterious young astrologer who proclaims herself to be 'Astrologist Mona Megistus,' and who possesses abilities to match the title. Erudite, but prideful.Though she is often strapped for cash and lives a life of thrift, she is resolved to never use astrology for profit... It is this very resolution that has caused her to constantly fret about money.",
+  affiliation: null,
+  description: "mona.description",
 }
 
 export const monaAscension = [

@@ -32,7 +32,7 @@ export const sucrose = {
     image: "/images/characters/sucrose-thumb.png",
   },
   affiliation: "knights_of_favonius",
-  description: "An alchemist with an insatiable curiosity towards the world and everything in it. Attached to the Knights of Favonius as an assistant to Albedo, her area of focus is 'bio-alchemy.' She strives to enrich the world by transforming living things with the power of alchemy. Granted, the products of her research sometimes prove to be more weird than wonderful — but on the whole, she has made monumental contributions to the field of bio-alchemy.",
+  description: "sucrose.description",
 }
 
 export const sucroseAscension = [

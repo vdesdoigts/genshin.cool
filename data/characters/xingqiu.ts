@@ -34,7 +34,7 @@ export const xingqiu = {
     image: "/images/characters/xingqiu-thumb.png",
   },
   affiliation: "feiyun_commerce_guild",
-  description: "The second son of the Feiyun Commerce Guild, Xingqiu has had a reputation for being studious and polite ever since he was a young child. But there is another side to the mild-mannered Xingqiu everyone knows. A daring, adventurous and much more mischievous side...",
+  description: "xingqiu.description",
 }
 
 export const xingqiuAscension = [

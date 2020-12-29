@@ -32,7 +32,7 @@ const xiangling = {
     image: "/images/characters/xiangling-thumb.png",
   },
   affiliation: "wanmin_restaurant",
-  description: "The Head Chef at the Wanmin Restaurant and also a waitress there, Xiangling is extremely passionate about cooking and excels at her signature hot and spicy dishes. Though still young, Xiangling is a true master of the culinary arts with all the skills of a kitchen veteran. She enjoys a good reputation among the hearty eaters at Chihu Rock. There's absolutely no need to be nervous if she wants you to sample her latest creation. It will not disappoint. Promise.",
+  description: "xiangling.description",
 }
 
 export const xianglingAscension = [

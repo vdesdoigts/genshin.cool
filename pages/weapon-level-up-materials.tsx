@@ -28,12 +28,12 @@ const WeaponMaterials = () => {
   return (
     <>
       <Head>
-        <title>{t('site.header.weapon_subtitle')} {t('site.header.weapon_title')} - Genshin Impact {router.locale.toUpperCase()}</title>
-        <meta
-          property="og:title"
-          content={`${t('site.header.weapon_subtitle')} ${t('site.header.weapon_title')} - Genshin Impact ${router.locale}.toUpperCase()`}
-        />
-        <meta name="twitter:title" content={`${t('site.header.weapon_subtitle')} ${t('site.header.weapon_title')} - Genshin Impact ${router.locale}.toUpperCase()`} />
+        <title>{t('seo.weapons_levelup')} | Genshin Impact | {router.locale.toUpperCase()}</title>
+        <meta property="og:title" content={`${t('seo.weapons_levelup')} | Genshin Impact | ${router.locale.toUpperCase()}`} />
+        <meta name="twitter:title" content={`${t('seo.weapons_levelup')} | Genshin Impact | ${router.locale.toUpperCase()}`} />
+
+        <meta name="description" content={t('seo.weapons_levelup_description')} />
+        <meta property="og:description" content={t('seo.weapons_levelup_description')} />
       </Head>
       <Box
         flexGrow={1}
