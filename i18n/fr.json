@@ -270,9 +270,16 @@
     "liyue": "Liyue"
   },
   "seo": {
-    "characters": "Personnages",
+    "characters_list": "Personnages",
+    "characters_list_description": "Characters can primarily be obtained by using Intertwined Fates or Acquaint Fates (purchased with Primogems though also available through Events, Quests or exchanged monthly for Stardust/Starglitter at Paimon's Bargains) to perform Wishes (Gacha pulls).",
+    "characters_ascensions": "Matériaux d'ascension de personnage",
+    "characters_ascensions_decription": "Genshin Impact helper. Know exactly what character ascension materials you need and where to get it based on your own roster of characters.",
     "farming_guide": "Guide de farming",
-    "site_description": "Découvrez les meilleures méthodes de farming et d'optimisation avec ce guide pour Genshin Impact."
+    "site_description": "A Genshin Impact companion. Find out exactly what you need and where to get it based on your own roster of characters and weapons.",
+    "talents": "Matériaux d'amélioration de talent de personnage",
+    "talents_description": "A Genshin Impact companion. Know exactly what talents leveling materials you need and where to get it based on your own roster of characters.",
+    "weapons_levelup": "Matériaux d'amélioration de d'armes",
+    "weapons_levelup_description": "A Genshin Impact companion. Know exactly what weapons materials you need and where to get it based on your own weapons."
   },
   "site": {
     "add_a_profile": "Ajouter un profil",
