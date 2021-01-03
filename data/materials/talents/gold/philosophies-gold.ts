@@ -6,5 +6,5 @@ export default {
     image: "/images/talentmaterials/gold-philosophies.png"
   },
   day: ["wednesday", "saturday", "sunday"],
-  domainOfMastery: "forsaken_rift",
+  domainOfMastery: "taishan_mansion",
 }

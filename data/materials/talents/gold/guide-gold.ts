@@ -6,5 +6,5 @@ export default {
     image: "/images/talentmaterials/gold-guide.png"
   },
   day: ["wednesday", "saturday", "sunday"],
-  domainOfMastery: "forsaken_rift",
+  domainOfMastery: "taishan_mansion",
 }

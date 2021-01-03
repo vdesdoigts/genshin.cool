@@ -31,9 +31,9 @@ const CharacterAscensionMaterials = () => {
   return (
     <>
       <Head>
-        <title>{t('site.seo.characters_ascensions')} | Genshin Impact | {router.locale.toUpperCase()}</title>
-        <meta property="og:title" content={`${t('site.seo.characters_ascensions')} | Genshin Impact | ${router.locale.toUpperCase()}`} />
-        <meta name="twitter:title" content={`${t('site.seo.characters_ascensions')} | Genshin Impact | ${router.locale.toUpperCase()}`} />
+        <title>{t('seo.characters_ascensions')} | Genshin Impact | {router.locale.toUpperCase()}</title>
+        <meta property="og:title" content={`${t('seo.characters_ascensions')} | Genshin Impact | ${router.locale.toUpperCase()}`} />
+        <meta name="twitter:title" content={`${t('seo.characters_ascensions')} | Genshin Impact | ${router.locale.toUpperCase()}`} />
 
         <meta name="description" content={t('seo.characters_ascensions_decription')} />
         <meta property="og:description" content={t('seo.characters_ascensions_decription')} />
