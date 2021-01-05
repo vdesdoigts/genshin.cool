@@ -76,7 +76,7 @@ const Layout = ({ children }) => {
           }}
         />
 
-        <script data-ad-client="ca-pub-8458876784042744" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        {/* <script data-ad-client="ca-pub-8458876784042744" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> */}
       </Head>
       <Box
         opacity={isMenuOpen ? 1 : 0}

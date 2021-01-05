@@ -6,5 +6,5 @@ export default {
     image: "/images/talentmaterials/prosperity-philosophies.png"
   },
 	day: ["monday", "thursday", "sunday"],
-  domainOfMastery: "forsaken_rift",
+  domainOfMastery: "taishan_mansion",
 }
