@@ -7,6 +7,7 @@ import chongyun from './chongyun'
 import diluc from './diluc'
 import diona from './diona'
 import fischl from './fischl'
+import ganyu from './ganyu'
 import jean from './jean'
 import kaeya from './kaeya'
 import keqing from './keqing'
@@ -37,6 +38,7 @@ export default [
   diluc,
   diona,
   fischl,
+  ganyu,
   jean,
   kaeya,
   keqing,
