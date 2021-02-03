@@ -24,6 +24,7 @@ import travelerAnemo from './traveler-anemo'
 import travelerGeo from './traveler-geo'
 import venti from './venti'
 import xiangling from './xiangling'
+import xiao from './xiao'
 import xingqiu from './xingqiu'
 import xinyan from './xinyan'
 import zhongli from './zhongli'
@@ -55,6 +56,7 @@ export default [
   travelerGeo,
   venti,
   xiangling,
+  xiao,
   xingqiu,
   xinyan,
   zhongli,

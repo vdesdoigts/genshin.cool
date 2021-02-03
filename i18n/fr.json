@@ -55,6 +55,7 @@
     "electro_hypostasis": "Hypostase Électro",
     "geo_hypostasis": "Hypostase Geo",
     "oceanid": "Esprit des Eaux",
+    "primo_geovishap": "Primo Geovishap",
     "pyro_regisvine": "Arbre enflammé",
     "stormterror": "Repaire de Stormterror",
     "wolf_of_the_north_challenge_reward": "Défi du Loup du Nord"
@@ -68,6 +69,7 @@
     "everflame_seed": "Graine de feu",
     "hoarfrost_core": "Duramen de glace",
     "hurricane_seed": "Graine d'ouragan",
+    "juvenile_jade": "Juvenile jade",
     "lightning_prism": "Prisme d'éclair",
     "ring_of_boreas": "Anneau de Boréas",
     "shadow_of_the_warrior": "Shadow of the warrior",
@@ -151,6 +153,9 @@
     },
     "xiangling": {
       "description": "The Head Chef at the Wanmin Restaurant and also a waitress there, Xiangling is extremely passionate about cooking and excels at her signature hot and spicy dishes. Though still young, Xiangling is a true master of the culinary arts with all the skills of a kitchen veteran. She enjoys a good reputation among the hearty eaters at Chihu Rock. There's absolutely no need to be nervous if she wants you to sample her latest creation. It will not disappoint. Promise."
+    },
+    "xiao": {
+      "description": "One of the \"Mighty and Illuminated Adepti\" guarding Liyue, also heralded as the \"Guardian Yaksha.\" Despite his appearance as a young man, occasional legends about him have been documented in ancient books. He is especially fond of Wangshu Inn's Almond Tofu. The reason is that the dish tastes just like the \"dreams\" he used to devour."
     },
     "xingqiu": {
       "description": "The second son of the Feiyun Commerce Guild, Xingqiu has had a reputation for being studious and polite ever since he was a young child. But there is another side to the mild-mannered Xingqiu everyone knows. A daring, adventurous and much more mischievous side..."
@@ -470,6 +475,7 @@
     "chef_de_cuisine": "Chef de Cuisine",
     "childe": "Childe",
     "chivalric_blossom": "Chivalric Blossom",
+    "conqueror_of_demons": "Conqueror of demons",
     "dandelion_knight": "Dandelion Knight",
     "dark_side_of_dawn": "Dark Side of Dawn",
     "deaconess": "Deaconess",
