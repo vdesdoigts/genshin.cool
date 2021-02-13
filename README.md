@@ -1,3 +1,10 @@
+
+# Genshin Impact
+
+https://genshin.cool is a Genshin Impact companion. Find out exactly what you need and where to get it based on your own roster of characters and weapons.
+
+![genshin.cool homepage](genshin.png)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
