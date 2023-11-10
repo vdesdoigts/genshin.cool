@@ -1,7 +1,7 @@
 
 # Genshin Impact
 
-https://genshin.cool is a Genshin Impact companion. Find out exactly what you need and where to get it based on your own roster of characters and weapons.
+[genshin.cool](https://genshin-vdesdoigts.vercel.app/) is a Genshin Impact companion. Find out exactly what you need and where to get it based on your own roster of characters and weapons.
 
 ![genshin.cool homepage](genshin.png)
 
